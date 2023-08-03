@@ -2,7 +2,7 @@ CREATE DATABASE HOSPITAL2
 USE HOSPITAL2
 
 CREATE TABLE Patient(
-	PatientID VARCHAR(10) PRIMARY KEY,
+	PatientID INT PRIMARY KEY IDENTITY(1,1),
 	Name VARCHAR(50),
 	Surname VARCHAR(50),
 	Gender CHAR(1)
@@ -13,79 +13,111 @@ CREATE TABLE Patient(
 );
 
 CREATE TABLE Receptionist(
-	ReceptionistID VARCHAR(10) PRIMARY KEY,
+	ReceptionistID INT PRIMARY KEY IDENTITY(1,1),
 	Name VARCHAR(50),
 	Surname VARCHAR(50),
 	Email VARCHAR(50)
 );
 
 CREATE TABLE Specialization( --Sherbime
-	SpecializationID VARCHAR(10) PRIMARY KEY,
+	SpecializationID INT PRIMARY KEY IDENTITY(1,1),
 	Name VARCHAR(50),
 	Description VARCHAR(255),
 	PhotoURL VARCHAR(255)
 );
 
 CREATE TABLE Doctor(
-	DoctorID VARCHAR(10) PRIMARY KEY,
+	DoctorID INT PRIMARY KEY IDENTITY(1,1),
 	Name VARCHAR(50),
 	Surname VARCHAR(50),
 	Email VARCHAR(50),
 	Education VARCHAR(255),
 	PhotoURL VARCHAR(255),
-	Specialization VARCHAR(10) FOREIGN KEY REFERENCES Specialization(SpecializationID)
+	Specialization INT FOREIGN KEY REFERENCES Specialization(SpecializationID)
 );
 
 CREATE TABLE PatientDoctor(
-	PatientID VARCHAR(10),
-	DoctorID VARCHAR(10),
+	PatientID INT,
+	DoctorID INT,
 	PRIMARY KEY (PatientID, DoctorID),
-	Patient VARCHAR(10) FOREIGN KEY REFERENCES Patient(PatientID),
-	Doctor VARCHAR(10) FOREIGN KEY REFERENCES Doctor(DoctorID)
+	Patient INT FOREIGN KEY REFERENCES Patient(PatientID),
+	Doctor INT FOREIGN KEY REFERENCES Doctor(DoctorID)
 );
 
 CREATE TABLE Room( 
-	RoomID VARCHAR(10) PRIMARY KEY,
-	Patient VARCHAR(10) UNIQUE FOREIGN KEY REFERENCES Patient(PatientID)
+	RoomID INT PRIMARY KEY IDENTITY(1,1),
+	Patient INT UNIQUE FOREIGN KEY REFERENCES Patient(PatientID)
 );
 
 CREATE TABLE Report(
-	ReportID VARCHAR(10) PRIMARY KEY,
+	ReportID INT PRIMARY KEY IDENTITY(1,1),
 	ReportType VARCHAR(255),
 	ReportDate DATE,
 	ReportDescription VARCHAR(255),
-	Patient VARCHAR(10) FOREIGN KEY REFERENCES Patient(PatientID),
-	Doctor VARCHAR(10) FOREIGN KEY REFERENCES Doctor(DoctorID)
+	Patient INT FOREIGN KEY REFERENCES Patient(PatientID),
+	Doctor INT FOREIGN KEY REFERENCES Doctor(DoctorID)
 );
 
 CREATE TABLE Reservation(
-	ReservationID VARCHAR(10) PRIMARY KEY,
+	ReservationID INT PRIMARY KEY IDENTITY(1,1),
 	ReservationDate DATE,
 	ReservationTime TIME,
-	Patient VARCHAR(10) FOREIGN KEY REFERENCES Patient(PatientID),
-	Doctor VARCHAR(10) FOREIGN KEY REFERENCES Doctor(DoctorID),
-	Service VARCHAR(10) FOREIGN KEY REFERENCES Specialization(SpecializationID)
+	Patient INT FOREIGN KEY REFERENCES Patient(PatientID),
+	Doctor INT FOREIGN KEY REFERENCES Doctor(DoctorID),
+	Service INT FOREIGN KEY REFERENCES Specialization(SpecializationID)
 );
 
 CREATE TABLE Payment(
-	PaymentID VARCHAR(10) PRIMARY KEY,
+	PaymentID INT PRIMARY KEY IDENTITY(1,1),
 	PaymentAmount VARCHAR(20),
 	PaymentDate DATE,
-	Receptionist VARCHAR(10) FOREIGN KEY REFERENCES Receptionist(ReceptionistID),
-	Patient VARCHAR(10) FOREIGN KEY REFERENCES Patient(PatientID),
-	Report VARCHAR(10) FOREIGN KEY REFERENCES Report(ReportID)
+	Receptionist INT FOREIGN KEY REFERENCES Receptionist(ReceptionistID),
+	Patient INT FOREIGN KEY REFERENCES Patient(PatientID),
+	Report INT FOREIGN KEY REFERENCES Report(ReportID)
 );
 
 CREATE TABLE Complaints(
-	ComplaintID VARCHAR(10) PRIMARY KEY,
+	ComplaintID INT PRIMARY KEY IDENTITY(1,1),
 	ComplaintDate DATE,
 	ComplaintDetails VARCHAR(255),
-	Patient VARCHAR(10) FOREIGN KEY REFERENCES Patient(PatientID)
+	Patient INT FOREIGN KEY REFERENCES Patient(PatientID)
 );
 
 CREATE TABLE ContactForm(
-	ContactID VARCHAR(10) PRIMARY KEY,
+	ContactID INT PRIMARY KEY IDENTITY(1,1),
 	Subject VARCHAR(100),
 	Message VARCHAR(255),
-	Patient VARCHAR(10) FOREIGN KEY REFERENCES Patient(PatientID)
+	Patient INT FOREIGN KEY REFERENCES Patient(PatientID)
 );
+CREATE TABLE Role (
+    RoleID INT PRIMARY KEY IDENTITY(1,1),
+    Name VARCHAR(50)
+);
+ALTER TABLE Patient
+ADD RoleID INT FOREIGN KEY REFERENCES Role(RoleID);
+
+ALTER TABLE Doctor
+ADD RoleID INT FOREIGN KEY REFERENCES Role(RoleID);
+
+ALTER TABLE Receptionist
+ADD RoleID INT FOREIGN KEY REFERENCES Role(RoleID);
+
+CREATE TABLE UserRole (
+    UserID INT,
+    RoleID INT,
+    PRIMARY KEY (UserID, RoleID),
+    FOREIGN KEY (UserID) REFERENCES Patient(PatientID) ON DELETE CASCADE,
+    FOREIGN KEY (UserID) REFERENCES Doctor(DoctorID) ON DELETE CASCADE,
+    FOREIGN KEY (UserID) REFERENCES Receptionist(ReceptionistID) ON DELETE CASCADE,
+    FOREIGN KEY (RoleID) REFERENCES Role(RoleID)
+);
+INSERT INTO Role (Name) VALUES
+('Administrator'),
+('Doctor'),
+('Receptionist'),
+('Patient');
+
+SELECT * FROM Role
+
+
+
