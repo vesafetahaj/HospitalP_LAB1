@@ -1,1 +1,1 @@
-# HospitalP_LAB1
+# Hospital_LAB1
