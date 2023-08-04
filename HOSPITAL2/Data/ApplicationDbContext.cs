@@ -11,7 +11,7 @@ namespace HOSPITAL2.Data
         {
   
         }
-        public DbSet<PatientModel> Patient { get; set; }
+        /*public DbSet<PatientModel> Patient { get; set; }
         public DbSet<SpecializationModel> Specialization { get; set; }
         public DbSet<ComplaintsModel> Complaints { get; set; }
         public DbSet<ContactFormModel> ContactForm { get; set; }
@@ -25,7 +25,7 @@ namespace HOSPITAL2.Data
         public DbSet<ReportModel> Report { get; set; }
         public DbSet<ReservationModel> Reservation { get; set; }
         public DbSet<RoleModel> Role { get; set; }
-        public DbSet<RoomModel> Room { get; set; }
+        public DbSet<RoomModel> Room { get; set; }*/
 
 
     }
