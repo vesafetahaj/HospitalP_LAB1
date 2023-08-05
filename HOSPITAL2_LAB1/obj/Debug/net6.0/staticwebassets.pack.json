@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\young-handsome-physician-medical-robe-with-stethoscope.jpg",
+      "PackagePath": "staticwebassets\\images\\young-handsome-physician-medical-robe-with-stethoscope.jpg"
+    },
+    {
       "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
