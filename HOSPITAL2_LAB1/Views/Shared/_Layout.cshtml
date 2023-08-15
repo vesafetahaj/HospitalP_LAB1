@@ -37,11 +37,28 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted bg-dark">
         <div class="container">
-            &copy; 2023 - HOSPITAL2_LAB1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Working Hours</h5>
+                    <p style="line-height: 1.2;">E hene - E premte: 7AM - 12AM</p>
+                    <p style="line-height: 1.2;">E shtune: 9AM - 22PM</p>
+                    <p style="line-height: 1.2;">E diele: 10AM - 20PM</p>
+                </div>
+                
+                <div class="col-md-2 text-center">
+                    <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Register for free!</h5>
+                    <a href="#" class="btn btn-danger btn-rounded" style="color:white">Sign up!</a>
+                </div>
+            </div>
+            <hr />
+            <div class="footer-copy text-center">
+                &copy; @(DateTime.Now.Year) SunriseCareHospital.com
+            </div>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
