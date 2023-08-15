@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m7Y1qEHGcAZA4KpnZjY4MJ1A9OcEEL610+JZ+piyhFw=",
+  "Hash": "hvUFp0e4uVlYLvJf71tRGYd5QeAkovcmWnQI0GKb5Vo=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1462,23 +1462,6 @@
       "OriginalItemSpec": "wwwroot\\images\\dermatology.jpg"
     },
     {
-      "Identity": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\doctor.jpg",
-      "SourceId": "HOSPITAL2_LAB1",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\",
-      "BasePath": "_content/HOSPITAL2_LAB1",
-      "RelativePath": "images/doctor.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\doctor.jpg"
-    },
-    {
       "Identity": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\doctor.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -2497,23 +2480,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\phone.png"
-    },
-    {
-      "Identity": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\photo.jpeg",
-      "SourceId": "HOSPITAL2_LAB1",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\",
-      "BasePath": "_content/HOSPITAL2_LAB1",
-      "RelativePath": "images/photo.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\photo.jpeg"
     },
     {
       "Identity": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\plasticsurgery.jpg",

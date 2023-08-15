@@ -130,7 +130,7 @@ namespace HOSPITAL2_LAB1.Areas.Identity.Pages.Account
                     {
                         return RedirectToAction("Index", "Patient");
                     }
-                    else if (roles.Contains("receptionist"))
+                    else if (roles.Contains("Receptionist"))
                     {
                         return RedirectToAction("Index", "Receptionist");
                     }

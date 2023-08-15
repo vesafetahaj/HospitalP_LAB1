@@ -109,10 +109,6 @@
       "PackagePath": "staticwebassets\\images\\doctor-pic2.jpg"
     },
     {
-      "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\doctor.jpg",
-      "PackagePath": "staticwebassets\\images\\doctor.jpg"
-    },
-    {
       "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\doctor.png",
       "PackagePath": "staticwebassets\\images\\doctor.png"
     },
@@ -343,10 +339,6 @@
     {
       "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\phone.png",
       "PackagePath": "staticwebassets\\images\\phone.png"
-    },
-    {
-      "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\photo.jpeg",
-      "PackagePath": "staticwebassets\\images\\photo.jpeg"
     },
     {
       "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\plasticsurgery.jpg",
