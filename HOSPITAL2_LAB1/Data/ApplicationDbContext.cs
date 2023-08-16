@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using HOSPITAL2_LAB1.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+
 
 namespace HOSPITAL2_LAB1.Data
 {
@@ -9,5 +11,8 @@ namespace HOSPITAL2_LAB1.Data
             : base(options)
         {
         }
+
+      
+
     }
 }

@@ -12,7 +12,7 @@ namespace HOSPITAL2_LAB1.Models
             Reservations = new HashSet<Reservation>();
             Specializations = new HashSet<Specialization>();
         }
-
+       
         public int AdminId { get; set; }
         public string? Name { get; set; }
         public string? Surname { get; set; }
