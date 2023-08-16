@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hvUFp0e4uVlYLvJf71tRGYd5QeAkovcmWnQI0GKb5Vo=",
+  "Hash": "/lmZpRuAYzz1sgUSUsnOcMSPPxd7dY/LcdIVSo17bhQ=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HOSPITAL2_LAB1.bundle.scp.css"
     },
     {
+      "Identity": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\css\\AboutUs.css",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "css/AboutUs.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AboutUs.css"
+    },
+    {
       "Identity": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\css\\site.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -1103,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\fonts\\Sequel100Black-85.ttf",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "fonts/Sequel100Black-85.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\Sequel100Black-85.ttf"
     },
     {
       "Identity": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\about.jpg",
@@ -1460,6 +1494,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\dermatology.jpg"
+    },
+    {
+      "Identity": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\doctor.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/doctor.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\doctor.jpg"
     },
     {
       "Identity": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\doctor.png",

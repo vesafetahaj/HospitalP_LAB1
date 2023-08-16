@@ -7,12 +7,27 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HOSPITAL2_LAB1.styles.css" asp-append-version="true" />
+    <style>
+        #logo {
+            transition: transform 0.3s ease;
+            width: 160px;
+        }
+        .nav-item{
+            margin-right: 20px;
+            font-family: Courier New, Courier, monospace;
+           
+        }
+
+        .nav-link:hover {
+            color: #9abddc;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SunRiseCare HOSPITAL</a>
+                <img src="~/images/sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png" alt="" id="logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,7 +41,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Sherbimet" asp-action="Sherbimet">Sherbimet</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="AboutUs" asp-action="AboutUs">AboutUs</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="AboutUs" asp-action="AboutUs">About Us</a>
                         </li>   
 
                     </ul>
@@ -42,7 +57,7 @@
     </div>
 
     <footer class="border-top footer text-muted bg-dark">
-        <div class="container">
+        <div class="container" style="padding:50px">
             <div class="row">
                 <div class="col-md-6">
                     <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Working Hours</h5>

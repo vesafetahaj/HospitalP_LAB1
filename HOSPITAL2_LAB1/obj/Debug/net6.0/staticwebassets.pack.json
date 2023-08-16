@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\HOSPITAL2_LAB1.bundle.scp.css"
     },
     {
+      "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\css\\AboutUs.css",
+      "PackagePath": "staticwebassets\\css\\AboutUs.css"
+    },
+    {
       "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\fonts\\Sequel100Black-85.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Sequel100Black-85.ttf"
     },
     {
       "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\Possible-3x1.mp4",
@@ -107,6 +115,10 @@
     {
       "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\doctor-pic2.jpg",
       "PackagePath": "staticwebassets\\images\\doctor-pic2.jpg"
+    },
+    {
+      "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\doctor.jpg",
+      "PackagePath": "staticwebassets\\images\\doctor.jpg"
     },
     {
       "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\doctor.png",
