@@ -120,7 +120,7 @@ namespace HOSPITAL2_LAB1.Areas.Identity.Pages.Account
 
                     if (roles.Contains("Admin"))
                     {
-                        return RedirectToAction("Index", "Admin");
+                        return RedirectToAction("Index", "Administrators");
                     }
                     else if (roles.Contains("Doctor"))
                     {

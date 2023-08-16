@@ -1,0 +1,134 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+    .box {
+        width: 291px;
+        height: 153px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        color: white;
+        font-family: 'Anek Gurmukhi', sans-serif;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .boxcontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .box h1 {
+        font-size: 60px;
+    }
+
+    .box h3 {
+        padding-top: 25px;
+    }
+
+    .box:hover {
+        transform: scale(1.05);
+    }
+
+    .quick-access {
+        margin-top: 50px;
+        margin-left: -35px;
+    }
+
+        .quick-access .btn {
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: white;
+            border-color: #9abddc;
+            color: #9abddc;
+        }
+
+            .quick-access .btn:hover {
+                background-color: #84a5c7;
+                border-color: #84a5c7;
+                color: white;
+            }
+</style>
+
+<div id="main">
+    <h1>Welcome to your dashboard!</h1>
+
+    <div class="boxcontainer">
+        <div class="box" style="background: #9abddc; margin-left: -110px;">
+            <h3>Appointments</h3>
+            <h1 id="appointments">0</h1>
+        </div>
+        <div class="box" style="background: #9abddc;opacity: 80%;">
+            <h3>Patients</h3>
+            <h1 id="patients">0</h1>
+        </div>
+        <div class="box" style="background: #9abddc;opacity: 60%;">
+            <h3>Doctors</h3>
+            <h1 id="doctors">0</h1>
+        </div>
+    </div> <br /> <br /><br />
+    <h1>Quick Access</h1><br />
+    <div class="quick-access">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a asp-action="Contact" asp-controller="Admin" class="btn btn-primary btn-lg btn-block">See Contact Forms</a>
+                </div>
+                <div class="col-md-3">
+                    <a asp-action="CreateDoctor" asp-controller="Admin" class="btn btn-primary btn-lg btn-block">Register a Doctor</a>
+                </div>
+                <div class="col-md-3">
+                    <a asp-action="Create" asp-controller="Roles" class="btn btn-primary btn-lg btn-block">Register a Role</a>
+                </div>
+                <div class="col-md-3">
+                    <a asp-action="Appointments" asp-controller="Admin" class="btn btn-primary btn-lg btn-block">See Appointments</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function animateNumbers() {
+        var appointments = 20;
+        var patients = 500;
+        var doctors = 50;
+
+        var appointmentsElement = document.getElementById("appointments");
+        var patientsElement = document.getElementById("patients");
+        var doctorsElement = document.getElementById("doctors");
+
+        var interval = 100; // Interval between each number increment in milliseconds
+        var duration = 1000; // Duration of the animation in milliseconds
+
+        var appointmentsStep = appointments / (duration / interval);
+        var patientsStep = patients / (duration / interval);
+        var doctorsStep = doctors / (duration / interval);
+
+        var currentappointments = 0;
+        var currentpatients = 0;
+        var currentdoctors = 0;
+
+        var timer = setInterval(function () {
+            currentappointments += appointmentsStep;
+            currentpatients += patientsStep;
+            currentdoctors += doctorsStep;
+
+            appointmentsElement.textContent = Math.round(currentappointments);
+            patientsElement.textContent = Math.round(currentpatients);
+            doctorsElement.textContent = Math.round(currentdoctors);
+
+            if (currentappointments >= appointments && currentpatients >= patients && currentdoctors >= doctors) {
+                clearInterval(timer);
+                appointmentsElement.textContent = appointments;
+                patientsElement.textContent = patients;
+                doctorsElement.textContent = doctors;
+            }
+        }, interval);
+    }
+
+    // Call the function to start the animation
+    animateNumbers();
+</script>
