@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/lmZpRuAYzz1sgUSUsnOcMSPPxd7dY/LcdIVSo17bhQ=",
+  "Hash": "/da+8a/HhMJF0UW98v7AIM3AoQebofdtT54TdH8EqFQ=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1987,6 +1987,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\idea.png"
+    },
+    {
+      "Identity": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\information.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/information.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\information.png"
     },
     {
       "Identity": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\injection.png",

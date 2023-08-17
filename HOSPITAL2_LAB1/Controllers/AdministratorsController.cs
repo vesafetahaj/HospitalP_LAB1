@@ -47,7 +47,7 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
         // GET: Administrators/Create
-        public IActionResult Create()
+        public IActionResult PersonalInfo()
         {
             ViewData["UserId"] = new SelectList(_context.AspNetUsers, "Id", "Id");
             return View();
@@ -58,7 +58,7 @@ namespace HOSPITAL2_LAB1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("AdminId,Name,Surname")] Administrator administrator)
+        public async Task<IActionResult> PersonalInfo([Bind("AdminId,Name,Surname")] Administrator administrator)
         {
             if (ModelState.IsValid)
             {

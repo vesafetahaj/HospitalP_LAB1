@@ -225,6 +225,10 @@
       "PackagePath": "staticwebassets\\images\\idea.png"
     },
     {
+      "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\information.png",
+      "PackagePath": "staticwebassets\\images\\information.png"
+    },
+    {
       "Id": "D:\\Desktop\\Hospital FINAL\\HOSPITAL2_LAB1\\wwwroot\\images\\injection.png",
       "PackagePath": "staticwebassets\\images\\injection.png"
     },

@@ -184,10 +184,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Desktop/Hospital FINAL/HOSPITAL2_LAB1/Views/Administrators/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Desktop/Hospital FINAL/HOSPITAL2_LAB1/Views/Administrators/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -202,6 +198,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Desktop/Hospital FINAL/HOSPITAL2_LAB1/Views/Administrators/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Desktop/Hospital FINAL/HOSPITAL2_LAB1/Views/Administrators/PersonalInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcUGVyc29uYWxJbmZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Desktop/Hospital FINAL/HOSPITAL2_LAB1/Views/Admin/Create.cshtml]

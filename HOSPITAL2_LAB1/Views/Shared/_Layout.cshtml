@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HOSPITAL2_LAB1.styles.css" asp-append-version="true" />
+    <link rel="icon" href="~/images/logo-color.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
     <style>
         #logo {
             transition: transform 0.3s ease;
@@ -14,12 +19,12 @@
         }
         .nav-item{
             margin-right: 20px;
-            font-family: Courier New, Courier, monospace;
+            font-family: 'Anek Gurmukhi', sans-serif;
            
         }
 
-        .nav-link:hover {
-            color: #9abddc;
+        .nav-link:hover, .nav-link.active {
+            color: #9abddc !important;
         }
         
     </style>
@@ -36,14 +41,14 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark @((ViewContext.RouteData.Values["Controller"] as string == "Home" && ViewContext.RouteData.Values["Action"] as string == "Index") ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Sherbimet" asp-action="Sherbimet">Sherbimet</a>
+                            <a class="nav-link text-dark @((ViewContext.RouteData.Values["Controller"] as string == "Sherbimet" && ViewContext.RouteData.Values["Action"] as string == "Sherbimet") ? "active" : "")" asp-area="" asp-controller="Sherbimet" asp-action="Sherbimet">Sherbimet</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="AboutUs" asp-action="AboutUs">About Us</a>
-                        </li>   
+                            <a class="nav-link text-dark @((ViewContext.RouteData.Values["Controller"] as string == "AboutUs" && ViewContext.RouteData.Values["Action"] as string == "AboutUs") ? "active" : "")" asp-area="" asp-controller="AboutUs" asp-action="AboutUs">About Us</a>
+                        </li>
 
                     </ul>
                     <partial name="_LoginPartial" />
