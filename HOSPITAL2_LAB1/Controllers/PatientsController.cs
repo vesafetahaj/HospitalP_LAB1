@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HOSPITAL2_LAB1.Data;
 using HOSPITAL2_LAB1.Models;
+using System.Security.Claims;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -25,6 +26,17 @@ namespace HOSPITAL2_LAB1.Controllers
             var hOSPITAL2Context = _context.Patients.Include(p => p.User);
             return View(await hOSPITAL2Context.ToListAsync());
         }
+        public async Task<IActionResult> Details()
+        {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var patient = await _context.Patients
+                .Include(a => a.User)
+                .FirstOrDefaultAsync(m => m.UserId == loggedInUserId);
+
+            return patient != null ? View(patient) : (IActionResult)NotFound();
+        }
+        /*
 
         // GET: Patients/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -44,10 +56,15 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return View(patient);
         }
-
+        */
         // GET: Patients/Create
         public IActionResult Create()
         {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (HasProvidedPersonalInfo(loggedInUserId))
+            {
+                return RedirectToAction(nameof(Details));
+            }
             ViewData["UserId"] = new SelectList(_context.AspNetUsers, "Id", "Id");
             return View();
         }
@@ -57,10 +74,16 @@ namespace HOSPITAL2_LAB1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PatientId,Name,Surname,Gender,Birthday,Address,Phone,UserId")] Patient patient)
+        public async Task<IActionResult> Create([Bind("PatientId,Name,Surname,Gender,Birthday,Address,Phone")] Patient patient)
         {
             if (ModelState.IsValid)
             {
+                // Get the user's ID from the ClaimsPrincipal
+                string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+                // Set the UserId property of the administrator object
+                patient.UserId = loggedInUserId;
+
                 _context.Add(patient);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -164,5 +187,10 @@ namespace HOSPITAL2_LAB1.Controllers
         {
           return (_context.Patients?.Any(e => e.PatientId == id)).GetValueOrDefault();
         }
+        private bool HasProvidedPersonalInfo(string userId)
+        {
+            return _context.Patients.Any(info => info.UserId == userId);
+        }
+
     }
 }

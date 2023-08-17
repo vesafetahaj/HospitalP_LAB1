@@ -1,72 +1,54 @@
-﻿@model IEnumerable<HOSPITAL2_LAB1.Models.Patient>
-
-@{
-    ViewData["Title"] = "Index";
+﻿@{
     Layout = "~/Views/Shared/_PatientLayout.cshtml";
 }
+<style>
+    #main {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
 
-<h1>Index</h1>
+    .background {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/foto1.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-top: -70px;
+    }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Surname)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Gender)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Birthday)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Address)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Phone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.User)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Surname)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Gender)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Birthday)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.User.Id)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.PatientId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.PatientId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.PatientId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        color: #fff;
+    }
+
+        .content h1 {
+            font-size: 70px;
+            margin-top: 30px;
+            font-family: 'Lucida Sans Typewriter';
+            font-size: 50px;
+        }
+
+        .content p {
+            margin-right: 40%;
+            font-weight: 100;
+            font-size: 17px;
+        }
+
+</style>
+<div id="main">
+    <div class="background">
+    </div>
+
+    <div class="content">
+        <h1>WELCOME TO YOUR DASHBOARD,DEAR PACIENT!</h1>
+        <P>"Your Wellness, Our Mission"!</P>
+    </div>
+
+
+</div>

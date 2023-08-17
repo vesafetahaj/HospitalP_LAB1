@@ -1,6 +1,10 @@
-﻿@{
+﻿@using System.Security.Claims
+@using Newtonsoft.Json
+
+@{
     ViewData["Title"] = "Patient Dashboard";
     Layout = null;
+    bool patientIdExists = ViewBag.PatientId != null && ViewBag.PatientId != 0;
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -102,8 +106,15 @@
     <div id="mySidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-        <a asp-area="" asp-controller="Patient" asp-action="Index"><img src="~/images/home1.png" id="home">Home</a>
-        <a asp-area="" asp-controller="Patient" asp-action="Kontakt"><img src="~/images/contact-mail.png">Contact</a>
+        <a asp-area="" asp-controller="Patients" asp-action="Index"><img src="~/images/home1.png" id="home">Home</a>
+        @if (patientIdExists)
+        {
+            <a asp-area="" asp-controller="Patients" asp-action="Details"><img src="~/images/information.png">Personal info</a>
+        }
+        else
+        {
+            <a asp-area="" asp-controller="Patients" asp-action="Create"><img src="~/images/information.png">Personal info</a>
+        }
         <a asp-area="" asp-controller="Patient" asp-action="Raporti"><img src="~/images/stethoscope.png">MyRaport</a>
         <a asp-area="" asp-controller="Patient" asp-action="Rezervimi"><img src="~/images/appointment1.png">Make Appointment</a>
         <a asp-area="" asp-controller="Patient" asp-action="YourAppointment"><img src="~/images/user.png">YourAppointment</a>
