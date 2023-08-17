@@ -12,7 +12,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create" id="createForm">
+        <form asp-action="PersonalInfo" id="createForm">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
@@ -30,17 +30,7 @@
             </div>
         </form>
 
-        <table id="confirmationMessage" class="table table-hover shadow" style="display: none; font-family: 'Anek Gurmukhi', sans-serif; font-size: 20px; padding-left: 70px;">
-            <tr>
-                <td><b>Name:</b></td>
-                <td><span id="confirmedName" style="padding-left: 70px;"></span></td>
-            </tr>
-            
-            <tr>
-                <td><b>Surname:</b></td>
-                <td><span id="confirmedSurname" style="padding-left: 70px;"></span></td>
-            </tr>
-        </table>
+      
 
 
     </div>
@@ -50,42 +40,4 @@
     <a asp-action="Index">Back to Home</a>
 </div>
 
-@section Scripts {
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const createForm = document.getElementById("createForm");
-            const createButton = document.getElementById("createButton");
-            const confirmationMessage = document.getElementById("confirmationMessage");
-            const confirmedName = document.getElementById("confirmedName");
-            const confirmedSurname = document.getElementById("confirmedSurname");
 
-            // Load data from local storage and fill the form
-            const savedData = JSON.parse(localStorage.getItem("adminFormData"));
-            if (savedData) {
-                createForm.style.display = "none"; // Hide the form initially
-                confirmationMessage.style.display = "block"; // Show confirmation message
-                confirmedName.textContent = savedData.Name; // Populate saved data
-                confirmedSurname.textContent = savedData.Surname;
-            }
-
-            createForm.addEventListener("submit", function (event) {
-                event.preventDefault();
-
-                const formData = {
-                    Name: createForm.elements["Name"].value,
-                    Surname: createForm.elements["Surname"].value
-                };
-
-                // Save form data to local storage
-                localStorage.setItem("adminFormData", JSON.stringify(formData));
-
-                // Update confirmation message with submitted data
-                confirmedName.textContent = formData.Name;
-                confirmedSurname.textContent = formData.Surname;
-
-                createForm.style.display = "none"; // Hide the form
-                confirmationMessage.style.display = "block"; // Show confirmation message
-            });
-        });
-    </script>
-}

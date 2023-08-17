@@ -1,6 +1,11 @@
-﻿@{
+﻿@using System.Security.Claims
+@using Newtonsoft.Json
+
+@{
     ViewData["Title"] = "Admin Dashboard";
     Layout = null;
+    bool adminIdExists = ViewBag.AdminId != null && ViewBag.AdminId != 0;
+
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -104,7 +109,15 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
         <a asp-area="" asp-controller="Administrators" asp-action="Index"><img src="~/images/home.png" id="home">Home</a>
-        <a asp-area="" asp-controller="Administrators" asp-action="PersonalInfo"><img src="~/images/information.png">Personal info</a>
+        @if (adminIdExists)
+        {
+            <a asp-area="" asp-controller="Administrators" asp-action="Details"><img src="~/images/information.png">Personal info</a>
+        }
+        else
+        {
+            <a asp-area="" asp-controller="Administrators" asp-action="PersonalInfo"><img src="~/images/information.png">Personal info</a>
+        }
+       
         <a asp-area="" asp-controller="Administrators" asp-action="Doctors"><img src="~/images/doctor.png">Doctors</a>
         <a asp-area="" asp-controller="Administrators" asp-action="Patients"><img src="~/images/patient.png">Patients</a>
         <a asp-area="" asp-controller="Administrators" asp-action="Appointments"><img src="~/images/appointment.png">Appointments</a>
@@ -128,6 +141,7 @@
             document.getElementById("main").style.marginLeft = "0";
             document.getElementById("logo").style.transform = "translateX(0)";
         }
+        
     </script>
 
     @RenderSection("Scripts", required: false)

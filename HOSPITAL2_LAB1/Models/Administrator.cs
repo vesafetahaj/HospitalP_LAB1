@@ -23,5 +23,6 @@ namespace HOSPITAL2_LAB1.Models
         public virtual ICollection<ContactForm> ContactForms { get; set; }
         public virtual ICollection<Reservation> Reservations { get; set; }
         public virtual ICollection<Specialization> Specializations { get; set; }
+        
     }
 }

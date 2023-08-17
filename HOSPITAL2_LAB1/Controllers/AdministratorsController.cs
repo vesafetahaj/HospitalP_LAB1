@@ -24,9 +24,21 @@ namespace HOSPITAL2_LAB1.Controllers
         public async Task<IActionResult> Index()
         {
             var hOSPITAL2Context = _context.Administrators.Include(a => a.User);
+            ViewBag.HasProvidedPersonalInfo = HasProvidedPersonalInfo(User.FindFirstValue(ClaimTypes.NameIdentifier).ToString().ToLower());
             return View(await hOSPITAL2Context.ToListAsync());
         }
+        public async Task<IActionResult> Details()
+        {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
+            var administrator = await _context.Administrators
+                .Include(a => a.User)
+                .FirstOrDefaultAsync(m => m.UserId == loggedInUserId);
+
+            return administrator != null ? View(administrator) : (IActionResult)NotFound();
+        }
+
+        /*
         // GET: Administrators/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -44,11 +56,16 @@ namespace HOSPITAL2_LAB1.Controllers
             }
 
             return View(administrator);
-        }
+        }*/
 
         // GET: Administrators/Create
         public IActionResult PersonalInfo()
         {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (HasProvidedPersonalInfo(loggedInUserId))
+            {
+                return RedirectToAction(nameof(Details));
+            }
             ViewData["UserId"] = new SelectList(_context.AspNetUsers, "Id", "Id");
             return View();
         }
@@ -70,7 +87,7 @@ namespace HOSPITAL2_LAB1.Controllers
 
                 _context.Add(administrator);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Details", new { id = administrator.AdminId }); // Redirect to the Details action with the created Administrator's ID
             }
 
             return View(administrator);
@@ -171,5 +188,11 @@ namespace HOSPITAL2_LAB1.Controllers
         {
           return (_context.Administrators?.Any(e => e.AdminId == id)).GetValueOrDefault();
         }
+        // In your controller or service
+        private bool HasProvidedPersonalInfo(string userId)
+        {
+            return _context.Administrators.Any(info => info.UserId == userId);
+        }
+
     }
 }

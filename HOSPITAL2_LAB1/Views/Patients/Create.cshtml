@@ -1,17 +1,16 @@
 ﻿@model HOSPITAL2_LAB1.Models.Patient
 
 @{
-    ViewData["Title"] = "Create";
-    Layout = null;
+    ViewData["Title"] = "Personal info";
+    Layout = "~/Views/Shared/_PatientLayout.cshtml";
 }
 
-<h1>Create</h1>
+<h1>Personal info</h1>
 
-<h4>Patient</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" id="createForm">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
@@ -43,18 +42,98 @@
                 <input asp-for="Phone" class="form-control" />
                 <span asp-validation-for="Phone" class="text-danger"></span>
             </div>
+            
             <div class="form-group">
-                <label asp-for="UserId" class="control-label"></label>
-                <select asp-for="UserId" class ="form-control" asp-items="ViewBag.UserId"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <button type="submit" class="btn btn-primary" id="createButton">Create</button>
             </div>
         </form>
+
+        <table id="confirmationMessage" class="table table-hover shadow" style="display: none; font-family: 'Anek Gurmukhi', sans-serif; font-size: 20px; padding-left: 70px;">
+            <tr>
+                <td><b>Name:</b></td>
+                <td><span id="confirmedName" style="padding-left: 70px;"></span></td>
+            </tr>
+            <tr>
+                <td><b>Surname:</b></td>
+                <td><span id="confirmedSurname" style="padding-left: 70px;"></span></td>
+            </tr>
+            <tr>
+                <td><b>Gender:</b></td>
+                <td><span id="confirmedGender" style="padding-left: 70px;"></span></td>
+            </tr>
+            <tr>
+                <td><b>Birthday:</b></td>
+                <td><span id="confirmedBirthday" style="padding-left: 70px;"></span></td>
+            </tr>
+            <tr>
+                <td><b>Address:</b></td>
+                <td><span id="confirmedAddress" style="padding-left: 70px;"></span></td>
+            </tr>
+            <tr>
+                <td><b>Phone:</b></td>
+                <td><span id="confirmedPhone" style="padding-left: 70px;"></span></td>
+            </tr>
+        </table>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Back to Home</a>
 </div>
 
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const createForm = document.getElementById("createForm");
+            const createButton = document.getElementById("createButton");
+            const confirmationMessage = document.getElementById("confirmationMessage");
+            const confirmedName = document.getElementById("confirmedName");
+            const confirmedSurname = document.getElementById("confirmedSurname");
+            const confirmedGender = document.getElementById("confirmedGender");
+            const confirmedBirthday = document.getElementById("confirmedBirthday");
+            const confirmedAddress = document.getElementById("confirmedAddress");
+            const confirmedPhone = document.getElementById("confirmedPhone");
+
+            // Load data from local storage and fill the form
+            const savedData = JSON.parse(localStorage.getItem("patientFormData"));
+            if (savedData) {
+                createForm.style.display = "none"; // Hide the form initially
+                confirmationMessage.style.display = "block"; // Show confirmation message
+                confirmedName.textContent = savedData.Name; // Populate saved data
+                confirmedSurname.textContent = savedData.Surname;
+                confirmedGender.textContent = savedData.Gender;
+                confirmedBirthday.textContent = savedData.Birthday;
+                confirmedAddress.textContent = savedData.Address;
+                confirmedPhone.textContent = savedData.Phone;
+            }
+
+            createForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const formData = {
+                    Name: createForm.elements["Name"].value,
+                    Surname: createForm.elements["Surname"].value,
+                    Gender: createForm.elements["Gender"].value,
+                    Birthday: createForm.elements["Birthday"].value,
+                    Address: createForm.elements["Address"].value,
+                    Phone: createForm.elements["Phone"].value,
+                   
+                };
+
+                // Save form data to local storage
+                localStorage.setItem("patientFormData", JSON.stringify(formData));
+
+                // Update confirmation message with submitted data
+                confirmedName.textContent = formData.Name;
+                confirmedSurname.textContent = formData.Surname;
+                confirmedGender.textContent = formData.Gender;
+                confirmedBirthday.textContent = formData.Birthday;
+                confirmedAddress.textContent = formData.Address;
+                confirmedPhone.textContent = formData.Phone;
+
+                createForm.style.display = "none"; // Hide the form
+                confirmationMessage.style.display = "block"; // Show confirmation message
+            });
+        });
+    </script>
+}
