@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SunRiseCare HOSPITAL</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HOSPITAL2_LAB1.styles.css" asp-append-version="true" />
+    <link rel="icon" href="~/images/logo-color.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        #logo {
+            transition: transform 0.3s ease;
+            width: 160px;
+        }
+        .nav-item{
+            margin-right: 20px;
+            font-family: 'Anek Gurmukhi', sans-serif;
+           
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #9abddc !important;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <img src="~/images/sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png" alt="" id="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @((ViewContext.RouteData.Values["Controller"] as string == "Home" && ViewContext.RouteData.Values["Action"] as string == "Index") ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @((ViewContext.RouteData.Values["Controller"] as string == "Sherbimet" && ViewContext.RouteData.Values["Action"] as string == "Sherbimet") ? "active" : "")" asp-area="" asp-controller="Sherbimet" asp-action="Sherbimet">Sherbimet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark @((ViewContext.RouteData.Values["Controller"] as string == "AboutUs" && ViewContext.RouteData.Values["Action"] as string == "AboutUs") ? "active" : "")" asp-area="" asp-controller="AboutUs" asp-action="AboutUs">About Us</a>
+                        </li>
+
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted bg-dark">
+        <div class="container" style="padding:50px">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Working Hours</h5>
+                    <p style="line-height: 1.2;">E hene - E premte: 7AM - 12AM</p>
+                    <p style="line-height: 1.2;">E shtune: 9AM - 22PM</p>
+                    <p style="line-height: 1.2;">E diele: 10AM - 20PM</p>
+                </div>
+                
+                <div class="col-md-2 text-center">
+                    <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Register for free!</h5>
+                    <a href="#" class="btn btn-danger btn-rounded" style="color:white">Sign up!</a>
+                </div>
+            </div>
+            <hr />
+            <div class="footer-copy text-center">
+                &copy; @(DateTime.Now.Year) SunriseCareHospital.com
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

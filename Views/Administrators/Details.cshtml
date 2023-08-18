@@ -1,0 +1,31 @@
+﻿@model HOSPITAL2_LAB1.Models.Administrator
+
+@{
+    ViewData["Title"] = "Personal info";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Personal info</h1>
+
+<div>
+   
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Surname)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Surname)
+        </dd>
+     
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to Home</a>
+</div>
