@@ -196,6 +196,12 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             return _context.Administrators.Any(info => info.UserId == userId);
         }
+        public async Task<IActionResult> Patients()
+        {
+            var patients = await _context.Patients.ToListAsync(); // Fetch all patients from the database
+            return View(patients);
+        }
+
 
     }
 }
