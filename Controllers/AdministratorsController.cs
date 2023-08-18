@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
-    [Authorize(Roles = "Administrator")]
+    [Authorize(Roles = "Admin")]
 
     public class AdministratorsController : Controller
     {

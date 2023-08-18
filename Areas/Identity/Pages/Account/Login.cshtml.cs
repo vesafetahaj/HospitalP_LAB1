@@ -124,7 +124,7 @@ namespace HOSPITAL2_LAB1.Areas.Identity.Pages.Account
                     }
                     else if (roles.Contains("Doctor"))
                     {
-                        return RedirectToAction("Index", "Doctor");
+                        return RedirectToAction("Index", "Doctors");
                     }
                     else if (roles.Contains("Patient"))
                     {
@@ -132,7 +132,7 @@ namespace HOSPITAL2_LAB1.Areas.Identity.Pages.Account
                     }
                     else if (roles.Contains("Receptionist"))
                     {
-                        return RedirectToAction("Index", "Receptionist");
+                        return RedirectToAction("Index", "Receptionists");
                     }
                     else
                     {
