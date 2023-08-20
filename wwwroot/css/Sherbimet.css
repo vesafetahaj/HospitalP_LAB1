@@ -1,0 +1,275 @@
+﻿
+
+.sherbimet-container h1 {
+    color: #004526;
+    text-align: center;
+    /*background-image: url('photosherbimet/sherbimi.jpg');*/
+    background-color: lightblue;
+    font-family: 'Lucida Console';
+    font-size: 30px;
+    padding: 10px;
+    margin-top: -15px;
+    cursor: pointer;
+    font-weight: 300;
+    transition: font-weight 250ms ease-in-out;
+    width: 100%;
+}
+
+    .sherbimet-container h1:hover {
+        font-weight: 900;
+    }
+
+
+
+.slider-sherbimet {
+    width: 100%;
+    height: 520px;
+    background: url("~/images/staf.jpg");
+    margin: 100px auto;
+    margin-top: 0px;
+    animation: slide 6s infinite;
+}
+
+@keyframes slide {
+    25% {
+        background: url("~/images/slide5.jpg");
+    }
+
+    50% {
+        background: url("~/images/test1.jpg");
+    }
+
+    75% {
+        background: url("~/images/lab.jpg");
+    }
+
+    100% {
+        background: url("~/images/slideee.jpg");
+    }
+}
+
+.h1 h1 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lucida Handwriting';
+    background-color: lightblue;
+    padding: 3px;
+    margin-top: -60px;
+    border: 2px solid #333333;
+    animation: border-animation 2s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes border-animation {
+    0% {
+        border-color: #333333;
+    }
+
+    50% {
+        border-color: #ff8a00;
+    }
+
+    100% {
+        border-color: #333333;
+    }
+}
+
+/*photos*/
+.row {
+    width: 80%;
+    display: grid;
+    max-width: 1170px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+}
+
+    .row .left {
+        overflow: hidden;
+    }
+
+
+        .row .left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+    .row .right {
+        display: flex;
+        align-items: center;
+    }
+
+        .row .right .content {
+            padding-left: 20px;
+        }
+
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+.row {
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.image-section {
+    float: left;
+    width: 8000%;
+    margin-left: 50px;
+}
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+    }
+
+
+.content-sherbimet {
+    width: 90%;
+    float: left;
+    margin-left: 50px;
+}
+
+    .content-sherbimet h1 {
+        font-size: 47px;
+        font-family: 'Lucida Calligraphy';
+        letter-spacing: 3.5px;
+        margin-top: 25px;
+        margin-left: -57px;
+        color: cornflowerblue;
+    }
+
+    .content-sherbimet h2 {
+        font-size: 40px;
+        font-family: sans-serif;
+        color: lightblue;
+        margin-top: -10px;
+        margin-bottom: -40px;
+        margin-left: 120px;
+    }
+
+    .content-sherbimet p {
+        font-family: serif;
+        margin-top: 50px;
+        text-align: justify;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+/*responsive*/
+@media screen and (max-width: 768px) {
+    .image-section {
+        width: 100%;
+        float: none;
+    }
+
+    .content-sherbimet {
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+    }
+
+        .content-sherbimet h1 {
+            font-size: 60px;
+            letter-spacing: 2px;
+            margin-top: 30px;
+        }
+
+        .content-sherbimet h2 {
+            font-size: 30px;
+        }
+
+        .content-sherbimet p {
+            font-size: 18px;
+        }
+}
+
+
+/*cards*/
+
+
+.card-sherbimet {
+    background: #fff;
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0px 0px 15px #1ca9c9;
+    box-sizing: border-box;
+    padding: 28px;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+    .card-sherbimet:hover {
+        box-shadow: 3px 3px 18px #A4DDED;
+        transform: translateY(-10px);
+    }
+
+.flexbox-sherbimet {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -70px;
+}
+
+.img img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.img {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: lightblue;
+    color: white;
+}
+
+
+.service-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .service-toggle:hover {
+        background-color: #0069d9;
+    }
+
+.service-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+    .service-content.open {
+        height: auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .service-content p {
+        text-align: left;
+        word-spacing: 4px;
+        font-size: 15px;
+    }
+#react-container{
+    margin-bottom:  400px;
+}

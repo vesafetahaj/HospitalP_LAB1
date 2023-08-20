@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6tenA2ZuLFGpP7YMtQHUj/hm/RlQt9TuBpbXrbLcR9w=",
+  "Hash": "aJqM7qZ1GuIEiyD4j/EC4BhOOYRs3crwbckD8MGFHhQ=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1086,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\AboutUs.css"
+    },
+    {
+      "Identity": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\css\\Sherbimet.css",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "css/Sherbimet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Sherbimet.css"
     },
     {
       "Identity": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\css\\site.css",
