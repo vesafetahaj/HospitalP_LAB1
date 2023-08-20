@@ -5,7 +5,7 @@ The website part has 4 pages that hold general information about the hospital, w
 
 The hospital is named SunRiseCare Hospital. It has its logo and the color themes which are mainly light blue.
 
-The web application part has 4 roles: Administrator, Doctor, Patient and Receptionist. Each of the roles have their own dashboard with their features. So the autherization and authentication are done by MVC.
+The web application part has 4 roles: Administrator, Doctor, Patient and Receptionist. Each of the roles have their own dashboard with their features. So the authorization and authentication are done by MVC.
 
 Each user that logs in is required to give their own personal information such as name,surname, address, birthday etc...
 
