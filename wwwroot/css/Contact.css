@@ -1,0 +1,221 @@
+﻿.container-contactus {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.form {
+    margin-top: 160px;
+    margin-bottom: -110px;
+    margin-left: 190px;
+    position: relative;
+    width: 80%;
+    background-color: #fafafa;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    background-color: #fafafa;
+    width: 120%;
+    height: 39rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+form {
+    padding: 2rem 4rem 3rem 2.4rem;
+    z-index: 10;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+
+.contact-form > h2 {
+    color: white;
+}
+
+#contactush2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+}
+
+.field {
+    position: relative;
+    margin: 1rem 0;
+    width: 100%;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: white;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+    .field:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+.area {
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+    font-family: "poppins", sans-serif;
+}
+
+.button {
+    padding: 0.6rem 1.3rem;
+    background-color: #fff;
+    border: 2px solid #fafafa;
+    font-size: 0.95rem;
+    color: rgb(133, 193, 213);
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+}
+
+    .button:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+
+.Login-butoni {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+    .Login-butoni a {
+        color: #555;
+        text-decoration: none;
+    }
+
+.contact-info {
+    padding: 5.3rem;
+    position: relative;
+    margin-right: 5px;
+    width: 100%;
+    max-width: 810px;
+    z-index: 1000;
+    overflow: hidden;
+    grid-template-columns: auto;
+    background-color: #fafafa;
+}
+
+    .contact-info:before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border: 22px solid lightblue;
+        border-radius: 50%;
+        bottom: -75px;
+        right: 70px;
+        opacity: 0.8;
+    }
+
+.text {
+    color: #333;
+}
+
+.icon {
+    width: 28px;
+    margin-right: 0.8rem;
+    margin-bottom: 0.9rem;
+}
+
+.title-contact {
+    color: rgb(115, 203, 232);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+    background-color: #fafafa;
+}
+
+.information {
+    display: flex;
+    color: #555;
+    margin: 0.7rem 0;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.big-circle {
+    position: absolute;
+    margin-top: -6.5rem;
+    margin-left: 1rem;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgb(196, 219, 228), rgb(105, 181, 206));
+    transform: translate(-150%, -80%);
+}
+
+    .big-circle:after {
+        content: "";
+        position: absolute;
+        width: 360px;
+        height: 360px;
+        background-color: #fafafa;
+        border-radius: 50%;
+        top: calc(50% - 180px);
+        left: calc(50% - 180px);
+    }
+
+.social-media {
+    padding: 1.3rem 0 0 0;
+}
+
+    .social-media p {
+        color: #868484;
+    }
+
+.social-icons {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 1rem;
+        transition: .3s;
+    }
+
+        .social-icons a :hover {
+            transform: scale(1.05);
+        }
+
+.icon1 {
+    width: 28px;
+    margin-left: 0.2rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0.2rem;
+}
+#react-container{
+    margin-bottom: 400px;
+}

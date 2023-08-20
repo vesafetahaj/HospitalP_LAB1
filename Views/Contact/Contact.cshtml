@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+
+
+<div id="react-container"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+
+
+
+<link rel="stylesheet" href="~/css/Contact.css">
+
+<script type="text/babel">
+
+
+    class Contact extends React.Component {
+       
+        
+        render() {
+           
+
+            return (
+
+                <div>
+                    <div className="container-contactus">
+
+                    <span class="big-circle"></span>
+
+                    <div className="form">
+
+                        <div className="contact-info">
+                            <h3 className="title-contact">Let's get in touch</h3>
+                            <p className="text">Should you have any questions or concerns - or
+                                simply want more information about Sunrisecare Hospital,
+                                please feel free to contact us.</p>
+                            <p>We would love to hear from you!</p> <br />
+
+                            <div className="info">
+                                <div className="information">
+                                    <img src="@Url.Content("~/images/point.png")" className="icon" alt="" />
+                                    <p>Prishtine, 10000</p>
+                                </div>
+                                <div className="information">
+                                    <img src="@Url.Content("~/images/email.png")" className="icon" alt="" />
+                                    <p>sunrisecare.info@gmail.com</p>
+                                </div>
+                                <div className="information">
+                                    <img src="@Url.Content("~/images/phonee.png")" className="icon" alt="" />
+                                    <p>(+383) 48-136-910</p>
+                                </div>
+                            </div>
+
+                            <div className="social-media">
+                                <p><b>Connect with us:</b></p>
+                                <div className="social-icons">
+                                    <a href="https://www.facebook.com/">
+                                    <img src="@Url.Content("~/images/facebook.png")" className="icon1" alt="" />
+                                    </a>
+                                    <a href="https://www.instagram.com/">
+                                    <img src="@Url.Content("~/images/instagram.png")" className="icon1" alt="" />
+                                    </a>
+                                    <a href="https://www.twitter.com/">
+                                    <img src="@Url.Content("~/images/twitter.png")" className="icon1" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='contact-form'>
+                            <form>
+                                <h2 id='contactush2'><b>Contact Us</b></h2>
+                                <input type="text" className="field" placeholder="Name" id="name" />
+
+                                <input type="email" className="field" placeholder="Email" id="email" />
+
+                                <input type="text" className="field" placeholder="Number" id="telefoni" />
+
+                                <textarea className="field area" placeholder="Message" id="comment"></textarea>
+
+                                <input
+                                    type="submit"
+                                    value="Send"
+                                    className="button"
+                                    
+                                />
+                                <div className="Login-butoni">
+                                    You haven't been logged in yet? <a href="https://localhost:7232/Identity/Account/Login"> Login here</a>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div> <br/>
+                </div>
+
+                    
+              </div>
+
+            );
+        }
+    }
+
+        ReactDOM.render(<Contact />, document.getElementById('react-container'));
+</script>

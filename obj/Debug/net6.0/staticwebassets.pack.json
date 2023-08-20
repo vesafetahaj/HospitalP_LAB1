@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\AboutUs.css"
     },
     {
+      "Id": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\css\\Contact.css",
+      "PackagePath": "staticwebassets\\css\\Contact.css"
+    },
+    {
       "Id": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\css\\Sherbimet.css",
       "PackagePath": "staticwebassets\\css\\Sherbimet.css"
     },
@@ -361,6 +365,10 @@
       "PackagePath": "staticwebassets\\images\\phone.png"
     },
     {
+      "Id": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\phonee.png",
+      "PackagePath": "staticwebassets\\images\\phonee.png"
+    },
+    {
       "Id": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\plasticsurgery.jpg",
       "PackagePath": "staticwebassets\\images\\plasticsurgery.jpg"
     },
@@ -417,8 +425,20 @@
       "PackagePath": "staticwebassets\\images\\salla.jpg"
     },
     {
+      "Id": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\slide5.jpg",
+      "PackagePath": "staticwebassets\\images\\slide5.jpg"
+    },
+    {
+      "Id": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\slideee.jpg",
+      "PackagePath": "staticwebassets\\images\\slideee.jpg"
+    },
+    {
       "Id": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\staf.jpg",
       "PackagePath": "staticwebassets\\images\\staf.jpg"
+    },
+    {
+      "Id": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\staf2.jpg",
+      "PackagePath": "staticwebassets\\images\\staf2.jpg"
     },
     {
       "Id": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\staff1.jpg",
@@ -475,6 +495,10 @@
     {
       "Id": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\termin.png",
       "PackagePath": "staticwebassets\\images\\termin.png"
+    },
+    {
+      "Id": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\test1.jpg",
+      "PackagePath": "staticwebassets\\images\\test1.jpg"
     },
     {
       "Id": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\twitter.png",

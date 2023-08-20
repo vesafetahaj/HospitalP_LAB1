@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aJqM7qZ1GuIEiyD4j/EC4BhOOYRs3crwbckD8MGFHhQ=",
+  "Hash": "p9/AeJbVPBM5wmxoyHDTU8fo1XRsjpfrBUwTiVe6ls0=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1086,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\AboutUs.css"
+    },
+    {
+      "Identity": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\css\\Contact.css",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "css/Contact.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Contact.css"
     },
     {
       "Identity": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\css\\Sherbimet.css",
@@ -2567,6 +2584,23 @@
       "OriginalItemSpec": "wwwroot\\images\\phone.png"
     },
     {
+      "Identity": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\phonee.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/phonee.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\phonee.png"
+    },
+    {
       "Identity": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\plasticsurgery.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -2822,6 +2856,40 @@
       "OriginalItemSpec": "wwwroot\\images\\salla.jpg"
     },
     {
+      "Identity": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\slide5.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/slide5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\slide5.jpg"
+    },
+    {
+      "Identity": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\slideee.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/slideee.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\slideee.jpg"
+    },
+    {
       "Identity": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\staf.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -2837,6 +2905,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\staf.jpg"
+    },
+    {
+      "Identity": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\staf2.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/staf2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\staf2.jpg"
     },
     {
       "Identity": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\staff1.jpg",
@@ -3075,6 +3160,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\termin.png"
+    },
+    {
+      "Identity": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\test1.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/test1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\test1.jpg"
     },
     {
       "Identity": "D:\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1\\wwwroot\\images\\twitter.png",
