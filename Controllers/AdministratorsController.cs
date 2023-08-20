@@ -387,8 +387,144 @@ namespace HOSPITAL2_LAB1.Controllers
             return View("Doctors", doctors);
         }
 
-        //Complaints
+        //Services
+        public async Task<IActionResult> Services()
+        {
+            var services = await _context.Specializations.ToListAsync();
 
+            return View(services);
+        }
+
+        public IActionResult CreateService()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateService([Bind("SpecializationId,Name,Description,PhotoUrl")] Specialization service)
+        {
+            if (ModelState.IsValid)
+            {
+                // Get the administrator's ID from the ClaimsPrincipal
+                string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+                // Find the administrator with the logged-in user's ID
+                var administrator = await _context.Administrators
+                    .FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+                if (administrator != null)
+                {
+                    // Associate the administrator with the service
+                    service.Administrator = administrator.AdminId;
+
+                    _context.Add(service);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Services));
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Administrator not found.");
+                }
+            }
+
+            return View(service);
+        }
+
+
+        public async Task<IActionResult> EditService(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var service = await _context.Specializations.FindAsync(id);
+            if (service == null)
+            {
+                return NotFound();
+            }
+
+            return View(service);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditService(int id, [Bind("SpecializationId,Name,Description,PhotoUrl,Administrator")] Specialization service)
+        {
+            if (id != service.SpecializationId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    // Retrieve the existing specialization from the DbContext
+                    var existingService = await _context.Specializations.FindAsync(id);
+
+                    // Update the properties of the existing specialization with the values from the binding model
+                    existingService.Name = service.Name;
+                    existingService.Description = service.Description;
+                    existingService.PhotoUrl = service.PhotoUrl;
+                    // Note: You might not need to update the Administrator property if you don't want to change it here
+
+                    // Save the changes to the DbContext
+                    _context.Update(existingService);
+                    await _context.SaveChangesAsync();
+
+                    return RedirectToAction(nameof(Services));
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!SpecializationExists(id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+            }
+
+            return View(service);
+        }
+        private bool SpecializationExists(int id)
+        {
+            return (_context.Specializations?.Any(e => e.SpecializationId == id)).GetValueOrDefault();
+        }
+
+        public async Task<IActionResult> DeleteService(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var service = await _context.Specializations.FindAsync(id);
+            if (service == null)
+            {
+                return NotFound();
+            }
+
+            return View(service);
+        }
+
+        [HttpPost, ActionName("DeleteService")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmedService(int id)
+        {
+            var service = await _context.Specializations.FindAsync(id);
+            if (service != null)
+            {
+                _context.Specializations.Remove(service);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(Services));
+        }
 
     }
 }

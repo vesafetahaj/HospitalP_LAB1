@@ -20,11 +20,15 @@
         .nav-item{
             margin-right: 20px;
             font-family: 'Anek Gurmukhi', sans-serif;
+            font-size: 17px;
            
         }
 
         .nav-link:hover, .nav-link.active {
             color: #9abddc !important;
+        }
+        #home{
+            margin-left:60px;
         }
         
     </style>
@@ -41,10 +45,10 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark @((ViewContext.RouteData.Values["Controller"] as string == "Home" && ViewContext.RouteData.Values["Action"] as string == "Index") ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark @((ViewContext.RouteData.Values["Controller"] as string == "Home" && ViewContext.RouteData.Values["Action"] as string == "Index") ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Index" id="home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark @((ViewContext.RouteData.Values["Controller"] as string == "Sherbimet" && ViewContext.RouteData.Values["Action"] as string == "Sherbimet") ? "active" : "")" asp-area="" asp-controller="Sherbimet" asp-action="Sherbimet">Sherbimet</a>
+                            <a class="nav-link text-dark @((ViewContext.RouteData.Values["Controller"] as string == "Sherbimet" && ViewContext.RouteData.Values["Action"] as string == "Sherbimet") ? "active" : "")" asp-area="" asp-controller="Sherbimet" asp-action="Sherbimet">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark @((ViewContext.RouteData.Values["Controller"] as string == "AboutUs" && ViewContext.RouteData.Values["Action"] as string == "AboutUs") ? "active" : "")" asp-area="" asp-controller="AboutUs" asp-action="AboutUs">About Us</a>
@@ -70,14 +74,14 @@
             <div class="row">
                 <div class="col-md-6">
                     <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Working Hours</h5>
-                    <p style="line-height: 1.2;">E hene - E premte: 7AM - 12AM</p>
-                    <p style="line-height: 1.2;">E shtune: 9AM - 22PM</p>
-                    <p style="line-height: 1.2;">E diele: 10AM - 20PM</p>
+                    <p style="line-height: 1.2;">Monday - Friday: 7AM - 12AM</p>
+                    <p style="line-height: 1.2;">Saturday: 9AM - 22PM</p>
+                    <p style="line-height: 1.2;">Sunday: 10AM - 20PM</p>
                 </div>
                 
                 <div class="col-md-2 text-center">
                     <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Register for free!</h5>
-                    <a href="#" class="btn btn-danger btn-rounded" style="color:white">Sign up!</a>
+                    <a href="https://localhost:7232/Identity/Account/Register" class="btn btn-danger btn-rounded" style="color:white">Sign up!</a>
                 </div>
             </div>
             <hr />
