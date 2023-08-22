@@ -6,9 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HOSPITAL2_LAB1.Data;
-using HOSPITAL2_LAB1.Models;
+using HOSPITAL2_LAB1.Model;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using System.Globalization;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -525,6 +526,59 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return RedirectToAction(nameof(Services));
         }
+
+        //Appointments
+        public async Task<IActionResult> Appointments(string filterDate, int? filterDoctor, int? filterPatient, int? filterService)
+        {
+            var appointmentsQuery = _context.Reservations
+                .Include(r => r.PatientNavigation)
+                .Include(r => r.DoctorNavigation)
+                .Include(r => r.ServiceNavigation)
+                .AsQueryable();
+
+            // Apply filters
+            if (!string.IsNullOrEmpty(filterDate))
+            {
+                DateTime selectedDate = DateTime.ParseExact(filterDate, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+                appointmentsQuery = appointmentsQuery.Where(a => a.ReservationDate.HasValue && a.ReservationDate.Value.Date == selectedDate.Date);
+            }
+
+            if (filterDoctor.HasValue)
+            {
+                appointmentsQuery = appointmentsQuery.Where(a => a.Doctor == filterDoctor.Value);
+            }
+
+            if (filterPatient.HasValue)
+            {
+                appointmentsQuery = appointmentsQuery.Where(a => a.Patient == filterPatient.Value);
+            }
+
+            if (filterService.HasValue)
+            {
+                appointmentsQuery = appointmentsQuery.Where(a => a.Service == filterService.Value);
+            }
+
+            var appointments = await appointmentsQuery.ToListAsync();
+
+            ViewBag.OldestAppointment = appointments.OrderBy(a => a.ReservationDate).FirstOrDefault();
+            ViewBag.EarliestAppointment = appointments.OrderBy(a => a.ReservationDate).LastOrDefault();
+
+            // Populate ViewBag.Doctors, ViewBag.Patients, and ViewBag.Specializations
+            var doctors = await _context.Doctors.ToListAsync();
+            var patients = await _context.Patients.ToListAsync();
+            var services = await _context.Specializations.ToListAsync();
+
+            ViewBag.Doctors = doctors;
+            ViewBag.Patients = patients;
+            ViewBag.Specializations = services;
+
+            return View(appointments);
+        }
+
+
+
+
+
 
     }
 }

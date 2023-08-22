@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HOSPITAL2_LAB1.Data;
-using HOSPITAL2_LAB1.Models;
+using HOSPITAL2_LAB1.Model;
 using Microsoft.AspNetCore.Authorization;
 
 namespace HOSPITAL2_LAB1.Controllers

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using HOSPITAL2_LAB1.Models;
+using HOSPITAL2_LAB1.Model;
 
 namespace HOSPITAL2_LAB1.Data
 {
@@ -50,7 +50,7 @@ namespace HOSPITAL2_LAB1.Data
             modelBuilder.Entity<Administrator>(entity =>
             {
                 entity.HasKey(e => e.AdminId)
-                    .HasName("PK__Administ__719FE4E8D0D26C00");
+                    .HasName("PK__Administ__719FE4E84C620078");
 
                 entity.ToTable("Administrator");
 
@@ -175,18 +175,18 @@ namespace HOSPITAL2_LAB1.Data
                 entity.HasOne(d => d.AdministratorNavigation)
                     .WithMany(p => p.Complaints)
                     .HasForeignKey(d => d.Administrator)
-                    .HasConstraintName("FK__Complaint__Admin__5AEE82B9");
+                    .HasConstraintName("FK__Complaint__Admin__628FA481");
 
                 entity.HasOne(d => d.PatientNavigation)
                     .WithMany(p => p.Complaints)
                     .HasForeignKey(d => d.Patient)
-                    .HasConstraintName("FK__Complaint__Patie__59FA5E80");
+                    .HasConstraintName("FK__Complaint__Patie__6383C8BA");
             });
 
             modelBuilder.Entity<ContactForm>(entity =>
             {
                 entity.HasKey(e => e.ContactId)
-                    .HasName("PK__ContactF__5C6625BBD0B6A4BA");
+                    .HasName("PK__ContactF__5C6625BB38CBCF0B");
 
                 entity.ToTable("ContactForm");
 
@@ -203,12 +203,12 @@ namespace HOSPITAL2_LAB1.Data
                 entity.HasOne(d => d.AdministratorNavigation)
                     .WithMany(p => p.ContactForms)
                     .HasForeignKey(d => d.Administrator)
-                    .HasConstraintName("FK__ContactFo__Admin__5EBF139D");
+                    .HasConstraintName("FK__ContactFo__Admin__6477ECF3");
 
                 entity.HasOne(d => d.PatientNavigation)
                     .WithMany(p => p.ContactForms)
                     .HasForeignKey(d => d.Patient)
-                    .HasConstraintName("FK__ContactFo__Patie__5DCAEF64");
+                    .HasConstraintName("FK__ContactFo__Patie__656C112C");
             });
 
             modelBuilder.Entity<Doctor>(entity =>
@@ -244,7 +244,7 @@ namespace HOSPITAL2_LAB1.Data
                 entity.HasOne(d => d.SpecializationNavigation)
                     .WithMany(p => p.Doctors)
                     .HasForeignKey(d => d.Specialization)
-                    .HasConstraintName("FK__Doctor__Speciali__412EB0B6");
+                    .HasConstraintName("FK__Doctor__Speciali__66603565");
 
                 entity.HasOne(d => d.User)
                     .WithOne(p => p.Doctor)
@@ -293,7 +293,7 @@ namespace HOSPITAL2_LAB1.Data
             modelBuilder.Entity<PatientDoctor>(entity =>
             {
                 entity.HasKey(e => new { e.PatientId, e.DoctorId })
-                    .HasName("PK__PatientD__75D2C3AB3B8CA225");
+                    .HasName("PK__PatientD__75D2C3ABECCA6DBC");
 
                 entity.ToTable("PatientDoctor");
 
@@ -304,12 +304,12 @@ namespace HOSPITAL2_LAB1.Data
                 entity.HasOne(d => d.DoctorNavigation)
                     .WithMany(p => p.PatientDoctors)
                     .HasForeignKey(d => d.Doctor)
-                    .HasConstraintName("FK__PatientDo__Docto__44FF419A");
+                    .HasConstraintName("FK__PatientDo__Docto__6754599E");
 
                 entity.HasOne(d => d.PatientNavigation)
                     .WithMany(p => p.PatientDoctors)
                     .HasForeignKey(d => d.Patient)
-                    .HasConstraintName("FK__PatientDo__Patie__440B1D61");
+                    .HasConstraintName("FK__PatientDo__Patie__68487DD7");
             });
 
             modelBuilder.Entity<Payment>(entity =>
@@ -327,17 +327,17 @@ namespace HOSPITAL2_LAB1.Data
                 entity.HasOne(d => d.PatientNavigation)
                     .WithMany(p => p.Payments)
                     .HasForeignKey(d => d.Patient)
-                    .HasConstraintName("FK__Payment__Patient__5629CD9C");
+                    .HasConstraintName("FK__Payment__Patient__693CA210");
 
                 entity.HasOne(d => d.ReceptionistNavigation)
                     .WithMany(p => p.Payments)
                     .HasForeignKey(d => d.Receptionist)
-                    .HasConstraintName("FK__Payment__Recepti__5535A963");
+                    .HasConstraintName("FK__Payment__Recepti__6A30C649");
 
                 entity.HasOne(d => d.ReportNavigation)
                     .WithMany(p => p.Payments)
                     .HasForeignKey(d => d.Report)
-                    .HasConstraintName("FK__Payment__Report__571DF1D5");
+                    .HasConstraintName("FK__Payment__Report__6B24EA82");
             });
 
             modelBuilder.Entity<Receptionist>(entity =>
@@ -386,12 +386,12 @@ namespace HOSPITAL2_LAB1.Data
                 entity.HasOne(d => d.DoctorNavigation)
                     .WithMany(p => p.Reports)
                     .HasForeignKey(d => d.Doctor)
-                    .HasConstraintName("FK__Report__Doctor__4CA06362");
+                    .HasConstraintName("FK__Report__Doctor__6C190EBB");
 
                 entity.HasOne(d => d.PatientNavigation)
                     .WithMany(p => p.Reports)
                     .HasForeignKey(d => d.Patient)
-                    .HasConstraintName("FK__Report__Patient__4BAC3F29");
+                    .HasConstraintName("FK__Report__Patient__6D0D32F4");
             });
 
             modelBuilder.Entity<Reservation>(entity =>
@@ -402,32 +402,27 @@ namespace HOSPITAL2_LAB1.Data
 
                 entity.Property(e => e.ReservationDate).HasColumnType("date");
 
-                entity.HasOne(d => d.AdministratorNavigation)
-                    .WithMany(p => p.Reservations)
-                    .HasForeignKey(d => d.Administrator)
-                    .HasConstraintName("FK__Reservati__Admin__5165187F");
-
                 entity.HasOne(d => d.DoctorNavigation)
                     .WithMany(p => p.Reservations)
                     .HasForeignKey(d => d.Doctor)
-                    .HasConstraintName("FK__Reservati__Docto__5070F446");
+                    .HasConstraintName("FK__Reservati__Docto__6EF57B66");
 
                 entity.HasOne(d => d.PatientNavigation)
                     .WithMany(p => p.Reservations)
                     .HasForeignKey(d => d.Patient)
-                    .HasConstraintName("FK__Reservati__Patie__4F7CD00D");
+                    .HasConstraintName("FK__Reservati__Patie__6FE99F9F");
 
                 entity.HasOne(d => d.ServiceNavigation)
                     .WithMany(p => p.Reservations)
                     .HasForeignKey(d => d.Service)
-                    .HasConstraintName("FK__Reservati__Servi__52593CB8");
+                    .HasConstraintName("FK__Reservati__Servi__70DDC3D8");
             });
 
             modelBuilder.Entity<Room>(entity =>
             {
                 entity.ToTable("Room");
 
-                entity.HasIndex(e => e.Patient, "UQ__Room__D1860046D95EEE90")
+                entity.HasIndex(e => e.Patient, "UQ__Room__D1860046BDBAFB10")
                     .IsUnique();
 
                 entity.Property(e => e.RoomId).HasColumnName("RoomID");
@@ -435,7 +430,7 @@ namespace HOSPITAL2_LAB1.Data
                 entity.HasOne(d => d.PatientNavigation)
                     .WithOne(p => p.Room)
                     .HasForeignKey<Room>(d => d.Patient)
-                    .HasConstraintName("FK__Room__Patient__48CFD27E");
+                    .HasConstraintName("FK__Room__Patient__71D1E811");
             });
 
             modelBuilder.Entity<Specialization>(entity =>
@@ -460,7 +455,7 @@ namespace HOSPITAL2_LAB1.Data
                 entity.HasOne(d => d.AdministratorNavigation)
                     .WithMany(p => p.Specializations)
                     .HasForeignKey(d => d.Administrator)
-                    .HasConstraintName("FK__Specializ__Admin__3E52440B");
+                    .HasConstraintName("FK__Specializ__Admin__72C60C4A");
             });
 
             OnModelCreatingPartial(modelBuilder);

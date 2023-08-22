@@ -1,4 +1,4 @@
-﻿using HOSPITAL2_LAB1.Models;
+﻿using HOSPITAL2_LAB1.Model;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,13 +6,7 @@ namespace HOSPITAL2_LAB1.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
+        
         public IActionResult Index()
         {
             return View();
@@ -21,10 +15,6 @@ namespace HOSPITAL2_LAB1.Controllers
         
         
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        
     }
 }

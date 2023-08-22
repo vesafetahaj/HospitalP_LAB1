@@ -1,4 +1,4 @@
-﻿using HOSPITAL2_LAB1.Models;
+﻿using HOSPITAL2_LAB1.Model;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 

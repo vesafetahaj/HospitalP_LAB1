@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HOSPITAL2_LAB1.Models
+namespace HOSPITAL2_LAB1.Model
 {
     public partial class Administrator
     {
@@ -9,10 +9,9 @@ namespace HOSPITAL2_LAB1.Models
         {
             Complaints = new HashSet<Complaint>();
             ContactForms = new HashSet<ContactForm>();
-            Reservations = new HashSet<Reservation>();
             Specializations = new HashSet<Specialization>();
         }
-       
+
         public int AdminId { get; set; }
         public string? Name { get; set; }
         public string? Surname { get; set; }
@@ -21,8 +20,6 @@ namespace HOSPITAL2_LAB1.Models
         public virtual AspNetUser? User { get; set; }
         public virtual ICollection<Complaint> Complaints { get; set; }
         public virtual ICollection<ContactForm> ContactForms { get; set; }
-        public virtual ICollection<Reservation> Reservations { get; set; }
         public virtual ICollection<Specialization> Specializations { get; set; }
-        
     }
 }

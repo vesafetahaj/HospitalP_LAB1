@@ -1,4 +1,4 @@
-namespace HOSPITAL2_LAB1.Models
+namespace HOSPITAL2_LAB1.Model
 {
     public class ErrorViewModel
     {

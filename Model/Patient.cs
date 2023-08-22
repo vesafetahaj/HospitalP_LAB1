@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HOSPITAL2_LAB1.Models
+namespace HOSPITAL2_LAB1.Model
 {
     public partial class Patient
     {
