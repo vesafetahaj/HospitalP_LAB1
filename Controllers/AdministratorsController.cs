@@ -594,8 +594,13 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
 
+        //Complaints
 
-
+        public async Task<IActionResult> Complaints()
+        {
+            var complaints = await _context.Complaints.Include(r => r.PatientNavigation).ToListAsync();
+            return View(complaints);
+        }
 
 
     }

@@ -7,7 +7,6 @@ namespace HOSPITAL2_LAB1.Model
     {
         public Administrator()
         {
-            Complaints = new HashSet<Complaint>();
             ContactForms = new HashSet<ContactForm>();
             Specializations = new HashSet<Specialization>();
         }
@@ -18,7 +17,6 @@ namespace HOSPITAL2_LAB1.Model
         public string? UserId { get; set; }
 
         public virtual AspNetUser? User { get; set; }
-        public virtual ICollection<Complaint> Complaints { get; set; }
         public virtual ICollection<ContactForm> ContactForms { get; set; }
         public virtual ICollection<Specialization> Specializations { get; set; }
     }

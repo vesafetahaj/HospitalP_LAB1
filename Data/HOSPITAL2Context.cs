@@ -172,11 +172,6 @@ namespace HOSPITAL2_LAB1.Data
                     .HasMaxLength(255)
                     .IsUnicode(false);
 
-                entity.HasOne(d => d.AdministratorNavigation)
-                    .WithMany(p => p.Complaints)
-                    .HasForeignKey(d => d.Administrator)
-                    .HasConstraintName("FK__Complaint__Admin__628FA481");
-
                 entity.HasOne(d => d.PatientNavigation)
                     .WithMany(p => p.Complaints)
                     .HasForeignKey(d => d.Patient)

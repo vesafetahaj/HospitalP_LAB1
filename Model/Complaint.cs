@@ -9,9 +9,7 @@ namespace HOSPITAL2_LAB1.Model
         public DateTime? ComplaintDate { get; set; }
         public string? ComplaintDetails { get; set; }
         public int? Patient { get; set; }
-        public int? Administrator { get; set; }
 
-        public virtual Administrator? AdministratorNavigation { get; set; }
         public virtual Patient? PatientNavigation { get; set; }
     }
 }
