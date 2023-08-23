@@ -1,0 +1,31 @@
+﻿@model List<HOSPITAL2_LAB1.Model.ContactForm>
+@{
+    ViewData["Title"] = "Contact Forms";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Contact Forms</h1>
+<hr />
+
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Message</th>
+            <th scope="col">Sent by</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var contactForm in Model)
+        {
+            <tr scope="row">
+                <td>@contactForm.ContactId</td>
+                <td>@contactForm.Subject</td>
+                <td>@contactForm.Message</td>
+                <td>@contactForm.PatientNavigation.Name @contactForm.PatientNavigation.Surname</td>
+            </tr>
+        }
+    </tbody>
+</table>

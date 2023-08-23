@@ -602,6 +602,13 @@ namespace HOSPITAL2_LAB1.Controllers
             return View(complaints);
         }
 
+        //Contact Forms
+
+        public async Task<IActionResult> ContactForms()
+        {
+            var contactForms = await _context.ContactForms.Include(r => r.PatientNavigation).ToListAsync();
+            return View(contactForms);
+        }
 
     }
 }
