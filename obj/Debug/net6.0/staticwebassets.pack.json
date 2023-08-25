@@ -1,771 +1,771 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HOSPITAL2_LAB1.bundle.scp.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HOSPITAL2_LAB1.bundle.scp.css",
       "PackagePath": "staticwebassets\\HOSPITAL2_LAB1.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\css\\AboutUs.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\css\\AboutUs.css",
       "PackagePath": "staticwebassets\\css\\AboutUs.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\css\\Contact.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\css\\Contact.css",
       "PackagePath": "staticwebassets\\css\\Contact.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\css\\Sherbimet.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\css\\Sherbimet.css",
       "PackagePath": "staticwebassets\\css\\Sherbimet.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\fonts\\Sequel100Black-85.ttf",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\fonts\\Sequel100Black-85.ttf",
       "PackagePath": "staticwebassets\\fonts\\Sequel100Black-85.ttf"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\Possible-3x1.mp4",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\Possible-3x1.mp4",
       "PackagePath": "staticwebassets\\images\\Possible-3x1.mp4"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\about.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\about.jpg",
       "PackagePath": "staticwebassets\\images\\about.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\afrim-nimani.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\afrim-nimani.jpg",
       "PackagePath": "staticwebassets\\images\\afrim-nimani.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\alergology.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\alergology.jpg",
       "PackagePath": "staticwebassets\\images\\alergology.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\anesthesia.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\anesthesia.jpg",
       "PackagePath": "staticwebassets\\images\\anesthesia.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\anesthesiology.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\anesthesiology.jpg",
       "PackagePath": "staticwebassets\\images\\anesthesiology.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\appointment.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\appointment.png",
       "PackagePath": "staticwebassets\\images\\appointment.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\appointment1.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\appointment1.png",
       "PackagePath": "staticwebassets\\images\\appointment1.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\appointments.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\appointments.jpg",
       "PackagePath": "staticwebassets\\images\\appointments.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\background.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\background.jpg",
       "PackagePath": "staticwebassets\\images\\background.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\bujar-vrella.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\bujar-vrella.jpg",
       "PackagePath": "staticwebassets\\images\\bujar-vrella.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\cardiocirurgy.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\cardiocirurgy.jpg",
       "PackagePath": "staticwebassets\\images\\cardiocirurgy.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\cardiology.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\cardiology.jpg",
       "PackagePath": "staticwebassets\\images\\cardiology.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\checkup.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\checkup.jpg",
       "PackagePath": "staticwebassets\\images\\checkup.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\checkuup.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\checkuup.jpg",
       "PackagePath": "staticwebassets\\images\\checkuup.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\complain.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\complain.png",
       "PackagePath": "staticwebassets\\images\\complain.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\contact-mail.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\contact-mail.png",
       "PackagePath": "staticwebassets\\images\\contact-mail.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\customer.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\customer.png",
       "PackagePath": "staticwebassets\\images\\customer.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\dashboard-doctor.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\dashboard-doctor.jpg",
       "PackagePath": "staticwebassets\\images\\dashboard-doctor.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\dentistry.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\dentistry.jpg",
       "PackagePath": "staticwebassets\\images\\dentistry.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\dentistryy.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\dentistryy.jpg",
       "PackagePath": "staticwebassets\\images\\dentistryy.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\dermatology.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\dermatology.jpg",
       "PackagePath": "staticwebassets\\images\\dermatology.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\doctor-pic1.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\doctor-pic1.jpg",
       "PackagePath": "staticwebassets\\images\\doctor-pic1.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\doctor-pic2.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\doctor-pic2.jpg",
       "PackagePath": "staticwebassets\\images\\doctor-pic2.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\doctor.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\doctor.jpg",
       "PackagePath": "staticwebassets\\images\\doctor.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\doctor.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\doctor.png",
       "PackagePath": "staticwebassets\\images\\doctor.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\email.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\email.png",
       "PackagePath": "staticwebassets\\images\\email.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\endocrinology.jpeg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\endocrinology.jpeg",
       "PackagePath": "staticwebassets\\images\\endocrinology.jpeg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\endocrinology.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\endocrinology.jpg",
       "PackagePath": "staticwebassets\\images\\endocrinology.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\expertise.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\expertise.png",
       "PackagePath": "staticwebassets\\images\\expertise.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\facebook.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\facebook.png",
       "PackagePath": "staticwebassets\\images\\facebook.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\favicon.ico",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\favicon.ico",
       "PackagePath": "staticwebassets\\images\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\foto1.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\foto1.jpg",
       "PackagePath": "staticwebassets\\images\\foto1.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\gallery.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\gallery.png",
       "PackagePath": "staticwebassets\\images\\gallery.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\gallery1.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\gallery1.jpg",
       "PackagePath": "staticwebassets\\images\\gallery1.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\gallery2.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\gallery2.jpg",
       "PackagePath": "staticwebassets\\images\\gallery2.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\gallery3.jpeg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\gallery3.jpeg",
       "PackagePath": "staticwebassets\\images\\gallery3.jpeg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\gallery3.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\gallery3.jpg",
       "PackagePath": "staticwebassets\\images\\gallery3.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\gallery4.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\gallery4.jpg",
       "PackagePath": "staticwebassets\\images\\gallery4.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\gallery5.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\gallery5.jpg",
       "PackagePath": "staticwebassets\\images\\gallery5.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\gallery6.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\gallery6.jpg",
       "PackagePath": "staticwebassets\\images\\gallery6.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\gastroenterology.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\gastroenterology.jpg",
       "PackagePath": "staticwebassets\\images\\gastroenterology.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\group.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\group.png",
       "PackagePath": "staticwebassets\\images\\group.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\gynecology.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\gynecology.jpg",
       "PackagePath": "staticwebassets\\images\\gynecology.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\happyclients.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\happyclients.png",
       "PackagePath": "staticwebassets\\images\\happyclients.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\heartrate.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\heartrate.png",
       "PackagePath": "staticwebassets\\images\\heartrate.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\hematology.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\hematology.jpg",
       "PackagePath": "staticwebassets\\images\\hematology.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\home.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\home.png",
       "PackagePath": "staticwebassets\\images\\home.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\home1.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\home1.png",
       "PackagePath": "staticwebassets\\images\\home1.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\hospital.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\hospital.png",
       "PackagePath": "staticwebassets\\images\\hospital.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\idea.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\idea.png",
       "PackagePath": "staticwebassets\\images\\idea.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\information.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\information.png",
       "PackagePath": "staticwebassets\\images\\information.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\injection.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\injection.png",
       "PackagePath": "staticwebassets\\images\\injection.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\instagram.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\instagram.png",
       "PackagePath": "staticwebassets\\images\\instagram.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\invitro.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\invitro.jpg",
       "PackagePath": "staticwebassets\\images\\invitro.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\kirurgji.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\kirurgji.jpg",
       "PackagePath": "staticwebassets\\images\\kirurgji.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\kirurgjiplastike.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\kirurgjiplastike.jpg",
       "PackagePath": "staticwebassets\\images\\kirurgjiplastike.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\lab.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\lab.jpg",
       "PackagePath": "staticwebassets\\images\\lab.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\laborator.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\laborator.jpg",
       "PackagePath": "staticwebassets\\images\\laborator.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\laboratoret.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\laboratoret.jpg",
       "PackagePath": "staticwebassets\\images\\laboratoret.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\login-forma-color.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\login-forma-color.jpg",
       "PackagePath": "staticwebassets\\images\\login-forma-color.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\logo-black-on-transparent-background.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\logo-black-on-transparent-background.png",
       "PackagePath": "staticwebassets\\images\\logo-black-on-transparent-background.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\logo-black.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\logo-black.png",
       "PackagePath": "staticwebassets\\images\\logo-black.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\logo-color.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\logo-color.png",
       "PackagePath": "staticwebassets\\images\\logo-color.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\logo-no-background.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\logo-no-background.png",
       "PackagePath": "staticwebassets\\images\\logo-no-background.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\logo192.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\logo192.png",
       "PackagePath": "staticwebassets\\images\\logo192.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\logo512.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\logo512.png",
       "PackagePath": "staticwebassets\\images\\logo512.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\lungs.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\lungs.png",
       "PackagePath": "staticwebassets\\images\\lungs.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\manifest.json",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\manifest.json",
       "PackagePath": "staticwebassets\\images\\manifest.json"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\medical-team.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\medical-team.png",
       "PackagePath": "staticwebassets\\images\\medical-team.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\medical.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\medical.png",
       "PackagePath": "staticwebassets\\images\\medical.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\menublue.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\menublue.png",
       "PackagePath": "staticwebassets\\images\\menublue.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\mission.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\mission.png",
       "PackagePath": "staticwebassets\\images\\mission.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\naim-loxha.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\naim-loxha.jpg",
       "PackagePath": "staticwebassets\\images\\naim-loxha.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\nefrologji.jpeg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\nefrologji.jpeg",
       "PackagePath": "staticwebassets\\images\\nefrologji.jpeg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\neurok.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\neurok.jpg",
       "PackagePath": "staticwebassets\\images\\neurok.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\neurologji.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\neurologji.jpg",
       "PackagePath": "staticwebassets\\images\\neurologji.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\oftamologu.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\oftamologu.jpg",
       "PackagePath": "staticwebassets\\images\\oftamologu.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\okulistik.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\okulistik.jpg",
       "PackagePath": "staticwebassets\\images\\okulistik.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\oncology.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\oncology.jpg",
       "PackagePath": "staticwebassets\\images\\oncology.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\orl.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\orl.jpg",
       "PackagePath": "staticwebassets\\images\\orl.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\patient.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\patient.png",
       "PackagePath": "staticwebassets\\images\\patient.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\pediatri.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\pediatri.jpg",
       "PackagePath": "staticwebassets\\images\\pediatri.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\phone.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\phone.png",
       "PackagePath": "staticwebassets\\images\\phone.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\phonee.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\phonee.png",
       "PackagePath": "staticwebassets\\images\\phonee.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\plasticsurgery.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\plasticsurgery.jpg",
       "PackagePath": "staticwebassets\\images\\plasticsurgery.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\pleumonogy.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\pleumonogy.jpg",
       "PackagePath": "staticwebassets\\images\\pleumonogy.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\point.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\point.png",
       "PackagePath": "staticwebassets\\images\\point.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\proct.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\proct.jpg",
       "PackagePath": "staticwebassets\\images\\proct.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\profit.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\profit.png",
       "PackagePath": "staticwebassets\\images\\profit.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\qendra.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\qendra.jpg",
       "PackagePath": "staticwebassets\\images\\qendra.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\radiology.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\radiology.jpg",
       "PackagePath": "staticwebassets\\images\\radiology.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\regjistrimi.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\regjistrimi.png",
       "PackagePath": "staticwebassets\\images\\regjistrimi.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\renato-janusic.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\renato-janusic.jpg",
       "PackagePath": "staticwebassets\\images\\renato-janusic.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\report.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\report.png",
       "PackagePath": "staticwebassets\\images\\report.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\reuma.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\reuma.jpg",
       "PackagePath": "staticwebassets\\images\\reuma.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\rezonance.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\rezonance.jpg",
       "PackagePath": "staticwebassets\\images\\rezonance.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\sad-face.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\sad-face.png",
       "PackagePath": "staticwebassets\\images\\sad-face.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\salla.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\salla.jpg",
       "PackagePath": "staticwebassets\\images\\salla.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\slide5.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\slide5.jpg",
       "PackagePath": "staticwebassets\\images\\slide5.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\slideee.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\slideee.jpg",
       "PackagePath": "staticwebassets\\images\\slideee.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\staf.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\staf.jpg",
       "PackagePath": "staticwebassets\\images\\staf.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\staf2.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\staf2.jpg",
       "PackagePath": "staticwebassets\\images\\staf2.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\staff1.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\staff1.jpg",
       "PackagePath": "staticwebassets\\images\\staff1.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\staff2.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\staff2.png",
       "PackagePath": "staticwebassets\\images\\staff2.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\staff3.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\staff3.jpg",
       "PackagePath": "staticwebassets\\images\\staff3.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\staff4.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\staff4.jpg",
       "PackagePath": "staticwebassets\\images\\staff4.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\staff5.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\staff5.png",
       "PackagePath": "staticwebassets\\images\\staff5.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\staff6.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\staff6.jpg",
       "PackagePath": "staticwebassets\\images\\staff6.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\staff7.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\staff7.jpg",
       "PackagePath": "staticwebassets\\images\\staff7.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\staff8.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\staff8.jpg",
       "PackagePath": "staticwebassets\\images\\staff8.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\statisticsimg.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\statisticsimg.jpg",
       "PackagePath": "staticwebassets\\images\\statisticsimg.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\stethoscope.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\stethoscope.png",
       "PackagePath": "staticwebassets\\images\\stethoscope.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\stomatology.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\stomatology.jpg",
       "PackagePath": "staticwebassets\\images\\stomatology.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png",
       "PackagePath": "staticwebassets\\images\\sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-white-on-transparent-background.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-white-on-transparent-background.png",
       "PackagePath": "staticwebassets\\images\\sunrisecare-hospital-low-resolution-logo-white-on-transparent-background.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\termin.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\termin.png",
       "PackagePath": "staticwebassets\\images\\termin.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\test1.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\test1.jpg",
       "PackagePath": "staticwebassets\\images\\test1.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\twitter.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\twitter.png",
       "PackagePath": "staticwebassets\\images\\twitter.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\urgjenca.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\urgjenca.jpg",
       "PackagePath": "staticwebassets\\images\\urgjenca.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\urology.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\urology.jpg",
       "PackagePath": "staticwebassets\\images\\urology.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\user.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\user.png",
       "PackagePath": "staticwebassets\\images\\user.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\value.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\value.png",
       "PackagePath": "staticwebassets\\images\\value.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\videoHome.mp4",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\videoHome.mp4",
       "PackagePath": "staticwebassets\\images\\videoHome.mp4"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\vision.png",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\vision.png",
       "PackagePath": "staticwebassets\\images\\vision.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\white-arrow-down.gif",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\white-arrow-down.gif",
       "PackagePath": "staticwebassets\\images\\white-arrow-down.gif"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\young-handsome-physician-medical-robe-with-stethoscope.jpg",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\images\\young-handsome-physician-medical-robe-with-stethoscope.jpg",
       "PackagePath": "staticwebassets\\images\\young-handsome-physician-medical-robe-with-stethoscope.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Admin\\Desktop\\Hospital_Lab1\\Hospital_LAB1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
