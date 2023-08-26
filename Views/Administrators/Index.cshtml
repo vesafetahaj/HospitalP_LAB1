@@ -1,5 +1,8 @@
 ﻿@{
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int numberOfPatients = (int)ViewData["NumberOfPatients"];
+    int numberOfDoctors = (int)ViewData["NumberOfDoctors"];
+    int numberOfAppointments = (int)ViewData["NumberOfAppointments"];
 }
 
 <style>
@@ -92,9 +95,9 @@
 
 <script>
     function animateNumbers() {
-        var appointments = 20;
-        var patients = 500;
-        var doctors = 50;
+        var appointments = @numberOfAppointments;
+        var patients = @numberOfPatients;
+        var doctors = @numberOfDoctors;
 
         var appointmentsElement = document.getElementById("appointments");
         var patientsElement = document.getElementById("patients");

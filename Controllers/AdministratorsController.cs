@@ -26,6 +26,13 @@ namespace HOSPITAL2_LAB1.Controllers
 
         public async Task<IActionResult> Index()
         {
+            int numberOfPatients = _context.Patients.Count();
+            int numberOfDoctors = _context.Doctors.Count();
+           int numberOfAppointments = _context.Reservations.Count();   
+
+            ViewData["NumberOfPatients"] = numberOfPatients;
+            ViewData["NumberOfDoctors"] = numberOfDoctors;
+            ViewData["NumberOfAppointments"] = numberOfAppointments;
             return View();
         }
         public async Task<IActionResult> Details()
@@ -93,7 +100,61 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return View(administrator);
         }
+        // GET: Administrators/EditPersonalInfo
+        public IActionResult EditPersonalInfo()
+        {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            Administrator administrator = _context.Administrators.FirstOrDefault(a => a.UserId == loggedInUserId);
 
+            if (administrator == null)
+            {
+                return NotFound();
+            }
+
+            return View(administrator);
+        }
+
+        // POST: Administrators/EditPersonalInfo
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditPersonalInfo(int id, [Bind("AdminId,Name,Surname")] Administrator updatedAdministrator)
+        {
+            if (id != updatedAdministrator.AdminId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                    Administrator existingAdministrator = await _context.Administrators.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+                    if (existingAdministrator == null)
+                    {
+                        return NotFound();
+                    }
+
+                    existingAdministrator.Name = updatedAdministrator.Name;
+                    existingAdministrator.Surname = updatedAdministrator.Surname;
+
+                    _context.Update(existingAdministrator);
+                    await _context.SaveChangesAsync();
+
+                    return RedirectToAction("Details", new { id = existingAdministrator.AdminId });
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    // Handle concurrency issues if needed
+                    return RedirectToAction("Details", new { id = id });
+                }
+            }
+
+            return View(updatedAdministrator);
+        }
+
+        /*
         // GET: Administrators/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -145,7 +206,7 @@ namespace HOSPITAL2_LAB1.Controllers
             }
             ViewData["UserId"] = new SelectList(_context.AspNetUsers, "Id", "Id", administrator.UserId);
             return View(administrator);
-        }
+        }*/
 
         // GET: Administrators/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -440,7 +501,7 @@ namespace HOSPITAL2_LAB1.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Administrator not found.");
+                    ModelState.AddModelError("", "You have to provide personal info first.");
                 }
             }
 
@@ -574,9 +635,13 @@ namespace HOSPITAL2_LAB1.Controllers
             }
 
             var appointments = await appointmentsQuery.ToListAsync();
+            var appointmentsWithDate = appointments.Where(a => a.ReservationDate.HasValue).ToList();
+            var oldestAppointment = appointmentsWithDate.OrderBy(a => a.ReservationDate).FirstOrDefault();
+            var earliestAppointment = appointmentsWithDate.OrderByDescending(a => a.ReservationDate).FirstOrDefault();
 
-            ViewBag.OldestAppointment = appointments.OrderBy(a => a.ReservationDate).FirstOrDefault();
-            ViewBag.EarliestAppointment = appointments.OrderBy(a => a.ReservationDate).LastOrDefault();
+            ViewBag.OldestAppointment = oldestAppointment;
+            ViewBag.EarliestAppointment = earliestAppointment;
+
 
             // Populate ViewBag.Doctors, ViewBag.Patients, and ViewBag.Specializations
             var doctors = await _context.Doctors.ToListAsync();
