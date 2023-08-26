@@ -403,8 +403,12 @@ namespace HOSPITAL2_LAB1.Controllers
         }
         public IActionResult CreateDoctor()
         {
-            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+            var doctorEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@doctor.com")).Select(u => u.Email).ToList();
+            SelectList doctorEmailsSelectList = new SelectList(doctorEmails);
+
+            ViewData["Emails"] = doctorEmailsSelectList;
             ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
+
             return View();
         }
 
