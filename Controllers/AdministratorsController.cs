@@ -208,12 +208,12 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             if (string.IsNullOrEmpty(query))
             {
-                // If the search string is empty or null, return all doctors
+                // If the search string is empty or null, return all patients
                 var allPatients = await _context.Patients.Include(a => a.User).ToListAsync();
                 return View("Patients", allPatients);
             }
 
-            // Search for doctors whose name or specialization contains the search query
+            // Search for patients whose name or surname contains the search query
             var patients = await _context.Patients
                 .Where(d => d.Name.Contains(query) || d.Surname.Contains(query))
                 .Include(a => a.User)
