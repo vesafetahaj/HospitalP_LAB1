@@ -50,7 +50,7 @@
                         }
 
 
-                        span {
+                        #spanHome {
                             font-family: 'Bebas Neue', cursive;
                             font-size: 5rem;
                             color: white;
@@ -64,7 +64,7 @@
                             transition: background-size .7s, background-position .5s ease-in-out;
                         }
 
-                            span:hover {
+                            #spanHome:hover {
                                 background-size: 100% 100%;
                                 background-position: 0% 100%;
                                 transition: background-position .7s, background-size .5s ease-in-out;
@@ -189,7 +189,7 @@
                     </style>
                     <div className='home-container'>
                       <video src="@Url.Content("~/images/videoHome.mp4")" autoPlay loop muted />
-                      <h1><span>SunRiseCare Hospital</span></h1>
+                      <h1><span id="spanHome">SunRiseCare Hospital</span></h1>
                       <p><strong>Welcome to our Hospital, where your health is our priority !</strong></p>
                     </div>
                     <div className='body-card'>
