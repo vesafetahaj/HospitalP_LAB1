@@ -24,12 +24,9 @@ namespace HOSPITAL2_LAB1.Controllers
             _context = context;
         }
 
-        // GET: Administrators
         public async Task<IActionResult> Index()
         {
-            var hOSPITAL2Context = _context.Administrators.Include(a => a.User);
-            ViewBag.HasProvidedPersonalInfo = HasProvidedPersonalInfo(User.FindFirstValue(ClaimTypes.NameIdentifier).ToString().ToLower());
-            return View(await hOSPITAL2Context.ToListAsync());
+            return View();
         }
         public async Task<IActionResult> Details()
         {
