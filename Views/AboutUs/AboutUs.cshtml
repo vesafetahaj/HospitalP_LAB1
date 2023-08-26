@@ -20,7 +20,7 @@
       
     
     class AboutUs extends React.Component {
-        handleScroll = () => {
+        handleScroll1 = () => {
             const element = document.getElementById('main-content');
             element.scrollIntoView({ behavior: 'smooth' });
         };
@@ -70,7 +70,7 @@
                     <div className='aboutus'>
                         <video src="@Url.Content("~/images/Possible-3x1.mp4")" id='aboutusvid' autoPlay loop muted />
                         <h2 id='sunriseabout'>About SunRiseCare Hospital</h2>
-                        <img id ='scrollimg' src="@Url.Content("~/images/white-arrow-down.gif")" alt='Scroll Down' onClick={this.handleScroll} />
+                        <img id ='scrollimg' src="@Url.Content("~/images/white-arrow-down.gif")" alt='Scroll Down' onClick={this.handleScroll1} />
                     </div>
                     <div id = 'main-content'>
                         <div className='card-container'>
