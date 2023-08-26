@@ -40,7 +40,6 @@
                         <div class="card-body">
                             <h5 class="card-title">@service.Name</h5>
                             <p class="card-text">@service.Description</p>
-                            <!-- Display other properties as needed -->
                             <div class="text-center">
                                 <a href="@Url.Action("EditService", "Administrators", new { id = service.SpecializationId })" class="btn btn-primary">Edit</a>
                                 <a href="@Url.Action("DeleteService", "Administrators", new { id = service.SpecializationId })" class="btn btn-danger">Delete</a>

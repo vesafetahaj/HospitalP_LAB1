@@ -48,16 +48,7 @@
                             <h5 class="card-title">@doctor.Name</h5>
                             <h5 class="card-title">@doctor.Surname</h5>
                             <p class="card-text">Education: @doctor.Education</p>
-                            <p class="card-text">Specialization:
-                                @foreach (var specialization in ViewBag.Name)
-                                {
-                                    if (specialization.Value == doctor.Specialization.ToString())
-                                    {
-                                        @specialization.Text
-                                        break;
-                                    }
-                                }
-                            </p>                            
+                            <p class="card-text">Specialization: @doctor.SpecializationNavigation.Name</p>                            
                             <p class="card-text">Email: @doctor.Email</p>
                             <div class="text-center">
                                 <a href="@Url.Action("EditDoctor", "Administrators", new { id = doctor.DoctorId })" class="btn btn-primary">Edit</a>

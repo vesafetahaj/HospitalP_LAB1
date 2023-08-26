@@ -284,10 +284,12 @@ namespace HOSPITAL2_LAB1.Controllers
         //Doctors
         public async Task<IActionResult> Doctors()
         {
-            var hOSPITAL2Context = _context.Doctors.Include(a => a.User);
-            ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
+            var doctors = await _context.Doctors
+                .Include(a => a.User)
+                .Include(r => r.SpecializationNavigation)
+                .ToListAsync();
 
-            return View(await hOSPITAL2Context.ToListAsync());
+            return View(doctors);
         }
         public async Task<IActionResult> EditDoctor(int? id)
         {
