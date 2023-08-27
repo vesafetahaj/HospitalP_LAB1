@@ -1,72 +1,118 @@
-﻿@model IEnumerable<HOSPITAL2_LAB1.Model.Doctor>
-
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+    ViewData["Title"] = "Doctor Dashboard";
     Layout = "~/Views/Shared/_DoctorLayout.cshtml";
 }
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
 
-<h1>Index</h1>
+        .paragraph {
+            transition: margin-left .4s;
+            padding-left: 30px;
+            margin-top: 2px;
+        }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Surname)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Education)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PhotoUrl)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.SpecializationNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.User)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Surname)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Education)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PhotoUrl)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SpecializationNavigation.SpecializationId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.User.Id)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.DoctorId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.DoctorId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.DoctorId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+            .paragraph > p1 {
+                font-family: 'Anek Gurmukhi', sans-serif;
+                color: #aecce4;
+                margin-top: 1px;
+                display: inline-block;
+                margin-left: 4rem;
+            }
+
+            .paragraph > p2 {
+                font-family: 'Anek Gurmukhi', sans-serif;
+                color: #aecce4;
+                margin-top: 3px;
+                display: inline-block;
+                margin-left: 4rem;
+            }
+
+            .paragraph > p3 {
+                font-family: 'Anek Gurmukhi', sans-serif;
+                color: #aecce4;
+                margin-top: 3px;
+                display: inline-block;
+                margin-left: 4rem;
+            }
+
+            .paragraph > p4 {
+                font-family: 'Anek Gurmukhi', sans-serif;
+                color: #aecce4;
+                margin-top: 3px;
+                display: inline-block;
+                margin-left: 4rem;
+            }
+
+            .paragraph > p5 {
+                font-family: 'Anek Gurmukhi', sans-serif;
+                color: #aecce4;
+                margin-top: 3px;
+                display: inline-block;
+                margin-left: 4rem;
+            }
+
+
+        .background {
+            width: 107.7%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/dashboard-doctor.jpg);
+            background-size: cover;
+            background-position: center;
+            margin-top: -70px;
+            margin-left: -7rem;
+        }
+
+        .content {
+            width: 100%;
+            position: absolute;
+            top: 35%;
+            color: #fff;
+        }
+
+            .content h1 {
+                font-family: 'Anek Gurmukhi', sans-serif;
+                color: #2c6796;
+                display: inline-block;
+                margin-left: 450px;
+                margin-bottom: 5rem;
+            }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="main">
+        <div class="background">
+        </div>
+
+        <div class="content">
+            <h1>Welcome to your dashboard!</h1>
+
+            <div class="paragraph">
+
+                <p1>Welcome to your doctor's dashboard, designed to streamline your workflow and enhance patient care.</p1> <br />
+                <p2>
+                    This comprehensive dashboard provides you with a holistic view of your patients,
+                    including their vital signs, medical history, and upcoming appointments.
+                </p2> <br />
+                <p3>Stay organized with a task management system that helps you prioritize and track your daily activities. </p3> <br />
+                <p4>Utilize clinical decision support tools and educational resources to stay updated with the latest medical knowledge. </p4> <br />
+                <p5>
+                    With this user-friendly dashboard, you can optimize your efficiency, provide the best care possible,
+                    and make a positive impact on your patients' lives.
+                </p5>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

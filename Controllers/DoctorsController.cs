@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using HOSPITAL2_LAB1.Data;
 using HOSPITAL2_LAB1.Model;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -24,29 +25,35 @@ namespace HOSPITAL2_LAB1.Controllers
         // GET: Doctors
         public async Task<IActionResult> Index()
         {
-            var hOSPITAL2Context = _context.Doctors.Include(d => d.SpecializationNavigation).Include(d => d.User);
-            return View(await hOSPITAL2Context.ToListAsync());
+            return View();
+        }
+        public async Task<IActionResult> WaitingForApproval()
+        {
+            return View();
         }
 
-        // GET: Doctors/Details/5
-        public async Task<IActionResult> Details(int? id)
+        // GET: Doctors/Details
+        // GET: Doctors/Profile
+        public async Task<IActionResult> Details()
         {
-            if (id == null || _context.Doctors == null)
-            {
-                return NotFound();
-            }
+            // Get the currently logged-in user's ID
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
+            // Retrieve the doctor's information from the database
             var doctor = await _context.Doctors
                 .Include(d => d.SpecializationNavigation)
-                .Include(d => d.User)
-                .FirstOrDefaultAsync(m => m.DoctorId == id);
+                .FirstOrDefaultAsync(m => m.UserId == loggedInUserId);
+
             if (doctor == null)
             {
-                return NotFound();
+                return View("WaitingForApproval"); 
             }
 
+            // Pass the doctor's information to the view
             return View(doctor);
         }
+
+
 
         // GET: Doctors/Create
         public IActionResult Create()
@@ -172,5 +179,7 @@ namespace HOSPITAL2_LAB1.Controllers
         {
           return (_context.Doctors?.Any(e => e.DoctorId == id)).GetValueOrDefault();
         }
+       
     }
+
 }

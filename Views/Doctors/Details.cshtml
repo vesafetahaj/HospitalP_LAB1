@@ -1,61 +1,162 @@
 ﻿@model HOSPITAL2_LAB1.Model.Doctor
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Doctor Dashboard";
     Layout = "~/Views/Shared/_DoctorLayout.cshtml";
 }
 
-<h1>Details</h1>
 
-<div>
-    <h4>Doctor</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Surname)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Surname)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Education)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Education)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PhotoUrl)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PhotoUrl)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SpecializationNavigation)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SpecializationNavigation.SpecializationId)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.User)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.User.Id)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.DoctorId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        body {
+            background: #d7dfe4;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            margin-top: -15px;
+        }
+
+        .wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 900px;
+            display: flex;
+            box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+            margin-top: 4.5rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+            .wrapper .left {
+                width: 38%;
+                background: linear-gradient(to bottom, #9abddc, #c2ced8);
+                padding: 30px 25px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                text-align: center;
+                color: #fff;
+            }
+
+                .wrapper .left img {
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    width: 17.8rem;
+                    height: 15rem;
+                    margin-top: 37px;
+                }
+
+                .wrapper .left h3 {
+                    margin-bottom: 10px;
+                    margin-top: 25px;
+                }
+
+            .wrapper .right {
+                width: 65%;
+                background: #fff;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                padding: 30px 25px;
+            }
+
+                .wrapper .right .info,
+                .wrapper .right .education {
+                    margin-bottom: 25px;
+                }
+
+                    .wrapper .right .info h3,
+                    .wrapper .right .education h3 {
+                        margin-bottom: 15px;
+                        padding-bottom: 5px;
+                        border-bottom: 1px solid #e0e0e0;
+                        color: #353c4e;
+                        text-transform: uppercase;
+                        letter-spacing: 5px;
+                    }
+
+                .wrapper .right .info-data,
+                .wrapper .right .education-data {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                    .wrapper .right .info-data .data,
+                    .wrapper .right .education-data .data {
+                        width: 45%;
+                    }
+
+                        .wrapper .right .info-data .data h4,
+                        .wrapper .right .education-data .data h4 {
+                            color: #353c4e;
+                            margin-bottom: 5px;
+                        }
+
+                    .wrapper .right .info-data p,
+                    .wrapper .right .education-data p {
+                        font-size: 13px;
+                        margin-bottom: 10px;
+                        color: #919aa3;
+                    }
+
+            .wrapper .social-media ul {
+                display: flex;
+            }
+
+                .wrapper .social-media ul a {
+                    width: 45px;
+                    height: 45px;
+                    background: linear-gradient(to bottom, #9abddc, #c2ced8);
+                    margin-right: -128px;
+                    margin-left: 140px;
+                    margin-top: 10px;
+                    border-radius: 5px;
+                    line-height: 45px;
+                    text-align: center;
+                    color: #fff;
+                    display: block;
+                    font-size: 18px;
+                }
+    </style>
+
+
+    <div id="main">
+        <div class="wrapper">
+            <div class="left">
+                <img src="~/images/@Model.PhotoUrl" alt="Doctor Image" width="100">
+                <h3>@Model.Name @Model.Surname</h3>
+            </div>
+            <div class="right">
+                <div class="info">
+                    <h3>Information</h3>
+                    <div class="info-data">
+                        <div class="data">
+                            <h4>Email</h4>
+                            <p>@Model.Email</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="education-data">
+                        <div class="data">
+                            <h4>Education</h4>
+                            <p>@Model.Education</p>
+                        </div>
+                        <div class="data">
+                            <h4>Specialization</h4>
+                            <p>@Model.SpecializationNavigation.Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
