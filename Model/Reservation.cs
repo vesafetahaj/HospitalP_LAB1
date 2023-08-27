@@ -10,10 +10,8 @@ namespace HOSPITAL2_LAB1.Model
         public TimeSpan? ReservationTime { get; set; }
         public int? Patient { get; set; }
         public int? Doctor { get; set; }
-        public int? Service { get; set; }
 
         public virtual Doctor? DoctorNavigation { get; set; }
         public virtual Patient? PatientNavigation { get; set; }
-        public virtual Specialization? ServiceNavigation { get; set; }
     }
 }

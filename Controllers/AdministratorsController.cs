@@ -610,12 +610,11 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
         //Appointments
-        public async Task<IActionResult> Appointments(string filterDate, int? filterDoctor, int? filterPatient, int? filterService)
+        public async Task<IActionResult> Appointments(string filterDate, int? filterDoctor, int? filterPatient)
         {
             var appointmentsQuery = _context.Reservations
                 .Include(r => r.PatientNavigation)
                 .Include(r => r.DoctorNavigation)
-                .Include(r => r.ServiceNavigation)
                 .AsQueryable();
 
             // Apply filters
@@ -635,10 +634,7 @@ namespace HOSPITAL2_LAB1.Controllers
                 appointmentsQuery = appointmentsQuery.Where(a => a.Patient == filterPatient.Value);
             }
 
-            if (filterService.HasValue)
-            {
-                appointmentsQuery = appointmentsQuery.Where(a => a.Service == filterService.Value);
-            }
+            
 
             var appointments = await appointmentsQuery.ToListAsync();
             var appointmentsWithDate = appointments.Where(a => a.ReservationDate.HasValue).ToList();
@@ -656,7 +652,6 @@ namespace HOSPITAL2_LAB1.Controllers
 
             ViewBag.Doctors = doctors;
             ViewBag.Patients = patients;
-            ViewBag.Specializations = services;
 
             return View(appointments);
         }

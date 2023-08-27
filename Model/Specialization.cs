@@ -8,7 +8,6 @@ namespace HOSPITAL2_LAB1.Model
         public Specialization()
         {
             Doctors = new HashSet<Doctor>();
-            Reservations = new HashSet<Reservation>();
         }
 
         public int SpecializationId { get; set; }
@@ -19,6 +18,5 @@ namespace HOSPITAL2_LAB1.Model
 
         public virtual Administrator? AdministratorNavigation { get; set; }
         public virtual ICollection<Doctor> Doctors { get; set; }
-        public virtual ICollection<Reservation> Reservations { get; set; }
     }
 }

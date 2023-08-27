@@ -221,6 +221,10 @@
       "PackagePath": "staticwebassets\\images\\health-checkup.png"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\health-report.png",
+      "PackagePath": "staticwebassets\\images\\health-report.png"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\heartrate.png",
       "PackagePath": "staticwebassets\\images\\heartrate.png"
     },

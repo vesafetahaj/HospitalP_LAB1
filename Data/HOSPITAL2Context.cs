@@ -395,17 +395,13 @@ namespace HOSPITAL2_LAB1.Data
                 entity.HasOne(d => d.DoctorNavigation)
                     .WithMany(p => p.Reservations)
                     .HasForeignKey(d => d.Doctor)
-                    .HasConstraintName("FK__Reservati__Docto__6EF57B66");
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .HasConstraintName("Reservation_Doctor_FK");
 
                 entity.HasOne(d => d.PatientNavigation)
                     .WithMany(p => p.Reservations)
                     .HasForeignKey(d => d.Patient)
                     .HasConstraintName("FK__Reservati__Patie__6FE99F9F");
-
-                entity.HasOne(d => d.ServiceNavigation)
-                    .WithMany(p => p.Reservations)
-                    .HasForeignKey(d => d.Service)
-                    .HasConstraintName("FK__Reservati__Servi__70DDC3D8");
             });
 
             modelBuilder.Entity<Room>(entity =>
