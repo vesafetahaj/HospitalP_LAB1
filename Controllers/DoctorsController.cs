@@ -33,7 +33,7 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
         // GET: Doctors/Details
-        // GET: Doctors/Profile
+
         public async Task<IActionResult> Details()
         {
             // Get the currently logged-in user's ID

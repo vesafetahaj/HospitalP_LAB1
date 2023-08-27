@@ -30,14 +30,22 @@ namespace HOSPITAL2_LAB1.Controllers
         }
         public async Task<IActionResult> Details()
         {
+            // Get the currently logged-in user's ID
             string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
+            // Retrieve the doctor's information from the database
             var patient = await _context.Patients
-                .Include(a => a.User)
                 .FirstOrDefaultAsync(m => m.UserId == loggedInUserId);
 
-            return patient != null ? View(patient) : (IActionResult)NotFound();
+            if (patient == null)
+            {
+                return View("WaitingForApproval");
+            }
+
+            // Pass the doctor's information to the view
+            return View(patient);
         }
+
         /*
 
         // GET: Patients/Details/5

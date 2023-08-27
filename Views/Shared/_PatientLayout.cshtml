@@ -107,14 +107,10 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
         <a asp-area="" asp-controller="Patients" asp-action="Index"><img src="~/images/home.png" id="home">Home</a>
-        @if (patientIdExists)
-        {
-            <a asp-area="" asp-controller="Patients" asp-action="Details"><img src="~/images/information.png">Personal info</a>
-        }
-        else
-        {
-            <a asp-area="" asp-controller="Patients" asp-action="Create"><img src="~/images/information.png">Personal info</a>
-        }
+        
+        <a asp-area="" asp-controller="Patients" asp-action="Details"><img src="~/images/information.png">Personal info</a>
+       
+          
         <a asp-area="" asp-controller="Patient" asp-action="Raporti"><img src="~/images/health-report.png">My Raports</a>
         <a asp-area="" asp-controller="Patient" asp-action="Rezervimi"><img src="~/images/health-checkup.png">Make Appointment</a>
         <a asp-area="" asp-controller="Patient" asp-action="YourAppointment"><img src="~/images/appointment.png">Your Appointments</a>
