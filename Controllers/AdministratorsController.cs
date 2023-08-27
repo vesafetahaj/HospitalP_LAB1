@@ -10,6 +10,7 @@ using HOSPITAL2_LAB1.Model;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using System.Globalization;
+using System.Numerics;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -671,6 +672,154 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             var contactForms = await _context.ContactForms.Include(r => r.PatientNavigation).ToListAsync();
             return View(contactForms);
+        }
+        //Receptionists
+        public async Task<IActionResult> Receptionists()
+        {
+            var hOSPITAL2Context = _context.Receptionists.Include(r => r.User);
+            return View(await hOSPITAL2Context.ToListAsync());
+        }
+        // GET: Admin/CreateReceptionist
+        public IActionResult CreateReceptionist()
+        {
+            var receptionistsEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@receptionist.com")).Select(u => u.Email).ToList();
+            SelectList receptionistsEmailsSelectList = new SelectList(receptionistsEmails);
+
+            ViewData["Emails"] = receptionistsEmailsSelectList;
+
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateReceptionist([Bind("ReceptionistId,Name,Surname,Email")] Receptionist receptionist)
+        {
+            if (ModelState.IsValid)
+            {
+                string selectedEmail = receptionist.Email;
+
+                var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
+
+                if (user != null)
+                {
+                    receptionist.UserId = user.Id;
+
+                    _context.Add(receptionist);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Receptionists));
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Selected user not found.");
+                }
+            }
+
+            var receptionistsEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@receptionist.com")).Select(u => u.Email).ToList();
+            ViewData["Emails"] = new SelectList(receptionistsEmails);
+
+            return View(receptionist);
+        }
+
+
+        // GET: Admin/EditReceptionist/5
+        public async Task<IActionResult> EditReceptionist(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var receptionist = await _context.Receptionists.FindAsync(id);
+            if (receptionist == null)
+            {
+                return NotFound();
+            }
+
+            var receptionistsEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@receptionist.com")).Select(u => u.Email).ToList();
+            ViewData["Emails"] = new SelectList(receptionistsEmails);
+
+            return View(receptionist);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditReceptionist(int id, [Bind("ReceptionistId,Name,Surname,Email")] Receptionist receptionist)
+        {
+            if (id != receptionist.ReceptionistId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                string selectedEmail = receptionist.Email;
+
+                var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
+
+                if (user != null)
+                {
+                    receptionist.UserId = user.Id;
+
+                    _context.Update(receptionist);
+                    await _context.SaveChangesAsync();
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Selected user not found.");
+                }
+
+                return RedirectToAction(nameof(Receptionists));
+            }
+
+            var receptionistsEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@receptionist.com")).Select(u => u.Email).ToList();
+            ViewData["Emails"] = new SelectList(receptionistsEmails);
+
+            return View(receptionist);
+        }
+        // GET: Receptionists/Delete/5
+        public async Task<IActionResult> DeleteReceptionist(int? id)
+        {
+            if (id == null || _context.Receptionists == null)
+            {
+                return NotFound();
+            }
+
+            var receptionist = await _context.Receptionists
+                .Include(a => a.User)
+                .FirstOrDefaultAsync(m => m.ReceptionistId == id);
+            if (receptionist == null)
+            {
+                return NotFound();
+            }
+            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+            return View(receptionist);
+
+        }
+
+        // POST: Receptionists/Delete/5
+        [HttpPost, ActionName("DeleteReceptionist")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmedReceptionist(int id)
+        {
+            if (_context.Receptionists == null)
+            {
+                return Problem("Entity set 'HOSPITAL2Context.Receptionists'  is null.");
+            }
+            var receptionist = await _context.Receptionists.FindAsync(id);
+            if (receptionist != null)
+            {
+                _context.Receptionists.Remove(receptionist);
+            }
+
+            await _context.SaveChangesAsync();
+            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+
+            return RedirectToAction(nameof(Receptionists));
+        }
+
+        private bool ReceptionistExists(int id)
+        {
+            return (_context.Receptionists?.Any(e => e.ReceptionistId == id)).GetValueOrDefault();
         }
 
     }

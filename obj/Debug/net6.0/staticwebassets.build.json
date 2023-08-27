@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OhqUV435fZkgfnkv92oDPnrVba4cmEW13Sp07O7LGS0=",
+  "Hash": "kZVsKDfr/Pd1ABeHL8yfMG/SoA6n2ypjQyCieF4NVcE=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -2803,6 +2803,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\radiology.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\receptionist.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/receptionist.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\receptionist.png"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\regjistrimi.png",
