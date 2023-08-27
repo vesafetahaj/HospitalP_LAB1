@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9OFulelarRXqtV6SGimTDHLZiDbNj9KekYfvEeYdrEE=",
+  "Hash": "AThaByZOy8P+n/Ju+S7CkEdIFcnQtnz108c0j/pWFc4=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1343,6 +1343,23 @@
       "OriginalItemSpec": "wwwroot\\images\\background.jpg"
     },
     {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\bad-review.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/bad-review.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bad-review.png"
+    },
+    {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\bujar-vrella.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -1936,6 +1953,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\happyclients.png"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\health-checkup.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/health-checkup.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\health-checkup.png"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\heartrate.png",

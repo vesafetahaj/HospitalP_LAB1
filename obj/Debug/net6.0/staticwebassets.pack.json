@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\images\\background.jpg"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\bad-review.png",
+      "PackagePath": "staticwebassets\\images\\bad-review.png"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\bujar-vrella.jpg",
       "PackagePath": "staticwebassets\\images\\bujar-vrella.jpg"
     },
@@ -211,6 +215,10 @@
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\happyclients.png",
       "PackagePath": "staticwebassets\\images\\happyclients.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\health-checkup.png",
+      "PackagePath": "staticwebassets\\images\\health-checkup.png"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\heartrate.png",
