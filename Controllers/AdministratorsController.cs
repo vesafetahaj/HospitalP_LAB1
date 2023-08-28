@@ -272,15 +272,15 @@ namespace HOSPITAL2_LAB1.Controllers
                 return View("Patients", allPatients);
             }
 
-            // Search for patients whose name or surname contains the search query
+            // Search for patients whose name and surname contain the search query
             var patients = await _context.Patients
-                .Where(d => d.Name.Contains(query) || d.Surname.Contains(query))
+                .Where(d => (d.Name + " " + d.Surname).Contains(query))
                 .Include(a => a.User)
                 .ToListAsync();
 
-
             return View("Patients", patients);
         }
+
 
         //Doctors
         public async Task<IActionResult> Doctors()
@@ -686,13 +686,15 @@ namespace HOSPITAL2_LAB1.Controllers
             var contactForms = await _context.ContactForms.Include(r => r.PatientNavigation).ToListAsync();
             return View(contactForms);
         }
+
         //Receptionists
+
+
         public async Task<IActionResult> Receptionists()
         {
             var hOSPITAL2Context = _context.Receptionists.Include(r => r.User);
             return View(await hOSPITAL2Context.ToListAsync());
         }
-        // GET: Admin/CreateReceptionist
         public IActionResult CreateReceptionist()
         {
             var receptionistsEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@receptionist.com")).Select(u => u.Email).ToList();
@@ -741,8 +743,6 @@ namespace HOSPITAL2_LAB1.Controllers
             return View(receptionist);
         }
 
-
-        // GET: Admin/EditReceptionist/5
         public async Task<IActionResult> EditReceptionist(int? id)
         {
             if (id == null)
@@ -797,7 +797,7 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return View(receptionist);
         }
-        // GET: Receptionists/Delete/5
+
         public async Task<IActionResult> DeleteReceptionist(int? id)
         {
             if (id == null || _context.Receptionists == null)
@@ -817,7 +817,6 @@ namespace HOSPITAL2_LAB1.Controllers
 
         }
 
-        // POST: Receptionists/Delete/5
         [HttpPost, ActionName("DeleteReceptionist")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmedReceptionist(int id)
