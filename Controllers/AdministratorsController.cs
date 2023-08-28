@@ -399,6 +399,7 @@ namespace HOSPITAL2_LAB1.Controllers
             }
 
             await _context.SaveChangesAsync();
+
             ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
             ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
 
@@ -421,6 +422,15 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Check if a doctor with the same email already exists
+                if (_context.Doctors.Any(d => d.Email == doctor.Email))
+                {
+                    ModelState.AddModelError("Email", "This doctor already exists.");
+                    ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+                    ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
+                    return View(doctor);
+                }
+
                 // Get the selected email from the doctor object
                 string selectedEmail = doctor.Email;
 
@@ -436,6 +446,7 @@ namespace HOSPITAL2_LAB1.Controllers
                     _context.Add(doctor);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Doctors));
+
                 }
                 else
                 {
@@ -447,6 +458,7 @@ namespace HOSPITAL2_LAB1.Controllers
             ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
             return View(doctor);
         }
+
         public async Task<IActionResult> SearchDoctors(string query)
         {
             if (string.IsNullOrEmpty(query))
@@ -459,7 +471,7 @@ namespace HOSPITAL2_LAB1.Controllers
             // Search for doctors whose name or specialization contains the search query
             var doctors = await _context.Doctors
                 .Where(d => d.Name.Contains(query) || d.Surname.Contains(query))
-                .Include(a => a.User)
+                .Include(a => a.User).Include(b=> b.SpecializationNavigation)
                 .ToListAsync();
 
             // Populate the ViewBag.Name for the Specializations dropdown
@@ -490,21 +502,23 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Get the administrator's ID from the ClaimsPrincipal
-                string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                if (_context.Specializations.Any(s => s.Name == service.Name))
+                {
+                    ModelState.AddModelError("Name", "A service with the same name already exists.");
+                    return View(service);
+                }
 
-                // Find the administrator with the logged-in user's ID
-                var administrator = await _context.Administrators
-                    .FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+                string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var administrator = await _context.Administrators.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
 
                 if (administrator != null)
                 {
-                    // Associate the administrator with the service
                     service.Administrator = administrator.AdminId;
 
                     _context.Add(service);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Services));
+
                 }
                 else
                 {
@@ -552,7 +566,6 @@ namespace HOSPITAL2_LAB1.Controllers
                     existingService.Name = service.Name;
                     existingService.Description = service.Description;
                     existingService.PhotoUrl = service.PhotoUrl;
-                    // Note: You might not need to update the Administrator property if you don't want to change it here
 
                     // Save the changes to the DbContext
                     _context.Update(existingService);
@@ -696,6 +709,13 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (_context.Receptionists.Any(r => r.Email == receptionist.Email))
+                {
+                    ModelState.AddModelError("Email", "This receptionist already exists.");
+                    ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+                    return View(receptionist);
+                }
+
                 string selectedEmail = receptionist.Email;
 
                 var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
@@ -707,6 +727,7 @@ namespace HOSPITAL2_LAB1.Controllers
                     _context.Add(receptionist);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Receptionists));
+
                 }
                 else
                 {

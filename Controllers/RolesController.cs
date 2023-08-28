@@ -22,15 +22,34 @@ namespace Hospital_System_Management.Controllers
         }
         [HttpPost]
         public IActionResult Create(IdentityRole role)
-
         {
-            //nese roli ekziston
-            if (!_manager.RoleExistsAsync(role.Name).GetAwaiter().GetResult())
+            if (ModelState.IsValid)
             {
-                _manager.CreateAsync(new IdentityRole(role.Name)).GetAwaiter().GetResult();
+                var roleExists = _manager.RoleExistsAsync(role.Name).GetAwaiter().GetResult();
+                if (!roleExists)
+                {
+                    var result = _manager.CreateAsync(new IdentityRole(role.Name)).GetAwaiter().GetResult();
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("Index");
+                    }
+                    else
+                    {
+                        foreach (var error in result.Errors)
+                        {
+                            ModelState.AddModelError("", error.Description);
+                        }
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Role already exists.");
+                }
             }
-            return RedirectToAction("Index");
+
+            return View();
         }
+
         [HttpGet]
         public IActionResult Edit(string id)
         {
