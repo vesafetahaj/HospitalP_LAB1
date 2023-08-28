@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using HOSPITAL2_LAB1.Data;
 using Microsoft.AspNetCore.Authorization;
 using HOSPITAL2_LAB1.Model;
+using System.Security.Claims;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -29,23 +30,24 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
         // GET: Receptionists/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details()
         {
-            if (id == null || _context.Receptionists == null)
-            {
-                return NotFound();
-            }
+            // Get the currently logged-in user's ID
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
+            // Retrieve the doctor's information from the database
             var receptionist = await _context.Receptionists
-                .Include(r => r.User)
-                .FirstOrDefaultAsync(m => m.ReceptionistId == id);
+                .FirstOrDefaultAsync(m => m.UserId == loggedInUserId);
+
             if (receptionist == null)
             {
-                return NotFound();
+                return View("WaitingForApproval");
             }
 
+            // Pass the doctor's information to the view
             return View(receptionist);
         }
+
 
         // GET: Receptionists/Create
         public IActionResult Create()
