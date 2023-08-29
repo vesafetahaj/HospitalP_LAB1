@@ -437,6 +437,10 @@
       "PackagePath": "staticwebassets\\images\\rezonance.jpg"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\roles.png",
+      "PackagePath": "staticwebassets\\images\\roles.png"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\sad-face.png",
       "PackagePath": "staticwebassets\\images\\sad-face.png"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kZVsKDfr/Pd1ABeHL8yfMG/SoA6n2ypjQyCieF4NVcE=",
+  "Hash": "n+Qy7QNsBUU3bgCw2u+5FdEdGxNx+OJ/mtBdHDdRYUU=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -2905,6 +2905,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\rezonance.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\roles.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/roles.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\roles.png"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\sad-face.png",

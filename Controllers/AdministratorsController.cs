@@ -410,11 +410,14 @@ namespace HOSPITAL2_LAB1.Controllers
             var doctorEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@doctor.com")).Select(u => u.Email).ToList();
             SelectList doctorEmailsSelectList = new SelectList(doctorEmails);
 
+            var specializations = _context.Specializations.ToList();
+            ViewData["Name"] = new SelectList(specializations, "SpecializationId", "Name");
+
             ViewData["Emails"] = doctorEmailsSelectList;
-            ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
 
             return View();
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -845,8 +848,20 @@ namespace HOSPITAL2_LAB1.Controllers
         public async Task<IActionResult> Users()
         {
             var users = await _context.AspNetUsers.ToListAsync();
+
+            // Retrieve receptionist information
+            var receptionists = await _context.Receptionists.ToListAsync();
+
+            // Retrieve doctor information
+            var doctors = await _context.Doctors.ToListAsync();
+
+            // Store the receptionist and doctor information in ViewData
+            ViewData["Receptionists"] = receptionists;
+            ViewData["Doctors"] = doctors;
+
             return View(users);
         }
+
 
     }
 }

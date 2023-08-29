@@ -3,6 +3,7 @@
     ViewData["Title"] = "Users";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+
 <style>
     .table-blue {
         background-color: #eaf4fd;
@@ -13,16 +14,16 @@
         color: #fff;
     }
 </style>
+
 <h1>System Users</h1>
 <hr />
-
 
 <table class="table table-bordered table-striped table-hover table-blue">
     <thead class="thead-dark">
         <tr>
             <th>ID</th>
             <th>Email</th>
-            <th></th>
+            <th>Info</th>
         </tr>
     </thead>
     <tbody>
@@ -31,6 +32,38 @@
             <tr>
                 <td>@user.Id</td>
                 <td>@user.Email</td>
+                <td>
+                    @if (user.Email.EndsWith("@doctor.com"))
+                    {
+                        var doctor = ViewData["Doctors"] as List<HOSPITAL2_LAB1.Model.Doctor>;
+                        var doctorInfoProvided = doctor.Any(d => d.UserId == user.Id);
+                        if (doctorInfoProvided)
+                        {
+                            <p class="text-success" style="text-align:center;"><b>Information already provided for this doctor.</b></p>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("CreateDoctor", "Administrators", new { userId = user.Id })">Provide Information</a>
+                        }
+                    }
+                    else if (user.Email.EndsWith("@receptionist.com"))
+                    {
+                        var receptionist = ViewData["Receptionists"] as List<HOSPITAL2_LAB1.Model.Receptionist>;
+                        var receptionistInfoProvided = receptionist.Any(r => r.UserId == user.Id);
+                        if (receptionistInfoProvided)
+                        {
+                            <p class="text-success" style="text-align:center;"><b>Information already provided for this receptionist.</b></p>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("CreateReceptionist", "Administrators", new { userId = user.Id })">Provide Information</a>
+                        }
+                    }
+                    else if (user.Email.EndsWith("@patient.com") || user.Email.EndsWith("@admin.com"))
+                    {
+                        <p class="text-danger" style="text-align:center;"><b>You cannot provide information for this user.</b></p>
+                    }
+                </td>
             </tr>
         }
     </tbody>
