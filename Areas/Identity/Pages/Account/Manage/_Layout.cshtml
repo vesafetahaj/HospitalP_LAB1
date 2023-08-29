@@ -7,8 +7,10 @@
     {
         Layout = "/Areas/Identity/Pages/_Layout.cshtml";
     }
-}
+    Layout = "/Areas/Identity/Pages/_Layout.cshtml";
 
+}
+<body>
 <h1>Manage your account</h1>
 
 <div>
@@ -27,3 +29,7 @@
 @section Scripts {
     @RenderSection("Scripts", required: false)
 }
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
