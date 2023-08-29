@@ -841,6 +841,12 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             return (_context.Receptionists?.Any(e => e.ReceptionistId == id)).GetValueOrDefault();
         }
+        //Users
+        public async Task<IActionResult> Users()
+        {
+            var users = await _context.AspNetUsers.ToListAsync();
+            return View(users);
+        }
 
     }
 }

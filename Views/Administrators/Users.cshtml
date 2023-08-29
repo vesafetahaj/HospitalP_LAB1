@@ -1,0 +1,37 @@
+﻿@model List<HOSPITAL2_LAB1.Model.AspNetUser>
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+    .table-blue {
+        background-color: #eaf4fd;
+    }
+
+    .thead-dark {
+        background-color: #343a40;
+        color: #fff;
+    }
+</style>
+<h1>System Users</h1>
+<hr />
+
+
+<table class="table table-bordered table-striped table-hover table-blue">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
