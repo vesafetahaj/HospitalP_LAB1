@@ -31,12 +31,7 @@
     grid-template-columns: auto;
 }
 
-form {
-    padding: 2rem 4rem 3rem 2.4rem;
-    z-index: 10;
-    overflow: hidden;
-    background-color: lightblue;
-}
+
 
 
 .contact-form > h2 {

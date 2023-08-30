@@ -17,12 +17,13 @@
                 <div>
                     <style>
                     {`
+                          html {
+        overflow-x: hidden;
+    }
                     .container{
                         max-width:100vw;
                     }
-                        #react-container{
-                            width:100%;
-                        }
+                      
                         body {
                             background-color: white;
                         }
@@ -78,7 +79,7 @@
                         .body-card {
                             position: absolute;
                             margin-top: 2.1%;
-                            width:100%;
+                            width:100vw;
 
                         }
                         .container-home {
@@ -92,7 +93,7 @@
                             position: relative;
                             padding:0%;
 
-                            width: 25%;
+                            width: 25vw;
                             height: 26vw;
                             transition: 0.3s ease-out;
                         }
