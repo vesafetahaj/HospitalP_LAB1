@@ -42,7 +42,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <img src="~/images/sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png" alt="" id="logo">
+                <a asp-controller="Home" asp-action="Index"><img src="~/images/sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png" alt="" id="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -61,12 +61,37 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark @((ViewContext.RouteData.Values["Controller"] as string == "Contact" && ViewContext.RouteData.Values["Action"] as string == "Contact") ? "active" : "")" asp-area="" asp-controller="Contact" asp-action="Contact">Contact</a>
                         </li>
-                         @if (SignInManager.IsSignedIn(User))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark @((ViewContext.RouteData.Values["Controller"] as string == "Receptionists" && ViewContext.RouteData.Values["Action"] as string == "Receptionists") ? "active" : "")" asp-area="" asp-controller="Receptionists" asp-action="Index">Dashboard</a>
-                            </li>
-                        }
+                        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                            <ul class="navbar-nav flex-grow-1">
+                                <!-- ... (other navigation items) ... -->
+                                @if (SignInManager.IsSignedIn(User))
+                                {
+                                    var userEmail = User.Identity.Name; // Get the user's email
+                                    var userDomain = userEmail.Split('@')[1]; // Extract domain from email
+
+                                    <li class="nav-item">
+                                        @if (userDomain == "receptionist.com") // Change this to the desired domain
+                                        {
+                                            <a class="nav-link text-dark @(ViewContext.RouteData.Values["Controller"] as string == "Receptionists" && ViewContext.RouteData.Values["Action"] as string == "Receptionists" ? "active" : "")" asp-area="" asp-controller="Receptionists" asp-action="Index">Dashboard</a>
+                                        }else if (userDomain == "admin.com")
+                                        {
+                                            <a class="nav-link text-dark @(ViewContext.RouteData.Values["Controller"] as string == "Administrators" && ViewContext.RouteData.Values["Action"] as string == "Administrators" ? "active" : "")" asp-area="" asp-controller="Administrators" asp-action="Index">Dashboard</a>
+                                        }
+                                        else if (userDomain == "patient.com")
+                                        {
+                                            <a class="nav-link text-dark @(ViewContext.RouteData.Values["Controller"] as string == "Patients" && ViewContext.RouteData.Values["Action"] as string == "Patients" ? "active" : "")" asp-area="" asp-controller="Patients" asp-action="Index">Dashboard</a>
+                                        }
+                                        else if (userDomain == "doctor.com")
+                                        {
+                                            <a class="nav-link text-dark @(ViewContext.RouteData.Values["Controller"] as string == "Doctors" && ViewContext.RouteData.Values["Action"] as string == "Doctors" ? "active" : "")" asp-area="" asp-controller="Doctors" asp-action="Index">Dashboard</a>
+                                        }
+                                        else
+                                        {
+                                            <a class="nav-link text-dark" style="display: none;" href="<!-- link for non-example.com domains -->"></a>
+                                        }
+                                    </li>
+                                }
+                       
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
