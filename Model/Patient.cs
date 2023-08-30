@@ -23,9 +23,10 @@ namespace HOSPITAL2_LAB1.Model
         public string? Address { get; set; }
         public string? Phone { get; set; }
         public string? UserId { get; set; }
+        public int? Room { get; set; }
 
+        public virtual Room? RoomNavigation { get; set; }
         public virtual AspNetUser? User { get; set; }
-        public virtual Room? Room { get; set; }
         public virtual ICollection<Complaint> Complaints { get; set; }
         public virtual ICollection<ContactForm> ContactForms { get; set; }
         public virtual ICollection<PatientDoctor> PatientDoctors { get; set; }

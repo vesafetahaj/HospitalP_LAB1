@@ -5,9 +5,14 @@ namespace HOSPITAL2_LAB1.Model
 {
     public partial class Room
     {
-        public int RoomId { get; set; }
-        public int? Patient { get; set; }
+        public Room()
+        {
+            Patients = new HashSet<Patient>();
+        }
 
-        public virtual Patient? PatientNavigation { get; set; }
+        public int RoomId { get; set; }
+        public string? RoomNumber { get; set; }
+
+        public virtual ICollection<Patient> Patients { get; set; }
     }
 }
