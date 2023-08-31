@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\images\\Possible-3x1.mp4"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\about-patient.jpg",
+      "PackagePath": "staticwebassets\\images\\about-patient.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\about.jpg",
       "PackagePath": "staticwebassets\\images\\about.jpg"
     },

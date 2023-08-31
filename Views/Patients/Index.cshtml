@@ -152,10 +152,91 @@
 
           .heading h1{
               font-size: 50px;
-              color: #000;
+            color: #1ca9c9;
               margin-bottom: 25px;
               position:relative;
           }
+
+          .heading h1::after{
+              content:"";
+              position:absolute;
+              width:100%;
+              height:4px;
+              display:block;
+              margin:0 auto;
+                background-color: #1ca9c9;
+          }
+
+          .heading p{
+              font-size: 18px;
+              color: #666;
+              margin-bottom: 35px;
+
+          }
+
+    .coontainer{
+        width: 90%;
+        margin:0 auto;
+        padding: 10px 20px;
+
+    }
+
+    .about{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+
+    .about-image-patient{
+        flex:1;
+        margin-right: 40px;
+        overflow:hidden;
+    }
+
+    .about-image-patient img{
+        max-width: 100%;
+        height:auto;
+        display:block;
+        transition: 0.5s ease;
+    }
+
+    .about-image-patient:hover img{
+        transform:scale(1.2);
+    }
+
+    .about-coontent{
+        flex:1;
+    }
+
+    .about-coontent h2{
+        font-size: 23px;
+        margin-bottom: 15px;
+            color: #1877F2;
+    }
+
+    .about-coontent p{
+        font-size: 18px;
+        line-height: 1.5;
+        color:#666;
+    }
+
+    .about-coontent .read-more{
+        display:inline-block;
+        padding:10px 20px;
+            background-color: #318CE7;
+            color:#fff;
+        font-size: 19px;
+        text-decoration:none;
+        border-radius: 25px;
+        margin-top: 15px;
+        transition: 0.3s ease;
+    }
+
+    .about-coontent .read-more:hover{
+                background-color: #89CFF0;
+    }
+
 
         </style>
 
@@ -173,23 +254,21 @@
 
     </div>
 
-    
-
+   
 
     <div class="heading">
         <h1>About Us</h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text .</p>
+    <p>Your health and happiness are our greatest rewards, and we are here for you, ready to provide the highest level of care, today and always.</p>
     </div>
 
     <div class="coontainer">
         <section class="about">
             <div class="about-image-patient">
-                <img src="~/images/about.jpg" />
+                <img src="~/images/about-patient.jpg" />
 
             </div>
          <div class="about-coontent">
-             <h2>Warm embrace in a cup</h2>
+            <h2>"Your Journey to Better Health Begins Here."</h2>
              <p>
                 Our hospital stands as a beacon of hope and healing in our community. For years, we have been at the forefront of providing exceptional healthcare services to our patients, driven by a steadfast commitment to their well-being.
                 Within our walls, you will find a team of dedicated medical professionals who are not only experts in their respective fields but also deeply compassionate individuals.
@@ -215,7 +294,7 @@
     <img src="~/images/happypatient1.jpg">
 
 
-    <img src="~/images/anesthesia.jpg">
+    <img src="~/images/happypatient3.jpg">
 
 
     <img src="~/images/happypatients2.jpg">

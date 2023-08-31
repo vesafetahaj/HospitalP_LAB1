@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bQfvpNQxVgvwHMNhTh4r8d5OO/CiBEoZ4gWEvRgvYAY=",
+  "Hash": "FhC7Qxz+dVy22k8jrn4Bef4KSgO6P6YltkEqfJp+LZ8=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1205,6 +1205,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\about.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\about-patient.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/about-patient.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\about-patient.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\afrim-nimani.jpg",
