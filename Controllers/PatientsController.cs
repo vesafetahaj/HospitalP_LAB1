@@ -224,7 +224,7 @@ namespace HOSPITAL2_LAB1.Controllers
 
                     _context.Add(reservation);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Appointments));
 
                 }
                 else
@@ -235,6 +235,111 @@ namespace HOSPITAL2_LAB1.Controllers
             ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
             return View(reservation);
         }
+        public async Task<IActionResult> Appointments()
+        {
+            var appointments = await _context.Reservations.Include(r => r.DoctorNavigation).ToListAsync(); 
+            return View(appointments);
+        }
 
+
+        //edit
+
+        public async Task<IActionResult> EditAppointment(int? id)
+        {
+            if (id == null || _context.Reservations == null)
+            {
+                return NotFound();
+            }
+
+            var reservation = await _context.Reservations.FindAsync(id);
+            if (reservation == null)
+            {
+                return NotFound();
+            }
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
+
+            return View(reservation);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditAppointment(int id, [Bind("ReservationId,ReservationDate,ReservationTime,Doctor")] Reservation reservation)
+        {
+            if (id != reservation.ReservationId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(reservation);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!AppointmentExists(reservation.ReservationId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+
+            // Repopulate the dropdown list for doctors
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
+
+            return View(reservation);
+        }
+
+
+        private bool AppointmentExists(int id)
+        {
+            return (_context.Reservations?.Any(e => e.ReservationId == id)).GetValueOrDefault();
+        }
+        public async Task<IActionResult> DeleteAppointment(int? id)
+        {
+            if (id == null || _context.Reservations == null)
+            {
+                return NotFound();
+            }
+
+            var reservation = await _context.Reservations
+              
+                .FirstOrDefaultAsync(m => m.ReservationId == id);
+            if (reservation == null)
+            {
+                return NotFound();
+            }
+
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
+            return View(reservation);
+
+        }
+
+        [HttpPost, ActionName("DeleteAppointment")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmedAppointment(int id)
+        {
+            if (_context.Reservations == null)
+            {
+                return Problem("Entity set 'HOSPITAL2Context.Reservations'  is null.");
+            }
+            var reservation = await _context.Reservations.FindAsync(id);
+            if (reservation != null)
+            {
+                _context.Reservations.Remove(reservation);
+            }
+
+            await _context.SaveChangesAsync();
+
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
+
+            return RedirectToAction(nameof(Appointments));
+        }
     }
 }

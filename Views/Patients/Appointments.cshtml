@@ -1,0 +1,44 @@
+﻿
+@model List<HOSPITAL2_LAB1.Model.Reservation>
+@{
+    ViewData["Title"] = "Reservations";
+    Layout = "~/Views/Shared/_PatientLayout.cshtml";
+}
+<style>
+    .table-blue {
+        background-color: #eaf4fd;
+    }
+
+    .thead-dark {
+        background-color: #343a40;
+        color: #fff;
+    }
+</style>
+<h1>Appointments</h1>
+<hr />
+
+
+<table class="table table-bordered table-striped table-hover table-blue">
+    <thead class="thead-dark">
+        <tr>
+           
+            <th>ReservationDate</th>
+            <th>ReservationTime</th>
+            <th>Doctor</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reservation in Model)
+        {
+            <tr>
+                <td>@reservation.ReservationDate?.ToString("yyyy-MM-dd")</td>
+                <td>@reservation.ReservationTime</td>
+                <td>@reservation.DoctorNavigation.Name @reservation.DoctorNavigation.Surname</td>
+                <td>
+                    <a asp-action="EditAppointment">Edit</a> 
+                    <a asp-action="DeleteAppointment">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
