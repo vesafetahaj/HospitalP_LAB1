@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj": {
+    "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
         "projectName": "HOSPITAL2_LAB1",
-        "projectPath": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -90,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
