@@ -25,6 +25,7 @@
             <th>ReservationDate</th>
             <th>ReservationTime</th>
             <th>Doctor</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -35,8 +36,8 @@
                 <td>@reservation.ReservationTime</td>
                 <td>@reservation.DoctorNavigation.Name @reservation.DoctorNavigation.Surname</td>
                 <td>
-                    <a asp-action="EditAppointment">Edit</a> 
-                    <a asp-action="DeleteAppointment">Delete</a>
+                    <a asp-action="EditAppointment" asp-route-id="@reservation.ReservationId">Ndrysho</a> |
+                    <a asp-action="DeleteAppointment" asp-route-id="@reservation.ReservationId">Anulo</a>
                 </td>
             </tr>
         }
