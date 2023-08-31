@@ -113,6 +113,14 @@
       "PackagePath": "staticwebassets\\images\\dashboard-doctor.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\images\\dashboardpatient.jpg",
+      "PackagePath": "staticwebassets\\images\\dashboardpatient.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\images\\dashboardpatient2.jpg",
+      "PackagePath": "staticwebassets\\images\\dashboardpatient2.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\images\\dentistry.jpg",
       "PackagePath": "staticwebassets\\images\\dentistry.jpg"
     },
@@ -167,6 +175,10 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\images\\foto1.jpg",
       "PackagePath": "staticwebassets\\images\\foto1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\images\\foto11.jpg",
+      "PackagePath": "staticwebassets\\images\\foto11.jpg"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\images\\gallery.png",

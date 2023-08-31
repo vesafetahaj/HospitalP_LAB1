@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "q/PT+n+LGUGKR8z2ixXeeRj0kG0Ww0J0U76T5B3zAgU=",
+  "Hash": "q1XqJc4xkmtbfvhMWazTsEKpxZKjZA6hoDuPkwwJVsA=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1513,6 +1513,40 @@
       "OriginalItemSpec": "wwwroot\\images\\dashboard-doctor.jpg"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\images\\dashboardpatient.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/dashboardpatient.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\dashboardpatient.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\images\\dashboardpatient2.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/dashboardpatient2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\dashboardpatient2.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\images\\dentistry.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -1749,6 +1783,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\foto1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\images\\foto11.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/foto11.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\foto11.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\Lab1_Hospital\\Hospital_LAB1\\wwwroot\\images\\gallery.png",

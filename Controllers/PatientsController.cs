@@ -202,5 +202,39 @@ namespace HOSPITAL2_LAB1.Controllers
             return _context.Patients.Any(info => info.UserId == userId);
         }
 
+        public IActionResult CreateAppointment()
+        {
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateAppointment([Bind("ReservationID,ReservationDate,ReservationTime,Doctor")] Reservation reservation)
+        {
+            if (ModelState.IsValid)
+            {
+              
+                string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var patient = await _context.Patients.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+                if (patient != null)
+                {
+                    reservation.Patient = patient.PatientId;
+
+                    _context.Add(reservation);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+
+                }
+                else
+                {
+                    ModelState.AddModelError("", "You have to provide personal info first.");
+                }
+            }
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
+            return View(reservation);
+        }
+
     }
 }
