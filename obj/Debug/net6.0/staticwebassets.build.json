@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KGSfRjfOJIg8wh94G9I9r2TItKuui0FYYhiAsyaR1Ow=",
+  "Hash": "bQfvpNQxVgvwHMNhTh4r8d5OO/CiBEoZ4gWEvRgvYAY=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "HOSPITAL2_LAB1\\wwwroot",
       "Source": "HOSPITAL2_LAB1",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "Pattern": "**"
     }
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\HOSPITAL2_LAB1.styles.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\HOSPITAL2_LAB1.styles.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "HOSPITAL2_LAB1.styles.css",
       "AssetKind": "All",
@@ -1051,13 +1051,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\HOSPITAL2_LAB1.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\bundle\\HOSPITAL2_LAB1.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HOSPITAL2_LAB1.bundle.scp.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HOSPITAL2_LAB1.bundle.scp.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "HOSPITAL2_LAB1.bundle.scp.css",
       "AssetKind": "All",
@@ -1068,13 +1068,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HOSPITAL2_LAB1.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HOSPITAL2_LAB1.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\css\\AboutUs.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\css\\AboutUs.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "css/AboutUs.css",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\css\\AboutUs.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\css\\Contact.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\css\\Contact.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "css/Contact.css",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Contact.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\css\\Footer.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\css\\Footer.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "css/Footer.css",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Footer.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\css\\Sherbimet.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\css\\Sherbimet.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "css/Sherbimet.css",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Sherbimet.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\css\\site.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\favicon.ico",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\fonts\\Sequel100Black-85.ttf",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\fonts\\Sequel100Black-85.ttf",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "fonts/Sequel100Black-85.ttf",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Sequel100Black-85.ttf"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\about.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\about.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/about.jpg",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\about.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\afrim-nimani.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\afrim-nimani.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/afrim-nimani.jpg",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\images\\afrim-nimani.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\alergology.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\alergology.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/alergology.jpg",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\images\\alergology.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\anesthesia.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\anesthesia.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/anesthesia.jpg",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\images\\anesthesia.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\anesthesiology.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\anesthesiology.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/anesthesiology.jpg",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\images\\anesthesiology.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\appointment.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\appointment.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/appointment.png",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\images\\appointment.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\appointment1.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\appointment1.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/appointment1.png",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\images\\appointment1.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\appointments.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\appointments.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/appointments.jpg",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\images\\appointments.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\background.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\background.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/background.jpg",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\bad-review.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\bad-review.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/bad-review.png",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bad-review.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\bujar-vrella.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\bujar-vrella.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/bujar-vrella.jpg",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bujar-vrella.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\cardiocirurgy.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\cardiocirurgy.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/cardiocirurgy.jpg",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cardiocirurgy.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\cardiology.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\cardiology.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/cardiology.jpg",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cardiology.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\checkup.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\checkup.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/checkup.jpg",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\images\\checkup.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\checkuup.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\checkuup.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/checkuup.jpg",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\images\\checkuup.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\complain.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\complain.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/complain.png",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\images\\complain.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\contact-mail.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\contact-mail.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/contact-mail.png",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\images\\contact-mail.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\customer.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\customer.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/customer.png",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\images\\customer.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\dashboard-doctor.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\dashboard-doctor.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/dashboard-doctor.jpg",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dashboard-doctor.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\dashboardpatient.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\dashboardpatient.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/dashboardpatient.jpg",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dashboardpatient.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\dashboardpatient2.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\dashboardpatient2.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/dashboardpatient2.jpg",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dashboardpatient2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\dentistry.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\dentistry.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/dentistry.jpg",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dentistry.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\dentistryy.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\dentistryy.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/dentistryy.jpg",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dentistryy.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\dermatology.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\dermatology.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/dermatology.jpg",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dermatology.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\doctor.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\doctor.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/doctor.jpg",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\images\\doctor.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\doctor.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\doctor.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/doctor.png",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\images\\doctor.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\doctor-pic1.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\doctor-pic1.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/doctor-pic1.jpg",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\images\\doctor-pic1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\doctor-pic2.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\doctor-pic2.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/doctor-pic2.jpg",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\images\\doctor-pic2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\email.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\email.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/email.png",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\images\\email.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\endocrinology.jpeg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\endocrinology.jpeg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/endocrinology.jpeg",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\images\\endocrinology.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\endocrinology.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\endocrinology.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/endocrinology.jpg",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\images\\endocrinology.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\expertise.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\expertise.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/expertise.png",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\images\\expertise.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\facebook.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\facebook.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/facebook.png",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\images\\facebook.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\favicon.ico",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\favicon.ico",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/favicon.ico",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\images\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\foto1.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\foto1.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/foto1.jpg",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\images\\foto1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\foto11.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\foto11.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/foto11.jpg",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\images\\foto11.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\gallery.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\gallery.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/gallery.png",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\gallery1.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\gallery1.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/gallery1.jpg",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\gallery2.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\gallery2.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/gallery2.jpg",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\gallery3.jpeg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\gallery3.jpeg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/gallery3.jpeg",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery3.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\gallery3.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\gallery3.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/gallery3.jpg",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\gallery4.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\gallery4.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/gallery4.jpg",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\gallery5.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\gallery5.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/gallery5.jpg",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\gallery6.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\gallery6.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/gallery6.jpg",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gallery6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\gastroenterology.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\gastroenterology.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/gastroenterology.jpg",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gastroenterology.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\group.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\group.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/group.png",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\images\\group.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\gynecology.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\gynecology.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/gynecology.jpg",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gynecology.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\happyclients.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\happyclients.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/happyclients.png",
       "AssetKind": "All",
@@ -2006,10 +2006,78 @@
       "OriginalItemSpec": "wwwroot\\images\\happyclients.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\health-checkup.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\happypatient.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/happypatient.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\happypatient.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\happypatient1.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/happypatient1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\happypatient1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\happypatient3.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/happypatient3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\happypatient3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\happypatients2.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/happypatients2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\happypatients2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\health-checkup.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/health-checkup.png",
       "AssetKind": "All",
@@ -2023,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\images\\health-checkup.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\health-report.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\health-report.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/health-report.png",
       "AssetKind": "All",
@@ -2040,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\images\\health-report.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\heartrate.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\heartrate.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/heartrate.png",
       "AssetKind": "All",
@@ -2057,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\images\\heartrate.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\hematology.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\hematology.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/hematology.jpg",
       "AssetKind": "All",
@@ -2074,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hematology.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\home.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\home.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/home.png",
       "AssetKind": "All",
@@ -2091,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\images\\home.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\home1.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\home1.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/home1.png",
       "AssetKind": "All",
@@ -2108,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\images\\home1.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\hospital.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\hospital.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/hospital.png",
       "AssetKind": "All",
@@ -2125,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hospital.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\idea.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\idea.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/idea.png",
       "AssetKind": "All",
@@ -2142,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\images\\idea.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\information.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\information.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/information.png",
       "AssetKind": "All",
@@ -2159,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\images\\information.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\injection.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\injection.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/injection.png",
       "AssetKind": "All",
@@ -2176,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\images\\injection.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\instagram.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\instagram.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/instagram.png",
       "AssetKind": "All",
@@ -2193,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\invitro.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\invitro.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/invitro.jpg",
       "AssetKind": "All",
@@ -2210,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\images\\invitro.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\kirurgji.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\kirurgji.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/kirurgji.jpg",
       "AssetKind": "All",
@@ -2227,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\images\\kirurgji.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\kirurgjiplastike.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\kirurgjiplastike.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/kirurgjiplastike.jpg",
       "AssetKind": "All",
@@ -2244,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\images\\kirurgjiplastike.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\lab.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\lab.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/lab.jpg",
       "AssetKind": "All",
@@ -2261,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\images\\lab.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\laborator.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\laborator.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/laborator.jpg",
       "AssetKind": "All",
@@ -2278,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\images\\laborator.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\laboratoret.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\laboratoret.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/laboratoret.jpg",
       "AssetKind": "All",
@@ -2295,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\images\\laboratoret.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\login-forma-color.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\login-forma-color.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/login-forma-color.jpg",
       "AssetKind": "All",
@@ -2312,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\images\\login-forma-color.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\logo192.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\logo192.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/logo192.png",
       "AssetKind": "All",
@@ -2329,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo192.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\logo512.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\logo512.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/logo512.png",
       "AssetKind": "All",
@@ -2346,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo512.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\logo-black.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\logo-black.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/logo-black.png",
       "AssetKind": "All",
@@ -2363,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo-black.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\logo-black-on-transparent-background.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\logo-black-on-transparent-background.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/logo-black-on-transparent-background.png",
       "AssetKind": "All",
@@ -2380,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo-black-on-transparent-background.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\logo-color.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\logo-color.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/logo-color.png",
       "AssetKind": "All",
@@ -2397,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo-color.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\logo-no-background.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\logo-no-background.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/logo-no-background.png",
       "AssetKind": "All",
@@ -2414,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo-no-background.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\lungs.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\lungs.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/lungs.png",
       "AssetKind": "All",
@@ -2431,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\images\\lungs.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\manifest.json",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\manifest.json",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/manifest.json",
       "AssetKind": "All",
@@ -2448,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\images\\manifest.json"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\medical.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\medical.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/medical.png",
       "AssetKind": "All",
@@ -2465,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\images\\medical.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\medical-team.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\medical-team.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/medical-team.png",
       "AssetKind": "All",
@@ -2482,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\images\\medical-team.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\menublue.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\menublue.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/menublue.png",
       "AssetKind": "All",
@@ -2499,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\images\\menublue.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\mission.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\mission.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/mission.png",
       "AssetKind": "All",
@@ -2516,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mission.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\naim-loxha.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\naim-loxha.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/naim-loxha.jpg",
       "AssetKind": "All",
@@ -2533,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\images\\naim-loxha.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\nefrologji.jpeg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\nefrologji.jpeg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/nefrologji.jpeg",
       "AssetKind": "All",
@@ -2550,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\images\\nefrologji.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\neurok.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\neurok.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/neurok.jpg",
       "AssetKind": "All",
@@ -2567,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\images\\neurok.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\neurologji.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\neurologji.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/neurologji.jpg",
       "AssetKind": "All",
@@ -2584,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\images\\neurologji.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\oftamologu.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\oftamologu.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/oftamologu.jpg",
       "AssetKind": "All",
@@ -2601,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\images\\oftamologu.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\okulistik.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\okulistik.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/okulistik.jpg",
       "AssetKind": "All",
@@ -2618,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\images\\okulistik.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\oncology.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\oncology.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/oncology.jpg",
       "AssetKind": "All",
@@ -2635,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\images\\oncology.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\orl.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\orl.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/orl.jpg",
       "AssetKind": "All",
@@ -2652,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\images\\orl.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\patient.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\patient.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/patient.png",
       "AssetKind": "All",
@@ -2669,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\images\\patient.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\pediatri.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\pediatri.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/pediatri.jpg",
       "AssetKind": "All",
@@ -2686,10 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\images\\pediatri.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\phone.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\phone.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/phone.png",
       "AssetKind": "All",
@@ -2703,10 +2771,10 @@
       "OriginalItemSpec": "wwwroot\\images\\phone.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\phonee.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\phonee.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/phonee.png",
       "AssetKind": "All",
@@ -2720,10 +2788,10 @@
       "OriginalItemSpec": "wwwroot\\images\\phonee.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\plasticsurgery.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\plasticsurgery.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/plasticsurgery.jpg",
       "AssetKind": "All",
@@ -2737,10 +2805,10 @@
       "OriginalItemSpec": "wwwroot\\images\\plasticsurgery.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\pleumonogy.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\pleumonogy.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/pleumonogy.jpg",
       "AssetKind": "All",
@@ -2754,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\images\\pleumonogy.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\point.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\point.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/point.png",
       "AssetKind": "All",
@@ -2771,10 +2839,10 @@
       "OriginalItemSpec": "wwwroot\\images\\point.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\Possible-3x1.mp4",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\Possible-3x1.mp4",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/Possible-3x1.mp4",
       "AssetKind": "All",
@@ -2788,10 +2856,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Possible-3x1.mp4"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\proct.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\proct.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/proct.jpg",
       "AssetKind": "All",
@@ -2805,10 +2873,10 @@
       "OriginalItemSpec": "wwwroot\\images\\proct.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\profit.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\profit.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/profit.png",
       "AssetKind": "All",
@@ -2822,10 +2890,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profit.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\qendra.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\qendra.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/qendra.jpg",
       "AssetKind": "All",
@@ -2839,10 +2907,10 @@
       "OriginalItemSpec": "wwwroot\\images\\qendra.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\radiology.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\radiology.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/radiology.jpg",
       "AssetKind": "All",
@@ -2856,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\images\\radiology.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\receptionist.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\receptionist.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/receptionist.png",
       "AssetKind": "All",
@@ -2873,10 +2941,10 @@
       "OriginalItemSpec": "wwwroot\\images\\receptionist.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\regjistrimi.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\regjistrimi.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/regjistrimi.png",
       "AssetKind": "All",
@@ -2890,10 +2958,10 @@
       "OriginalItemSpec": "wwwroot\\images\\regjistrimi.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\renato-janusic.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\renato-janusic.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/renato-janusic.jpg",
       "AssetKind": "All",
@@ -2907,10 +2975,10 @@
       "OriginalItemSpec": "wwwroot\\images\\renato-janusic.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\report.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\report.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/report.png",
       "AssetKind": "All",
@@ -2924,10 +2992,10 @@
       "OriginalItemSpec": "wwwroot\\images\\report.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\reuma.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\reuma.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/reuma.jpg",
       "AssetKind": "All",
@@ -2941,10 +3009,10 @@
       "OriginalItemSpec": "wwwroot\\images\\reuma.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\rezonance.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\rezonance.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/rezonance.jpg",
       "AssetKind": "All",
@@ -2958,10 +3026,10 @@
       "OriginalItemSpec": "wwwroot\\images\\rezonance.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\roles.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\roles.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/roles.png",
       "AssetKind": "All",
@@ -2975,10 +3043,10 @@
       "OriginalItemSpec": "wwwroot\\images\\roles.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\sad-face.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\sad-face.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/sad-face.png",
       "AssetKind": "All",
@@ -2992,10 +3060,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sad-face.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\salla.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\salla.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/salla.jpg",
       "AssetKind": "All",
@@ -3009,10 +3077,10 @@
       "OriginalItemSpec": "wwwroot\\images\\salla.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\slide5.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\slide5.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/slide5.jpg",
       "AssetKind": "All",
@@ -3026,10 +3094,10 @@
       "OriginalItemSpec": "wwwroot\\images\\slide5.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\slideee.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\slideee.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/slideee.jpg",
       "AssetKind": "All",
@@ -3043,10 +3111,10 @@
       "OriginalItemSpec": "wwwroot\\images\\slideee.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\staf.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\staf.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/staf.jpg",
       "AssetKind": "All",
@@ -3060,10 +3128,10 @@
       "OriginalItemSpec": "wwwroot\\images\\staf.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\staf2.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\staf2.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/staf2.jpg",
       "AssetKind": "All",
@@ -3077,10 +3145,10 @@
       "OriginalItemSpec": "wwwroot\\images\\staf2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\staff1.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\staff1.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/staff1.jpg",
       "AssetKind": "All",
@@ -3094,10 +3162,10 @@
       "OriginalItemSpec": "wwwroot\\images\\staff1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\staff2.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\staff2.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/staff2.png",
       "AssetKind": "All",
@@ -3111,10 +3179,10 @@
       "OriginalItemSpec": "wwwroot\\images\\staff2.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\staff3.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\staff3.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/staff3.jpg",
       "AssetKind": "All",
@@ -3128,10 +3196,10 @@
       "OriginalItemSpec": "wwwroot\\images\\staff3.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\staff4.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\staff4.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/staff4.jpg",
       "AssetKind": "All",
@@ -3145,10 +3213,10 @@
       "OriginalItemSpec": "wwwroot\\images\\staff4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\staff5.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\staff5.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/staff5.png",
       "AssetKind": "All",
@@ -3162,10 +3230,10 @@
       "OriginalItemSpec": "wwwroot\\images\\staff5.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\staff6.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\staff6.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/staff6.jpg",
       "AssetKind": "All",
@@ -3179,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\images\\staff6.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\staff7.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\staff7.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/staff7.jpg",
       "AssetKind": "All",
@@ -3196,10 +3264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\staff7.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\staff8.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\staff8.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/staff8.jpg",
       "AssetKind": "All",
@@ -3213,10 +3281,10 @@
       "OriginalItemSpec": "wwwroot\\images\\staff8.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\statisticsimg.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\statisticsimg.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/statisticsimg.jpg",
       "AssetKind": "All",
@@ -3230,10 +3298,10 @@
       "OriginalItemSpec": "wwwroot\\images\\statisticsimg.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\stethoscope.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\stethoscope.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/stethoscope.png",
       "AssetKind": "All",
@@ -3247,10 +3315,10 @@
       "OriginalItemSpec": "wwwroot\\images\\stethoscope.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\stomatology.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\stomatology.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/stomatology.jpg",
       "AssetKind": "All",
@@ -3264,10 +3332,10 @@
       "OriginalItemSpec": "wwwroot\\images\\stomatology.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png",
       "AssetKind": "All",
@@ -3281,10 +3349,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-white-on-transparent-background.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-white-on-transparent-background.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/sunrisecare-hospital-low-resolution-logo-white-on-transparent-background.png",
       "AssetKind": "All",
@@ -3298,10 +3366,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-white-on-transparent-background.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\termin.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\termin.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/termin.png",
       "AssetKind": "All",
@@ -3315,10 +3383,10 @@
       "OriginalItemSpec": "wwwroot\\images\\termin.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\test1.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\test1.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/test1.jpg",
       "AssetKind": "All",
@@ -3332,10 +3400,10 @@
       "OriginalItemSpec": "wwwroot\\images\\test1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\twitter.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\twitter.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/twitter.png",
       "AssetKind": "All",
@@ -3349,10 +3417,10 @@
       "OriginalItemSpec": "wwwroot\\images\\twitter.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\urgjenca.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\urgjenca.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/urgjenca.jpg",
       "AssetKind": "All",
@@ -3366,10 +3434,10 @@
       "OriginalItemSpec": "wwwroot\\images\\urgjenca.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\urology.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\urology.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/urology.jpg",
       "AssetKind": "All",
@@ -3383,10 +3451,10 @@
       "OriginalItemSpec": "wwwroot\\images\\urology.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\user.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\user.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/user.png",
       "AssetKind": "All",
@@ -3400,10 +3468,10 @@
       "OriginalItemSpec": "wwwroot\\images\\user.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\value.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\value.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/value.png",
       "AssetKind": "All",
@@ -3417,10 +3485,10 @@
       "OriginalItemSpec": "wwwroot\\images\\value.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\videoHome.mp4",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\videoHome.mp4",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/videoHome.mp4",
       "AssetKind": "All",
@@ -3434,10 +3502,10 @@
       "OriginalItemSpec": "wwwroot\\images\\videoHome.mp4"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\vision.png",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\vision.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/vision.png",
       "AssetKind": "All",
@@ -3451,10 +3519,10 @@
       "OriginalItemSpec": "wwwroot\\images\\vision.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\white-arrow-down.gif",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\white-arrow-down.gif",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/white-arrow-down.gif",
       "AssetKind": "All",
@@ -3468,10 +3536,10 @@
       "OriginalItemSpec": "wwwroot\\images\\white-arrow-down.gif"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\images\\young-handsome-physician-medical-robe-with-stethoscope.jpg",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\images\\young-handsome-physician-medical-robe-with-stethoscope.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "images/young-handsome-physician-medical-robe-with-stethoscope.jpg",
       "AssetKind": "All",
@@ -3485,10 +3553,10 @@
       "OriginalItemSpec": "wwwroot\\images\\young-handsome-physician-medical-robe-with-stethoscope.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\js\\site.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -3502,10 +3570,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -3519,10 +3587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -3536,10 +3604,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -3553,10 +3621,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -3570,10 +3638,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -3587,10 +3655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -3604,10 +3672,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -3621,10 +3689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -3638,10 +3706,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -3655,10 +3723,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -3672,10 +3740,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -3689,10 +3757,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -3706,10 +3774,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -3723,10 +3791,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -3740,10 +3808,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -3757,10 +3825,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -3774,10 +3842,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -3791,10 +3859,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -3808,10 +3876,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -3825,10 +3893,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -3842,10 +3910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -3859,10 +3927,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -3876,10 +3944,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -3893,10 +3961,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -3910,10 +3978,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -3927,10 +3995,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -3944,10 +4012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -3961,10 +4029,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -3978,10 +4046,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -3995,10 +4063,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -4012,10 +4080,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -4029,10 +4097,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -4046,10 +4114,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -4063,10 +4131,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -4080,10 +4148,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -4097,10 +4165,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -4114,10 +4182,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -4131,10 +4199,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -4148,10 +4216,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -4165,10 +4233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -4182,10 +4250,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -4199,10 +4267,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -4216,10 +4284,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -4233,10 +4301,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -4250,10 +4318,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -4267,10 +4335,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -4284,10 +4352,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -4301,10 +4369,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -4318,10 +4386,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -4335,10 +4403,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -4352,10 +4420,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -4369,10 +4437,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -4386,10 +4454,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -4403,10 +4471,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -4420,10 +4488,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -4437,10 +4505,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -4454,10 +4522,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\LAB1\\Hospital_LAB1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\wwwroot\\",
       "BasePath": "_content/HOSPITAL2_LAB1",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

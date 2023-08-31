@@ -1,6 +1,7 @@
 ﻿@{
     Layout = "~/Views/Shared/_PatientLayout.cshtml";
 }
+
 <style>
    /* #main {
         margin: 0px;
@@ -137,8 +138,27 @@
             }
 
 
+            /*about us*/
+          .heading{
+              width:90%;
+              display:flex;
+              justify-content:center;
+              align-items:center;
+              flex-direction:column;
+              text-align:center;
+              margin:20px auto;
+
+          }
+
+          .heading h1{
+              font-size: 50px;
+              color: #000;
+              margin-bottom: 25px;
+              position:relative;
+          }
+
         </style>
-       
+
 
     <div class="homedashboard-section">
     <div class="imagee-patient">
@@ -153,9 +173,38 @@
 
     </div>
 
+    
+
+
+    <div class="heading">
+        <h1>About Us</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text .</p>
+    </div>
+
+    <div class="coontainer">
+        <section class="about">
+            <div class="about-image-patient">
+                <img src="~/images/about.jpg" />
+
+            </div>
+         <div class="about-coontent">
+             <h2>Warm embrace in a cup</h2>
+             <p>
+                Our hospital stands as a beacon of hope and healing in our community. For years, we have been at the forefront of providing exceptional healthcare services to our patients, driven by a steadfast commitment to their well-being.
+                Within our walls, you will find a team of dedicated medical professionals who are not only experts in their respective fields but also deeply compassionate individuals.
+             </p>
+             <a href="#" class="read-more">Our Services</a>
+
+
+         </div>
+
+        </section>
+    </div>
 
 <div class="Ourhospital">
     <h1><i>HAPPY PATIENTS AT OUR HOSPITAL </i></h1>
+    
 </div>
 
 <div class="gallery">
@@ -173,6 +222,8 @@
 
 
 </div>
+
+
 
 
 
