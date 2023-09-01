@@ -237,8 +237,174 @@
                 background-color: #89CFF0;
     }
 
+    /*special services*/
 
-        </style>
+    .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+        margin-top: 80px;
+        background: White;
+        margin-bottom: 5px;
+    }
+
+    .items {
+        text-align: center;
+        padding: 3rem 2rem;
+        background: #fff;
+        grid-template-rows: auto 1fr;
+        position: relative;
+        outline: .1rem solid brown;
+        outline-offset: -1.5rem;
+        cursor: pointer;
+    }
+
+        .items:hover {
+            outline: .2rem solid brown;
+            outline-offset: 0;
+        }
+
+        .items img {
+            width: 80%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: 0.2s ease;
+            position: relative;
+        }
+
+            .items img:hover {
+                transform: scale(1.1);
+            }
+
+        .items h4 {
+            padding: .5rem 0;
+            text-align: center;
+            font-size: 1.5rem;
+            color: brown;
+        }
+
+    .items {
+        font-size: 1.3rem;
+        color: #444;
+        margin-top:-30px;
+    }
+
+        .items button {
+            padding: 3px 18px;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: brown;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 18px;
+            margin: 0 auto;
+            transition: 0.2s all;
+        }
+
+            .items button a {
+                color: beige;
+            }
+
+            .items button:hover {
+                transform: scale(1.08);
+            }
+
+    .products-new {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 3px 18px;
+        border: none;
+        color: white;
+        background-color: white;
+        cursor: pointer;
+        font-size: 18px;
+        margin: 0 auto;
+        transition: 0.2s all;
+        margin-bottom: 5px;
+    }
+
+    .items-new {
+        text-align: center;
+        padding: 3rem 2rem;
+        background: white;
+        grid-template-rows: auto 1fr;
+        position: relative;
+        outline: .1rem solid brown;
+        outline-offset: -1.5rem;
+        cursor: pointer;
+        width: 250%;
+        margin-top: -115px;
+    }
+
+        .items-new:hover {
+            outline: .2rem solid brown;
+            outline-offset: 0;
+        }
+
+        .items-new img {
+            width: 90%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: 0.2s ease;
+            position: relative;
+        }
+
+            .items-new img:hover {
+                transform: scale(1.1);
+            }
+
+        .items-new h4 {
+            padding: .5rem 0;
+            text-align: center;
+            font-size: 1.5rem;
+            color: brown;
+        }
+
+        .items-new p {
+            font-size: 1.2rem;
+            color: rgb(109, 106, 106);
+            margin-bottom: 20px;
+        }
+
+        .items-new button {
+            padding: 3px 18px;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: brown;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 18px;
+            margin: 0 auto;
+            transition: 0.2s all;
+        }
+
+            .items-new button a {
+                color: beige;
+            }
+
+            .items-new button:hover {
+                transform: scale(1.08);
+            }
+ 
+            .Specialservices h1{
+        font-size: 47px;
+        font-family: 'Lucida Calligraphy';
+        letter-spacing: 3.5px;
+        text-align:center;
+        margin-top:100px;
+      
+        color: cornflowerblue;
+
+        
+            }
+
+     </style>
 
 
     <div class="homedashboard-section">
@@ -302,7 +468,30 @@
 
 </div>
 
+<div class="Specialservices">
+    <h1>Our Special Services</h1>
+<div class="products">
 
+    <div class="items">
+        <img src="~/images/ambulance.jpg">
+        <h4>Bread</h4>
+        <div class="price">0.40$</div> <br>
+        <button><a href="contact.php">Order now</a></button>
+    </div>
+    <div class="items">
+        <img src="~/images/ambulance.jpg">
+        <h4>Brownie</h4>
+        <div class="price">0.70$</div> <br>
+        <button><a href="contact.php">Order now</a></button>
+    </div>
+    <div class="items">
+        <img src="~/images/ambulance.jpg">
+        <h4>Macaroons</h4>
+        <div class="price">0.50$</div> <br>
+        <button><a href="contact.php">Order now</a></button>
+    </div>
+    </div>
+    </div>
 
 
 
