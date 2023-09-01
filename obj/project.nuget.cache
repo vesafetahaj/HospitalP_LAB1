@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HJVlCr3Un0jlGfmxXJ+JSz7RYucMtIhiV/cWyLJiACCpg35bZfxKeVCrKJTVMpWg4UNkoNB1WToqDzEdGc2ZfA==",
+  "dgSpecHash": "eny3KeAh3N7ybzn/KwdOKu9nkw+OxpWtfVsUcU87W58zgGGl/ZAP+48VSiZ7oIRY7KSM6XtiFCGCz1NqziqrEA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\TEST\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\TESTLAB\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
