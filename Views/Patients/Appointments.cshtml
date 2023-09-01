@@ -36,6 +36,7 @@
                 <td>@reservation.ReservationTime</td>
                 <td>@reservation.DoctorNavigation.Name @reservation.DoctorNavigation.Surname</td>
                 <td>
+                    <input type="checkbox" class="reservation-checkbox" data-id="@reservation.ReservationId" />
                     <a asp-action="EditAppointment" asp-route-id="@reservation.ReservationId">Ndrysho</a> |
                     <a asp-action="DeleteAppointment" asp-route-id="@reservation.ReservationId">Anulo</a>
                 </td>
@@ -43,3 +44,22 @@
         }
     </tbody>
 </table>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkboxes = document.querySelectorAll(".reservation-checkbox");
+
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener("change", function () {
+                var row = this.closest("tr");
+
+                if (this.checked) {
+                    // Handle marking as done (e.g., change the row's background color).
+                    row.style.backgroundColor = "#b0e57c"; // You can use any color you prefer.
+                } else {
+                    // Handle unmarking as done (e.g., remove the background color).
+                    row.style.backgroundColor = "";
+                }
+            });
+        });
+    });
+</script>
