@@ -386,5 +386,144 @@ namespace HOSPITAL2_LAB1.Controllers
             );
         }
 
+        //complaints
+        public async Task<IActionResult> Complaints()
+        {
+            var complaints = await _context.Complaints.ToListAsync();
+
+            return View(complaints);
+        }
+
+        public IActionResult CreateComplaint()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateComplaint([Bind("ComplaintId,ComplaintDate,ComplaintDetails")] Complaint complaint)
+        {
+            if (ModelState.IsValid)
+            {
+                /* if (_context.Complaints.Any(s => s.Name == complaint.Name))
+                 {
+                     ModelState.AddModelError("Name", "A complaint with the same name already exists.");
+                     return View(complaint);
+                 }*/
+
+                string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var patient = await _context.Patients.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+                if (patient != null)
+                {
+                    complaint.Patient = patient.PatientId;
+
+                    _context.Add(complaint);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Complaints));
+
+                }
+                else
+                {
+                    ModelState.AddModelError("", "You have to provide personal info first.");
+                }
+            }
+
+            return View(complaint);
+        }
+
+
+        public async Task<IActionResult> EditComplaint(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var complaint = await _context.Complaints.FindAsync(id);
+            if (complaint == null)
+            {
+                return NotFound();
+            }
+
+            return View(complaint);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditComplaint(int id, [Bind("ComplaintId,ComplaintDate,ComplaintDetails,Patient")] Complaint complaint)
+        {
+            if (id != complaint.ComplaintId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    // Retrieve the existing specialization from the DbContext
+                    var existingComplaint = await _context.Complaints.FindAsync(id);
+
+                    // Update the properties of the existing specialization with the values from the binding model
+                    existingComplaint.ComplaintDate = complaint.ComplaintDate;
+                    existingComplaint.ComplaintDetails = complaint.ComplaintDetails;
+
+
+                    // Save the changes to the DbContext
+                    _context.Update(existingComplaint);
+                    await _context.SaveChangesAsync();
+
+                    return RedirectToAction(nameof(Complaints));
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ComplaintExists(id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+            }
+
+            return View(complaint);
+        }
+        private bool ComplaintExists(int id)
+        {
+            return (_context.Complaints?.Any(e => e.ComplaintId == id)).GetValueOrDefault();
+        }
+
+        public async Task<IActionResult> DeleteComplaint(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var complaint = await _context.Complaints.FindAsync(id);
+            if (complaint == null)
+            {
+                return NotFound();
+            }
+
+            return View(complaint);
+        }
+
+        [HttpPost, ActionName("DeleteComplaint")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmedComplaint(int id)
+        {
+            var complaint = await _context.Complaints.FindAsync(id);
+            if (complaint != null)
+            {
+                _context.Complaints.Remove(complaint);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(Complaints));
+        }
     }
 }

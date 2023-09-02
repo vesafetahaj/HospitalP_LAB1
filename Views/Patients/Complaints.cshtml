@@ -1,0 +1,44 @@
+﻿@model List<HOSPITAL2_LAB1.Model.Complaint>
+@{
+    ViewData["Title"] = "Complaints";
+    Layout = "~/Views/Shared/_PatientLayout.cshtml";
+}
+<style>
+    .table-blue {
+        background-color: #eaf4fd;
+    }
+
+    .thead-dark {
+        background-color: #343a40;
+        color: #fff;
+    }
+</style>
+<h1>Appointments</h1>
+<hr />
+
+
+<table class="table table-bordered table-striped table-hover table-blue">
+    <thead class="thead-dark">
+        <tr>
+
+            <th>ComplaintDate</th>
+            <th>ComplaintDetails</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var complaint in Model)
+        {
+            <tr>
+                <td>@complaint.ComplaintDate?.ToString("yyyy-MM-dd")</td>
+                <td>@complaint.ComplaintDetails</td>
+
+                <td>
+                    <input type="checkbox" class="complaint-checkbox" data-id="@complaint.ComplaintId" />
+                    <a asp-action="EditComplaint" asp-route-id="@complaint.ComplaintId">Ndrysho</a> |
+                    <a asp-action="DeleteComplaint" asp-route-id="@complaint.ComplaintId">Anulo</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
