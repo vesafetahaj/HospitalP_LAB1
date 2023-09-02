@@ -246,6 +246,86 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
 
+        //edit
+
+
+        public async Task<IActionResult> EditReport(int? id)
+        {
+            if (id == null || _context.Reports == null)
+            {
+                return NotFound();
+            }
+
+            var report = await _context.Reports.FindAsync(id);
+            if (report == null)
+            {
+                return NotFound();
+            }
+            ViewBag.PatientList = new SelectList(_context.Patients, "PatientId", "FullName");
+
+            return View(report);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditReport(int id, [Bind("ReportID,ReportType,ReportDate,ReportDescription, Patient")] Report editedReport)
+        {
+            if (id != editedReport.ReportId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    if (IsDuplicateReports(editedReport))
+                    {
+                        ModelState.AddModelError("", "This report is not available!");
+                    }
+                    else
+                    {
+                        var existingReport = await _context.Reports.FindAsync(id);
+                        existingReport.ReportType = editedReport.ReportType;
+                        existingReport.ReportDate = editedReport.ReportDate;
+                        existingReport.ReportDescription = editedReport.ReportDescription;
+                        existingReport.Patient = editedReport.Patient;
+                        _context.Update(existingReport);
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index));
+                    }
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ReportExists(editedReport.ReportId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+            }
+
+            ViewBag.PatientList = new SelectList(_context.Patients, "PatientId", "FullName");
+            return View(editedReport);
+        }
+        //
+        private bool ReportExists(int id)
+        {
+            return (_context.Reports?.Any(e => e.ReportId == id)).GetValueOrDefault();
+        }
+
+        private bool IsDuplicateReports(Report editedReport)
+        {
+            return _context.Reports.Any(r =>
+               r.ReportId != editedReport.ReportId &&
+               r.ReportType == editedReport.ReportType &&
+               r.ReportDate == editedReport.ReportDate &&
+               r.ReportDescription == editedReport.ReportDescription &&
+               r.Patient == editedReport.Patient
+           );
+        }
 
     }
 
