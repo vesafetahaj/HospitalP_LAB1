@@ -47,7 +47,7 @@ namespace HOSPITAL2_LAB1.Controllers
 
             if (doctor == null)
             {
-                return View("WaitingForApproval"); 
+                return View("WaitingForApproval");
             }
 
             // Pass the doctor's information to the view
@@ -65,7 +65,7 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
         // POST: Doctors/Create
-       
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("DoctorId,Name,Surname,Email,Education,PhotoUrl,Specialization,UserId")] Doctor doctor)
@@ -170,15 +170,17 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 _context.Doctors.Remove(doctor);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool DoctorExists(int id)
         {
-          return (_context.Doctors?.Any(e => e.DoctorId == id)).GetValueOrDefault();
+            return (_context.Doctors?.Any(e => e.DoctorId == id)).GetValueOrDefault();
         }
+
+
         //crudi per raporte
 
         public IActionResult CreateRaport()
@@ -244,6 +246,7 @@ namespace HOSPITAL2_LAB1.Controllers
             // Handle case where the patient is not found
             return NotFound();
         }
+
 
 
         //edit
@@ -327,6 +330,52 @@ namespace HOSPITAL2_LAB1.Controllers
            );
         }
 
-    }
+        //delete
 
+        public async Task<IActionResult> DeleteReport(int? id)
+        {
+            if (id == null || _context.Reports == null)
+            {
+                return NotFound();
+            }
+
+            var report = await _context.Reports
+
+                .FirstOrDefaultAsync(m => m.ReportId == id);
+            if (report == null)
+            {
+                return NotFound();
+            }
+
+            ViewBag.PatientList = new SelectList(_context.Patients, "PatientId", "FullName");
+            return View(report);
+
+        }
+
+        [HttpPost, ActionName("DeleteReport")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmedReport(int id)
+        {
+            if (_context.Reports == null)
+            {
+                return Problem("Entity set 'HOSPITAL2Context.Reports'  is null.");
+            }
+            var report = await _context.Reports.FindAsync(id);
+            if (report != null)
+            {
+                _context.Reports.Remove(report);
+            }
+
+            await _context.SaveChangesAsync();
+
+            ViewBag.PatientList = new SelectList(_context.Patients, "PatientId", "FullName");
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
+    }
 }
+// mbarimi crudit
+
+
