@@ -7,30 +7,102 @@
 
 <style>
 
+ 
     .kontakti h1{
         margin-top:20px;
-        font-size: 36px; 
-        color: #red;
+        font-size: 30px; 
+        color: cornflowerblue;
         text-align: center; 
-        text-decoration: underline; 
+        text-decoration: none;
         margin-bottom: 20px;
+        
 
     }
 
+
+    .kontakti p{
+        font-size: 18px; /* Adjust the font size as needed */
+        color: #666; /* Text color */
+        text-align: center; /* Justify-align the text */
+        line-height: 1.5; /* Line spacing */
+        margin-bottom: 10px;
+        align-itemscenter;
+    }
+
+    .kontakti h6{
+        margin-top: 20px;
+        font-size: 30px;
+        color: cornflowerblue;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+ 
+    .form-group {
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+       align-content:center;
+    }
+
+    label.control-label {
+        font-weight: bold;
+    }
+
+    input.form-control {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    span.text-danger {
+        color: red;
+    }
+
+    /* Style the submit button */
+    input[type="submit"].btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    /* Style the "Back to List" link */
+    a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+        /* Apply a border to the "Back to List" link on hover */
+        a:hover {
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+
+  
 </style>
 
-<div class="kontakti"
 
-<h1>Welcome dear Patient</h1>
 
-<p>If you have any questions, concerns, or require assistance, our hospital is here for you. Our dedicated team of healthcare professionals is readily available to address your inquiries and provide the support you need.</p>
-<h4>Contact us today, and let us guide you on your path to better health and well-being.</h4>
+<div class="kontakti">
+
+<h1>WELCOME DEAR PATIENT!</h1>
+
+<p>If you have any questions, concerns, or require assistance, our hospital is here for you. <br />Our dedicated team of healthcare professionals is readily available to address your inquiries and provide the support you need.</p>
+<h6>Contact us today, and let us guide you on your path to better health and well-being.</h6>
 
 </div>
 
 <hr />
 <div class="row">
     <div class="col-md-4">
+      
         <form asp-action="CreateMessage">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -51,9 +123,11 @@
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
+        </div>
     </div>
-</div>
+
 
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+
