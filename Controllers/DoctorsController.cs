@@ -179,7 +179,9 @@ namespace HOSPITAL2_LAB1.Controllers
         {
           return (_context.Doctors?.Any(e => e.DoctorId == id)).GetValueOrDefault();
         }
-       
+
+
+    
     }
 
 }

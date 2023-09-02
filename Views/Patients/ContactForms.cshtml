@@ -1,0 +1,46 @@
+﻿@model List<HOSPITAL2_LAB1.Model.ContactForm>
+@{
+    ViewData["Title"] = "ContactForm";
+    Layout = "~/Views/Shared/_PatientLayout.cshtml";
+}
+<style>
+    .table-blue {
+        background-color: #eaf4fd;
+    }
+
+    .thead-dark {
+        background-color: #343a40;
+        color: #fff;
+    }
+</style>
+<h1>Messages</h1>
+<h2>Your control and convenience are our priority, providing you with a seamless messaging experience.</h2>
+<p>Dear Patient,if you need to edit, delete, or review messages you've sent ,you can easily manage your communication and ensure your messages are exactly as you intend them to be</p>
+<hr />
+
+
+<table class="table table-bordered table-striped table-hover table-blue">
+    <thead class="thead-dark">
+        <tr>
+
+            <th>Subject</th>
+            <th>Message</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var contact in Model)
+        {
+            <tr>
+                <td>@contact.Subject</td>
+                <td>@contact.Message</td>
+
+                <td>
+                    <input type="checkbox" class="contact-checkbox" data-id="@contact.ContactId" />
+                    <a asp-action="EditMessage" asp-route-id="@contact.ContactId">Edit</a> |
+                    <a asp-action="DeleteMessage" asp-route-id="@contact.ContactId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

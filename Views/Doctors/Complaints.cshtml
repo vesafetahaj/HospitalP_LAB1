@@ -1,0 +1,38 @@
+﻿@model List<HOSPITAL2_LAB1.Model.Complaint>
+
+@{
+    ViewData["Title"] = "Complaints";
+    Layout = "~/Views/Shared/_DoctorLayout.cshtml";
+}
+
+<style>
+    .custom-card {
+        border: 2px solid lightblue;
+        background-color: white;
+    }
+
+        .custom-card:hover {
+            background-color: #DCE9F9;
+        }
+</style>
+
+<div id="main">
+    <h1>Complaints</h1>
+    <hr />
+    <div class="row">
+        @foreach (var complaint in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Complaint ID: @complaint.ComplaintId</h5>
+                        <hr />
+                        <p class="card-text"><b>Date:</b> @complaint.ComplaintDate?.ToString("yyyy-MM-dd")</p>
+                        <p class="card-text"><b>Details:</b> @complaint.ComplaintDetails</p>
+                        <p class="card-text"><b>By:</b> @complaint.PatientNavigation.Name @complaint.PatientNavigation.Surname</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

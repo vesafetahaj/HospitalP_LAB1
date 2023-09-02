@@ -1,0 +1,54 @@
+﻿@model HOSPITAL2_LAB1.Model.ContactForm
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_PatientLayout.cshtml";
+}
+
+<style>
+
+    .kontakti h1{
+        text-align:center;
+
+    }
+
+</style>
+
+<div class="kontakti"
+
+<h1>Welcome dear Patient</h1>
+
+<p>If you have any questions, concerns, or require assistance, our hospital is here for you. Our dedicated team of healthcare professionals is readily available to address your inquiries and provide the support you need.</p>
+<h4>Contact us today, and let us guide you on your path to better health and well-being.</h4>
+
+</div>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateMessage">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label"></label>
+                <input asp-for="Subject" class="form-control" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Message" class="control-label"></label>
+                <input asp-for="Message" class="form-control" />
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+
+
+
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

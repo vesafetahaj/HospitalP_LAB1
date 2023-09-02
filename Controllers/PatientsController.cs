@@ -525,5 +525,145 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return RedirectToAction(nameof(Complaints));
         }
+
+        //contact forma
+        public async Task<IActionResult> ContactForms()
+        {
+            var contact = await _context.ContactForms.ToListAsync();
+
+            return View(contact);
+        }
+
+        public IActionResult CreateMessage()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateMessage([Bind("ContactId,Subject,Message")] ContactForm contact)
+        {
+            if (ModelState.IsValid)
+            {
+                /* if (_context.Complaints.Any(s => s.Name == complaint.Name))
+                 {
+                     ModelState.AddModelError("Name", "A complaint with the same name already exists.");
+                     return View(complaint);
+                 }*/
+
+                string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var patient = await _context.Patients.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+                if (patient != null)
+                {
+                    contact.Patient = patient.PatientId;
+
+                    _context.Add(contact);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(ContactForms));
+
+                }
+                else
+                {
+                    ModelState.AddModelError("", "You have to provide personal info first.");
+                }
+            }
+
+            return View(contact);
+        }
+
+
+        public async Task<IActionResult> EditMessage(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var contact = await _context.ContactForms.FindAsync(id);
+            if (contact == null)
+            {
+                return NotFound();
+            }
+
+            return View(contact);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditMessage(int id, [Bind("ContactId,Subject,Message,Patient")] ContactForm contact)
+        {
+            if (id != contact.ContactId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    // Retrieve the existing specialization from the DbContext
+                    var existingContact = await _context.ContactForms.FindAsync(id);
+
+                    // Update the properties of the existing specialization with the values from the binding model
+                    existingContact.Subject = contact.Subject;
+                    existingContact.Message = contact.Message;
+
+
+                    // Save the changes to the DbContext
+                    _context.Update(existingContact);
+                    await _context.SaveChangesAsync();
+
+                    return RedirectToAction(nameof(ContactForms));
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!MessageExists(id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+            }
+
+            return View(contact);
+        }
+        private bool MessageExists(int id)
+        {
+            return (_context.ContactForms?.Any(e => e.ContactId == id)).GetValueOrDefault();
+        }
+
+        public async Task<IActionResult> DeleteMessage(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var contact = await _context.ContactForms.FindAsync(id);
+            if (contact == null)
+            {
+                return NotFound();
+            }
+
+            return View(contact);
+        }
+
+        [HttpPost, ActionName("DeleteMessage")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmedContact(int id)
+        {
+            var contact = await _context.ContactForms.FindAsync(id);
+            if (contact != null)
+            {
+                _context.ContactForms.Remove(contact);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(ContactForms));
+        }
     }
 }
