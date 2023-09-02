@@ -1,0 +1,56 @@
+﻿@model HOSPITAL2_LAB1.Model.Report
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_DoctorLayout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Raport</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateRaport">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="ReportType" class="control-label"></label>
+                <input asp-for="ReportType" class="form-control" />
+                <span asp-validation-for="ReportType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReportDate" class="control-label"></label>
+                <input asp-for="ReportDate" class="form-control" type="date" />
+                <span asp-validation-for="ReportDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReportDescription" class="control-label"></label>
+                <input asp-for="ReportDescription" class="form-control" />
+                <span asp-validation-for="ReportDescription" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="Patient" class="control-label"></label>
+                <select asp-for="Patient" class="form-control" asp-items="@ViewBag.PatientList">
+                    <option value="" disabled selected>Select a patient</option>
+                </select>
+                <span asp-validation-for="Patient" class="text-danger"></span>
+            </div>
+
+
+
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Reports">Back to List</a>
+</div>
+
+

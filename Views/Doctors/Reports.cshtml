@@ -1,0 +1,65 @@
+﻿@model List<HOSPITAL2_LAB1.Model.Report>
+@{
+    ViewData["Title"] = "Reports";
+    Layout = "~/Views/Shared/_DoctorLayout.cshtml";
+}
+<style>
+    .table-blue {
+        background-color: #eaf4fd;
+    }
+
+    .thead-dark {
+        background-color: #343a40;
+        color: #fff;
+    }
+</style>
+<h1>Raports</h1>
+<hr />
+
+
+<table class="table table-bordered table-striped table-hover table-blue">
+    <thead class="thead-dark">
+        <tr>
+            <th>ReservationType</th>
+            <th>ReservationDate</th>
+            <th>ReservationDescription</th>
+            <th>Patient</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var report in Model)
+        {
+            <tr>
+                <td>@report.ReportType</td>
+                <td>@report.ReportDate?.ToString("yyyy-MM-dd")</td>
+                <td>@report.ReportDescription</td>
+                <td>@report.PatientNavigation.Name @report.PatientNavigation.Surname</td>
+                <td>
+                    <input type="checkbox" class="report-checkbox" data-id="@report.ReportId" />
+                    <a asp-action="EditReport" asp-route-id="@report.ReportId">Ndrysho</a> |
+                    <a asp-action="DeleteReport" asp-route-id="@report.ReportId">Anulo</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkboxes = document.querySelectorAll(".report-checkbox");
+
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener("change", function () {
+                var row = this.closest("tr");
+
+                if (this.checked) {
+                    // Handle marking as done (e.g., change the row's background color).
+                    row.style.backgroundColor = "#b0e57c"; // You can use any color you prefer.
+                } else {
+                    // Handle unmarking as done (e.g., remove the background color).
+                    row.style.backgroundColor = "";
+                }
+            });
+        });
+    });
+</script>

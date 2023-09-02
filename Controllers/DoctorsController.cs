@@ -179,9 +179,74 @@ namespace HOSPITAL2_LAB1.Controllers
         {
           return (_context.Doctors?.Any(e => e.DoctorId == id)).GetValueOrDefault();
         }
+        //crudi per raporte
+
+        public IActionResult CreateRaport()
+        {
+            ViewBag.PatientList = new SelectList(_context.Patients, "PatientId", "FullName");
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateRaport([Bind("ReportID,ReportType,ReportDate,ReportDescription, Patient")] Report report)
+        {
+            if (ModelState.IsValid)
+            {
+                string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var doctor = await _context.Doctors.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+                if (doctor != null)
+                {
+                    var existingRaport = await _context.Reports
+                        .FirstOrDefaultAsync(a => a.ReportType == report.ReportType &&
+                                                  a.ReportDate == report.ReportDate &&
+                                                  a.ReportDescription == report.ReportDescription &&
+                                                  a.Patient == report.Patient);
+
+                    if (existingRaport != null)
+                    {
+                        ModelState.AddModelError("", "The report is not available! ");
+                    }
+                    else
+                    {
+                        report.Doctor = doctor.DoctorId;
+                        _context.Add(report);
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index)); //
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "You have to provide personal info first.");
+                }
+            }
+
+            ViewBag.PatientList = new SelectList(_context.Patients, "PatientId", "FullName");
+            return View(report);
+        }
+
+        public async Task<IActionResult> Reports()
+        {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var doctor = await _context.Doctors.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+            if (doctor != null)
+            {
+                var report = await _context.Reports
+                    .Include(a => a.PatientNavigation)
+                    .Where(a => a.Doctor == doctor.DoctorId)
+                    .ToListAsync();
+
+                return View(report);
+            }
+
+            // Handle case where the patient is not found
+            return NotFound();
+        }
 
 
-    
+
     }
 
 }
