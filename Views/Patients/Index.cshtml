@@ -215,7 +215,7 @@
             color: #666;
         }
 
-        .about-coontent .read-more {
+       /**.about-coontent .read-more {
             display: inline-block;
             padding: 10px 20px;
             background-color: #318CE7;
@@ -229,7 +229,25 @@
 
             .about-coontent .read-more:hover {
                 background-color: #89CFF0;
-            }
+            }*/
+
+    .about-coontent button {
+        width: 148px;
+        height: 42px;
+        margin-top: 20px;
+        background: none;
+        border: 2px solid #1ca9c9;
+        font-size: 18px;
+        font-weight: 500;
+        box-shadow: 0px 0 5px 1px #b3aeae;
+    }
+
+        .about-coontent button:hover {
+            width: 155px;
+            background: #A4DDED;
+            color: #fff;
+            cursor: pointer;
+        }
 
     /*special services*/
 
@@ -329,7 +347,7 @@
     <div class="content1">
         <h1>Welcome to your dashboard dear Patient! </h1>
         <p>In our hospital, patient care is not just a duty; it's our unwavering commitment.<br /> We understand that during your time of illness or need, what matters most is the quality of care you receive. <br />That's why we prioritize your wellbeing above all else</p>
-        <button>Contact Us</button>
+        <button><a asp-area="" asp-controller="Patients" asp-action="CreateMessage">Contact Us</a></button>
     </div>
 
 </div>
@@ -353,7 +371,8 @@
                 Our hospital stands as a beacon of hope and healing in our community. For years, we have been at the forefront of providing exceptional healthcare services to our patients, driven by a steadfast commitment to their well-being.
                 Within our walls, you will find a team of dedicated medical professionals who are not only experts in their respective fields but also deeply compassionate individuals.
             </p>
-            <a href="#" class="read-more">Our Services</a>
+          
+            <button><a asp-area="" asp-controller="Sherbimet" asp-action="Sherbimet">Our Services</a></button>
 
 
         </div>
