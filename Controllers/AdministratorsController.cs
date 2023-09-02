@@ -312,11 +312,32 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditDoctor(int id, [Bind("DoctorId,Name,Surname,Education,Specialization,Email,PhotoUrl")] Doctor doctor)
         {
-            if (id != doctor.DoctorId)
+            if (string.IsNullOrWhiteSpace(doctor.Name))
             {
-                return NotFound();
+                ModelState.AddModelError("Name", "Name is required.");
+            }
+            if (string.IsNullOrWhiteSpace(doctor.Surname))
+            {
+                ModelState.AddModelError("Surname", "Surname is required.");
+            }
+            if (string.IsNullOrWhiteSpace(doctor.Education))
+            {
+                ModelState.AddModelError("Education", "Education is required.");
             }
 
+            if (string.IsNullOrWhiteSpace(doctor.Email))
+            {
+                ModelState.AddModelError("Email", "Email is required.");
+            }
+
+            if (doctor.Specialization == null)
+            {
+                ModelState.AddModelError("Specialization", "Specialization is required.");
+            }
+            if (string.IsNullOrWhiteSpace(doctor.PhotoUrl))
+            {
+                ModelState.AddModelError("PhotoUrl", "Photo URL is required.");
+            }
             if (ModelState.IsValid)
             {
                 try
@@ -423,6 +444,32 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateDoctor([Bind("DoctorId,Name,Surname,Education,Specialization,Email,PhotoUrl")] Doctor doctor)
         {
+            if (string.IsNullOrWhiteSpace(doctor.Name))
+            {
+                ModelState.AddModelError("Name", "Name is required.");
+            }
+            if (string.IsNullOrWhiteSpace(doctor.Surname))
+            {
+                ModelState.AddModelError("Surname", "Surname is required.");
+            }
+            if (string.IsNullOrWhiteSpace(doctor.Education))
+            {
+                ModelState.AddModelError("Education", "Education is required.");
+            }
+
+            if (string.IsNullOrWhiteSpace(doctor.Email))
+            {
+                ModelState.AddModelError("Email", "Email is required.");
+            }
+
+            if (doctor.Specialization == null)
+            {
+                ModelState.AddModelError("Specialization", "Specialization is required.");
+            }
+            if (string.IsNullOrWhiteSpace(doctor.PhotoUrl))
+            {
+                ModelState.AddModelError("PhotoUrl", "Photo URL is required.");
+            }
             if (ModelState.IsValid)
             {
                 // Check if a doctor with the same email already exists
@@ -496,6 +543,7 @@ namespace HOSPITAL2_LAB1.Controllers
 
         public IActionResult CreateService()
         {
+
             return View();
         }
 
@@ -503,6 +551,21 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateService([Bind("SpecializationId,Name,Description,PhotoUrl")] Specialization service)
         {
+            if (string.IsNullOrWhiteSpace(service.Name))
+            {
+                ModelState.AddModelError("Name", "Name is required.");
+            }
+
+            if (string.IsNullOrWhiteSpace(service.Description))
+            {
+                ModelState.AddModelError("Description", "Description is required.");
+            }
+
+            if (string.IsNullOrWhiteSpace(service.PhotoUrl))
+            {
+                ModelState.AddModelError("PhotoUrl", "Photo URL is required.");
+            }
+
             if (ModelState.IsValid)
             {
                 if (_context.Specializations.Any(s => s.Name == service.Name))
@@ -557,7 +620,20 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 return NotFound();
             }
+            if (string.IsNullOrWhiteSpace(service.Name))
+            {
+                ModelState.AddModelError("Name", "Name is required.");
+            }
 
+            if (string.IsNullOrWhiteSpace(service.Description))
+            {
+                ModelState.AddModelError("Description", "Description is required.");
+            }
+
+            if (string.IsNullOrWhiteSpace(service.PhotoUrl))
+            {
+                ModelState.AddModelError("PhotoUrl", "Photo URL is required.");
+            }
             if (ModelState.IsValid)
             {
                 try
@@ -714,6 +790,18 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (string.IsNullOrWhiteSpace(receptionist.Name))
+                {
+                    ModelState.AddModelError("Name", "Name is required.");
+                }
+                if (string.IsNullOrWhiteSpace(receptionist.Surname))
+                {
+                    ModelState.AddModelError("Surname", "Surname is required.");
+                }
+                if (string.IsNullOrWhiteSpace(receptionist.Email))
+                {
+                    ModelState.AddModelError("Email", "Email is required.");
+                }
                 if (_context.Receptionists.Any(r => r.Email == receptionist.Email))
                 {
                     ModelState.AddModelError("Email", "This receptionist already exists.");
@@ -772,6 +860,18 @@ namespace HOSPITAL2_LAB1.Controllers
             if (id != receptionist.ReceptionistId)
             {
                 return NotFound();
+            }
+            if (string.IsNullOrWhiteSpace(receptionist.Name))
+            {
+                ModelState.AddModelError("Name", "Name is required.");
+            }
+            if (string.IsNullOrWhiteSpace(receptionist.Surname))
+            {
+                ModelState.AddModelError("Surname", "Surname is required.");
+            }
+            if (string.IsNullOrWhiteSpace(receptionist.Email))
+            {
+                ModelState.AddModelError("Email", "Email is required.");
             }
 
             if (ModelState.IsValid)
