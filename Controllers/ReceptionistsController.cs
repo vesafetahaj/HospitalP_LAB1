@@ -298,212 +298,174 @@ namespace HOSPITAL2_LAB1.Controllers
             return RedirectToAction(nameof(Rooms));
         }
 
-    }
 
+            // Register patient 
 
-
-    // Register patient 
-    /* public async Task<IActionResult> Patients()
-     {
-         var doctors = await _context.Patients
-             .Include(a => a.User)
-             .Include(r => r.SpecializationNavigation)
-             .ToListAsync();
-
-         return View(patients);
-     }
-     public async Task<IActionResult> EditPatient(int? id)
-     {
-         if (id == null || _context.Patients == null)
-         {
-             return NotFound();
-         }
-
-         var doctor = await _context.Patients.FindAsync(id);
-         if (doctor == null)
-         {
-             return NotFound();
-         }
-         ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
-         ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
-         return View(doctor);
-     }
-     [HttpPost]
-     [ValidateAntiForgeryToken]
-     public async Task<IActionResult> EditDoctor(int id, [Bind("DoctorId,Name,Surname,Education,Specialization,Email,PhotoUrl")] Doctor doctor)
-     {
-         if (id != doctor.DoctorId)
-         {
-             return NotFound();
-         }
-
-         if (ModelState.IsValid)
-         {
-             try
+          public async Task<IActionResult> Patients()
              {
-                 // Get the selected email from the doctor object
-                 string selectedEmail = doctor.Email;
+                 var patient = await _context.Patients
+                     .Include(a => a.User)
+                     .Include(r => r.RoomNavigation)
+                     .ToListAsync();
 
-                 // Find the user with the selected email in the AspNetUsers table
-                 var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
-
-                 if (user != null)
-                 {
-                     // Set the UserId property of the doctor entity
-                     doctor.UserId = user.Id;
-
-                     _context.Update(doctor);
-                     await _context.SaveChangesAsync();
-                 }
-                 else
-                 {
-                     ModelState.AddModelError("", "Selected user not found.");
-                 }
+                 return View(patient);
              }
-             catch (DbUpdateConcurrencyException)
+             public async Task<IActionResult> EditPatient(int? id)
              {
-                 if (!DoctorExists(doctor.DoctorId))
+                 if (id == null || _context.Patients == null)
                  {
                      return NotFound();
                  }
-                 else
+
+                 var patient = await _context.Patients.FindAsync(id);
+                 if (patient == null)
                  {
-                     throw;
+                     return NotFound();
                  }
+                 ViewData["Name"] = new SelectList(_context.Specializations, "RoomId", "Name");
+                 ViewData["EmailAddress"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+                 return View(patient);
              }
-             return RedirectToAction(nameof(Doctors));
-         }
-
-         ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
-         ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
-         return View(doctor);
-     }
-
-
-     private bool DoctorExists(int id)
-     {
-         return (_context.Doctors?.Any(e => e.DoctorId == id)).GetValueOrDefault();
-     }
-     public async Task<IActionResult> DeleteDoctor(int? id)
-     {
-         if (id == null || _context.Doctors == null)
-         {
-             return NotFound();
-         }
-
-         var doctor = await _context.Doctors
-             .Include(a => a.User)
-             .FirstOrDefaultAsync(m => m.DoctorId == id);
-         if (doctor == null)
-         {
-             return NotFound();
-         }
-         ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
-         ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
-         return View(doctor);
-
-     }
-
-     [HttpPost, ActionName("DeleteDoctor")]
-     [ValidateAntiForgeryToken]
-     public async Task<IActionResult> DeleteConfirmedDoctor(int id)
-     {
-         if (_context.Doctors == null)
-         {
-             return Problem("Entity set 'HOSPITAL2Context.Doctors'  is null.");
-         }
-         var doctor = await _context.Doctors.FindAsync(id);
-         if (doctor != null)
-         {
-             _context.Doctors.Remove(doctor);
-         }
-
-         await _context.SaveChangesAsync();
-
-         ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
-         ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
-
-         return RedirectToAction(nameof(Doctors));
-     }
-     public IActionResult CreateDoctor()
-     {
-         var doctorEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@doctor.com")).Select(u => u.Email).ToList();
-         SelectList doctorEmailsSelectList = new SelectList(doctorEmails);
-
-         var specializations = _context.Specializations.ToList();
-         ViewData["Name"] = new SelectList(specializations, "SpecializationId", "Name");
-
-         ViewData["Emails"] = doctorEmailsSelectList;
-
-         return View();
-     }
-
-
-     [HttpPost]
-     [ValidateAntiForgeryToken]
-     public async Task<IActionResult> CreateDoctor([Bind("DoctorId,Name,Surname,Education,Specialization,Email,PhotoUrl")] Doctor doctor)
-     {
-         if (ModelState.IsValid)
-         {
-             // Check if a doctor with the same email already exists
-             if (_context.Doctors.Any(d => d.Email == doctor.Email))
+             [HttpPost]
+             [ValidateAntiForgeryToken]
+             public async Task<IActionResult> EditPatient(int id, [Bind("PatientId,Name,Surname,Gender,Birthday,Address,Phone")] Patient patient)
              {
-                 ModelState.AddModelError("Email", "This doctor already exists.");
+                 if (id != patient.PatientId)
+                 {
+                     return NotFound();
+                 }
+
+                 if (ModelState.IsValid)
+                 {
+                     try
+                     {
+                         // Get the selected email from the doctor object
+                         string selectedEmailAddress = patient.Address;
+
+                         // Find the user with the selected email in the AspNetUsers table
+                         var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmailAddress);
+
+                         if (user != null)
+                         {
+                             // Set the UserId property of the doctor entity
+                             patient.UserId = user.Id;
+
+                             _context.Update(patient);
+                             await _context.SaveChangesAsync();
+                         }
+                         else
+                         {
+                             ModelState.AddModelError("", "Selected user not found.");
+                         }
+                     }
+                     catch (DbUpdateConcurrencyException)
+                     {
+                         if (!PatientExists(patient.PatientId))
+                         {
+                             return NotFound();
+                         }
+                         else
+                         {
+                             throw;
+                         }
+                     }
+                     return RedirectToAction(nameof(Patients));
+                 }
+
+                 ViewData["Name"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
                  ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
-                 ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
-                 return View(doctor);
+                 return View(patient);
              }
 
-             // Get the selected email from the doctor object
-             string selectedEmail = doctor.Email;
 
-             // Find the user with the selected email in the AspNetUsers table
-             var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
-
-             if (user != null)
+             private bool PatientExists(int id)
              {
-                 // Set the UserId property of the doctor entity
-                 doctor.UserId = user.Id;
-
-                 // Add and save the doctor entity
-                 _context.Add(doctor);
-                 await _context.SaveChangesAsync();
-                 return RedirectToAction(nameof(Doctors));
-
+                 return (_context.Patients?.Any(e => e.PatientId == id)).GetValueOrDefault();
              }
-             else
+            
+             public IActionResult CreatePatient()
              {
-                 ModelState.AddModelError("", "Selected user not found.");
+                 var PatientEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@patient.com")).Select(u => u.Email).ToList();
+                 SelectList patientEmailsSelectList = new SelectList(PatientEmails);
+
+                 var room = _context.Rooms.ToList();
+                 ViewData["Name"] = new SelectList(room, "RoomId", "RoomNumber");
+
+                 ViewData["Emails"] = patientEmailsSelectList;
+
+                 return View();
              }
-         }
 
-         ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
-         ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
-         return View(doctor);
-     }
 
-     public async Task<IActionResult> SearchDoctors(string query)
-     {
-         if (string.IsNullOrEmpty(query))
-         {
-             // If the search string is empty or null, return all doctors
-             var allDoctors = await _context.Doctors.Include(a => a.User).ToListAsync();
-             return View("Doctors", allDoctors);
-         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreatePatient([Bind("PatientId,Name,Surname,Gender,Birthday,Address,Phone")] Patient patient) {
+             {
+                if (ModelState.IsValid)
+                {
+                    // Check if a patient with the same email already exists
+                    if (_context.Patients.Any(d => d.Address == patient.Address))
+                    {
+                        ModelState.AddModelError("Address", "This patient already exists.");
+                        ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+                        ViewData["Room"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+                        return View(patient);
+                    }
 
-         // Search for doctors whose name or specialization contains the search query
-         var doctors = await _context.Doctors
-             .Where(d => d.Name.Contains(query) || d.Surname.Contains(query))
-             .Include(a => a.User).Include(b => b.SpecializationNavigation)
-             .ToListAsync();
+                    // Get the selected email from the doctor object
+                    string selectedEmail = patient.Address;
 
-         // Populate the ViewBag.Name for the Specializations dropdown
-         ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
+                    // Find the user with the selected email in the AspNetUsers table
+                    var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
 
-         // Populate the ViewBag.Emails for the Emails dropdown
-         ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+                    if (user != null)
+                    {
+                        // Set the UserId property of the doctor entity
+                        patient.UserId = user.Id;
 
-         return View("Doctors", doctors);
-     }
-    */
-}
+                        // Add and save the doctor entity
+                        _context.Add(patient);
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Patients));
+
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Selected user not found.");
+                    }
+                }
+
+                ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+                ViewData["Room"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+                return View(patient);
+            }
+        }
+
+             public async Task<IActionResult> SearchPatients(string query)
+             {
+                 if (string.IsNullOrEmpty(query))
+                 {
+                     // If the search string is empty or null, return all doctors
+                     var allPatients = await _context.Patients.Include(a => a.User).ToListAsync();
+                     return View("Patients", allPatients);
+                 }
+
+                 // Search for doctors whose name or rooom contains the search query
+                 var patient = await _context.Patients
+                     .Where(d => d.Name.Contains(query) || d.Surname.Contains(query))
+                     .Include(a => a.User).Include(b => b.RoomNavigation)
+                     .ToListAsync();
+
+                 // Populate the ViewBag.Name for the Room dropdown
+                 ViewData["Room"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+
+                 // Populate the ViewBag.Emails for the Emails dropdown
+                 ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+
+                 return View("Patients", patient);
+             }
+            
+        }
+
+    }
+
