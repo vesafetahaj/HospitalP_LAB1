@@ -9,6 +9,7 @@ using HOSPITAL2_LAB1.Data;
 using Microsoft.AspNetCore.Authorization;
 using HOSPITAL2_LAB1.Model;
 using System.Security.Claims;
+using System.Globalization;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -464,8 +465,69 @@ namespace HOSPITAL2_LAB1.Controllers
 
                  return View("Patients", patient);
              }
-            
+        public async Task<IActionResult> Appointments(string filterDate, int? filterDoctor, int? filterPatient)
+        {
+            var appointmentsQuery = _context.Reservations
+                .Include(r => r.PatientNavigation)
+                .Include(r => r.DoctorNavigation)
+                .AsQueryable();
+
+            // Apply filters
+            if (!string.IsNullOrEmpty(filterDate))
+            {
+                DateTime selectedDate = DateTime.ParseExact(filterDate, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+                appointmentsQuery = appointmentsQuery.Where(a => a.ReservationDate.HasValue && a.ReservationDate.Value.Date == selectedDate.Date);
+            }
+
+            if (filterDoctor.HasValue)
+            {
+                appointmentsQuery = appointmentsQuery.Where(a => a.Doctor == filterDoctor.Value);
+            }
+
+            if (filterPatient.HasValue)
+            {
+                appointmentsQuery = appointmentsQuery.Where(a => a.Patient == filterPatient.Value);
+            }
+
+
+
+            var appointments = await appointmentsQuery.ToListAsync();
+            var appointmentsWithDate = appointments.Where(a => a.ReservationDate.HasValue).ToList();
+            var oldestAppointment = appointmentsWithDate.OrderBy(a => a.ReservationDate).FirstOrDefault();
+            var earliestAppointment = appointmentsWithDate.OrderByDescending(a => a.ReservationDate).FirstOrDefault();
+
+            ViewBag.OldestAppointment = oldestAppointment;
+            ViewBag.EarliestAppointment = earliestAppointment;
+
+
+            // Populate ViewBag.Doctors, ViewBag.Patients, and ViewBag.Specializations
+            var doctors = await _context.Doctors.ToListAsync();
+            var patients = await _context.Patients.ToListAsync();
+            var services = await _context.Specializations.ToListAsync();
+
+            ViewBag.Doctors = doctors;
+            ViewBag.Patients = patients;
+
+            return View(appointments);
         }
+        //Users
+        public async Task<IActionResult> Users()
+        {
+            var users = await _context.AspNetUsers.ToListAsync();
+
+            // Retrieve receptionist information
+            var receptionists = await _context.Receptionists.ToListAsync();
+
+            // Retrieve doctor information
+            var doctors = await _context.Doctors.ToListAsync();
+
+            // Store the receptionist and doctor information in ViewData
+            ViewData["Receptionists"] = receptionists;
+            ViewData["Doctors"] = doctors;
+
+            return View(users);
+        }
+    }
 
     }
 

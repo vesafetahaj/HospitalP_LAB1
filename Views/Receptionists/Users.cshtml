@@ -1,0 +1,44 @@
+﻿@model List<HOSPITAL2_LAB1.Model.AspNetUser>
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_ReceptionistLayout.cshtml";
+}
+
+<style>
+    .table-blue {
+        background-color: #eee;
+    }
+
+    .thead-dark {
+        background-color: lightblue;
+        color: #fff;
+    }
+</style>
+
+<h1>System Users</h1>
+<hr />
+
+<table class="table table-bordered table-striped table-hover table-blue">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Info</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Email</td>
+                <td>
+                    @if (user.Email.EndsWith("@patient.com") || user.Email.EndsWith("@admin.com") || user.Email.EndsWith("@doctor.com") || user.Email.EndsWith("@receptionist.com"))
+                    {
+                        <p class="text-danger" style="text-align:center;"><b>You cannot provide information for this user.</b></p>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
