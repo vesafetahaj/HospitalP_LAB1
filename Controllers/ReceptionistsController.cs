@@ -322,8 +322,8 @@ namespace HOSPITAL2_LAB1.Controllers
                  {
                      return NotFound();
                  }
-                 ViewData["Name"] = new SelectList(_context.Specializations, "RoomId", "Name");
-                 ViewData["EmailAddress"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+                 ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+                 ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
                  return View(patient);
              }
              [HttpPost]
@@ -347,7 +347,7 @@ namespace HOSPITAL2_LAB1.Controllers
 
                          if (user != null)
                          {
-                             // Set the UserId property of the doctor entity
+                             // Set the UserId property of the patient entity
                              patient.UserId = user.Id;
 
                              _context.Update(patient);
@@ -372,7 +372,7 @@ namespace HOSPITAL2_LAB1.Controllers
                      return RedirectToAction(nameof(Patients));
                  }
 
-                 ViewData["Name"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+                 ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
                  ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
                  return View(patient);
              }
@@ -389,7 +389,7 @@ namespace HOSPITAL2_LAB1.Controllers
                  SelectList patientEmailsSelectList = new SelectList(PatientEmails);
 
                  var room = _context.Rooms.ToList();
-                 ViewData["Name"] = new SelectList(room, "RoomId", "RoomNumber");
+                 ViewData["RoomNumber"] = new SelectList(room, "RoomId", "RoomNumber");
 
                  ViewData["Emails"] = patientEmailsSelectList;
 
@@ -408,7 +408,7 @@ namespace HOSPITAL2_LAB1.Controllers
                     {
                         ModelState.AddModelError("Address", "This patient already exists.");
                         ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
-                        ViewData["Room"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+                        ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
                         return View(patient);
                     }
 
@@ -420,10 +420,10 @@ namespace HOSPITAL2_LAB1.Controllers
 
                     if (user != null)
                     {
-                        // Set the UserId property of the doctor entity
+                        // Set the UserId property of the patient entity
                         patient.UserId = user.Id;
 
-                        // Add and save the doctor entity
+                        // Add and save the patient entity
                         _context.Add(patient);
                         await _context.SaveChangesAsync();
                         return RedirectToAction(nameof(Patients));
@@ -436,7 +436,7 @@ namespace HOSPITAL2_LAB1.Controllers
                 }
 
                 ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
-                ViewData["Room"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+                ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
                 return View(patient);
             }
         }
@@ -457,7 +457,7 @@ namespace HOSPITAL2_LAB1.Controllers
                      .ToListAsync();
 
                  // Populate the ViewBag.Name for the Room dropdown
-                 ViewData["Room"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+                 ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
 
                  // Populate the ViewBag.Emails for the Emails dropdown
                  ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
