@@ -400,8 +400,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcV2FpdGluZ0ZvckFwcHJvdmFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Admin/Desktop/hospitalnew4/Hospital_LAB1/Views/Receptionists/Appointments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xBcHBvaW50bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Desktop/hospitalnew4/Hospital_LAB1/Views/Receptionists/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/hospitalnew4/Hospital_LAB1/Views/Receptionists/CreateAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xDcmVhdGVBcHBvaW50bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Desktop/hospitalnew4/Hospital_LAB1/Views/Receptionists/CreatePatient.cshtml]
@@ -416,6 +424,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Admin/Desktop/hospitalnew4/Hospital_LAB1/Views/Receptionists/DeleteAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xEZWxldGVBcHBvaW50bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Desktop/hospitalnew4/Hospital_LAB1/Views/Receptionists/DeleteRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xEZWxldGVSb29tLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -426,6 +438,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/Desktop/hospitalnew4/Hospital_LAB1/Views/Receptionists/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/hospitalnew4/Hospital_LAB1/Views/Receptionists/EditAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xFZGl0QXBwb2ludG1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Desktop/hospitalnew4/Hospital_LAB1/Views/Receptionists/EditPatient.cshtml]

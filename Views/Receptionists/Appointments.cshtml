@@ -1,0 +1,71 @@
+﻿
+@model List<HOSPITAL2_LAB1.Model.Reservation>
+@{
+    ViewData["Title"] = "Reservations";
+    Layout = "~/Views/Shared/_ReceptionistLayout.cshtml";
+}
+<style>
+    html {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 100vw;
+    }
+    .table-blue {
+        background-color: #eaf4fd;
+    }
+
+    .thead-dark {
+        background-color: #343a40;
+        color: #fff;
+    }
+</style>
+<h1>Appointments</h1>
+<hr />
+
+<table class="table table-bordered table-striped table-hover table-blue">
+    <thead class="thead-dark">
+        <tr>
+           
+            <th>ReservationDate</th>
+            <th>ReservationTime</th>
+            <th>Doctor</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reservation in Model)
+        {
+            <tr>
+                <td>@reservation.ReservationDate?.ToString("yyyy-MM-dd")</td>
+                <td>@reservation.ReservationTime</td>
+                <td>@reservation.DoctorNavigation.Name @reservation.DoctorNavigation.Surname</td>
+                <td>
+                    <input type="checkbox" class="reservation-checkbox" data-id="@reservation.ReservationId" />
+                    <a asp-action="EditAppointment" asp-route-id="@reservation.ReservationId">Edit</a> |
+                    <a asp-action="DeleteAppointment" asp-route-id="@reservation.ReservationId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkboxes = document.querySelectorAll(".reservation-checkbox");
+
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener("change", function () {
+                var row = this.closest("tr");
+
+                if (this.checked) {
+                    // Handle marking as done (e.g., change the row's background color).
+                    row.style.backgroundColor = "#b0e57c"; // You can use any color you prefer.
+                } else {
+                    // Handle unmarking as done (e.g., remove the background color).
+                    row.style.backgroundColor = "";
+                }
+            });
+        });
+    });
+</script>
