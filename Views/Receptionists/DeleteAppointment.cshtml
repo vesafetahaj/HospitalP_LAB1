@@ -1,0 +1,49 @@
+﻿@model HOSPITAL2_LAB1.Model.Reservation
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_ReceptionistLayout.cshtml";
+}
+
+
+
+<h3>Are you sure you want to delete this appointment?</h3>
+<div>
+    <h4>Appointment</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ReservationDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ReservationDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ReservationTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ReservationTime)
+        </dd>
+       
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Doctor)
+        </dt>
+        <dd class="col-sm-10">
+            @foreach (var doctor in @ViewBag.DoctorList)
+            {
+                if (doctor.Value == @Model.Doctor.ToString())
+                {
+                    @doctor.Text
+                    break;
+                }
+            }
+        </dd>
+     
+    </dl>
+
+    <form asp-action="DeleteAppointment">
+        <input type="hidden" asp-for="ReservationId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Appointments">Back to List</a>
+    </form>
+</div>

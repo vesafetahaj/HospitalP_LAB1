@@ -465,52 +465,11 @@ namespace HOSPITAL2_LAB1.Controllers
 
                  return View("Patients", patient);
              }
-        public async Task<IActionResult> Appointments(string filterDate, int? filterDoctor, int? filterPatient)
-        {
-            var appointmentsQuery = _context.Reservations
-                .Include(r => r.PatientNavigation)
-                .Include(r => r.DoctorNavigation)
-                .AsQueryable();
 
-            // Apply filters
-            if (!string.IsNullOrEmpty(filterDate))
-            {
-                DateTime selectedDate = DateTime.ParseExact(filterDate, "yyyy-MM-dd", CultureInfo.InvariantCulture);
-                appointmentsQuery = appointmentsQuery.Where(a => a.ReservationDate.HasValue && a.ReservationDate.Value.Date == selectedDate.Date);
-            }
-
-            if (filterDoctor.HasValue)
-            {
-                appointmentsQuery = appointmentsQuery.Where(a => a.Doctor == filterDoctor.Value);
-            }
-
-            if (filterPatient.HasValue)
-            {
-                appointmentsQuery = appointmentsQuery.Where(a => a.Patient == filterPatient.Value);
-            }
+        
 
 
-
-            var appointments = await appointmentsQuery.ToListAsync();
-            var appointmentsWithDate = appointments.Where(a => a.ReservationDate.HasValue).ToList();
-            var oldestAppointment = appointmentsWithDate.OrderBy(a => a.ReservationDate).FirstOrDefault();
-            var earliestAppointment = appointmentsWithDate.OrderByDescending(a => a.ReservationDate).FirstOrDefault();
-
-            ViewBag.OldestAppointment = oldestAppointment;
-            ViewBag.EarliestAppointment = earliestAppointment;
-
-
-            // Populate ViewBag.Doctors, ViewBag.Patients, and ViewBag.Specializations
-            var doctors = await _context.Doctors.ToListAsync();
-            var patients = await _context.Patients.ToListAsync();
-            var services = await _context.Specializations.ToListAsync();
-
-            ViewBag.Doctors = doctors;
-            ViewBag.Patients = patients;
-
-            return View(appointments);
-        }
-        //Users
+        //Showing users
         public async Task<IActionResult> Users()
         {
             var users = await _context.AspNetUsers.ToListAsync();
@@ -527,7 +486,185 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return View(users);
         }
-    }
+
+        // Creating an appointment
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateAppointment([Bind("ReservationID,ReservationDate,ReservationTime,Doctor")] Reservation reservation)
+        {
+            if (ModelState.IsValid)
+            {
+                string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var patient = await _context.Patients.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+                if (patient != null)
+                {
+                    var existingAppointment = await _context.Reservations
+                        .FirstOrDefaultAsync(a => a.ReservationDate == reservation.ReservationDate &&
+                                                  a.ReservationTime == reservation.ReservationTime &&
+                                                  a.Doctor == reservation.Doctor);
+
+                    if (existingAppointment != null)
+                    {
+                        ModelState.AddModelError("", "The appointment is not available.Please choose another one!");
+                    }
+                    else
+                    {
+                        reservation.Patient = patient.PatientId;
+                        _context.Add(reservation);
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Appointments));
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "You have to provide personal info first.");
+                }
+            }
+
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
+            return View(reservation);
+        }
+
+        public async Task<IActionResult> Appointments()
+        {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var patient = await _context.Patients.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+            if (patient != null)
+            {
+                var appointments = await _context.Reservations
+                    .Include(a => a.DoctorNavigation)
+                    .Where(a => a.Patient == patient.PatientId)
+                    .ToListAsync();
+
+                return View(appointments);
+            }
+
+            // Handle case where the patient is not found
+            return NotFound();
+        }
+
+
+
+        //Edit
+        public async Task<IActionResult> EditAppointment(int? id)
+        {
+            if (id == null || _context.Reservations == null)
+            {
+                return NotFound();
+            }
+
+            var reservation = await _context.Reservations.FindAsync(id);
+            if (reservation == null)
+            {
+                return NotFound();
+            }
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
+
+            return View(reservation);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditAppointment(int id, [Bind("ReservationId,ReservationDate,ReservationTime,Doctor")] Reservation editedReservation)
+        {
+            if (id != editedReservation.ReservationId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    if (IsDuplicateAppointment(editedReservation))
+                    {
+                        ModelState.AddModelError("", "This appointment is not available.Please choose another one!");
+                    }
+                    else
+                    {
+                        var existingReservation = await _context.Reservations.FindAsync(id);
+                        existingReservation.ReservationDate = editedReservation.ReservationDate;
+                        existingReservation.ReservationTime = editedReservation.ReservationTime;
+                        existingReservation.Doctor = editedReservation.Doctor;
+                        _context.Update(existingReservation);
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Appointments));
+                    }
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!AppointmentExists(editedReservation.ReservationId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+            }
+
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
+            return View(editedReservation);
+        }
+
+
+        private bool AppointmentExists(int id)
+        {
+            return (_context.Reservations?.Any(e => e.ReservationId == id)).GetValueOrDefault();
+        }
+        public async Task<IActionResult> DeleteAppointment(int? id)
+        {
+            if (id == null || _context.Reservations == null)
+            {
+                return NotFound();
+            }
+
+            var reservation = await _context.Reservations
+
+                .FirstOrDefaultAsync(m => m.ReservationId == id);
+            if (reservation == null)
+            {
+                return NotFound();
+            }
+
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
+            return View(reservation);
+
+        }
+
+        [HttpPost, ActionName("DeleteAppointment")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmedAppointment(int id)
+        {
+            if (_context.Reservations == null)
+            {
+                return Problem("Entity set 'HOSPITAL2Context.Reservations'  is null.");
+            }
+            var reservation = await _context.Reservations.FindAsync(id);
+            if (reservation != null)
+            {
+                _context.Reservations.Remove(reservation);
+            }
+
+            await _context.SaveChangesAsync();
+
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
+
+            return RedirectToAction(nameof(Appointments));
+        }
+        private bool IsDuplicateAppointment(Reservation editedReservation)
+        {
+            return _context.Reservations.Any(r =>
+                r.ReservationId != editedReservation.ReservationId &&
+                r.ReservationDate == editedReservation.ReservationDate &&
+                r.ReservationTime == editedReservation.ReservationTime &&
+                r.Doctor == editedReservation.Doctor
+            );
+        }
 
     }
+
+}
 
