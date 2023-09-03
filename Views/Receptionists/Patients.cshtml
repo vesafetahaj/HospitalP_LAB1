@@ -5,6 +5,13 @@
     Layout = "~/Views/Shared/_ReceptionistLayout.cshtml";
 }
 <style>
+    html {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 100vw;
+    }
     .card {
         display: flex;
         flex-direction: column;
@@ -18,14 +25,18 @@
 
         .card-image img {
             width: 100%;
-            height: 100%;
+            height: 100%;   
             object-fit: cover;
         }
+
+    #search-button{
+        margin-right: 10%;
+    }
 </style>
 
 <div id="main">
     <h1>Patients</h1>
-    <div style="display:flex; justify-content:end; margin-top: -40px">
+    <div style="display:flex; justify-content:end; margin-top: -40px; margin-right:10%">
         <a href="@Url.Action("CreatePatient", "Receptionists")" class="btn btn-outline-primary">Register a Patient</a>
     </div>
     <div class="row mt-4">

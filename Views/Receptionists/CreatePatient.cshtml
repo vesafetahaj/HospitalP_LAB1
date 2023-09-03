@@ -4,10 +4,17 @@
     ViewData["Title"] = "Create";
     Layout = "~/Views/Shared/_ReceptionistLayout.cshtml";
 }
+<style>
+    html {
+        overflow-x: hidden;
+    }
 
-<h1>Create</h1>
+    .container {
+        max-width: 100vw;
+    }
+</style>
 
-<h4>Patient</h4>
+<h1>Register a patient</h1>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -34,11 +41,13 @@
                 <br />
              
             </div>
+            <br />
             <div class="form-group">
                 <label asp-for="Birthday" class="control-label"></label>
                 <input asp-for="Birthday" class="form-control" />
                 <span asp-validation-for="Birthday" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Phone" class="control-label"></label>
                 <input asp-for="Phone" class="form-control" />
@@ -51,7 +60,7 @@
                 </select>
                 <span asp-validation-for="Room" class="text-danger"></span>
             </div>
-
+            <br />
             <div class="form-group">
                 <label asp-for="Address" class="control-label"></label>
                 @Html.DropDownList("Email", ViewData["Emails"] as SelectList, "Select an email", new { @class = "form-control" })

@@ -4,52 +4,237 @@
     ViewData["Title"] = "Rooms";
     Layout = "~/Views/Shared/_ReceptionistLayout.cshtml";
 }
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+
 <style>
-    .card {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-    .card-image {
-        flex: 1 0 auto;
-        overflow: hidden;
-    }
 
-        .card-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.home-section{
+    position: relative;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    transition: all 0.5s ease;
+  }
+  
+
+
+
+
+.home-section .home-content{
+  position: relative;
+  padding-top: 104px;
+}
+.home-content .overview-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-bottom: 26px;
+  }
+.overview-boxes .box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 4 - 15px);
+  background: #fff;
+  padding: 15px 14px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.overview-boxes .box-topic{
+  font-size: 20px;
+  font-weight: 500;
+}
+.home-content .box .number{
+  display: inline-block;
+  font-size: 35px;
+  margin-top: -6px;
+  font-weight: 500;
+}
+
+.home-content .box .indicator i{
+  height: 20px;
+  width: 20px;
+  background: #8FDACB;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.box .indicator i.down{
+  background: #e87d88;
+}
+.home-content .box .indicator .text{
+  font-size: 12px;
+}
+.home-content .box .cart{
+  display: inline-block;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  background: #cce5ff;
+  line-height: 50px;
+  text-align: center;
+  color: #66b0ff;
+  border-radius: 12px;
+  margin: -15px 0 0 6px;
+}
+.home-content .box .cart.two{
+   color: #2BD47D;
+   background: #C0F2D8;
+ }
+.home-content .box .cart.three{
+   color: #ffc233;
+   background: #ffe8b3;
+ }
+.home-content .box .cart.four{
+   color: #e05260;
+   background: #f7d4d7;
+ }
+
+ .home-content .sales-boxes{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 20px; */
+  }
+
+/* left box */
+.home-content .sales-boxes .recent-sales{
+    width: 100%;
+    background: #fff;
+            padding: 20px 10px;
+            margin: 0 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .home-content .sales-boxes .sales-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sales-boxes .box .title{
+    font-size: 24px;
+    font-weight: 500;
+    /* margin-bottom: 10px; */
+  }
+  .sales-boxes .sales-details tr.topic{
+    font-size: 20px;
+    font-weight: 500;
+
+  }
+  
+  .sales-boxes .sales-details td{
+    font-size: 18px;
+    color: #333;
+    font-size: 400;
+    text-decoration: none;
+  }
+
 </style>
 
-<div id="main">
-    <h1>Rooms</h1>
-    <div style="display:flex; justify-content:end; margin-top: -40px">
-        <a href="@Url.Action("CreateRoom", "Receptionists")" class="btn btn-outline-primary">Create a new room</a>
-    </div>
-   
-    <div class="row mt-4">
-        @if (Model.Count > 0)
-        {
-            @foreach (var room in Model)
-            {
-                <div class="col-md-3 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">@room.RoomNumber</h5>
-                            <div class="text-center">
-                                <a href="@Url.Action("EditRoom", "Receptionists", new { id = room.RoomId })" class="btn btn-primary">Edit</a>
-                                <a href="@Url.Action("DeleteRoom", "Receptionists", new { id = room.RoomId })" class="btn btn-danger">Delete</a>
-                            </div>
-                        </div>
-                    </div>
+<section class="home-section">
+<div class="home-content">
+    <div class="overview-boxes">
+        <div class="box">
+            <div class="right-side">
+                <div class="box-topic">Available Rooms</div>
+                <div class="number">120</div>
+                <div class="indicator">
+                    <i class='bx bx-up-arrow-alt'></i>
+                    <span class="text">Up from yesterday</span>
                 </div>
-            }
-        }
-        else
-        {
-            <p>No rooms found!</p>
-        }
+            </div>
+            <i class='bx bx-cart-alt cart'></i>
+        </div>
+        <div class="box">
+            <div class="right-side">
+                <div class="box-topic">Reservations</div>
+                <div class="number">38</div>
+                <div class="indicator">
+                    <i class='bx bx-up-arrow-alt'></i>
+                    <span class="text">Up from yesterday</span>
+                </div>
+            </div>
+            <i class='bx bxs-cart-add cart two'></i>
+        </div>
+        <div class="box">
+            <div class="right-side">
+                <div class="box-topic">Patients</div>
+                <div class="number">129</div>
+                <div class="indicator">
+                    <i class='bx bx-up-arrow-alt'></i>
+                    <span class="text">Up from yesterday</span>
+                </div>
+            </div>
+            <i class='bx bx-cart cart three'></i>
+        </div>
+        <div class="box">
+            <div class="right-side">
+                <div class="box-topic">Cancelations </div>
+                <div class="number">11</div>
+                <div class="indicator">
+                    <i class='bx bx-down-arrow-alt down'></i>
+                    <span class="text">Down From Today</span>
+                </div>
+            </div>
+            <i class='bx bxs-cart-download cart four'></i>
+        </div>
     </div>
-</div>
+
+    <div class="sales-boxes">
+        <div class="recent-sales box">
+            <div class="title">Rooms</div>
+            <br />
+            <div class="sales-details">
+                    <div id="main">
+                        <div style="display:flex; justify-content:end; margin-top: -40px; margin-right:-320%   ">
+                            <a href="@Url.Action("CreateRoom", "Receptionists")" class="btn btn-outline-primary">Create a new room</a>
+                        </div>
+                        <br />
+                     
+                        @if (Model.Count > 0)
+                        {
+                            <table class="table table-hover">
+                                <thead >
+                                    <tr>
+                                        <th>Room Number</th> 
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var room in Model)
+                                    {
+                                        <tr>
+                                            <td>@room.RoomNumber</td>
+                                            <td>
+                                                <a href="@Url.Action("EditRoom", "Receptionists", new { id = room.RoomId })" class="btn btn-primary btn-sm">Edit</a>
+                                                <a href="@Url.Action("DeleteRoom", "Receptionists", new { id = room.RoomId })" class="btn btn-danger btn-sm">Delete</a>
+
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        }
+                        else
+                        {
+                            <p>No rooms reserved .</p>
+                        }
+                    </div>
+            </div>
+
+        </div>
+        </section>
+
+
+
