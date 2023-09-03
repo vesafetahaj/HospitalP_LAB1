@@ -741,7 +741,6 @@ namespace HOSPITAL2_LAB1.Controllers
             // Populate ViewBag.Doctors, ViewBag.Patients, and ViewBag.Specializations
             var doctors = await _context.Doctors.ToListAsync();
             var patients = await _context.Patients.ToListAsync();
-            var services = await _context.Specializations.ToListAsync();
 
             ViewBag.Doctors = doctors;
             ViewBag.Patients = patients;

@@ -17,6 +17,7 @@ namespace HOSPITAL2_LAB1.Controllers
     public class ReceptionistsController : Controller
     {
         private readonly HOSPITAL2Context _context;
+        private object patient;
 
         public ReceptionistsController(HOSPITAL2Context context)
         {
@@ -532,26 +533,20 @@ namespace HOSPITAL2_LAB1.Controllers
 
         public async Task<IActionResult> Appointments()
         {
-            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var patient = await _context.Patients.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+            
+            var appointmentsQuery = _context.Reservations
+                .Include(r => r.PatientNavigation)
+                .Include(r => r.DoctorNavigation)
+                .AsQueryable();
+            var appointments = await appointmentsQuery.ToListAsync();
+            return View(appointments);
 
-            if (patient != null)
-            {
-                var appointments = await _context.Reservations
-                    .Include(a => a.DoctorNavigation)
-                    .Where(a => a.Patient == patient.PatientId)
-                    .ToListAsync();
-
-                return View(appointments);
-            }
-
-            // Handle case where the patient is not found
-            return NotFound();
         }
 
 
 
         //Edit
+        // GET: Receptionists/EditAppointment/5
         public async Task<IActionResult> EditAppointment(int? id)
         {
             if (id == null || _context.Reservations == null)
@@ -564,10 +559,14 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 return NotFound();
             }
-            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
+
+            // Populate the DoctorList dropdown with the same data as in the GET action
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName", reservation.Doctor);
 
             return View(reservation);
         }
+
+        // POST: Receptionists/EditAppointment/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditAppointment(int id, [Bind("ReservationId,ReservationDate,ReservationTime,Doctor")] Reservation editedReservation)
@@ -583,7 +582,7 @@ namespace HOSPITAL2_LAB1.Controllers
                 {
                     if (IsDuplicateAppointment(editedReservation))
                     {
-                        ModelState.AddModelError("", "This appointment is not available.Please choose another one!");
+                        ModelState.AddModelError("", "This appointment is not available. Please choose another one!");
                     }
                     else
                     {
@@ -609,15 +608,21 @@ namespace HOSPITAL2_LAB1.Controllers
                 }
             }
 
-            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
+            // Populate the DoctorList dropdown with the same data as in the GET action
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName", editedReservation.Doctor);
+
             return View(editedReservation);
         }
 
+     
 
         private bool AppointmentExists(int id)
         {
             return (_context.Reservations?.Any(e => e.ReservationId == id)).GetValueOrDefault();
         }
+
+
+   
         public async Task<IActionResult> DeleteAppointment(int? id)
         {
             if (id == null || _context.Reservations == null)
