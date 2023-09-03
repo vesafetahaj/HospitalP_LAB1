@@ -272,30 +272,21 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditReport(int id, [Bind("ReportID,ReportType,ReportDate,ReportDescription, Patient")] Report editedReport)
         {
-            if (id != editedReport.ReportId)
-            {
-                return NotFound();
-            }
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    if (IsDuplicateReports(editedReport))
-                    {
-                        ModelState.AddModelError("", "This report is not available!");
-                    }
-                    else
-                    {
-                        var existingReport = await _context.Reports.FindAsync(id);
-                        existingReport.ReportType = editedReport.ReportType;
-                        existingReport.ReportDate = editedReport.ReportDate;
-                        existingReport.ReportDescription = editedReport.ReportDescription;
-                        existingReport.Patient = editedReport.Patient;
-                        _context.Update(existingReport);
-                        await _context.SaveChangesAsync();
-                        return RedirectToAction(nameof(Index));
-                    }
+                    var existingReport = await _context.Reports.FindAsync(id);
+
+                    existingReport.ReportType = editedReport.ReportType;
+                    existingReport.ReportDate = editedReport.ReportDate;
+                    existingReport.ReportDescription = editedReport.ReportDescription;
+                    existingReport.Patient = editedReport.Patient;
+                    _context.Update(existingReport);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Reports));
+
                 }
                 catch (DbUpdateConcurrencyException)
                 {
