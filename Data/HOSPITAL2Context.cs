@@ -251,11 +251,11 @@ namespace HOSPITAL2_LAB1.Data
 
                 entity.Property(e => e.PatientId).HasColumnName("PatientID");
 
-                entity.Property(e => e.Address)
+                entity.Property(e => e.Birthday).HasColumnType("date");
+
+                entity.Property(e => e.Email)
                     .HasMaxLength(255)
                     .IsUnicode(false);
-
-                entity.Property(e => e.Birthday).HasColumnType("date");
 
                 entity.Property(e => e.Gender)
                     .HasMaxLength(1)

@@ -20,11 +20,11 @@ namespace HOSPITAL2_LAB1.Model
         public string? Surname { get; set; }
         public string? Gender { get; set; }
         public DateTime? Birthday { get; set; }
-        public string? Address { get; set; }
+        public string? Email { get; set; }
         public string? Phone { get; set; }
         public string? UserId { get; set; }
         public int? Room { get; set; }
-        public string FullName => $"{Name} {Surname}";
+
         public virtual Room? RoomNavigation { get; set; }
         public virtual AspNetUser? User { get; set; }
         public virtual ICollection<Complaint> Complaints { get; set; }

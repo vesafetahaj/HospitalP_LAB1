@@ -33,7 +33,20 @@
                 <td>@user.Id</td>
                 <td>@user.Email</td>
                 <td>
-                    @if (user.Email.EndsWith("@patient.com") || user.Email.EndsWith("@admin.com") || user.Email.EndsWith("@doctor.com") || user.Email.EndsWith("@receptionist.com"))
+                    @if (user.Email.EndsWith("@patient.com"))
+                    {
+                        var patients = ViewData["Patients"] as List<HOSPITAL2_LAB1.Model.Patient>;
+                        var patientInfoProvided = patients.Any(r => r.UserId == user.Id);
+                        if (patientInfoProvided)
+                        {
+                            <p class="text-success" style="text-align:center;"><b>Information already provided for this patient.</b></p>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("CreatePatient", "Receptionists", new { userId = user.Id })">Provide Information</a>
+                        }
+                    }
+                    else
                     {
                         <p class="text-danger" style="text-align:center;"><b>You cannot provide information for this user.</b></p>
                     }

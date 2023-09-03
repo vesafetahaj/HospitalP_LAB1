@@ -57,11 +57,11 @@
                         <div class="card-body">
                             <h5 class="card-title">@patient.Name</h5>
                             <h5 class="card-title">@patient.Surname</h5>
-                            <p class="card-text">Education: @patient.Gender</p>
-                            <p class="card-text">Education: @patient.Birthday</p>
-                            <p class="card-text">Education: @patient.Phone</p>
-                            <p class="card-text">Specialization: @patient.RoomNavigation.RoomNumber</p>
-                            <p class="card-text">Email: @patient.Address</p>
+                            <p class="card-text">Gender: @patient.Gender</p>
+                            <p class="card-text">Birthday: @patient.Birthday</p>
+                            <p class="card-text">Phone: @patient.Phone</p>
+                            <p class="card-text">Room: @(patient.RoomNavigation != null ? patient.RoomNavigation.RoomNumber : "N/A")</p>
+                            <p class="card-text">Email: @patient.Email</p>
                             <div class="text-center">
                                 <a href="@Url.Action("EditPatient", "Receptionists", new { id = patient.PatientId })" class="btn btn-primary">Edit</a>
                             </div>
