@@ -7,12 +7,15 @@
 
 <style>
     .custom-card {
-        border: 2px solid lightblue; 
+        border: 2px solid lightblue;
         background-color: white;
+        transition: background-color 0.3s, transform 0.3s; /* Add transition effects */
     }
-    .custom-card:hover{
-            background-color: #DCE9F9;
-    }
+
+        .custom-card:hover {
+            background-color: #DCE9F9; /* Change background color on hover */
+            transform: scale(1.05); /* Apply a slight scaling effect on hover */
+        }
 </style>
 
 <div id="main">
@@ -25,7 +28,7 @@
                 <div class="card custom-card">
                     <div class="card-body">
                         <h5 class="card-title">Complaint ID: @complaint.ComplaintId</h5>
-                        <hr/>
+                        <hr />
                         <p class="card-text"><b>Date:</b> @complaint.ComplaintDate?.ToString("yyyy-MM-dd")</p>
                         <p class="card-text"><b>Details:</b> @complaint.ComplaintDetails</p>
                         <p class="card-text"><b>By:</b> @complaint.PatientNavigation.Name @complaint.PatientNavigation.Surname</p>
