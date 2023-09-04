@@ -691,5 +691,25 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return RedirectToAction(nameof(ContactForms));
         }
+
+        //shfaqja e raporteve nga doktori tek pacienti
+        public async Task<IActionResult> Reports()
+        {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var patient = await _context.Patients.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+            if (patient != null)
+            {
+                var raport = await _context.Reports
+                    .Include(a => a.DoctorNavigation)
+                    .Where(a => a.Patient == patient.PatientId)
+                    .ToListAsync();
+
+                return View(raport);
+            }
+
+            // Handle case where the patient is not found
+            return NotFound();
+        }
     }
 }
