@@ -183,9 +183,28 @@ namespace HOSPITAL2_LAB1.Controllers
 
         //crudi per raporte
 
-        public IActionResult CreateRaport()
+        public async Task<IActionResult> CreateRaport()
         {
-            ViewBag.PatientList = new SelectList(_context.Patients, "PatientId", "FullName");
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var doctor = await _context.Doctors.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+            if (doctor != null)
+            {
+                // Get the list of patients who have reservations with the current doctor
+                var patientsWithReservations = await _context.Reservations
+                    .Where(reservation => reservation.Doctor == doctor.DoctorId)
+                    .Select(reservation => reservation.PatientNavigation) // Use PatientNavigation to get the patient details
+                    .Distinct()
+                    .ToListAsync();
+
+                // Create a SelectList with filtered patients
+                ViewBag.PatientList = new SelectList(patientsWithReservations, "PatientId", "FullName");
+            }
+            else
+            {
+                ModelState.AddModelError("", "You have to provide personal info first.");
+            }
+
             return View();
         }
 
@@ -193,9 +212,10 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateRaport([Bind("ReportID,ReportType,ReportDate,ReportDescription, Patient")] Report report)
         {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (ModelState.IsValid)
             {
-                string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                
                 var doctor = await _context.Doctors.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
 
                 if (doctor != null)
@@ -215,7 +235,7 @@ namespace HOSPITAL2_LAB1.Controllers
                         report.Doctor = doctor.DoctorId;
                         _context.Add(report);
                         await _context.SaveChangesAsync();
-                        return RedirectToAction(nameof(Index)); //
+                        return RedirectToAction(nameof(Index));
                     }
                 }
                 else
@@ -224,7 +244,17 @@ namespace HOSPITAL2_LAB1.Controllers
                 }
             }
 
-            ViewBag.PatientList = new SelectList(_context.Patients, "PatientId", "FullName");
+            // Get the list of patients who have reservations with the current doctor
+            var currentDoctor = await _context.Doctors.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+            var patientsWithReservations = await _context.Reservations
+                .Where(reservation => reservation.Doctor == currentDoctor.DoctorId)
+                .Select(reservation => reservation.PatientNavigation) // Use PatientNavigation to get the patient details
+                .Distinct()
+                .ToListAsync();
+
+            // Create a SelectList with filtered patients
+            ViewBag.PatientList = new SelectList(patientsWithReservations, "PatientId", "FullName");
+
             return View(report);
         }
 
@@ -264,7 +294,22 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 return NotFound();
             }
-            ViewBag.PatientList = new SelectList(_context.Patients, "PatientId", "FullName");
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var doctor = await _context.Doctors.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+            if(doctor != null) { 
+                var patientsWithReservations = await _context.Reservations
+                   .Where(reservation => reservation.Doctor == doctor.DoctorId)
+                   .Select(reservation => reservation.PatientNavigation) // Use PatientNavigation to get the patient details
+                   .Distinct()
+                   .ToListAsync();
+                ViewBag.PatientList = new SelectList(patientsWithReservations, "PatientId", "FullName");
+
+            }
+            else
+            {
+                ModelState.AddModelError("", "You have to provide personal info first.");
+
+            }
 
             return View(report);
         }
@@ -272,9 +317,11 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditReport(int id, [Bind("ReportID,ReportType,ReportDate,ReportDescription, Patient")] Report editedReport)
         {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             if (ModelState.IsValid)
             {
+
                 try
                 {
                     var existingReport = await _context.Reports.FindAsync(id);
@@ -301,7 +348,15 @@ namespace HOSPITAL2_LAB1.Controllers
                 }
             }
 
-            ViewBag.PatientList = new SelectList(_context.Patients, "PatientId", "FullName");
+            var currentDoctor = await _context.Doctors.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+            var patientsWithReservations = await _context.Reservations
+                .Where(reservation => reservation.Doctor == currentDoctor.DoctorId)
+                .Select(reservation => reservation.PatientNavigation) // Use PatientNavigation to get the patient details
+                .Distinct()
+                .ToListAsync();
+
+            // Create a SelectList with filtered patients
+            ViewBag.PatientList = new SelectList(patientsWithReservations, "PatientId", "FullName");
             return View(editedReport);
         }
         //
