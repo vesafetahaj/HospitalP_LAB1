@@ -544,9 +544,20 @@ namespace HOSPITAL2_LAB1.Controllers
         //contact forma
         public async Task<IActionResult> ContactForms()
         {
-            var contact = await _context.ContactForms.ToListAsync();
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var patient = await _context.Patients.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
 
-            return View(contact);
+            if (patient != null)
+            {
+                var contactform = await _context.ContactForms
+                   .Where(a => a.Patient == patient.PatientId)
+                    .ToListAsync();
+
+                return View(contactform);
+            }
+
+            // Handle case where the patient is not found
+            return NotFound();
         }
 
         public IActionResult CreateMessage()
