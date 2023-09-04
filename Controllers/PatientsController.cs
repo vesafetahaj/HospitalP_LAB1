@@ -389,9 +389,21 @@ namespace HOSPITAL2_LAB1.Controllers
         //complaints
         public async Task<IActionResult> Complaints()
         {
-            var complaints = await _context.Complaints.ToListAsync();
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var patient = await _context.Patients.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
 
-            return View(complaints);
+            if (patient != null)
+            {
+                var complaints = await _context.Complaints
+
+                     .Where(a => a.Patient == patient.PatientId)
+                    .ToListAsync();
+
+                return View(complaints);
+            }
+
+            // Handle case where the patient is not found
+            return NotFound();
         }
 
         public IActionResult CreateComplaint()
@@ -525,6 +537,9 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return RedirectToAction(nameof(Complaints));
         }
+
+
+
 
         //contact forma
         public async Task<IActionResult> ContactForms()
