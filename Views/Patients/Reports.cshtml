@@ -9,7 +9,7 @@
     }
 
     .thead-dark {
-        background-color: #343a40;
+        background-color: #073980;
         color: #fff;
     }
 </style>
@@ -20,10 +20,10 @@
 <table class="table table-bordered table-striped table-hover table-blue">
     <thead class="thead-dark">
         <tr>
-            <th>ReservationType</th>
-            <th>ReservationDate</th>
-            <th>ReservationDescription</th>
-            <th>Patient</th>
+            <th>AppointmentType</th>
+            <th>AppointmentDate</th>
+            <th>AppointmentDescription</th>
+            <th>Doctor</th>
             <th>Action</th>
         </tr>
     </thead>
@@ -34,7 +34,7 @@
                 <td>@report.ReportType</td>
                 <td>@report.ReportDate?.ToString("yyyy-MM-dd")</td>
                 <td>@report.ReportDescription</td>
-                <td>@report.PatientNavigation.Name @report.PatientNavigation.Surname</td>
+                <td>@report.DoctorNavigation.Name @report.DoctorNavigation.Surname</td>
                 <td>
                     <input type="checkbox" class="report-checkbox" data-id="@report.ReportId" />
                     <a asp-action="EditReport" asp-route-id="@report.ReportId">Ndrysho</a> |
