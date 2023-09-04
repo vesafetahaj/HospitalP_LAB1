@@ -4,17 +4,28 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <style>
-    .table-blue {
-        background-color: #eaf4fd;
+    .patient-container {
+        border: 1px solid #0f5298;
+        width: 300px; /* Fixed width for the square container */
+        height: 300px; /* Fixed height for the square container */
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(120deg,#f0f7ff, #77b5fe);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .thead-dark {
-        background-color: #343a40;
-        color: #fff;
-    }
+        .patient-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+        }
 </style>
 <h1>Patients</h1>
-<hr/>
+<hr />
 <div class="row mt-4">
     <form method="get" action="@Url.Action("SearchPatients", "Administrators")">
         <div class="input-group mb-3">
@@ -24,30 +35,19 @@
     </form>
 </div>
 
-<table class="table table-bordered table-striped table-hover table-blue">
-    <thead class="thead-dark">
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Surname</th>
-            <th>Gender</th>
-            <th>Birthday</th>
-            <th>Email</th>
-            <th>Phone</th>
-        </tr>
-    </thead>
-    <tbody>
+<div class="container">
+    <div class="row">
         @foreach (var patient in Model)
         {
-            <tr>
-                <td>@patient.PatientId</td>
-                <td>@patient.Name</td>
-                <td>@patient.Surname</td>
-                <td>@patient.Gender</td>
-                <td>@patient.Birthday?.ToString("yyyy-MM-dd")</td>
-                <td>@patient.Email</td>
-                <td>@patient.Phone</td>
-            </tr>
+            <div class="col-md-4">
+                <div class="patient-container">
+                    <h4>@patient.Name @patient.Surname</h4>
+                    <p><strong>Gender:</strong> @patient.Gender</p>
+                    <p><strong>Birthday:</strong> @patient.Birthday?.ToString("yyyy-MM-dd")</p>
+                    <p><strong>Email:</strong> @patient.Email</p>
+                    <p><strong>Phone:</strong> @patient.Phone</p>
+                </div>
+            </div>
         }
-    </tbody>
-</table>
+    </div>
+</div>
