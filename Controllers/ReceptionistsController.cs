@@ -186,7 +186,7 @@ namespace HOSPITAL2_LAB1.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
 
-       
+
         public async Task<IActionResult> CreateRoom([Bind("RoomId,RoomNumber")] Room room)
         {
             if (ModelState.IsValid)
@@ -301,17 +301,17 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
 
-            // Register patient 
+        // Register patient 
 
-          public async Task<IActionResult> Patients()
-             {
-                 var patient = await _context.Patients
-                     .Include(a => a.User)
-                     .Include(r => r.RoomNavigation)
-                     .ToListAsync();
+        public async Task<IActionResult> Patients()
+        {
+            var patient = await _context.Patients
+                .Include(a => a.User)
+                .Include(r => r.RoomNavigation)
+                .ToListAsync();
 
-                 return View(patient);
-             }
+            return View(patient);
+        }
         public async Task<IActionResult> EditPatient(int? id)
         {
             if (id == null)
@@ -357,6 +357,25 @@ namespace HOSPITAL2_LAB1.Controllers
                         // Set the UserId property of the patient entity
                         patient.UserId = user.Id;
 
+                        // Check if the room is Room ID 1 (which is an exception and can have more than 3 patients)
+                        if (patient.Room != 1)
+                        {
+                            // Check if the new room assignment exceeds the limit (3 patients per room)
+                            var room = await _context.Rooms.FirstOrDefaultAsync(r => r.RoomId == patient.Room);
+                            if (room != null)
+                            {
+                                var patientsInRoom = await _context.Patients.CountAsync(p => p.Room == patient.Room);
+                                if (patientsInRoom >= 3)
+                                {
+                                    ModelState.AddModelError("", "This room already has 3 patients assigned.");
+                                    ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+                                    ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+                                    return View(patient);
+                                }
+                            }
+                        }
+
+                        // Update the patient's room assignment
                         _context.Update(patient);
                         await _context.SaveChangesAsync();
                         return RedirectToAction(nameof(Patients));
@@ -385,10 +404,7 @@ namespace HOSPITAL2_LAB1.Controllers
             ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
 
             return View(patient);
-
-          
         }
-
 
 
 
@@ -398,17 +414,17 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
         public IActionResult CreatePatient()
-             {
-                 var PatientEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@patient.com")).Select(u => u.Email).ToList();
-                 SelectList patientEmailsSelectList = new SelectList(PatientEmails);
+        {
+            var PatientEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@patient.com")).Select(u => u.Email).ToList();
+            SelectList patientEmailsSelectList = new SelectList(PatientEmails);
 
-                 var room = _context.Rooms.ToList();
-                 ViewData["RoomNumber"] = new SelectList(room, "RoomId", "RoomNumber");
+            var room = _context.Rooms.ToList();
+            ViewData["RoomNumber"] = new SelectList(room, "RoomId", "RoomNumber");
 
-                 ViewData["Emails"] = patientEmailsSelectList;
+            ViewData["Emails"] = patientEmailsSelectList;
 
-                 return View();
-             }
+            return View();
+        }
 
 
         [HttpPost]
@@ -426,6 +442,24 @@ namespace HOSPITAL2_LAB1.Controllers
                 {
                     // Set the UserId property of the patient entity
                     patient.UserId = user.Id;
+
+                    // Check if the room is Room ID 1 (which is an exception and can have more than 3 patients)
+                    if (patient.Room != 1)
+                    {
+                        // Check if the room has already reached its patient limit (3 patients)
+                        var room = await _context.Rooms.FirstOrDefaultAsync(r => r.RoomId == patient.Room);
+                        if (room != null)
+                        {
+                            var patientsInRoom = await _context.Patients.CountAsync(p => p.Room == patient.Room);
+                            if (patientsInRoom >= 3)
+                            {
+                                ModelState.AddModelError("", "This room already has 3 patients assigned.");
+                                ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Id", "Email");
+                                ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+                                return View(patient);
+                            }
+                        }
+                    }
 
                     // Add and save the patient entity
                     _context.Add(patient);
@@ -445,28 +479,28 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
         public async Task<IActionResult> SearchPatients(string query)
-             {
-                 if (string.IsNullOrEmpty(query))
-                 {
-                     // If the search string is empty or null, return all doctors
-                     var allPatients = await _context.Patients.Include(a => a.User).ToListAsync();
-                     return View("Patients", allPatients);
-                 }
+        {
+            if (string.IsNullOrEmpty(query))
+            {
+                // If the search string is empty or null, return all doctors
+                var allPatients = await _context.Patients.Include(a => a.User).ToListAsync();
+                return View("Patients", allPatients);
+            }
 
-                 // Search for doctors whose name or rooom contains the search query
-                 var patient = await _context.Patients
-                     .Where(d => d.Name.Contains(query) || d.Surname.Contains(query))
-                     .Include(a => a.User).Include(b => b.RoomNavigation)
-                     .ToListAsync();
+            // Search for doctors whose name or rooom contains the search query
+            var patient = await _context.Patients
+                .Where(d => d.Name.Contains(query) || d.Surname.Contains(query))
+                .Include(a => a.User).Include(b => b.RoomNavigation)
+                .ToListAsync();
 
-                 // Populate the ViewBag.Name for the Room dropdown
-                 ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+            // Populate the ViewBag.Name for the Room dropdown
+            ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
 
-                 // Populate the ViewBag.Emails for the Emails dropdown
-                 ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+            // Populate the ViewBag.Emails for the Emails dropdown
+            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
 
-                 return View("Patients", patient);
-             }
+            return View("Patients", patient);
+        }
 
 
 
@@ -532,7 +566,7 @@ namespace HOSPITAL2_LAB1.Controllers
 
         public async Task<IActionResult> Appointments()
         {
-            
+
             var appointmentsQuery = _context.Reservations
                 .Include(r => r.PatientNavigation)
                 .Include(r => r.DoctorNavigation)
@@ -613,7 +647,7 @@ namespace HOSPITAL2_LAB1.Controllers
             return View(editedReservation);
         }
 
-     
+
 
         private bool AppointmentExists(int id)
         {
@@ -621,7 +655,7 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
 
-   
+
         public async Task<IActionResult> DeleteAppointment(int? id)
         {
             if (id == null || _context.Reservations == null)

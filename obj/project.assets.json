@@ -11495,19 +11495,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fursine\\.nuget\\packages\\": {}
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fursine\\Desktop\\LAB1\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
       "projectName": "HOSPITAL2_LAB1",
-      "projectPath": "C:\\Users\\fursine\\Desktop\\LAB1\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
-      "packagesPath": "C:\\Users\\fursine\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fursine\\Desktop\\LAB1\\Hospital_LAB1\\obj\\",
+      "projectPath": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fursine\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11583,7 +11583,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
