@@ -4,14 +4,77 @@
     ViewData["Title"] = "Create";
     Layout = "~/Views/Shared/_PatientLayout.cshtml";
 }
+<style>
+    .form-group label{
+        margin-bottom:6px;
+        margin-top:20px;
+        color: #0071c5;
+        font-size:20px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 
-<h1>Create</h1>
+ 
+    hr{
+        color: #0071c5;;
+    }
 
-<h4>Reservation</h4>
+
+
+
+
+    .termin h2{
+        text-align: center;
+        color: cadetblue;
+    }
+
+    .termin p{
+        text-align: center;
+        font-size: 16px;
+        color:cornflowerblue;
+    }
+
+
+    .custom-btn {
+        background-color: #3498db; 
+        color: #fff; 
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 15px;
+        margin-top:17px;
+        font-size: 14px; 
+        cursor: pointer; 
+        transition: background-color 0.3s, color 0.3s; 
+    }
+
+        .custom-btn:hover {
+            background-color: #2980b9; 
+            color: #fff; 
+        }
+
+    .bordered-form {
+        border: 1px solid #ccc; /* Border style and color */
+        padding: 20px; /* Add padding inside the form */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    }
+
+
+</style>
+
+
+
+<h1>SunriseCare Hospital</h1>
+<div class="termin">
+<h2>Book an appointment!</h2>
+<p>"Your Health, Our Priority – Book Today."</p>
+</div>
+
+
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="CreateAppointment">
+     
+        <form asp-action="CreateAppointment" class="bordered-form">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="ReservationDate" class="control-label"></label>
@@ -36,7 +99,7 @@
 
 
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="custom-btn" />
             </div>
         </form>
     </div>

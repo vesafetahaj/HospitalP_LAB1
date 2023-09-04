@@ -4,62 +4,63 @@
     Layout = "~/Views/Shared/_PatientLayout.cshtml";
 }
 <style>
-    .table-blue {
-        background-color: #eaf4fd;
+    .accordion {
+        display: none;
+        padding: 10px;
+        background-color: #f1f1f1;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
     }
 
-    .thead-dark {
+    .accordion-button {
+        cursor: pointer;
         background-color: #073980;
         color: #fff;
+        border: none;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
     }
 </style>
 <h1>Raports</h1>
 <hr />
 
+@foreach (var report in Model)
+{
+    <div class="accordion-button" onclick="toggleAccordion(this)">
+        @report.ReportType - @report.ReportDate?.ToString("yyyy-MM-dd")
+    </div>
+    <div class="accordion">
+        <table class="table table-bordered table-striped table-hover table-blue">
+            <thead class="thead-dark">
+                <tr>
+                    <th>AppointmentType</th>
+                    <th>AppointmentDate</th>
+                    <th>AppointmentDescription</th>
+                    <th>Doctor</th>
+                 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@report.ReportType</td>
+                    <td>@report.ReportDate?.ToString("yyyy-MM-dd")</td>
+                    <td>@report.ReportDescription</td>
+                    <td>@report.DoctorNavigation.Name @report.DoctorNavigation.Surname</td>
+                 
+                </tr>
+            </tbody>
+        </table>
+    </div>
+}
 
-<table class="table table-bordered table-striped table-hover table-blue">
-    <thead class="thead-dark">
-        <tr>
-            <th>AppointmentType</th>
-            <th>AppointmentDate</th>
-            <th>AppointmentDescription</th>
-            <th>Doctor</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var report in Model)
-        {
-            <tr>
-                <td>@report.ReportType</td>
-                <td>@report.ReportDate?.ToString("yyyy-MM-dd")</td>
-                <td>@report.ReportDescription</td>
-                <td>@report.DoctorNavigation.Name @report.DoctorNavigation.Surname</td>
-                <td>
-                    <input type="checkbox" class="report-checkbox" data-id="@report.ReportId" />
-                    <a asp-action="EditReport" asp-route-id="@report.ReportId">Ndrysho</a> |
-                    <a asp-action="DeleteReport" asp-route-id="@report.ReportId">Anulo</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var checkboxes = document.querySelectorAll(".report-checkbox");
-
-        checkboxes.forEach(function (checkbox) {
-            checkbox.addEventListener("change", function () {
-                var row = this.closest("tr");
-
-                if (this.checked) {
-                    // Handle marking as done (e.g., change the row's background color).
-                    row.style.backgroundColor = "#b0e57c"; // You can use any color you prefer.
-                } else {
-                    // Handle unmarking as done (e.g., remove the background color).
-                    row.style.backgroundColor = "";
-                }
-            });
-        });
-    });
+    function toggleAccordion(button) {
+        var accordion = button.nextElementSibling;
+        if (accordion.style.display === "block") {
+            accordion.style.display = "none";
+        } else {
+            accordion.style.display = "block";
+        }
+    }
 </script>
