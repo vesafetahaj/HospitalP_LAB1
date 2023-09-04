@@ -9,10 +9,10 @@
         margin-bottom:6px;
         margin-top:20px;
         color: #0071c5;
-        font-size:20px;
+        font-size:15px;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-
+  
  
     hr{
         color: #0071c5;;
@@ -20,11 +20,9 @@
 
 
 
-
-
     .termin h2{
         text-align: center;
-        color: cadetblue;
+        color: #7CB9E8;
     }
 
     .termin p{
@@ -41,7 +39,7 @@
         border: none; 
         border-radius: 15px;
         margin-top:17px;
-        font-size: 14px; 
+        font-size: 12px; 
         cursor: pointer; 
         transition: background-color 0.3s, color 0.3s; 
     }
@@ -52,11 +50,44 @@
         }
 
     .bordered-form {
-        border: 1px solid #ccc; /* Border style and color */
-        padding: 20px; /* Add padding inside the form */
-        border-radius: 5px; /* Rounded corners */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+        border: 1px solid #ccc; 
+        padding: 20px; 
+        border-radius: 10px;
+        box-shadow: 0 0 10px #6CB4EE;
     }
+
+     .imagee-patient {
+         margin-top:20px;
+        width: 40%;
+    }
+
+        .imagee-patient img {
+            width: 78%;
+            margin-left:880px;
+            
+        }
+
+
+   .row{
+       margin-top:-378px;
+       margin-left:75px;
+       
+   }
+
+    .back-link {
+        text-decoration: none; 
+        color: #3498db;
+        border-radius: 5px; 
+        transition: background-color 0.3s, color 0.3s; 
+        margin-left:250px;
+        font-weight:bold;
+    }
+
+        .back-link:hover {
+            cursor:pointer;
+            color: #007791;
+        }
+      
 
 
 </style>
@@ -71,6 +102,10 @@
 
 
 <hr />
+
+<div class="imagee-patient">
+    <img src="~/images/termini.png" />
+</div>
 <div class="row">
     <div class="col-md-4">
      
@@ -106,6 +141,6 @@
 </div>
 
 <div>
-    <a asp-action="Appointments">Back to List</a>
+    <a asp-action="Appointments" class="back-link">Back to List</a>
 </div>
 

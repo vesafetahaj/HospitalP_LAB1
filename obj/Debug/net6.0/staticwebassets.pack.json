@@ -565,6 +565,14 @@
       "PackagePath": "staticwebassets\\images\\termin.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\SunriseCare\\Hospital_LAB1\\wwwroot\\images\\termini.png",
+      "PackagePath": "staticwebassets\\images\\termini.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\SunriseCare\\Hospital_LAB1\\wwwroot\\images\\termini1.jpg",
+      "PackagePath": "staticwebassets\\images\\termini1.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\SunriseCare\\Hospital_LAB1\\wwwroot\\images\\test1.jpg",
       "PackagePath": "staticwebassets\\images\\test1.jpg"
     },
