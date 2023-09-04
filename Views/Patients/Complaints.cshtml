@@ -34,9 +34,8 @@
                 <td>@complaint.ComplaintDetails</td>
 
                 <td>
-                    <input type="checkbox" class="complaint-checkbox" data-id="@complaint.ComplaintId" />
-                    <a asp-action="EditComplaint" asp-route-id="@complaint.ComplaintId">Ndrysho</a> |
-                    <a asp-action="DeleteComplaint" asp-route-id="@complaint.ComplaintId">Anulo</a>
+                    <a href="@Url.Action("EditComplaint", "Patients", new { id = complaint.ComplaintId })" class="btn btn-primary">Edit</a>
+                    <a href="@Url.Action("DeleteComplaint", "Patients", new { id = complaint.ComplaintId })" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
         }

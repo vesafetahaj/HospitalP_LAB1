@@ -36,9 +36,9 @@
                 <td>@contact.Message</td>
 
                 <td>
-                 
-                    <a asp-action="EditMessage" asp-route-id="@contact.ContactId">Edit</a> |
-                    <a asp-action="DeleteMessage" asp-route-id="@contact.ContactId">Delete</a>
+
+                    <a href="@Url.Action("EditMessage", "Patients", new { id = contact.ContactId })" class="btn btn-primary">Edit</a>
+                    <a href="@Url.Action("DeleteMessage", "Patients", new { id = contact.ContactId })" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
         }
