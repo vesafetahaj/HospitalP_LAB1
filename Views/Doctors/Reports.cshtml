@@ -4,12 +4,12 @@
     Layout = "~/Views/Shared/_DoctorLayout.cshtml";
 }
 <style>
-    .table-blue {
-        background-color: #eaf4fd;
+    body {
+        background: #d7dfe4;
     }
 
     .thead-dark {
-        background-color: #343a40;
+        background-color: #7a99aa;
         color: #fff;
     }
 </style>
@@ -20,13 +20,14 @@
 <table class="table table-bordered table-striped table-hover table-blue">
     <thead class="thead-dark">
         <tr>
-            <th>ReservationType</th>
-            <th>ReservationDate</th>
-            <th>ReservationDescription</th>
+            <th>Report Type</th>
+            <th>Report Date</th>
+            <th>Report Description</th>
             <th>Patient</th>
             <th>Action</th>
         </tr>
     </thead>
+
     <tbody>
         @foreach (var report in Model)
         {
