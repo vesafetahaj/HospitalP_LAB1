@@ -1,0 +1,45 @@
+﻿@model List<HOSPITAL2_LAB1.Model.Patient>
+@{
+    ViewData["Title"] = "Patients";
+    Layout = "~/Views/Shared/_DoctorLayout.cshtml";
+}
+<style>
+    body {
+        background: #d7dfe4;
+    }
+
+    .thead-dark {
+        background-color: #7a99aa;
+        color: #fff;
+    }
+</style>
+<h1>Patients</h1>
+<hr />
+<div class="container">
+    <table class="table table-bordered table-striped table-hover table-blue">
+        <thead class="thead-dark">
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Gender</th>
+                <th>Birthday</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var patient in Model)
+            {
+                <tr>
+                    <td>@patient.Name</td>
+                    <td>@patient.Surname</td>
+                    <td>@patient.Gender</td>
+                    <td>@patient.Birthday</td>
+                    <td>@patient.Email</td>
+                    <td>@patient.Phone</td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

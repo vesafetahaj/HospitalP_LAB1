@@ -442,6 +442,24 @@ namespace HOSPITAL2_LAB1.Controllers
             //case where the patient is not found
             return NotFound();
         }
+        public async Task<IActionResult> Patients()
+        {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var doctor = await _context.Doctors.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+            if (doctor != null)
+            {
+                // Get the patients who have reservations with the specific doctor
+                var patients = await _context.Patients
+                    .Where(p => p.Reservations.Any(r => r.DoctorNavigation.DoctorId == doctor.DoctorId))
+                    .ToListAsync();
+
+                return View(patients);
+            }
+
+            return NotFound();
+        }
+
 
 
     }

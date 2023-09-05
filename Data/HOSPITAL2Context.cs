@@ -28,7 +28,6 @@ namespace HOSPITAL2_LAB1.Data
         public virtual DbSet<ContactForm> ContactForms { get; set; } = null!;
         public virtual DbSet<Doctor> Doctors { get; set; } = null!;
         public virtual DbSet<Patient> Patients { get; set; } = null!;
-        public virtual DbSet<PatientDoctor> PatientDoctors { get; set; } = null!;
         public virtual DbSet<Payment> Payments { get; set; } = null!;
         public virtual DbSet<Receptionist> Receptionists { get; set; } = null!;
         public virtual DbSet<Report> Reports { get; set; } = null!;
@@ -283,28 +282,23 @@ namespace HOSPITAL2_LAB1.Data
                     .WithOne(p => p.Patient)
                     .HasForeignKey<Patient>(d => d.UserId)
                     .OnDelete(DeleteBehavior.SetNull);
-            });
 
-            modelBuilder.Entity<PatientDoctor>(entity =>
-            {
-                entity.HasKey(e => new { e.PatientId, e.DoctorId })
-                    .HasName("PK__PatientD__75D2C3AB7FFB4B32");
+                entity.HasMany(d => d.Doctors)
+                    .WithMany(p => p.Patients)
+                    .UsingEntity<Dictionary<string, object>>(
+                        "PatientDoctor",
+                        l => l.HasOne<Doctor>().WithMany().HasForeignKey("DoctorId").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__PatientDo__Docto__6EF57B66"),
+                        r => r.HasOne<Patient>().WithMany().HasForeignKey("PatientId").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__PatientDo__Patie__6FE99F9F"),
+                        j =>
+                        {
+                            j.HasKey("PatientId", "DoctorId").HasName("PK__PatientD__75D2C3AB7FFB4B32");
 
-                entity.ToTable("PatientDoctor");
+                            j.ToTable("PatientDoctor");
 
-                entity.Property(e => e.PatientId).HasColumnName("PatientID");
+                            j.IndexerProperty<int>("PatientId").HasColumnName("PatientID");
 
-                entity.Property(e => e.DoctorId).HasColumnName("DoctorID");
-
-                entity.HasOne(d => d.DoctorNavigation)
-                    .WithMany(p => p.PatientDoctors)
-                    .HasForeignKey(d => d.Doctor)
-                    .HasConstraintName("FK__PatientDo__Docto__6EF57B66");
-
-                entity.HasOne(d => d.PatientNavigation)
-                    .WithMany(p => p.PatientDoctors)
-                    .HasForeignKey(d => d.Patient)
-                    .HasConstraintName("FK__PatientDo__Patie__6FE99F9F");
+                            j.IndexerProperty<int>("DoctorId").HasColumnName("DoctorID");
+                        });
             });
 
             modelBuilder.Entity<Payment>(entity =>
