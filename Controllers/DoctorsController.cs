@@ -420,8 +420,32 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
 
+        // mbarimi crudit per raporte 
+
+
+        //shfaqja e termineve nga pacienti tek doktori
+        public async Task<IActionResult> Appointments()
+        {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var doctor = await _context.Doctors.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+            if (doctor != null)
+            {
+                var reservation = await _context.Reservations
+                    .Include(a => a.PatientNavigation)
+                    .Where(a => a.Doctor == doctor.DoctorId)
+                    .ToListAsync();
+
+                return View(reservation);
+            }
+
+            //case where the patient is not found
+            return NotFound();
+        }
+
+
     }
 }
-// mbarimi crudit
+
 
 
