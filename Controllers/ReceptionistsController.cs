@@ -437,7 +437,7 @@ namespace HOSPITAL2_LAB1.Controllers
                 string selectedEmail = patient.Email;
 
                 // Find the user with the selected email in the AspNetUsers table
-                var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => string.Equals(u.Email, selectedEmail, StringComparison.OrdinalIgnoreCase));
+                var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email.ToLower() == selectedEmail.ToLower());
                 if (user != null)
                 {
                     // Set the UserId property of the patient entity
