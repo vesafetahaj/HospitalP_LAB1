@@ -525,45 +525,7 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
 
-        // Creating an appointment
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateAppointment([Bind("ReservationID,ReservationDate,ReservationTime,Doctor")] Reservation reservation)
-        {
-            if (ModelState.IsValid)
-            {
-                string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                var patient = await _context.Patients.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
-
-                if (patient != null)
-                {
-                    var existingAppointment = await _context.Reservations
-                        .FirstOrDefaultAsync(a => a.ReservationDate == reservation.ReservationDate &&
-                                                  a.ReservationTime == reservation.ReservationTime &&
-                                                  a.Doctor == reservation.Doctor);
-
-                    if (existingAppointment != null)
-                    {
-                        ModelState.AddModelError("", "The appointment is not available.Please choose another one!");
-                    }
-                    else
-                    {
-                        reservation.Patient = patient.PatientId;
-                        _context.Add(reservation);
-                        await _context.SaveChangesAsync();
-                        return RedirectToAction(nameof(Appointments));
-                    }
-                }
-                else
-                {
-                    ModelState.AddModelError("", "You have to provide personal info first.");
-                }
-            }
-
-            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
-            return View(reservation);
-        }
-
+       
         public async Task<IActionResult> Appointments()
         {
 
@@ -706,7 +668,52 @@ namespace HOSPITAL2_LAB1.Controllers
             );
         }
 
-    }
+            [HttpGet]
+            public async Task<IActionResult> CreatePayment()
+            {
+            var PatientEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@patient.com")).Select(u => u.Email).ToList();
+            SelectList patientEmailsSelectList = new SelectList(PatientEmails);
+
+            var report = _context.Reports.ToList();
+            ViewData["ReportType"] = new SelectList(report, "ReportId", "ReportType");
+
+            ViewData["Emails"] = patientEmailsSelectList;
+
+
+            return View();
+        }
+
+            [HttpPost]
+            [ValidateAntiForgeryToken]
+            public async Task<IActionResult> CreatePayment([Bind("PaymentId,PaymentAmount,PaymentDate,Patient,Report")] Payment payment)
+            {
+                if (ModelState.IsValid)
+                {
+                    // Check if the selected Patient and Report exist in the database
+                    var existingPatient = await _context.Patients.FindAsync(payment.Patient);
+                    var existingReport = await _context.Reports.FindAsync(payment.Report);
+
+                    if (existingPatient == null || existingReport == null)
+                    {
+                        ModelState.AddModelError("", "The selected Patient or Report does not exist");
+                    }
+                    else
+                    {
+                        _context.Add(payment);
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index));
+                    }
+                }
+
+             
+
+            ViewData["ReportType"] = new SelectList(_context.Reports, "ReportId", "ReportType");
+            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Id", "Email");
+
+            return View(payment);
+
+        }
+}
 
 }
 
