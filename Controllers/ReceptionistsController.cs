@@ -667,9 +667,20 @@ namespace HOSPITAL2_LAB1.Controllers
                 r.Doctor == editedReservation.Doctor
             );
         }
+
+        public async Task<IActionResult> Payments()
+        {
+            var payment = await _context.Payments
+                .Include(a => a.ReportNavigation)
+                .Include(r => r.PatientNavigation)
+                .ToListAsync();
+
+            return View(payment);
+        }
+
         // Create Payment
 
-            [HttpGet]
+        [HttpGet]
             public async Task<IActionResult> CreatePayment()
             {
             var PatientEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@patient.com")).Select(u => u.Email).ToList();
@@ -714,7 +725,8 @@ namespace HOSPITAL2_LAB1.Controllers
             return View(payment);
 
         }
-        
+       
+
     }
 
 }

@@ -37,7 +37,7 @@
 <div id="main">
     <h1>Payments</h1>
     <div style="display:flex; justify-content:end; margin-top: -40px; margin-right:10%">
-        <a href="@Url.Action("CreatePayment", "Receptionists")" class="btn btn-outline-primary">Register a Patient</a>
+        <a href="@Url.Action("CreatePayment", "Receptionists")" class="btn btn-outline-primary">Make a new payment</a>
     </div>
     <div class="row mt-4">
         @if (Model.Count > 0)
@@ -61,7 +61,7 @@
         }
         else
         {
-            <p>No patients found.</p>
+            <p>No payments found.</p>
         }
     </div>
 </div>
