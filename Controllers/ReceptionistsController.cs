@@ -525,7 +525,7 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
 
-       
+       // show appointments
         public async Task<IActionResult> Appointments()
         {
 
@@ -667,6 +667,7 @@ namespace HOSPITAL2_LAB1.Controllers
                 r.Doctor == editedReservation.Doctor
             );
         }
+        // Create Payment
 
             [HttpGet]
             public async Task<IActionResult> CreatePayment()
@@ -713,7 +714,8 @@ namespace HOSPITAL2_LAB1.Controllers
             return View(payment);
 
         }
-}
+        
+    }
 
 }
 
