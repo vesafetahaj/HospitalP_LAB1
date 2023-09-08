@@ -184,29 +184,7 @@ namespace HOSPITAL2_LAB1.Controllers
             return View();
         }
 
-        /*
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateRoom([Bind("RoomId,RoomNumber")] Room room)
-        {
-
-            if (ModelState.IsValid)
-            {
-                if (_context.Rooms.Any(s => s.RoomNumber == room.RoomNumber))
-                {
-                    ModelState.AddModelError("RoomNumber", "A room with the same number already exists.");
-                }
-                else
-                {
-                    _context.Add(room);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Rooms));
-                }
-            }
-
-            return View(room);
-        }
-        */
+        
         public async Task<IActionResult> CreateRoom([Bind("RoomId,RoomNumber")] Room room)
         {
             if (ModelState.IsValid)
@@ -350,8 +328,9 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return View(patient);
         }
+        [HttpGet]
         public async Task<IActionResult> EditPatient(int? id)
-        {
+        {   
             if (id == null)
             {
                 return NotFound();
