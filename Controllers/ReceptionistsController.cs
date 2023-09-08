@@ -592,16 +592,19 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 try
                 {
+                    var existingReservation = await _context.Reservations.FindAsync(id);
+
                     if (IsDuplicateAppointment(editedReservation))
                     {
                         ModelState.AddModelError("", "This appointment is not available. Please choose another one!");
                     }
                     else
                     {
-                        var existingReservation = await _context.Reservations.FindAsync(id);
+                        // Update the reservation details
                         existingReservation.ReservationDate = editedReservation.ReservationDate;
                         existingReservation.ReservationTime = editedReservation.ReservationTime;
                         existingReservation.Doctor = editedReservation.Doctor;
+
                         _context.Update(existingReservation);
                         await _context.SaveChangesAsync();
                         return RedirectToAction(nameof(Appointments));
@@ -620,12 +623,9 @@ namespace HOSPITAL2_LAB1.Controllers
                 }
             }
 
-            // Populate the DoctorList dropdown with the same data as in the GET action
-            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName", editedReservation.Doctor);
-
+            ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
             return View(editedReservation);
         }
-
 
 
         private bool AppointmentExists(int id)
@@ -661,15 +661,17 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             if (_context.Reservations == null)
             {
-                return Problem("Entity set 'HOSPITAL2Context.Reservations'  is null.");
-            }
-            var reservation = await _context.Reservations.FindAsync(id);
-            if (reservation != null)
-            {
-                _context.Reservations.Remove(reservation);
+                return Problem("Entity set 'HOSPITAL2Context.Reservations' is null.");
             }
 
-            await _context.SaveChangesAsync();
+            var reservation = await _context.Reservations.FindAsync(id);
+
+            if (reservation != null)
+            {
+                // Remove the reservation
+                _context.Reservations.Remove(reservation);
+                await _context.SaveChangesAsync();
+            }
 
             ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
 
