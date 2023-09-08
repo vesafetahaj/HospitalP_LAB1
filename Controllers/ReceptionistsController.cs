@@ -184,10 +184,29 @@ namespace HOSPITAL2_LAB1.Controllers
             return View();
         }
 
+        /*
         [HttpPost]
         [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateRoom([Bind("RoomId,RoomNumber")] Room room)
+        {
 
+            if (ModelState.IsValid)
+            {
+                if (_context.Rooms.Any(s => s.RoomNumber == room.RoomNumber))
+                {
+                    ModelState.AddModelError("RoomNumber", "A room with the same number already exists.");
+                }
+                else
+                {
+                    _context.Add(room);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Rooms));
+                }
+            }
 
+            return View(room);
+        }
+        */
         public async Task<IActionResult> CreateRoom([Bind("RoomId,RoomNumber")] Room room)
         {
             if (ModelState.IsValid)
@@ -207,7 +226,9 @@ namespace HOSPITAL2_LAB1.Controllers
             return View(room);
         }
 
-         [HttpGet]
+
+
+        [HttpGet]
         public async Task<IActionResult> EditRoom(int? id)
         {
             if (id == null)
@@ -287,23 +308,7 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return View(service);
         }
-        /*
-        [HttpPost, ActionName("DeleteRoom")]
-        [ValidateAntiForgeryToken]
-
-        public async Task<IActionResult> DeleteConfirmedRooms(int id)
-        {
-            var room = await _context.Rooms.FindAsync(id);
-            if (room != null)
-            {
-                _context.Rooms.Remove(room);
-                await _context.SaveChangesAsync();
-            }
-
-            return RedirectToAction(nameof(Rooms));
-        }
-        */
-
+       
         [HttpPost, ActionName("DeleteRoom")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmedRooms(int id)
