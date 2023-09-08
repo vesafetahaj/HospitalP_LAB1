@@ -21,7 +21,7 @@
         @foreach (var payment in Model)
         {
             <tr>
-               
+                <td>@payment.PaymentId</td>
                 <td>@payment.PaymentAmount</td>
                 <td>@payment.PaymentDate</td>
                 <td>@payment.PatientNavigation.Email</td>

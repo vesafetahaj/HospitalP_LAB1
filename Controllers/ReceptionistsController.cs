@@ -680,56 +680,166 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
         // Create Payment
-
+        
         [HttpGet]
-            public async Task<IActionResult> CreatePayment()
-            {
-            var PatientEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@patient.com")).Select(u => u.Email).ToList();
-            SelectList patientEmailsSelectList = new SelectList(PatientEmails);
+        public async Task<IActionResult> CreatePayment()
+        {
+            var patientEmails = _context.Patients
+                .Select(patient => new SelectListItem
+                {
+                    Value = patient.PatientId.ToString(), // Use the appropriate property for the value
+                    Text = patient.Email// Use the appropriate property for the text
+                })
+                .ToList();
 
-            var report = _context.Reports.ToList();
-            ViewData["ReportType"] = new SelectList(report, "ReportId", "ReportType");
+            ViewBag.PatientList = new SelectList(patientEmails, "Value", "Text");
 
-            ViewData["Emails"] = patientEmailsSelectList;
-
+            var report = await _context.Reports.ToListAsync();
+            ViewBag.ReportList = new SelectList(report, "ReportId", "ReportType");
 
             return View();
         }
 
-            [HttpPost]
-            [ValidateAntiForgeryToken]
-            public async Task<IActionResult> CreatePayment([Bind("PaymentId,PaymentAmount,PaymentDate,Patient,Report")] Payment payment)
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreatePayment([Bind("PaymentAmount,PaymentDate,Patient,Report")] Payment payment)
+        {
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
+                // Check if the selected Patient and Report IDs exist in the database
+                var existingPatient = await _context.Patients.FindAsync(payment.Patient);
+                var existingReport = await _context.Reports.FindAsync(payment.Report);
+
+                if (existingPatient != null && existingReport != null)
                 {
-                    // Check if the selected Patient and Report exist in the database
-                    var existingPatient = await _context.Patients.FindAsync(payment.Patient);
-                    var existingReport = await _context.Reports.FindAsync(payment.Report);
+                    // Set the navigation properties of the payment entity
+                    payment.PatientNavigation = existingPatient;
+                    payment.ReportNavigation = existingReport;
 
-                    if (existingPatient == null || existingReport == null)
-                    {
-                        ModelState.AddModelError("", "The selected Patient or Report does not exist");
-                    }
-                    else
-                    {
-
+                    // Add and save the payment entity
                     _context.Add(payment);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Payments));
                 }
+                else
+                {
+                    ModelState.AddModelError("", "Selected Patient or Report not found.");
+                    // Handle the case where the Patient or Report is not found
                 }
+            }
 
-             
-
-            ViewData["ReportType"] = new SelectList(_context.Reports, "ReportId", "ReportType");
-            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Id", "Email");
+            // If there are validation errors or the creation fails, repopulate dropdowns or other data
+            // You can load the necessary data here for the dropdowns or other form fields
 
             return View(payment);
-
         }
-       
+
+        /*
+        [HttpGet]
+        public async Task<IActionResult> CreatePayment()
+        {
+            var patientEmails = _context.Patients
+                .Select(patient => new SelectListItem
+                {
+                    Value = patient.PatientId.ToString(),
+                    Text = patient.Email
+                })
+                .ToList();
+
+            ViewBag.PatientList = new SelectList(patientEmails, "Value", "Text");
+
+            // Initialize an empty list for reports
+            var reports = new List<SelectListItem>();
+
+            // Get the selected patient ID from the query string
+            var selectedPatientId = Request.Query["Patient"];
+
+            if (!string.IsNullOrEmpty(selectedPatientId))
+            {
+                // Fetch reports for the selected patient
+                reports = await _context.Reports
+                    .Where(r => r.Patient == int.Parse(selectedPatientId))
+                    .Select(report => new SelectListItem
+                    {
+                        Value = report.ReportId.ToString(),
+                        Text = report.ReportType
+                    })
+                    .ToListAsync();
+            }
+
+            ViewBag.ReportList = new SelectList(reports, "Value", "Text");
+
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreatePayment([Bind("PaymentAmount,PaymentDate,Patient,Report")] Payment payment)
+        {
+            if (ModelState.IsValid)
+            {
+                // Check if the selected Patient and Report IDs exist in the database
+                var existingPatient = await _context.Patients.FindAsync(payment.Patient);
+                var existingReport = await _context.Reports.FindAsync(payment.Report);
+
+                if (existingPatient != null && existingReport != null)
+                {
+                    // Set the navigation properties of the payment entity
+                    payment.PatientNavigation = existingPatient;
+                    payment.ReportNavigation = existingReport;
+
+                    // Add and save the payment entity
+                    _context.Add(payment);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Payments));
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Selected Patient or Report not found.");
+                    // Handle the case where the Patient or Report is not found
+                }
+            }
+
+            // Repopulate the dropdowns based on the selected patient
+            var patientEmails = _context.Patients
+                .Select(patient => new SelectListItem
+                {
+                    Value = patient.PatientId.ToString(),
+                    Text = patient.Email
+                })
+                .ToList();
+
+            ViewBag.PatientList = new SelectList(patientEmails, "Value", "Text");
+
+            // Initialize an empty list for reports
+            var reports = new List<SelectListItem>();
+
+            // Get the selected patient ID from the query string
+            var selectedPatientId = Request.Query["Patient"];
+
+            if (!string.IsNullOrEmpty(selectedPatientId))
+            {
+                // Fetch reports for the selected patient
+                reports = await _context.Reports
+                    .Where(r => r.Patient == int.Parse(selectedPatientId))
+                    .Select(report => new SelectListItem
+                    {
+                        Value = report.ReportId.ToString(),
+                        Text = report.ReportType
+                    })
+                    .ToListAsync();
+            }
+
+            ViewBag.ReportList = new SelectList(reports, "Value", "Text");
+
+            return View(payment);
+        }
+        */
+
 
     }
 
 }
+
 
