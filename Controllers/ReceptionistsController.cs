@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 using HOSPITAL2_LAB1.Model;
 using System.Security.Claims;
 using System.Globalization;
+using Microsoft.Data.SqlClient;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -194,7 +195,6 @@ namespace HOSPITAL2_LAB1.Controllers
                 if (_context.Rooms.Any(s => s.RoomNumber == room.RoomNumber))
                 {
                     ModelState.AddModelError("RoomNumber", "A room with the same number already exists.");
-                    return View(room);
                 }
                 else
                 {
@@ -202,12 +202,12 @@ namespace HOSPITAL2_LAB1.Controllers
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Rooms));
                 }
-
             }
 
             return View(room);
         }
-        [HttpGet]
+
+         [HttpGet]
         public async Task<IActionResult> EditRoom(int? id)
         {
             if (id == null)
@@ -263,7 +263,10 @@ namespace HOSPITAL2_LAB1.Controllers
             }
 
             return View(room);
-        }
+        } 
+
+       
+       
         private bool RoomExists(int id)
         {
             return (_context.Rooms?.Any(e => e.RoomId == id)).GetValueOrDefault();
@@ -284,7 +287,7 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return View(service);
         }
-
+        /*
         [HttpPost, ActionName("DeleteRoom")]
         [ValidateAntiForgeryToken]
 
@@ -299,6 +302,36 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return RedirectToAction(nameof(Rooms));
         }
+        */
+
+        [HttpPost, ActionName("DeleteRoom")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmedRooms(int id)
+        {
+            try
+            {
+                var room = await _context.Rooms.FindAsync(id);
+                if (room != null)
+                {
+                    _context.Rooms.Remove(room);
+                    await _context.SaveChangesAsync();
+                }
+
+                return RedirectToAction(nameof(Rooms));
+            }
+            catch (SqlException ex) when (ex.Message.Contains("The DELETE statement conflicted with the REFERENCE constraint"))
+            {
+                ModelState.AddModelError("", "Cannot delete the room because it has patients assigned to it.");
+                return View("DeleteRoomExc"); // Assuming you have a "DeleteRoom" view
+            }
+            catch (Exception ex)
+            {
+                // Handle other exceptions if needed
+                ModelState.AddModelError("", "An error occurred while deleting the room.");
+                return View("DeleteRoomExc"); // Assuming you have a "DeleteRoom" view
+            }
+        }
+
 
 
         // Register patient 

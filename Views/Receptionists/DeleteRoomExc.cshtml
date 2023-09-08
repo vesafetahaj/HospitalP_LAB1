@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "~/Views/Shared/_ReceptionistLayout.cshtml";
+}
+<div id="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="alert alert-danger" role="alert">
+                    <h4 class="alert-heading">Error!</h4>
+                    <p>A patient has been assigned to this room, therefore you cannot delete it.</p>
+                    <hr>
+                    <div>
+                        <a asp-action="Rooms">Go back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
