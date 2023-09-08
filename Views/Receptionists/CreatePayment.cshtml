@@ -5,6 +5,18 @@
     Layout = "~/Views/Shared/_ReceptionistLayout.cshtml";
 }
 
+<style>
+    html {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 100vw;
+    }
+    .row{
+        width:30%;
+    }
+</style>
 <br />
 <h2>Create Payment</h2>
 
@@ -33,5 +45,5 @@
     </form>
 </div>
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Payments">Back to List</a>
 </div>

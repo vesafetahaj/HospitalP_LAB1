@@ -19,7 +19,11 @@
     .thead-dark {
         background-color: #343a40;
         color: #fff;
+
+    table {
+        margin-right:10%;
     }
+
 </style>
 <h1>Appointments</h1>
 <hr />
@@ -42,9 +46,9 @@
                 <td>@reservation.ReservationTime</td>
                 <td>@reservation.DoctorNavigation.Name @reservation.DoctorNavigation.Surname</td>
                 <td>
-                    <input type="checkbox" class="reservation-checkbox" data-id="@reservation.ReservationId" />
-                    <a asp-action="EditAppointment" asp-route-id="@reservation.ReservationId">Edit</a> |
-                    <a asp-action="DeleteAppointment" asp-route-id="@reservation.ReservationId">Delete</a>
+                  
+                    <a href="@Url.Action("EditAppointment", "Receptionists", new { id = reservation.ReservationId })" class="btn btn-primary">Edit</a>
+                    <a href="@Url.Action("DeleteAppointment", "Receptionists", new { id = reservation.ReservationId })" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
         }
