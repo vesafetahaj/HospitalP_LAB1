@@ -1,67 +1,36 @@
-﻿@model List<HOSPITAL2_LAB1.Model.Payment>
+﻿@model IEnumerable<HOSPITAL2_LAB1.Model.Payment>
 
 @{
-    ViewData["Title"] = "Patients";
+    ViewData["Title"] = "Payments";
     Layout = "~/Views/Shared/_ReceptionistLayout.cshtml";
 }
-<style>
-    html {
-        overflow-x: hidden;
-    }
 
-    .container {
-        max-width: 100vw;
-    }
-    .card {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
+<h2>Payments</h2>
 
-    .card-image {
-        flex: 1 0 auto;
-        overflow: hidden;
-    }
-
-        .card-image img {
-            width: 100%;
-            height: 100%;   
-            object-fit: cover;
-        }
-
-    #search-button{
-        margin-right: 10%;
-    }
-</style>
-
-<div id="main">
-    <h1>Payments</h1>
-    <div style="display:flex; justify-content:end; margin-top: -40px; margin-right:10%">
-        <a href="@Url.Action("CreatePayment", "Receptionists")" class="btn btn-outline-primary">Make a new payment</a>
-    </div>
-    <div class="row mt-4">
-        @if (Model.Count > 0)
+<table class="table">
+    <thead>
+        <tr>
+            <th>Payment ID</th>
+            <th>Payment Amount</th>
+            <th>Payment Date</th>
+            <th>Patient</th>
+            <th>Report</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var payment in Model)
         {
-            @foreach (var payment in Model)
-            {
-                <div class="col-md-3 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">@payment.PaymentAmount</h5>
-                            <h5 class="card-title">@payment.PaymentDate</h5>
-                            <p class="card-text">Room: @(payment.ReportNavigation != null ? payment.ReportNavigation.ReportType : "N/A")</p>
-                            <p class="card-text">Email: @payment.Patient</p>
-                            <div class="text-center">
-                                <a href="@Url.Action("EditPayment", "Receptionists", new { id = payment.PaymentId })" class="btn btn-primary">Edit</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            }
+            <tr>
+               
+                <td>@payment.PaymentAmount</td>
+                <td>@payment.PaymentDate</td>
+                <td>@payment.PatientNavigation.Email</td>
+                <td>@payment.ReportNavigation.ReportType</td>
+            </tr>
         }
-        else
-        {
-            <p>No payments found.</p>
-        }
-    </div>
+    </tbody>
+</table>
+
+<div>
+    <a asp-action="CreatePayment">Create Payment</a>
 </div>

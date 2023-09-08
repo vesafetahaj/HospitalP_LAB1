@@ -670,12 +670,13 @@ namespace HOSPITAL2_LAB1.Controllers
 
         public async Task<IActionResult> Payments()
         {
-            var payment = await _context.Payments
-                .Include(a => a.ReportNavigation)
-                .Include(r => r.PatientNavigation)
-                .ToListAsync();
+            var paymentsQuery = _context.Payments
+                .Include(p => p.PatientNavigation) // Include the related Patient
+                .Include(p => p.ReportNavigation) // Include the related Report
+                .AsQueryable();
 
-            return View(payment);
+            var payments = await paymentsQuery.ToListAsync();
+            return View(payments);
         }
 
         // Create Payment
@@ -711,10 +712,11 @@ namespace HOSPITAL2_LAB1.Controllers
                     }
                     else
                     {
-                        _context.Add(payment);
-                        await _context.SaveChangesAsync();
-                        return RedirectToAction(nameof(Index));
-                    }
+
+                    _context.Add(payment);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Payments));
+                }
                 }
 
              
