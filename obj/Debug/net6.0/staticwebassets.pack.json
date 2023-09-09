@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\images\\anesthesiology.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\appointment-book.png",
+      "PackagePath": "staticwebassets\\images\\appointment-book.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\appointment.png",
       "PackagePath": "staticwebassets\\images\\appointment.png"
     },
@@ -83,6 +87,18 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\bad-review.png",
       "PackagePath": "staticwebassets\\images\\bad-review.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\bad.png",
+      "PackagePath": "staticwebassets\\images\\bad.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\bill.png",
+      "PackagePath": "staticwebassets\\images\\bill.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\book.png",
+      "PackagePath": "staticwebassets\\images\\book.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\bujar-vrella.jpg",
@@ -105,12 +121,24 @@
       "PackagePath": "staticwebassets\\images\\checkuup.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\comments.png",
+      "PackagePath": "staticwebassets\\images\\comments.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\complain.png",
       "PackagePath": "staticwebassets\\images\\complain.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\complaintt.png",
+      "PackagePath": "staticwebassets\\images\\complaintt.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\contact-mail.png",
       "PackagePath": "staticwebassets\\images\\contact-mail.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\contact.png",
+      "PackagePath": "staticwebassets\\images\\contact.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\customer.png",
@@ -405,6 +433,10 @@
       "PackagePath": "staticwebassets\\images\\orl.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\paper-bills.png",
+      "PackagePath": "staticwebassets\\images\\paper-bills.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\patient.png",
       "PackagePath": "staticwebassets\\images\\patient.png"
     },
@@ -447,6 +479,10 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\radiology.jpg",
       "PackagePath": "staticwebassets\\images\\radiology.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\raport.png",
+      "PackagePath": "staticwebassets\\images\\raport.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\receptionist.png",

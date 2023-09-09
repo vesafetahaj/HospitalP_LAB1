@@ -302,39 +302,25 @@
                             </div>
                         </div>
 
-                        <div className='contact-form'>
-                            <form id='forma'>
-                                <h2 id='contactush2'><b>Contact Us</b></h2>
-                                <input type="text" className="field" placeholder="Name" id="name" />
+            <form asp-action="CreateMessage">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label"></label>
+                <input asp-for="Subject" class="form-control" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Message" class="control-label"></label>
+                <input asp-for="Message" class="form-control" />
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
 
-                                <input type="email" className="field" placeholder="Email" id="email" />
 
-                                <input type="text" className="field" placeholder="Number" id="telefoni" />
 
-                                <textarea className="field area" placeholder="Message" id="comment"></textarea>
 
-                                <input
-                                    type="submit"
-                                    value="Send"
-                                    className="button"
-                                    
-                                />
-                                <div className="Login-butoni">
-                                    You haven't been logged in yet? <a href="https://localhost:7232/Identity/Account/Login"> Login here</a>
-                                </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
 
-                            </form>
-                        </div>
 
-                    </div> <br/>
-                </div>
-
-                    
-              </div>
-
-            );
-        }
-    }
-
-        ReactDOM.render(<Contact />, document.getElementById('react-container'));
-</script>
