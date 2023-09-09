@@ -33,9 +33,9 @@
 
 
 
-.contact-form > h2 {
-    color: white;
-}
+    .contact-form > h2 {
+        color: white;
+    }
 
 #contactush2 {
     color: #fff;
@@ -210,6 +210,7 @@
     margin-bottom: 0.7rem;
     margin-top: 0.2rem;
 }
-#react-container{
+
+#react-container {
     margin-bottom: 400px;
 }

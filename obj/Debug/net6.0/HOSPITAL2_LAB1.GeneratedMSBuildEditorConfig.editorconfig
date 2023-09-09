@@ -9,549 +9,549 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HOSPITAL2_LAB1
 build_property.RootNamespace = HOSPITAL2_LAB1
-build_property.ProjectDir = C:\Users\LENOVO\Desktop\Hospital_LAB1\
+build_property.ProjectDir = C:\Users\Admin\Desktop\HospitalLab1\Hospital_LAB1\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\LENOVO\Desktop\Hospital_LAB1
+build_property.MSBuildProjectDirectory = C:\Users\Admin\Desktop\HospitalLab1\Hospital_LAB1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Lockout.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Lockout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGgyZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGlzYWJsZTJmYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRXh0ZXJuYWxMb2dpbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/Error.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/AboutUs/AboutUs.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/AboutUs/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/Appointments.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/Appointments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcQXBwb2ludG1lbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/Complaints.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/Complaints.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcQ29tcGxhaW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/ContactForms.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/ContactForms.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcQ29udGFjdEZvcm1zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/CreateDoctor.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/CreateDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcQ3JlYXRlRG9jdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/CreateReceptionist.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/CreateReceptionist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcQ3JlYXRlUmVjZXB0aW9uaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/CreateService.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/CreateService.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcQ3JlYXRlU2VydmljZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/Delete.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/DeleteDoctor.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/DeleteDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcRGVsZXRlRG9jdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/DeleteReceptionist.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/DeleteReceptionist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcRGVsZXRlUmVjZXB0aW9uaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/DeleteService.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/DeleteService.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcRGVsZXRlU2VydmljZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/Details.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/Doctors.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/Doctors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcRG9jdG9ycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/Edit.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/EditDoctor.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/EditDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcRWRpdERvY3Rvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/EditPersonalInfo.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/EditPersonalInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcRWRpdFBlcnNvbmFsSW5mby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/EditReceptionist.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/EditReceptionist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcRWRpdFJlY2VwdGlvbmlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/EditService.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/EditService.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcRWRpdFNlcnZpY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/Index.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/Patients.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/Patients.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcUGF0aWVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/PersonalInfo.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/PersonalInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcUGVyc29uYWxJbmZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/Receptionists.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/Receptionists.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcUmVjZXB0aW9uaXN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/Services.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/Services.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcU2VydmljZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Administrators/Users.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Administrators/Users.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvcnNcVXNlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Contact/Contact.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Contact/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Doctors/Appointments.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Doctors/Appointments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xBcHBvaW50bWVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Doctors/Complaints.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Doctors/Complaints.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xDb21wbGFpbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Doctors/Create.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Doctors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Doctors/CreateRaport.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Doctors/CreateRaport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xDcmVhdGVSYXBvcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Doctors/Delete.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Doctors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Doctors/DeleteReport.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Doctors/DeleteReport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xEZWxldGVSZXBvcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Doctors/Details.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Doctors/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Doctors/Edit.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Doctors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Doctors/EditReport.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Doctors/EditReport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xFZGl0UmVwb3J0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Doctors/Index.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Doctors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Doctors/Patients.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Doctors/Patients.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xQYXRpZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Doctors/Reports.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Doctors/Reports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xSZXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Doctors/WaitingForApproval.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Doctors/WaitingForApproval.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xXYWl0aW5nRm9yQXBwcm92YWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Home/Index.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/Appointments.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/Appointments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcQXBwb2ludG1lbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/Complaints.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/Complaints.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcQ29tcGxhaW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/ContactForms.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/ContactForms.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcQ29udGFjdEZvcm1zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/Create.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/CreateAppointment.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/CreateAppointment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcQ3JlYXRlQXBwb2ludG1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/CreateComplaint.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/CreateComplaint.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcQ3JlYXRlQ29tcGxhaW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/CreateMessage.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/CreateMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcQ3JlYXRlTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/Delete.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/DeleteAppointment.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/DeleteAppointment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRGVsZXRlQXBwb2ludG1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/DeleteComplaint.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/DeleteComplaint.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRGVsZXRlQ29tcGxhaW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/DeleteMessage.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/DeleteMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRGVsZXRlTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/Details.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/Edit.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/EditAppointment.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/EditAppointment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRWRpdEFwcG9pbnRtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/EditComplaint.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/EditComplaint.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRWRpdENvbXBsYWludC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/EditMessage.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/EditMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRWRpdE1lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/Index.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/Payments.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/Payments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcUGF5bWVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/Reports.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/Reports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcUmVwb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Patients/WaitingForApproval.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Patients/WaitingForApproval.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcV2FpdGluZ0ZvckFwcHJvdmFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/Appointments.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/Appointments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xBcHBvaW50bWVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/Create.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/CreatePatient.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/CreatePatient.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xDcmVhdGVQYXRpZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/CreatePayment.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/CreatePayment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xDcmVhdGVQYXltZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/CreateRoom.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/CreateRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xDcmVhdGVSb29tLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/Delete.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/DeleteAppointment.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/DeleteAppointment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xEZWxldGVBcHBvaW50bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/DeleteRoom.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/DeleteRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xEZWxldGVSb29tLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/DeleteRoomExc.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/DeleteRoomExc.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xEZWxldGVSb29tRXhjLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/Details.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/Edit.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/EditAppointment.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/EditAppointment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xFZGl0QXBwb2ludG1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/EditPatient.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/EditPatient.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xFZGl0UGF0aWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/EditRoom.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/EditRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xFZGl0Um9vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/Index.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/Patients.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/Patients.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xQYXRpZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/Payments.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/Payments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xQYXltZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/Rooms.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/Rooms.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xSb29tcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/Users.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/Users.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Receptionists/WaitingForApproval.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Receptionists/WaitingForApproval.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0aW9uaXN0c1xXYWl0aW5nRm9yQXBwcm92YWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Roles/Create.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Roles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Roles/Delete.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Roles/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Roles/Edit.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Roles/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Roles/Index.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Shared/Error.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Shared/_DoctorLayout.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Shared/_DoctorLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Eb2N0b3JMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Shared/_PatientLayout.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Shared/_PatientLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXRpZW50TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Shared/_ReceptionistLayout.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Shared/_ReceptionistLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZWNlcHRpb25pc3RMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Sherbimet/Sherbimet.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Sherbimet/Sherbimet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hlcmJpbWV0XFNoZXJiaW1ldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/_ViewImports.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/_ViewStart.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/LENOVO/Desktop/Hospital_LAB1/Views/Shared/_Layout.cshtml]
+[C:/Users/Admin/Desktop/HospitalLab1/Hospital_LAB1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-301nsarhna
