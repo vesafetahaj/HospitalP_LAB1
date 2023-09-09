@@ -11,18 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
 
-
-
-
-<!--<link rel="stylesheet" href="~/css/Contact.css">-->
 <style>
-    html {
-        overflow-x: hidden;
-    }
-
-    .container {
-        max-width: 100vw;
-    }
     .container-contactus {
         position: relative;
         width: 100%;
@@ -45,9 +34,8 @@
     }
 
     .contact-form {
-        background-color: #fafafa;
-        width: 120%;
-        height: 39rem;
+        background-color: lightblue;
+        width: 90%;
         border-radius: 10px;
         box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
         z-index: 1000;
@@ -56,17 +44,12 @@
         grid-template-columns: auto;
     }
 
-    form {
-        padding: 2rem 4rem 3rem 2.4rem;
-        z-index: 10;
-        overflow: hidden;
-        background-color: lightblue;
-    }
 
 
-    .contact-form > h2 {
-        color: white;
-    }
+
+        .contact-form > h2 {
+            color: white;
+        }
 
     #contactush2 {
         color: #fff;
@@ -246,31 +229,26 @@
         margin-bottom: 400px;
     }
 </style>
+
+
+
 <script type="text/babel">
-
-
     class Contact extends React.Component {
-       
-        
+
+
         render() {
-           
 
             return (
-
                 <div>
                     <div className="container-contactus">
-
                     <span class="big-circle"></span>
-
                     <div className="form">
-
                         <div className="contact-info">
                             <h3 className="title-contact">Let's get in touch</h3>
                             <p className="text">Should you have any questions or concerns - or
                                 simply want more information about Sunrisecare Hospital,
                                 please feel free to contact us.</p>
                             <p>We would love to hear from you!</p> <br />
-
                             <div className="info">
                                 <div className="information">
                                     <img src="@Url.Content("~/images/point.png")" className="icon" alt="" />
@@ -285,7 +263,6 @@
                                     <p>(+383) 48-136-910</p>
                                 </div>
                             </div>
-
                             <div className="social-media">
                                 <p><b>Connect with us:</b></p>
                                 <div className="social-icons">
@@ -301,26 +278,30 @@
                                 </div>
                             </div>
                         </div>
+                        <div className='contact-form'>
+                            <form>
+                                <h2 id='contactush2'><b>Contact Us</b></h2>
+                                <input type="text" className="field" placeholder="Name" id="name" />
+                                <input type="email" className="field" placeholder="Email" id="email" />
+                                <input type="text" className="field" placeholder="Number" id="telefoni" />
+                                <textarea className="field area" placeholder="Message" id="comment"></textarea>
+                                <input
+                                    type="submit"
+                                    value="Send"
+                                    className="button"
 
-            <form asp-action="CreateMessage">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Subject" class="control-label"></label>
-                <input asp-for="Subject" class="form-control" />
-                <span asp-validation-for="Subject" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Message" class="control-label"></label>
-                <input asp-for="Message" class="form-control" />
-                <span asp-validation-for="Message" class="text-danger"></span>
-            </div>
+                                />
+                                <div className="Login-butoni">
+                                    You haven't been logged in yet? <a href="https://localhost:7232/Identity/Account/Login"> Login here</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div> <br/>
+                </div>
 
-
-
-
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-
-
+              </div>
+            );
+        }
+    }
+        ReactDOM.render(<Contact />, document.getElementById('react-container'));
+</script>
