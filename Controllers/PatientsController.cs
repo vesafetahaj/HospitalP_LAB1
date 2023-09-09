@@ -188,14 +188,14 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 _context.Patients.Remove(patient);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool PatientExists(int id)
         {
-          return (_context.Patients?.Any(e => e.PatientId == id)).GetValueOrDefault();
+            return (_context.Patients?.Any(e => e.PatientId == id)).GetValueOrDefault();
         }
         private bool HasProvidedPersonalInfo(string userId)
         {
@@ -258,7 +258,7 @@ namespace HOSPITAL2_LAB1.Controllers
             if (patient != null)
             {
                 var appointments = await _context.Reservations
-                    .Include(a => a.DoctorNavigation) 
+                    .Include(a => a.DoctorNavigation)
                     .Where(a => a.Patient == patient.PatientId)
                     .ToListAsync();
 
@@ -352,7 +352,7 @@ namespace HOSPITAL2_LAB1.Controllers
             }
 
             var reservation = await _context.Reservations
-              
+
                 .FirstOrDefaultAsync(m => m.ReservationId == id);
             if (reservation == null)
             {
@@ -718,6 +718,26 @@ namespace HOSPITAL2_LAB1.Controllers
                     .ToListAsync();
 
                 return View(raport);
+            }
+
+            // Handle case where the patient is not found
+            return NotFound();
+        }
+
+        //shfaqja e pagesave tek pacienti
+        public async Task<IActionResult> Payments()
+        {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var patient = await _context.Patients.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+
+            if (patient != null)
+            {
+                var payments = await _context.Payments
+                    .Include(a => a.ReportNavigation)
+                    .Where(a => a.Patient == patient.PatientId)
+                    .ToListAsync();
+
+                return View(payments);
             }
 
             // Handle case where the patient is not found

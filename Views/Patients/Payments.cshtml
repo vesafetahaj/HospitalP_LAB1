@@ -1,0 +1,34 @@
+﻿@model IEnumerable<HOSPITAL2_LAB1.Model.Payment>
+
+@{
+    ViewData["Title"] = "Payments";
+    Layout = "~/Views/Shared/_PatientLayout.cshtml";
+}
+
+<br />
+<h2>Payments</h2>
+
+<table class="table">
+    <thead style="background-color:black; color:white">
+        <tr>
+            <th>Payment ID</th>
+            <th>Payment Amount</th>
+            <th>Payment Date</th>
+            <th>Patient</th>
+            <th>Report</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var payment in Model)
+        {
+            <tr>
+                <td>@payment.PaymentId</td>
+                <td>@payment.PaymentAmount</td>
+                <td>@payment.PaymentDate</td>
+                <td>@payment.PatientNavigation.Email</td>
+                <td>@payment.ReportNavigation.ReportType</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
