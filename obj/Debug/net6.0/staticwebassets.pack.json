@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\Sherbimet.css"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\css\\loading.css",
+      "PackagePath": "staticwebassets\\css\\loading.css"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -119,6 +123,10 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\checkuup.jpg",
       "PackagePath": "staticwebassets\\images\\checkuup.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\clinical.jpg",
+      "PackagePath": "staticwebassets\\images\\clinical.jpg"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\comments.png",
@@ -369,6 +377,10 @@
       "PackagePath": "staticwebassets\\images\\logo-no-background.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\logo192.png",
       "PackagePath": "staticwebassets\\images\\logo192.png"
     },
@@ -529,6 +541,10 @@
       "PackagePath": "staticwebassets\\images\\slideee.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\slideri1.png",
+      "PackagePath": "staticwebassets\\images\\slideri1.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\specialservices2.jpg",
       "PackagePath": "staticwebassets\\images\\specialservices2.jpg"
     },
@@ -587,10 +603,6 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\stomatology.jpg",
       "PackagePath": "staticwebassets\\images\\stomatology.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png",
-      "PackagePath": "staticwebassets\\images\\sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-white-on-transparent-background.png",

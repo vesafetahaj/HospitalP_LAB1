@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aIGmsNmuDVZ2O8tYioGbp6VRaIMSiVbDieSWh0oCjSE=",
+  "Hash": "BDXhga5JKPKzBbJQ8e96TICha7J0949k2VejgXViHUg=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1122,6 +1122,23 @@
       "OriginalItemSpec": "wwwroot\\css\\Footer.css"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\css\\loading.css",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "css/loading.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\loading.css"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\css\\Sherbimet.css",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -1545,6 +1562,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\checkuup.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\clinical.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/clinical.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\clinical.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\comments.png",
@@ -2533,6 +2567,23 @@
       "OriginalItemSpec": "wwwroot\\images\\login-forma-color.jpg"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\logo.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\logo192.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -3298,6 +3349,23 @@
       "OriginalItemSpec": "wwwroot\\images\\slideee.jpg"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\slideri1.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/slideri1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\slideri1.png"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\specialservices2.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -3551,23 +3619,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\stomatology.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png",
-      "SourceId": "HOSPITAL2_LAB1",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\",
-      "BasePath": "_content/HOSPITAL2_LAB1",
-      "RelativePath": "images/sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-color-on-transparent-background.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HospitalLab1\\Hospital_LAB1\\wwwroot\\images\\sunrisecare-hospital-low-resolution-logo-white-on-transparent-background.png",

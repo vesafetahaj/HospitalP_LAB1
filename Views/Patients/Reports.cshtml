@@ -3,6 +3,8 @@
     ViewData["Title"] = "Reports";
     Layout = "~/Views/Shared/_PatientLayout.cshtml";
 }
+
+<link rel="stylesheet" href="~/css/loading.css" asp-append-version="true" />
 <style>
     .accordion {
         display: none;
@@ -21,8 +23,33 @@
         width: 100%;
         padding: 10px;
     }
+
+
+
+
+
+
+    
 </style>
-<h1>Raports</h1>
+<div class="loader">
+    <span>R</span>
+    <span>A</span>
+    <span>P</span>
+    <span>O</span>
+    <span>R</span>
+    <span>T</span>
+    <span>S</span>
+
+    <div class="covers">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
 <hr />
 
 @foreach (var report in Model)
