@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\images\\afrim-nimani.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\agenda.png",
+      "PackagePath": "staticwebassets\\images\\agenda.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\alergology.jpg",
       "PackagePath": "staticwebassets\\images\\alergology.jpg"
     },
@@ -71,6 +75,14 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\anesthesiology.jpg",
       "PackagePath": "staticwebassets\\images\\anesthesiology.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\ankesa.png",
+      "PackagePath": "staticwebassets\\images\\ankesa.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\ankesa1.png",
+      "PackagePath": "staticwebassets\\images\\ankesa1.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\appointment-book.png",
@@ -101,10 +113,6 @@
       "PackagePath": "staticwebassets\\images\\bad.png"
     },
     {
-      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\bill.png",
-      "PackagePath": "staticwebassets\\images\\bill.png"
-    },
-    {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\book.png",
       "PackagePath": "staticwebassets\\images\\book.png"
     },
@@ -133,10 +141,6 @@
       "PackagePath": "staticwebassets\\images\\clinical.jpg"
     },
     {
-      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\comments.png",
-      "PackagePath": "staticwebassets\\images\\comments.png"
-    },
-    {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\complain.png",
       "PackagePath": "staticwebassets\\images\\complain.png"
     },
@@ -157,8 +161,8 @@
       "PackagePath": "staticwebassets\\images\\contact-mail.png"
     },
     {
-      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\contact.png",
-      "PackagePath": "staticwebassets\\images\\contact.png"
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\contact-us.png",
+      "PackagePath": "staticwebassets\\images\\contact-us.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\customer.png",
@@ -209,6 +213,10 @@
       "PackagePath": "staticwebassets\\images\\email.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\email1.png",
+      "PackagePath": "staticwebassets\\images\\email1.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\endocrinology.jpeg",
       "PackagePath": "staticwebassets\\images\\endocrinology.jpeg"
     },
@@ -225,8 +233,16 @@
       "PackagePath": "staticwebassets\\images\\facebook.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\fatura.png",
+      "PackagePath": "staticwebassets\\images\\fatura.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\favicon.ico",
       "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\folder.png",
+      "PackagePath": "staticwebassets\\images\\folder.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\foto1.jpg",
@@ -307,6 +323,10 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\health-report.png",
       "PackagePath": "staticwebassets\\images\\health-report.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\healthreport.png",
+      "PackagePath": "staticwebassets\\images\\healthreport.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\heart-1.png",
@@ -633,12 +653,20 @@
       "PackagePath": "staticwebassets\\images\\termin.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\terminbook.png",
+      "PackagePath": "staticwebassets\\images\\terminbook.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\termini.png",
       "PackagePath": "staticwebassets\\images\\termini.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\termini1.jpg",
       "PackagePath": "staticwebassets\\images\\termini1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\terminiiii.png",
+      "PackagePath": "staticwebassets\\images\\terminiiii.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\test1.jpg",

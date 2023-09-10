@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oP9CuAVwvNZ4g589eXdxAKpgEPi0+Odh70tzD8UB/Rs=",
+  "Hash": "SOFaMlREi6mCzqylpCt1AB2r5+JX9Wd/YygZ2Q1QYWg=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1275,6 +1275,23 @@
       "OriginalItemSpec": "wwwroot\\images\\afrim-nimani.jpg"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\agenda.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/agenda.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\agenda.png"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\alergology.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -1341,6 +1358,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\anesthesiology.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\ankesa.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/ankesa.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ankesa.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\ankesa1.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/ankesa1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ankesa1.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\appointment.png",
@@ -1462,23 +1513,6 @@
       "OriginalItemSpec": "wwwroot\\images\\bad-review.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\bill.png",
-      "SourceId": "HOSPITAL2_LAB1",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
-      "BasePath": "_content/HOSPITAL2_LAB1",
-      "RelativePath": "images/bill.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bill.png"
-    },
-    {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\book.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -1598,23 +1632,6 @@
       "OriginalItemSpec": "wwwroot\\images\\clinical.jpg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\comments.png",
-      "SourceId": "HOSPITAL2_LAB1",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
-      "BasePath": "_content/HOSPITAL2_LAB1",
-      "RelativePath": "images/comments.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\comments.png"
-    },
-    {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\complain.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -1647,23 +1664,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\complaintt.png"
-    },
-    {
-      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\contact.png",
-      "SourceId": "HOSPITAL2_LAB1",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
-      "BasePath": "_content/HOSPITAL2_LAB1",
-      "RelativePath": "images/contact.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\contact.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\contact-image.avif",
@@ -1715,6 +1715,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\contact-mail.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\contact-us.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/contact-us.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\contact-us.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\customer.png",
@@ -1921,6 +1938,23 @@
       "OriginalItemSpec": "wwwroot\\images\\email.png"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\email1.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/email1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\email1.png"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\endocrinology.jpeg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -1989,6 +2023,23 @@
       "OriginalItemSpec": "wwwroot\\images\\facebook.png"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\fatura.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/fatura.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\fatura.png"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\favicon.ico",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -2004,6 +2055,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\folder.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/folder.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\folder.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\foto1.jpg",
@@ -2327,6 +2395,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\health-checkup.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\healthreport.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/healthreport.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\healthreport.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\health-report.png",
@@ -3740,6 +3825,23 @@
       "OriginalItemSpec": "wwwroot\\images\\termin.png"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\terminbook.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/terminbook.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\terminbook.png"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\termini.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -3772,6 +3874,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\termini1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\terminiiii.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/terminiiii.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\terminiiii.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\test1.jpg",
