@@ -6,19 +6,20 @@
 }
 <style>
     .table-blue {
-        background-color: #eaf4fd;
+        background-color: #E1EBEE;
     }
 
     .thead-dark {
-        background-color: #343a40;
+        background-color: #007FFF;
         color: #fff;
     }
 
+  
 
 </style>
+
 <h1>Appointments</h1>
 <hr />
-
 
 <table class="table table-bordered table-striped table-hover table-blue">
     <thead class="thead-dark">
@@ -46,22 +47,4 @@
         }
     </tbody>
 </table>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var checkboxes = document.querySelectorAll(".reservation-checkbox");
 
-        checkboxes.forEach(function (checkbox) {
-            checkbox.addEventListener("change", function () {
-                var row = this.closest("tr");
-
-                if (this.checked) {
-                    // Handle marking as done (e.g., change the row's background color).
-                    row.style.backgroundColor = "#b0e57c"; // You can use any color you prefer.
-                } else {
-                    // Handle unmarking as done (e.g., remove the background color).
-                    row.style.backgroundColor = "";
-                }
-            });
-        });
-    });
-</script>
