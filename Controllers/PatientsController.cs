@@ -743,5 +743,6 @@ namespace HOSPITAL2_LAB1.Controllers
             // Handle case where the patient is not found
             return NotFound();
         }
+
     }
 }

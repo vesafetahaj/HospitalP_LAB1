@@ -9,7 +9,7 @@
 
     h3 {
         font-family: 'Anek Gurmukhi', sans-serif;
-        color: #aecce4;
+        color: #6CB4EE;
         display: inline;
     }
 
@@ -18,8 +18,8 @@
         justify-content: center;
         align-items: center;
         background-color: #f0f8ff;
-        height: 150vh;
-        background-image: url('../images/slide5.jpg');
+        height: 100vh;
+        background-image: url('../images/foto1.jpg');
         background-size: cover;
         position: relative;
     }
@@ -41,7 +41,8 @@
 
     label {
         font-weight: bold;
-        color: #333;
+        color: #0077c0;
+         
     }
 
     .btn-primary {
@@ -53,9 +54,14 @@
             background-color: #0056b3;
         }
 
+
+    .my-custom-link {
+        color: blue;
+        text-decoration:none;
+    }
+
 </style>
 
-<link rel="stylesheet" href="~/css/CreateComplaint.css">
 
 <div class="container">
     <div class="form-container">
@@ -67,7 +73,7 @@
 
             <div class="form-group">
                 <label asp-for="ComplaintDate" class="control-label"></label>
-                <input asp-for="ComplaintDate" class="form-control" />
+                <input asp-for="ComplaintDate" class="form-control" type="date" />
                 <span asp-validation-for="ComplaintDate" class="text-danger"></span>
             </div>
 
@@ -83,8 +89,8 @@
             </div>
         </form>
 
-        <div>
-            <a asp-action="Complaints">Back to List</a>
+        <div class="my-custom-div">
+            <a asp-action="Index" class="my-custom-link">Back to Home</a>
         </div>
     </div>
 </div>

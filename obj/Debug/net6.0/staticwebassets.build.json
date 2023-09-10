@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gO5aXyWfuNvQz7JjFRIIp5knJhGujYjy1FvEw+vuv3Y=",
+  "Hash": "SOFaMlREi6mCzqylpCt1AB2r5+JX9Wd/YygZ2Q1QYWg=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1103,23 +1103,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Contact.css"
-    },
-    {
-      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\css\\CreateComplaint.css",
-      "SourceId": "HOSPITAL2_LAB1",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
-      "BasePath": "_content/HOSPITAL2_LAB1",
-      "RelativePath": "css/CreateComplaint.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\CreateComplaint.css"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\css\\CreateDoctor.css",
