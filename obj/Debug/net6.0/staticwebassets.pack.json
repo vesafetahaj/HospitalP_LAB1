@@ -141,6 +141,14 @@
       "PackagePath": "staticwebassets\\images\\complaintt.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\contact-image.avif",
+      "PackagePath": "staticwebassets\\images\\contact-image.avif"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\contact-imagee.jpg",
+      "PackagePath": "staticwebassets\\images\\contact-imagee.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\contact-mail.png",
       "PackagePath": "staticwebassets\\images\\contact-mail.png"
     },
@@ -295,6 +303,10 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\health-report.png",
       "PackagePath": "staticwebassets\\images\\health-report.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\heart-1.png",
+      "PackagePath": "staticwebassets\\images\\heart-1.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\heartrate.png",

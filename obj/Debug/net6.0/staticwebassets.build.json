@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ftdMOVrjshGMupHitnYc7JQzNpgI7uEbcjNBqzeR52U=",
+  "Hash": "kWhyipk0NHLBa80YueKIW5OWG4mZy9J6QKHG9I/N7n8=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1649,6 +1649,40 @@
       "OriginalItemSpec": "wwwroot\\images\\contact.png"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\contact-image.avif",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/contact-image.avif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\contact-image.avif"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\contact-imagee.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/contact-imagee.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\contact-imagee.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\contact-mail.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -2293,6 +2327,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\health-report.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\heart-1.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/heart-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\heart-1.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\images\\heartrate.png",
