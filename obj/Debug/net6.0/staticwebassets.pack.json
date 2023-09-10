@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\Contact.css"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\css\\CreateComplaint.css",
+      "PackagePath": "staticwebassets\\css\\CreateComplaint.css"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HOSPITAL-V2\\Hospital_LAB1\\wwwroot\\css\\CreateDoctor.css",
       "PackagePath": "staticwebassets\\css\\CreateDoctor.css"
     },
