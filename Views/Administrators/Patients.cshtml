@@ -4,43 +4,76 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <style>
-    .patient-container {
-        border: 1px solid #0f5298;
-        width: 300px; /* Fixed width for the square container */
-        height: 300px; /* Fixed height for the square container */
+    /* Main container style */
+    .patients-container {
+        padding: 20px;
+    }
+
+    /* Patient card style */
+    .patient-card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
         margin: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: linear-gradient(120deg,#f0f7ff, #77b5fe);
-        transition: background-color 0.3s ease, transform 0.3s ease;
+        background-color: #fff;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-        .patient-container:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+        .patient-card h4 {
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .patient-card p {
+            color: #666;
+            margin: 5px 0;
+        }
+
+    /* Search bar style */
+    .search-bar {
+        margin-bottom: 20px;
+    }
+
+    /* Search input style */
+    .search-input {
+        width: 70%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    /* Original search button style */
+    .search-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+        .search-button:hover {
+            background-color: #0056b3;
         }
 </style>
 <h1>Patients</h1>
 <hr />
 <div class="row mt-4">
-    <form method="get" action="@Url.Action("SearchPatients", "Administrators")">
-        <div class="input-group mb-3">
-            <input type="text" name="query" class="form-control" placeholder="Search by name and surname" aria-label="Search" aria-describedby="search-button">
-            <button class="btn btn-primary" type="submit" id="search-button">Search</button>
+    <form method="get" action="@Url.Action("SearchPatients", "Administrators")" class="search-bar">
+        <div class="input-group">
+            <input type="text" name="query" class="form-control search-input" placeholder="Search by name and surname" aria-label="Search" aria-describedby="search-button">
+            <button class="btn btn-primary search-button" type="submit" id="search-button">Search</button>
         </div>
     </form>
 </div>
 
-<div class="container">
+<div class="container patients-container">
     <div class="row">
         @foreach (var patient in Model)
         {
             <div class="col-md-4">
-                <div class="patient-container">
+                <div class="patient-card">
                     <h4>@patient.Name @patient.Surname</h4>
                     <p><strong>Gender:</strong> @patient.Gender</p>
                     <p><strong>Birthday:</strong> @patient.Birthday?.ToString("yyyy-MM-dd")</p>

@@ -5,12 +5,56 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Edit Service</h1>
+<style>
 
-<h4>Service</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+    h3 {
+        font-family: 'Anek Gurmukhi', sans-serif;
+        color: #aecce4;
+        display: inline;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        background-color: #f0f8ff;
+        position: relative;
+    }
+
+    .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 70%;
+        max-width: 600px;
+        position: relative;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+</style>
+<div class="container">
+    <div class="form-container">
+        <h3>Edit Service</h3>
+        <hr />
         <form asp-action="EditService">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="SpecializationId" />
@@ -36,9 +80,10 @@
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
-    </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
 </div>
