@@ -825,40 +825,52 @@ namespace HOSPITAL2_LAB1.Controllers
             return View();
         }
 
-        
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreatePayment([Bind("PaymentAmount,PaymentDate,Patient,Report")] Payment payment)
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> CreatePayment([Bind("PaymentAmount,PaymentDate,Patient,Report")] Payment payment)
+{
+    if (string.IsNullOrWhiteSpace(payment.PaymentAmount))
+    {
+        ModelState.AddModelError("PaymentAmount", "Payment amount is required");
+    }
+    if (payment.PaymentDate == null)
+    {
+        ModelState.AddModelError("PaymentDate", "Payment date is required");
+    }
+    if (ModelState.IsValid)
+    {
+        var existingPatient = await _context.Patients.FindAsync(payment.Patient);
+        var existingReport = await _context.Reports.FindAsync(payment.Report);
+
+        if (existingPatient != null && existingReport != null)
         {
-            if (ModelState.IsValid)
-            {
-                // Check if the selected Patient and Report IDs exist in the database
-                var existingPatient = await _context.Patients.FindAsync(payment.Patient);
-                var existingReport = await _context.Reports.FindAsync(payment.Report);
+            payment.PatientNavigation = existingPatient;
+            payment.ReportNavigation = existingReport;
 
-                if (existingPatient != null && existingReport != null)
-                {
-                    // Set the navigation properties of the payment entity
-                    payment.PatientNavigation = existingPatient;
-                    payment.ReportNavigation = existingReport;
-
-                    // Add and save the payment entity
-                    _context.Add(payment);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Payments));
-                }
-                else
-                {
-                    ModelState.AddModelError("", "Selected Patient or Report not found.");
-                    // Handle the case where the Patient or Report is not found
-                }
-            }
-
-            // If there are validation errors or the creation fails, repopulate dropdowns or other data
-            // You can load the necessary data here for the dropdowns or other form fields
-
-            return View(payment);
+            _context.Add(payment);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Payments));
         }
+        else
+        {
+            ModelState.AddModelError("", "Selected Patient or Report not found.");
+        }
+    }
+
+    var patientEmails = _context.Patients
+        .Select(patient => new SelectListItem
+        {
+            Value = patient.PatientId.ToString(),
+            Text = patient.Email
+        })
+        .ToList();
+    ViewBag.PatientList = new SelectList(patientEmails, "Value", "Text");
+
+    var report = await _context.Reports.ToListAsync();
+    ViewBag.ReportList = new SelectList(report, "ReportId", "ReportType");
+
+    return View(payment);
+}
 
         /*
         [HttpGet]
