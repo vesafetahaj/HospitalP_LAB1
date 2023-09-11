@@ -11,6 +11,7 @@ using HOSPITAL2_LAB1.Model;
 using System.Security.Claims;
 using System.Globalization;
 using Microsoft.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -458,14 +459,14 @@ namespace HOSPITAL2_LAB1.Controllers
             return _context.Patients.Any(e => e.PatientId == id);
         }
 
+        [HttpGet]
         public IActionResult CreatePatient()
         {
             var PatientEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@patient.com")).Select(u => u.Email).ToList();
             SelectList patientEmailsSelectList = new SelectList(PatientEmails);
 
             var room = _context.Rooms.ToList();
-            ViewData["RoomNumber"] = new SelectList(room, "RoomId", "RoomNumber");
-
+            ViewData["RoomNumber"] = new SelectList(room, "RoomId", "RoomNumber"); 
             ViewData["Emails"] = patientEmailsSelectList;
 
             return View();
@@ -476,22 +477,21 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreatePatient([Bind("PatientId,Name,Surname,Gender,Birthday,Email,Phone,Room")] Patient patient)
         {
+            
+
             if (ModelState.IsValid)
             {
-                // Get the selected email from the patient object
+              
                 string selectedEmail = patient.Email;
 
-                // Find the user with the selected email in the AspNetUsers table
                 var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email.ToLower() == selectedEmail.ToLower());
                 if (user != null)
                 {
-                    // Set the UserId property of the patient entity
+                   
                     patient.UserId = user.Id;
 
-                    // Check if the room is Room ID 1 (which is an exception and can have more than 3 patients)
                     if (patient.Room != 1)
                     {
-                        // Check if the room has already reached its patient limit (3 patients)
                         var room = await _context.Rooms.FirstOrDefaultAsync(r => r.RoomId == patient.Room);
                         if (room != null)
                         {
@@ -506,7 +506,6 @@ namespace HOSPITAL2_LAB1.Controllers
                         }
                     }
 
-                    // Add and save the patient entity
                     _context.Add(patient);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Patients));
@@ -514,7 +513,6 @@ namespace HOSPITAL2_LAB1.Controllers
                 else
                 {
                     ModelState.AddModelError("", "Selected user not found.");
-                    // Handle the case where the user is not found
                 }
             }
 
@@ -527,21 +525,17 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             if (string.IsNullOrEmpty(query))
             {
-                // If the search string is empty or null, return all doctors
                 var allPatients = await _context.Patients.Include(a => a.User).ToListAsync();
                 return View("Patients", allPatients);
             }
 
-            // Search for doctors whose name or rooom contains the search query
             var patient = await _context.Patients
                 .Where(d => d.Name.Contains(query) || d.Surname.Contains(query))
                 .Include(a => a.User).Include(b => b.RoomNavigation)
                 .ToListAsync();
 
-            // Populate the ViewBag.Name for the Room dropdown
             ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
 
-            // Populate the ViewBag.Emails for the Emails dropdown
             ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
 
             return View("Patients", patient);
@@ -553,19 +547,14 @@ namespace HOSPITAL2_LAB1.Controllers
         //Showing users
         public async Task<IActionResult> Users()
         {
-            // Retrieve all users from the database
             var users = await _context.AspNetUsers.ToListAsync();
 
-            // Filter the list to only include patients
             var patientUsers = users.Where(user => user.Email.EndsWith("@patient.com")).ToList();
 
-            // Retrieve receptionist information
             var patients = await _context.Patients.ToListAsync();
 
-            // Store the receptionist and doctor information in ViewData
             ViewData["Patients"] = patients;
 
-            // Pass the filtered patient user list to the view
             return View(patientUsers);
         }
 
