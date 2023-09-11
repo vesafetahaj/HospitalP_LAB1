@@ -577,26 +577,7 @@ namespace HOSPITAL2_LAB1.Controllers
             return View(patient);
         }
 
-        public async Task<IActionResult> SearchPatients(string query)
-        {
-            if (string.IsNullOrEmpty(query))
-            {
-                var allPatients = await _context.Patients.Include(a => a.User).ToListAsync();
-                return View("Patients", allPatients);
-            }
-
-            var patient = await _context.Patients
-                .Where(d => d.Name.Contains(query) || d.Surname.Contains(query))
-                .Include(a => a.User).Include(b => b.RoomNavigation)
-                .ToListAsync();
-
-            ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
-
-            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
-
-            return View("Patients", patient);
-        }
-
+       
 
 
 
@@ -670,6 +651,10 @@ namespace HOSPITAL2_LAB1.Controllers
                     {
                         ModelState.AddModelError("", "This appointment is not available. Please choose another one!");
                     }
+                    else if (!IsAppointmentValid(editedReservation))
+                    {
+                        ModelState.AddModelError("", "Appointments must be set at least 2 hours in advance.");
+                    }
                     else
                     {
                         // Update the reservation details
@@ -699,8 +684,27 @@ namespace HOSPITAL2_LAB1.Controllers
             return View(editedReservation);
         }
 
+        private bool IsAppointmentValid(Reservation appointment)
+        {
+            var minValidDateTime = DateTime.Now.AddHours(2);
 
-   
+            if (appointment.ReservationDate.HasValue && appointment.ReservationTime.HasValue)
+            {
+                var appointmentDateTime = new DateTime(
+                    appointment.ReservationDate.Value.Year,
+                    appointment.ReservationDate.Value.Month,
+                    appointment.ReservationDate.Value.Day,
+                    appointment.ReservationTime.Value.Hours,
+                    appointment.ReservationTime.Value.Minutes,
+                    0
+                );
+
+                return appointmentDateTime > minValidDateTime;
+            }
+
+            return false;
+        }
+
 
         private bool AppointmentExists(int id)
         {
