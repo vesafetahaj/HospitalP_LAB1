@@ -258,11 +258,36 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
         //Patients
-        public async Task<IActionResult> Patients()
+        public async Task<IActionResult> Patients(string sortOrder)
         {
-            var patients = await _context.Patients.ToListAsync(); // Fetch all patients from the database
+            ViewData["NameSortParam"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["DateSortParam"] = sortOrder == "Date" ? "date_desc" : "Date";
+
+            var patientsQuery = _context.Patients.AsQueryable();
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    patientsQuery = patientsQuery.OrderByDescending(p => p.Name);
+                    break;
+                case "name_asc": // Add sorting by name in ascending order
+                    patientsQuery = patientsQuery.OrderBy(p => p.Name);
+                    break;
+                case "Date":
+                    patientsQuery = patientsQuery.OrderBy(p => p.Birthday);
+                    break;
+                case "date_desc":
+                    patientsQuery = patientsQuery.OrderByDescending(p => p.Birthday);
+                    break;
+                default:
+                    ViewData["NameSortParam"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : sortOrder; // Retain the sortOrder for the view
+                    break;
+            }
+
+            var patients = await patientsQuery.Include(a => a.User).ToListAsync();
             return View(patients);
         }
+
         public async Task<IActionResult> SearchPatients(string query)
         {
             if (string.IsNullOrEmpty(query))
