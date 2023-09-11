@@ -12,6 +12,7 @@ using System.Security.Claims;
 using System.Globalization;
 using Microsoft.Data.SqlClient;
 using System.Text.RegularExpressions;
+using Humanizer;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -645,26 +646,29 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 try
                 {
-                    var existingReservation = await _context.Reservations.FindAsync(id);
+                    if (IsTimeSpanValid(editedReservation.ReservationTime))
+                    {
+                        if (IsDuplicateAppointment(editedReservation))
+                        {
+                            ModelState.AddModelError("", "This appointment is not available. Please choose another one!");
+                        }
+                       
+                        else
+                        {
+                            // Update the reservation details
+                            var existingReservation = await _context.Reservations.FindAsync(id);
+                            existingReservation.ReservationDate = editedReservation.ReservationDate;
+                            existingReservation.ReservationTime = editedReservation.ReservationTime;
+                            existingReservation.Doctor = editedReservation.Doctor;
 
-                    if (IsDuplicateAppointment(editedReservation))
-                    {
-                        ModelState.AddModelError("", "This appointment is not available. Please choose another one!");
-                    }
-                    else if (!IsAppointmentValid(editedReservation))
-                    {
-                        ModelState.AddModelError("", "Appointments must be set at least 2 hours in advance.");
+                            _context.Update(existingReservation);
+                            await _context.SaveChangesAsync();
+                            return RedirectToAction(nameof(Appointments));
+                        }
                     }
                     else
                     {
-                        // Update the reservation details
-                        existingReservation.ReservationDate = editedReservation.ReservationDate;
-                        existingReservation.ReservationTime = editedReservation.ReservationTime;
-                        existingReservation.Doctor = editedReservation.Doctor;
-
-                        _context.Update(existingReservation);
-                        await _context.SaveChangesAsync();
-                        return RedirectToAction(nameof(Appointments));
+                        ModelState.AddModelError("", "Invalid appointment time. Please choose a time between 00:00:00 and 23:59:59.");
                     }
                 }
                 catch (DbUpdateConcurrencyException)
@@ -683,27 +687,21 @@ namespace HOSPITAL2_LAB1.Controllers
             ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
             return View(editedReservation);
         }
-
-        private bool IsAppointmentValid(Reservation appointment)
+        private bool IsTimeSpanValid(TimeSpan? timeSpan)
         {
-            var minValidDateTime = DateTime.Now.AddHours(2);
-
-            if (appointment.ReservationDate.HasValue && appointment.ReservationTime.HasValue)
+            if (timeSpan.HasValue)
             {
-                var appointmentDateTime = new DateTime(
-                    appointment.ReservationDate.Value.Year,
-                    appointment.ReservationDate.Value.Month,
-                    appointment.ReservationDate.Value.Day,
-                    appointment.ReservationTime.Value.Hours,
-                    appointment.ReservationTime.Value.Minutes,
-                    0
-                );
-
-                return appointmentDateTime > minValidDateTime;
+                // Check if the time span is within the valid range
+                var minTimeSpan = TimeSpan.Zero;
+                var maxTimeSpan = TimeSpan.Parse("23:59:59.9999999");
+                return timeSpan >= minTimeSpan && timeSpan <= maxTimeSpan;
             }
 
+            // If the time span is null, consider it invalid
             return false;
         }
+
+      
 
 
         private bool AppointmentExists(int id)
