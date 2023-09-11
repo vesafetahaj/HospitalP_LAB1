@@ -404,11 +404,7 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 ModelState.AddModelError("Phone", "Phone number is required");
             }
-            if (patient.Room == null)
-            {
-                ModelState.AddModelError("Room", "Please select a room");
-            }
-
+            
             if (ModelState.IsValid)
             {
                 try
@@ -492,8 +488,53 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreatePatient([Bind("PatientId,Name,Surname,Gender,Birthday,Email,Phone,Room")] Patient patient)
         {
-            
+           
+            if (string.IsNullOrWhiteSpace(patient.Name))
+            {
+                ModelState.AddModelError("Name", "Name is reqired");
+            }
+            else if (!Regex.IsMatch(patient.Name, "^[a-zA-Z]+$"))
+            {
+                ModelState.AddModelError("Name", "Name should only contain letters");
+            }
 
+            if (string.IsNullOrWhiteSpace(patient.Surname))
+            {
+                ModelState.AddModelError("Surname", "Surname is required");
+            }
+            else if (!Regex.IsMatch(patient.Surname, "^[a-zA-Z]+$"))
+            {
+                ModelState.AddModelError("Surname", "Surname should only contain letters");
+            }
+
+            if (string.IsNullOrWhiteSpace(patient.Gender))
+            {
+                ModelState.AddModelError("Gender", "Gender is required");
+            }
+            if (patient.Birthday == null)
+            {
+                ModelState.AddModelError("Birthday", "Please fill in your birthday");
+            }
+            else
+            {
+                var minBirthDate = DateTime.Today.AddYears(-18);
+
+                if (patient.Birthday > minBirthDate)
+                {
+                    ModelState.AddModelError("Birthday", "You must be at least 18 years old.");
+                }
+            }
+
+            if (string.IsNullOrWhiteSpace(patient.Email))
+            {
+                ModelState.AddModelError("Email", "Please select an email");
+            }
+
+            if (patient.Phone == null)
+            {
+                ModelState.AddModelError("Phone", "Phone number is required");
+            }
+           
             if (ModelState.IsValid)
             {
               
@@ -604,7 +645,6 @@ namespace HOSPITAL2_LAB1.Controllers
                 return NotFound();
             }
 
-            // Populate the DoctorList dropdown with the same data as in the GET action
             ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName", reservation.Doctor);
 
             return View(reservation);
@@ -659,6 +699,8 @@ namespace HOSPITAL2_LAB1.Controllers
             return View(editedReservation);
         }
 
+
+   
 
         private bool AppointmentExists(int id)
         {
