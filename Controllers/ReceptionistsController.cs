@@ -606,9 +606,28 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return View(patientUsers);
         }
+        public async Task<IActionResult> SearchPatients(string query)
+        {
+            if (string.IsNullOrEmpty(query))
+            {
+                var allPatients = await _context.Patients.Include(a => a.User).ToListAsync();
+                return View("Patients", allPatients);
+            }
+
+            var patient = await _context.Patients
+                .Where(d => d.Name.Contains(query) || d.Surname.Contains(query))
+                .Include(a => a.User).Include(b => b.RoomNavigation)
+                .ToListAsync();
+
+            ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+
+            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+
+            return View("Patients", patient);
+        }
 
 
-       // show appointments
+        // show appointments
         public async Task<IActionResult> Appointments()
         {
 
