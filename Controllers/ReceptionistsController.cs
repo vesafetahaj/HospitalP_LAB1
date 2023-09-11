@@ -363,10 +363,20 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 ModelState.AddModelError("Name", "Name is reqired");
             }
+            else if (!Regex.IsMatch(patient.Name, "^[a-zA-Z]+$"))
+            {
+                ModelState.AddModelError("Name", "Name should only contain letters");
+            }
+
             if (string.IsNullOrWhiteSpace(patient.Surname))
             {
                 ModelState.AddModelError("Surname", "Surname is required");
             }
+            else if (!Regex.IsMatch(patient.Surname, "^[a-zA-Z]+$"))
+            {
+                ModelState.AddModelError("Surname", "Surname should only contain letters");
+            }
+
             if (string.IsNullOrWhiteSpace(patient.Gender))
             {
                 ModelState.AddModelError("Gender", "Gender is required");
@@ -375,10 +385,21 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 ModelState.AddModelError("Birthday", "Please fill in your birthday");
             }
+            else
+            {
+                var minBirthDate = DateTime.Today.AddYears(-18);
+
+                if (patient.Birthday > minBirthDate)
+                {
+                    ModelState.AddModelError("Birthday", "You must be at least 18 years old.");
+                }
+            }
+
             if (string.IsNullOrWhiteSpace(patient.Email))
             {
                 ModelState.AddModelError("Email", "Please select an email");
             }
+            
             if (patient.Phone == null)
             {
                 ModelState.AddModelError("Phone", "Phone number is required");
@@ -392,21 +413,16 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 try
                 {
-                    // Get the selected email from the patient object
                     string selectedEmail = patient.Email;
 
-                    // Find the user with the selected email in the AspNetUsers table
                     var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
 
                     if (user != null)
                     {
-                        // Set the UserId property of the patient entity
                         patient.UserId = user.Id;
 
-                        // Check if the room is Room ID 1 (which is an exception and can have more than 3 patients)
                         if (patient.Room != 1)
                         {
-                            // Check if the new room assignment exceeds the limit (3 patients per room)
                             var room = await _context.Rooms.FirstOrDefaultAsync(r => r.RoomId == patient.Room);
                             if (room != null)
                             {
@@ -452,8 +468,7 @@ namespace HOSPITAL2_LAB1.Controllers
             return View(patient);
         }
 
-
-
+       
         private bool PatientExists(int id)
         {
             return _context.Patients.Any(e => e.PatientId == id);
