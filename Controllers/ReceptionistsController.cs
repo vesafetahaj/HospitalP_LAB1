@@ -13,6 +13,7 @@ using System.Globalization;
 using Microsoft.Data.SqlClient;
 using System.Text.RegularExpressions;
 using Humanizer;
+using Microsoft.CSharp.RuntimeBinder;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -472,16 +473,26 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
         [HttpGet]
+        [HttpGet]
         public IActionResult CreatePatient()
         {
-            var PatientEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@patient.com")).Select(u => u.Email).ToList();
-            SelectList patientEmailsSelectList = new SelectList(PatientEmails);
+            try
+            {
+                var PatientEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@patient.com")).Select(u => u.Email).ToList();
+                SelectList patientEmailsSelectList = new SelectList(PatientEmails);
 
-            var room = _context.Rooms.ToList();
-            ViewData["RoomNumber"] = new SelectList(room, "RoomId", "RoomNumber"); 
-            ViewData["Emails"] = patientEmailsSelectList;
+                var room = _context.Rooms.ToList();
+                ViewData["RoomNumber"] = new SelectList(room, "RoomId", "RoomNumber");
+                ViewData["Emails"] = patientEmailsSelectList;
 
-            return View();
+                return View();
+            }
+            catch (RuntimeBinderException ex)
+            {
+                ViewData["ErrorMessage"] = "An error occurred while loading data. Please try again later.";
+                // Log the exception or perform additional error handling if needed.
+                return View();
+            }
         }
 
 
