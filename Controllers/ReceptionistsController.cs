@@ -358,6 +358,34 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 return NotFound();
             }
+            if (string.IsNullOrWhiteSpace(patient.Name))
+            {
+                ModelState.AddModelError("Name", "Name is reqired");
+            }
+            if (string.IsNullOrWhiteSpace(patient.Surname))
+            {
+                ModelState.AddModelError("Surname", "Surname is required");
+            }
+            if (string.IsNullOrWhiteSpace(patient.Gender))
+            {
+                ModelState.AddModelError("Gender", "Gender is required");
+            }
+            if(patient.Birthday == null)
+            {
+                ModelState.AddModelError("Birthday", "Please fill in your birthday");
+            }
+            if (string.IsNullOrWhiteSpace(patient.Email))
+            {
+                ModelState.AddModelError("Email", "Please select an email");
+            }
+            if (patient.Phone == null)
+            {
+                ModelState.AddModelError("Phone", "Phone number is required");
+            }
+            if (patient.Room == null)
+            {
+                ModelState.AddModelError("Room", "Please select a room");
+            }
 
             if (ModelState.IsValid)
             {
