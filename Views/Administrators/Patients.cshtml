@@ -5,12 +5,10 @@
 }
 
 <style>
-    /* Main container style */
     .patients-container {
         padding: 20px;
     }
 
-    /* Patient card style */
     .patient-card {
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -31,12 +29,10 @@
             margin: 5px 0;
         }
 
-    /* Search bar style */
     .search-bar {
         margin-bottom: 20px;
     }
 
-    /* Search input style */
     .search-input {
         width: 70%;
         padding: 10px;
@@ -44,13 +40,11 @@
         border-radius: 5px;
     }
 
-    /* Sorting buttons container style */
     .sorting-buttons-container {
         text-align: center;
         margin-bottom: 10px;
     }
 
-    /* Sorting buttons style */
     .sorting-buttons a {
         margin-right: 10px;
     }
@@ -59,7 +53,6 @@
 <h1>Patients</h1>
 <hr />
 
-<!-- Search bar -->
 <div class="row mt-4">
     <form method="get" action="@Url.Action("SearchPatients", "Administrators")" class="search-bar">
         <div class="input-group">
@@ -69,9 +62,7 @@
     </form>
 </div>
 
-<!-- Sorting buttons centered container -->
 <div class="sorting-buttons-container">
-    <!-- Sorting buttons with space -->
     <div class="sorting-buttons">
         <a asp-action="Patients" asp-route-sortOrder="name_desc" class="btn btn-primary">Sort by Name Desc</a>
         <a asp-action="Patients" asp-route-sortOrder="name_asc" class="btn btn-primary">Sort by Name Asc</a>
@@ -81,7 +72,6 @@
     </div>
 </div>
 
-<!-- Patient list -->
 <div class="container patients-container">
     <div class="row">
         @foreach (var patient in Model)
