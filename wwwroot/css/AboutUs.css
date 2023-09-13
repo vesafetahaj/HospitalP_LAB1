@@ -168,6 +168,7 @@ html {
 	border-bottom: 1px solid lightgrey;
 	height: 200px;
 	padding: 20px;
+	padding-top: 30px;
 }
 
 	.staff-row:hover {
