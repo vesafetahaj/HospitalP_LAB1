@@ -158,7 +158,6 @@ html {
 			transform: scale(1.05); /* Increase the size on hover */
 		}
 
-
 #staff-container > h1 {
 	text-align: center;
 	font-family: "sequel 85";
@@ -167,7 +166,7 @@ html {
 
 .staff-row {
 	border-bottom: 1px solid lightgrey;
-	height: 240px;
+	height: 200px;
 	padding: 20px;
 }
 
@@ -179,10 +178,11 @@ html {
 	width: 200px;
 	border-radius: 100%;
 	margin-right: 100px;
+	max-height:180px;
 }
 .staff-info{
 	margin-left:220px;
-	margin-top: -170px;
+	margin-top: -140px;
 }
 @keyframes zoomUp {
 	from {
