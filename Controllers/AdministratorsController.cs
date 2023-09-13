@@ -495,13 +495,15 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 ModelState.AddModelError("PhotoUrl", "Photo URL is required.");
             }
+            var doctorEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@doctor.com")).Select(u => u.Email).ToList();
+            SelectList doctorEmailsSelectList = new SelectList(doctorEmails);
             if (ModelState.IsValid)
             {
                 // Check if a doctor with the same email already exists
                 if (_context.Doctors.Any(d => d.Email == doctor.Email))
                 {
                     ModelState.AddModelError("Email", "This doctor already exists.");
-                    ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+                    ViewData["Emails"] = doctorEmailsSelectList;
                     ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
                     return View(doctor);
                 }
@@ -529,7 +531,7 @@ namespace HOSPITAL2_LAB1.Controllers
                 }
             }
 
-            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+            ViewData["Emails"] = doctorEmailsSelectList;
             ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
             return View(doctor);
         }
@@ -812,6 +814,9 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateReceptionist([Bind("ReceptionistId,Name,Surname,Email")] Receptionist receptionist)
         {
+            var receptionistsEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@receptionist.com")).Select(u => u.Email).ToList();
+            SelectList receptionistsEmailsSelectList = new SelectList(receptionistsEmails);
+
             if (ModelState.IsValid)
             {
                 if (string.IsNullOrWhiteSpace(receptionist.Name))
@@ -829,7 +834,7 @@ namespace HOSPITAL2_LAB1.Controllers
                 if (_context.Receptionists.Any(r => r.Email == receptionist.Email))
                 {
                     ModelState.AddModelError("Email", "This receptionist already exists.");
-                    ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+                    ViewData["Emails"] = receptionistsEmailsSelectList;
                     return View(receptionist);
                 }
 
@@ -852,8 +857,7 @@ namespace HOSPITAL2_LAB1.Controllers
                 }
             }
 
-            var receptionistsEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@receptionist.com")).Select(u => u.Email).ToList();
-            ViewData["Emails"] = new SelectList(receptionistsEmails);
+            ViewData["Emails"] = receptionistsEmailsSelectList;
 
             return View(receptionist);
         }
