@@ -162,13 +162,13 @@ html {
 	text-align: center;
 	font-family: "sequel 85";
 	margin-bottom: 50px;
+	margin-top:30px;
 }
 
 .staff-row {
 	border-bottom: 1px solid lightgrey;
-	height: 200px;
+	height: 180px;
 	padding: 20px;
-	padding-top: 30px;
 }
 
 	.staff-row:hover {
@@ -178,12 +178,11 @@ html {
 .staff-image img {
 	width: 200px;
 	border-radius: 100%;
-	margin-right: 100px;
 	max-height:180px;
 }
-.staff-info{
-	margin-left:220px;
-	margin-top: -140px;
+.staff-info {
+	margin-left: 320px;
+
 }
 @keyframes zoomUp {
 	from {

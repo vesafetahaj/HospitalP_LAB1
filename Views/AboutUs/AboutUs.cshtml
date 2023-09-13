@@ -134,7 +134,7 @@
                         </div>
                     </div>
 
-                    <div id='staff-container' className={`staff-container ${animateStaffContainer ? 'zoom-up' : ''}`}>
+                    <div id='staff-container' >
                         <h1>Our Team</h1>
                         
                             <div class="row mt-4">
@@ -145,7 +145,7 @@
                                             <div className='staff-row'>
                                                 <div className='staff-image'>
                                                     <img src="~/images/@Url.Content(doctor.PhotoUrl)" class="card-img-top" alt="Doctor Image"/>
-                                                     <div className='staff-info'>
+                                                                     <div className='staff-info'  style={{ marginTop: '-110px'}}>
                                                          <h3>@doctor.FullName</h3>
                                                          <h5>Specialization: @doctor.SpecializationNavigation.Name</h5>
                                                          <p>Email: @doctor.Email</p>
