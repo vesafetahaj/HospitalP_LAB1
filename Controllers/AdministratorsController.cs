@@ -330,7 +330,9 @@ namespace HOSPITAL2_LAB1.Controllers
                 return NotFound();
             }
             ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
-            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+            var doctorEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@doctor.com")).Select(u => u.Email).ToList();
+            SelectList doctorEmailsSelectList = new SelectList(doctorEmails);
+            ViewData["Emails"] = doctorEmailsSelectList; 
             return View(doctor);
         }
         [HttpPost]
@@ -363,6 +365,8 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 ModelState.AddModelError("PhotoUrl", "Photo URL is required.");
             }
+            var doctorEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@doctor.com")).Select(u => u.Email).ToList();
+            SelectList doctorEmailsSelectList = new SelectList(doctorEmails);
             if (ModelState.IsValid)
             {
                 try
@@ -372,14 +376,36 @@ namespace HOSPITAL2_LAB1.Controllers
 
                     // Find the user with the selected email in the AspNetUsers table
                     var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
+                    
 
                     if (user != null)
                     {
+                        // Check if a doctor with the same UserId already exists
+                        var existingDoctor = await _context.Doctors.FirstOrDefaultAsync(d => d.UserId == user.Id);
+                      
+                        if (existingDoctor != null && existingDoctor.DoctorId != doctor.DoctorId)
+                        {
+                            ModelState.AddModelError("Email", "A doctor with the same email already exists.");
+                            ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
+                           
+                            ViewData["Emails"] = doctorEmailsSelectList;
+                            return View(doctor);
+                        }
+
                         // Set the UserId property of the doctor entity
                         doctor.UserId = user.Id;
+                        existingDoctor.Name = doctor.Name;
+                        existingDoctor.Surname = doctor.Surname;
+                        existingDoctor.Education = doctor.Education;
+                        existingDoctor.Specialization = doctor.Specialization;
+                        existingDoctor.Email = doctor.Email;
+                        existingDoctor.PhotoUrl = doctor.PhotoUrl;
+                        existingDoctor.UserId = user.Id; // Set UserId
 
-                        _context.Update(doctor);
                         await _context.SaveChangesAsync();
+
+
+                        return RedirectToAction(nameof(Doctors));
                     }
                     else
                     {
@@ -388,22 +414,17 @@ namespace HOSPITAL2_LAB1.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!DoctorExists(doctor.DoctorId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    ModelState.AddModelError("", "Concurrency issue occurred.");
                 }
-                return RedirectToAction(nameof(Doctors));
             }
 
             ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
-            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+           
+            ViewData["Emails"] = doctorEmailsSelectList;
+
             return View(doctor);
         }
+
 
 
         private bool DoctorExists(int id)
@@ -425,7 +446,9 @@ namespace HOSPITAL2_LAB1.Controllers
                 return NotFound();
             }
             ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
-            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+            var doctorEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@doctor.com")).Select(u => u.Email).ToList();
+            SelectList doctorEmailsSelectList = new SelectList(doctorEmails);
+            ViewData["Emails"] = doctorEmailsSelectList;
             return View(doctor);
 
         }
@@ -447,19 +470,20 @@ namespace HOSPITAL2_LAB1.Controllers
             await _context.SaveChangesAsync();
 
             ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
-            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
-
+            var doctorEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@doctor.com")).Select(u => u.Email).ToList();
+            SelectList doctorEmailsSelectList = new SelectList(doctorEmails);
+            ViewData["Emails"] = doctorEmailsSelectList;
             return RedirectToAction(nameof(Doctors));
         }
         public IActionResult CreateDoctor()
         {
             var doctorEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@doctor.com")).Select(u => u.Email).ToList();
             SelectList doctorEmailsSelectList = new SelectList(doctorEmails);
+            ViewData["Emails"] = doctorEmailsSelectList;
 
             var specializations = _context.Specializations.ToList();
             ViewData["Name"] = new SelectList(specializations, "SpecializationId", "Name");
 
-            ViewData["Emails"] = doctorEmailsSelectList;
 
             return View();
         }

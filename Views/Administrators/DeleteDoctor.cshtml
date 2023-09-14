@@ -48,14 +48,7 @@
             @Html.DisplayNameFor(model => model.Email)
         </dt>
         <dd class="col-sm-10">
-            @foreach (var email in ViewBag.Emails)
-            {
-                if (email.Value == @Model.Email.ToString())
-                {
-                    @email.Text
-                    break;
-                }
-            }
+            @Html.DisplayFor(model => model.Email)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.PhotoUrl)
