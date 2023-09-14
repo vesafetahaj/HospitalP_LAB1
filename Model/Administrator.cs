@@ -14,6 +14,7 @@ namespace HOSPITAL2_LAB1.Model
         public string? Name { get; set; }
         public string? Surname { get; set; }
         public string? UserId { get; set; }
+        public string FullName => $"{Name} {Surname}";
 
         public virtual AspNetUser? User { get; set; }
         public virtual ICollection<Specialization> Specializations { get; set; }

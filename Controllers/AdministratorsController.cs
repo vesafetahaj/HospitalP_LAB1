@@ -563,7 +563,7 @@ namespace HOSPITAL2_LAB1.Controllers
         //Services
         public async Task<IActionResult> Services()
         {
-            var services = await _context.Specializations.ToListAsync();
+            var services = await _context.Specializations.Include(a=>a.AdministratorNavigation).ToListAsync();
 
             return View(services);
         }

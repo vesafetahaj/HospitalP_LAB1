@@ -41,10 +41,13 @@
                         <div class="card-body">
                             <h5 class="card-title">@service.Name</h5>
                             <p class="card-text">@service.Description</p>
+
                             <div class="text-center">
                                 <a href="@Url.Action("EditService", "Administrators", new { id = service.SpecializationId })" class="btn btn-primary">Edit</a>
                                 <a href="@Url.Action("DeleteService", "Administrators", new { id = service.SpecializationId })" class="btn btn-danger">Delete</a>
-                            </div>
+                            </div><br/>
+                            <p class="card-text" style="font-size:13px; color:#666;">Registered by: @service.AdministratorNavigation.FullName</p>
+
                         </div>
                     </div>
                 </div>
