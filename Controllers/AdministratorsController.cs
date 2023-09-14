@@ -913,6 +913,7 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 return NotFound();
             }
+
             if (string.IsNullOrWhiteSpace(receptionist.Name))
             {
                 ModelState.AddModelError("Name", "Name is required.");
@@ -926,29 +927,54 @@ namespace HOSPITAL2_LAB1.Controllers
                 ModelState.AddModelError("Email", "Email is required.");
             }
 
+            var receptionistsEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@receptionist.com")).Select(u => u.Email).ToList();
+            SelectList receptionistsEmailsSelectList = new SelectList(receptionistsEmails);
+
             if (ModelState.IsValid)
             {
-                string selectedEmail = receptionist.Email;
-
-                var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
-
-                if (user != null)
+                try
                 {
-                    receptionist.UserId = user.Id;
+                    string selectedEmail = receptionist.Email;
 
-                    _context.Update(receptionist);
-                    await _context.SaveChangesAsync();
+                    var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
+
+                    if (user != null)
+                    {
+                        // Check if a receptionist with the same UserId already exists
+                        var existingReceptionist = await _context.Receptionists.FirstOrDefaultAsync(r => r.UserId == user.Id);
+
+                        if (existingReceptionist != null && existingReceptionist.ReceptionistId != receptionist.ReceptionistId)
+                        {
+                            ModelState.AddModelError("Email", "A receptionist with the same email already exists.");
+                            ViewData["Emails"] = receptionistsEmailsSelectList;
+                            return View(receptionist);
+                        }
+
+                        receptionist.UserId = user.Id;
+                        // Retrieve the existing receptionist from the DbContext
+
+                        // Update the properties of the existing receptionist with the values from the binding model
+                        existingReceptionist.Name = receptionist.Name;
+                        existingReceptionist.Surname = receptionist.Surname;
+                        existingReceptionist.Email = receptionist.Email;
+                        existingReceptionist.UserId = receptionist.UserId; // Set UserId
+
+                        await _context.SaveChangesAsync();
+
+                        return RedirectToAction(nameof(Receptionists));
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Selected user not found.");
+                    }
                 }
-                else
+                catch (DbUpdateConcurrencyException)
                 {
-                    ModelState.AddModelError("", "Selected user not found.");
+                    ModelState.AddModelError("", "Concurrency issue occurred.");
                 }
-
-                return RedirectToAction(nameof(Receptionists));
             }
 
-            var receptionistsEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@receptionist.com")).Select(u => u.Email).ToList();
-            ViewData["Emails"] = new SelectList(receptionistsEmails);
+            ViewData["Emails"] = receptionistsEmailsSelectList;
 
             return View(receptionist);
         }
