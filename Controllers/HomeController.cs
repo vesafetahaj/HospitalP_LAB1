@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
-    public class NewsController : Controller
+    public class HomeController : Controller
     {
         
         public IActionResult Index()
