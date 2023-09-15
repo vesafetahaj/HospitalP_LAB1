@@ -9,6 +9,7 @@ using HOSPITAL2_LAB1.Data;
 using HOSPITAL2_LAB1.Model;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
+using System.Numerics;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -212,6 +213,26 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateRaport([Bind("ReportID,ReportType,ReportDate,ReportDescription, Patient")] Report report)
         {
+
+            if (string.IsNullOrWhiteSpace(report.ReportType))
+            {
+                ModelState.AddModelError("ReportType", "Report Type is required.");
+            }
+            if (report.ReportDate==null)
+            {
+                ModelState.AddModelError("ReportDate", "Date is required.");
+            }
+            if (string.IsNullOrWhiteSpace(report.ReportDescription))
+            {
+                ModelState.AddModelError("ReportDescription", "Education is required.");
+            }
+
+            if (report.Patient == null)
+            {
+                ModelState.AddModelError("Patient", "Patient is required.");
+            }
+
+
             string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (ModelState.IsValid)
             {
@@ -242,6 +263,8 @@ namespace HOSPITAL2_LAB1.Controllers
                 {
                     ModelState.AddModelError("", "You have to provide personal info first.");
                 }
+
+
             }
 
             // Get the list of patients who have reservations with the current doctor
