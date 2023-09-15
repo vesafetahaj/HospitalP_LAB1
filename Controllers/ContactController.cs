@@ -8,5 +8,9 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             return View();
         }
+        public IActionResult Message()
+        {
+            return View();
+        }
     }
-}
+}   
