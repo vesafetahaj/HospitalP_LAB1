@@ -1,1 +1,158 @@
-﻿
+﻿@{
+    ViewData["Title"] = "News";
+}
+
+
+
+<div id="react-container"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+
+
+
+<!--<link rel="stylesheet" href="~/css/Contact.css">-->
+<style>
+	
+	.wrapper {
+		max-width: 600px;
+		margin: 0 auto;
+		font-family: "Open Sans", sans-serif;
+		margin: 0;
+		padding: 1rem;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	#wrap + #wrap {
+		margin-top: 1rem;
+	}
+
+	#wrap {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		background: aliceblue;
+		padding: 1.5rem;
+		border-radius: 1rem;
+		width: calc(100% - 2rem);
+		box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+	}
+
+		#wrap::before {
+			content: url("/images/healthyy.png");
+			width: 100px; /* Set the width of the container */
+			height: 100px; /* Set the height of the container */
+			background-size: cover; /* Adjust this property to control the image size */
+			/* Add any other styles you want to apply to the image */
+		}
+
+		#wrap:nth-child(even) {
+			flex-direction: row-reverse;
+			background: honeydew;
+			margin-right: -2rem;
+			margin-left: 2rem;
+		}
+
+			#wrap:nth-child(even)::before {
+				transform: rotateY(180deg);
+			}
+
+	.covidRules {
+		font-family: 'Roboto Slab', serif;
+		font-size: 1.2rem;
+		margin: 0;
+		padding: 1rem;
+		display: grid;
+		place-items: center;
+		min-height: 100vh;
+		margin-bottom:30%;
+	}
+
+	ol {
+		padding: 0;
+		margin: 0;
+		max-width: 700px;
+		position: relative;
+	}
+
+		ol::before {
+			content: '';
+			width: 0.5rem;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 8%;
+			background: peachpuff;
+			z-index: -1;
+		}
+
+	#lista {
+		padding: 0.5rem 1.5rem 1rem;
+		border-radius: 1.5rem;
+		background: peachpuff;
+	}
+
+		#lista + #lista {
+			margin-top: 1rem;
+		}
+
+	::marker {
+		font-weight: 600;
+		color: tomato;
+		font-size: 1.8rem;
+	}
+</style>
+<script type="text/babel">
+
+
+    class Index extends React.Component {
+        render() {
+            return (
+                <div>
+				
+					<div class="wrapper">
+			<h1>10 TIPS FOR MAINTAINING A HEALTHY LIFESTYLE </h1>
+		<ul>
+				<li id="wrap"><strong>Measure and Watch Your Weight</strong>
+	Keeping track of your body weight on a daily or weekly basis will help you see what you’re losing and/or what you’re gaining.</li>
+				<li id="wrap"><strong>Limit Unhealthy Foods and Eat Healthy Meals</strong>
+	Do not forget to eat breakfast and choose a nutritious meal with more protein and fiber and less fat, sugar, and calories.</li>
+				<li id="wrap"><strong>Take Multivitamin Supplements</strong>
+	To make sure you have sufficient levels of nutrients, taking a daily multivitamin supplement is a good idea such as vitamins A, B6, B12, C, D, and E, as well as zinc, iron, copper  and magnesium</li>
+			<li id="wrap"><strong>Drink Water and Stay Hydrated, and Limit Sugared Beverages</strong>
+	Drink water regularly to stay healthy, but there is NO evidence that drinking water frequently (e.g. every 15 minutes) can help prevent any viral infection.</li>
+		   <li id="wrap"><strong>Reduce Sitting and Screen Time</strong>
+	Exercise can’t immunize you from your sedentary time. Even people who exercise regularly could be at increased risk for diabetes and heart disease and stroke if they spend lots of time sitting behind computers</li>
+		</ul>
+				</div>
+    <div class="covidRules">
+	<h1>Covid Prevention Actions</h1>
+    <ol>
+
+		<li id="lista">Staying Up to Date with COVID-19 Vaccines.</li>
+			<li id="lista">Improving Ventilation and Spending Time Outdoors.</li>
+			<li id="lista">Moving Indoor Activities Outdoors</li>
+			<li id="lista">Getting Tested for COVID-19.</li>
+			<li id="lista">Following Recommendations for What to Do If You Have Been Exposed.</li>
+			<li id="lista">Staying Home When You Have Suspected or Confirmed COVID-19.</li>
+            <li id="lista">Seeking Treatment If You Have COVID-19 and Are at High Risk of Getting Very Sick.</li>
+			<li id="lista">Avoiding Contact with People Who Have Suspected or Confirmed COVID-19.</li>
+
+    </ol>
+    </div>
+
+              </div>
+
+            );
+        }
+    }
+
+        ReactDOM.render(<Index />, document.getElementById('react-container'));
+</script>
