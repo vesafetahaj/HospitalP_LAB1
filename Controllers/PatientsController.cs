@@ -9,6 +9,7 @@ using HOSPITAL2_LAB1.Data;
 using HOSPITAL2_LAB1.Model;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using System.Composition;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -213,6 +214,19 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateAppointment([Bind("ReservationID,ReservationDate,ReservationTime,Doctor")] Reservation reservation)
         {
+            if (reservation.ReservationDate == null)
+            {
+                ModelState.AddModelError("ReservationDate", "Reservation date is required");
+            }
+
+            if (reservation.ReservationTime == null)
+            {
+                ModelState.AddModelError("ReservationTime", "Reservation time is required");
+            }
+            if (reservation.Doctor == null)
+            {
+                ModelState.AddModelError("Doctor", "Doctor is required.");
+            }
             if (ModelState.IsValid)
             {
                 string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -427,6 +441,17 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateComplaint([Bind("ComplaintId,ComplaintDate,ComplaintDetails")] Complaint complaint)
         {
+
+            if (complaint.ComplaintDate == null)
+            {
+                ModelState.AddModelError("ComplaintDate", "Complaint date is required");
+            }
+
+            if (complaint.ComplaintDetails == null)
+            {
+                ModelState.AddModelError("ComplaintDetails", "Complaint detail is required");
+            }
+          
             if (ModelState.IsValid)
             {
                 /* if (_context.Complaints.Any(s => s.Name == complaint.Name))
