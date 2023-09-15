@@ -511,15 +511,15 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 try
                 {
-                    // Retrieve the existing specialization from the DbContext
+                   
                     var existingComplaint = await _context.Complaints.FindAsync(id);
 
-                    // Update the properties of the existing specialization with the values from the binding model
+                   
                     existingComplaint.ComplaintDate = complaint.ComplaintDate;
                     existingComplaint.ComplaintDetails = complaint.ComplaintDetails;
 
 
-                    // Save the changes to the DbContext
+                   
                     _context.Update(existingComplaint);
                     await _context.SaveChangesAsync();
 
@@ -593,7 +593,7 @@ namespace HOSPITAL2_LAB1.Controllers
                 return View(contactform);
             }
 
-            // Handle case where the patient is not found
+        
             return NotFound();
         }
 
@@ -606,13 +606,17 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateMessage([Bind("ContactId,Subject,Message")] ContactForm contact)
         {
+            if (string.IsNullOrWhiteSpace(contact.Subject))
+            {
+                ModelState.AddModelError("Subject", "A subject is required.");
+            }
+            if (contact.Message == null)
+            {
+                ModelState.AddModelError("Message", "A message is required.");
+            }
+         
             if (ModelState.IsValid)
             {
-                /* if (_context.Complaints.Any(s => s.Name == complaint.Name))
-                 {
-                     ModelState.AddModelError("Name", "A complaint with the same name already exists.");
-                     return View(complaint);
-                 }*/
 
                 string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 var patient = await _context.Patients.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
