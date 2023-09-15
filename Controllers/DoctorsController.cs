@@ -10,6 +10,7 @@ using HOSPITAL2_LAB1.Model;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using System.Numerics;
+using System.Composition;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -232,7 +233,6 @@ namespace HOSPITAL2_LAB1.Controllers
                 ModelState.AddModelError("Patient", "Patient is required.");
             }
 
-
             string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (ModelState.IsValid)
             {
@@ -312,6 +312,8 @@ namespace HOSPITAL2_LAB1.Controllers
                 return NotFound();
             }
 
+
+
             var report = await _context.Reports.FindAsync(id);
             if (report == null)
             {
@@ -340,6 +342,24 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditReport(int id, [Bind("ReportID,ReportType,ReportDate,ReportDescription, Patient")] Report editedReport)
         {
+
+            if (string.IsNullOrWhiteSpace(editedReport.ReportType))
+            {
+                ModelState.AddModelError("ReportType", "Report Type is required.");
+            }
+            if (editedReport.ReportDate == null)
+            {
+                ModelState.AddModelError("ReportDate", "Date is required.");
+            }
+            if (string.IsNullOrWhiteSpace(editedReport.ReportDescription))
+            {
+                ModelState.AddModelError("ReportDescription", "Education is required.");
+            }
+            if (editedReport.Patient == null)
+            {
+                ModelState.AddModelError("Patient", "Patient is required.");
+            }
+
             string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             if (ModelState.IsValid)
