@@ -225,7 +225,7 @@ namespace HOSPITAL2_LAB1.Controllers
             }
             if (string.IsNullOrWhiteSpace(report.ReportDescription))
             {
-                ModelState.AddModelError("ReportDescription", "Education is required.");
+                ModelState.AddModelError("ReportDescription", "Description is required.");
             }
 
             if (report.Patient == null)
@@ -353,7 +353,7 @@ namespace HOSPITAL2_LAB1.Controllers
             }
             if (string.IsNullOrWhiteSpace(editedReport.ReportDescription))
             {
-                ModelState.AddModelError("ReportDescription", "Education is required.");
+                ModelState.AddModelError("ReportDescription", "Description is required.");
             }
             if (editedReport.Patient == null)
             {

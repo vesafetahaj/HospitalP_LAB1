@@ -11,9 +11,7 @@
     .thead-dark {
         background-color: #7a99aa;
         color: #fff;
-
     }
-
 </style>
 <h1>Appointments</h1>
 <hr />
@@ -26,7 +24,7 @@
             <th>Reservation Time</th>
             <th>Patient</th>
             <th>Doctor</th>
-            <th>Action</th>
+             <th>Action</th>
 
         </tr>
     </thead>
@@ -40,7 +38,7 @@
                 <td>@reservation.PatientNavigation.Name @reservation.PatientNavigation.Surname</td>
                 <td>@reservation.DoctorNavigation.Name @reservation.DoctorNavigation.Surname</td>
                 <td>
-                    <input type="checkbox" class="reservation-checkbox" data-id="@reservation.ReservationId"> Done </input>
+                    <input type="checkbox" class="reservation-checkbox" data-id="@reservation.ReservationId" />
 
                 </td>
             </tr>
