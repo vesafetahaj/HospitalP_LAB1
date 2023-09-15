@@ -11495,19 +11495,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fursine\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fursine\\Desktop\\LAB1\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\hospiatlnew11\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
       "projectName": "HOSPITAL2_LAB1",
-      "projectPath": "C:\\Users\\fursine\\Desktop\\LAB1\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
-      "packagesPath": "C:\\Users\\fursine\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fursine\\Desktop\\LAB1\\Hospital_LAB1\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\hospiatlnew11\\Hospital_LAB1\\HOSPITAL2_LAB1.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\hospiatlnew11\\Hospital_LAB1\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\fursine\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11515,6 +11520,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
