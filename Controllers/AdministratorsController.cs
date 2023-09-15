@@ -855,29 +855,27 @@ namespace HOSPITAL2_LAB1.Controllers
                 {
                     ModelState.AddModelError("Email", "Email is required.");
                 }
-                if (_context.Receptionists.Any(r => r.Email == receptionist.Email))
-                {
-                    ModelState.AddModelError("Email", "This receptionist already exists.");
-                    ViewData["Emails"] = receptionistsEmailsSelectList;
-                    return View(receptionist);
-                }
-
-                string selectedEmail = receptionist.Email;
-
-                var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
-
-                if (user != null)
-                {
-                    receptionist.UserId = user.Id;
-
-                    _context.Add(receptionist);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Receptionists));
-
-                }
                 else
                 {
-                    ModelState.AddModelError("", "Selected user not found.");
+                    string selectedEmail = receptionist.Email;
+
+                    var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
+
+                    if (user != null)
+                    {
+                        receptionist.UserId = user.Id;
+
+                        if (_context.Receptionists.Any(r => r.Email == receptionist.Email))
+                        {
+                            ModelState.AddModelError("Email", "This receptionist already exists.");
+                            ViewData["Emails"] = receptionistsEmailsSelectList;
+                            return View(receptionist);
+                        }
+
+                        _context.Add(receptionist);
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Receptionists));
+                    }
                 }
             }
 
@@ -885,6 +883,7 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return View(receptionist);
         }
+
 
         public async Task<IActionResult> EditReceptionist(int? id)
         {

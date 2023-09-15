@@ -21,11 +21,12 @@
         border-color: #fbaed2;
         color: white;
     }
-    .btn-pink-fill:hover{
+
+        .btn-pink-fill:hover {
             background-color: white;
             border-color: white;
             color: #fbaed2;
-    }
+        }
 
     .btn-pink-outline:hover {
         background-color: #fbaed2;
@@ -69,13 +70,20 @@
 <div class="mt-3">
     <p>
         <button type="button" class="btn btn-pink-outline" id="oldestButton" onclick="toggleOldestDate()">Oldest Appointment</button>
-        <span id="oldestDate" style="display:none;">Date: @ViewBag.OldestAppointment.ReservationDate?.ToString("yyyy-MM-dd"), Time: @ViewBag.OldestAppointment.ReservationTime</span>
+        @if (ViewBag.OldestAppointment != null)
+        {
+            <span id="oldestDate">Date: @ViewBag.OldestAppointment.ReservationDate?.ToString("yyyy-MM-dd"), Time: @ViewBag.OldestAppointment.ReservationTime</span>
+        }
     </p>
     <p>
         <button type="button" class="btn btn-pink-outline" id="earliestButton" onclick="toggleEarliestDate()">Earliest Appointment</button>
-        <span id="earliestDate" style="display:none;">Date: @ViewBag.EarliestAppointment.ReservationDate?.ToString("yyyy-MM-dd"), Time: @ViewBag.EarliestAppointment.ReservationTime</span>
+        @if (ViewBag.EarliestAppointment != null)
+        {
+            <span id="earliestDate">Date: @ViewBag.EarliestAppointment.ReservationDate?.ToString("yyyy-MM-dd"), Time: @ViewBag.EarliestAppointment.ReservationTime</span>
+        }
     </p>
 </div>
+
 
 <form method="get" class="form-inline">
     <div class="form-group mr-3">
