@@ -1,12 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HOSPITAL2_LAB1.Data;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
     public class SherbimetController : Controller
     {
-        public IActionResult Sherbimet()
+        private readonly HOSPITAL2Context _context;
+
+        public SherbimetController(HOSPITAL2Context context)
         {
-            return View();
+            _context = context;
+        }
+        public async Task<IActionResult> Sherbimet()
+        {
+            var services = await _context.Specializations.ToListAsync();
+
+            return View(services);
         }
     }
 }
