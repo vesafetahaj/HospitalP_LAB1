@@ -46,28 +46,6 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return administrator != null ? View(administrator) : (IActionResult)NotFound();
         }
-
-        /*
-        // GET: Administrators/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null || _context.Administrators == null)
-            {
-                return NotFound();
-            }
-
-            var administrator = await _context.Administrators
-                .Include(a => a.User)
-                .FirstOrDefaultAsync(m => m.AdminId == id);
-            if (administrator == null)
-            {
-                return NotFound();
-            }
-
-            return View(administrator);
-        }*/
-
-        // GET: Administrators/Create
         public IActionResult PersonalInfo()
         {
             string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -79,19 +57,13 @@ namespace HOSPITAL2_LAB1.Controllers
             return View();
         }
 
-        // POST: Administrators/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> PersonalInfo([Bind("AdminId,Name,Surname")] Administrator administrator)
         {
             if (ModelState.IsValid)
             {
-                // Get the user's ID from the ClaimsPrincipal
                 string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-                // Set the UserId property of the administrator object
                 administrator.UserId = loggedInUserId;
 
                 _context.Add(administrator);
@@ -101,7 +73,6 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return View(administrator);
         }
-        // GET: Administrators/EditPersonalInfo
         public IActionResult EditPersonalInfo()
         {
             string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -115,7 +86,6 @@ namespace HOSPITAL2_LAB1.Controllers
             return View(administrator);
         }
 
-        // POST: Administrators/EditPersonalInfo
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditPersonalInfo(int id, [Bind("AdminId,Name,Surname")] Administrator updatedAdministrator)
@@ -147,7 +117,6 @@ namespace HOSPITAL2_LAB1.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    // Handle concurrency issues if needed
                     return RedirectToAction("Details", new { id = id });
                 }
             }
@@ -209,7 +178,6 @@ namespace HOSPITAL2_LAB1.Controllers
             return View(administrator);
         }*/
 
-        // GET: Administrators/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Administrators == null)
@@ -228,7 +196,6 @@ namespace HOSPITAL2_LAB1.Controllers
             return View(administrator);
         }
 
-        // POST: Administrators/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -270,7 +237,7 @@ namespace HOSPITAL2_LAB1.Controllers
                 case "name_desc":
                     patientsQuery = patientsQuery.OrderByDescending(p => p.Name);
                     break;
-                case "name_asc": // Add sorting by name in ascending order
+                case "name_asc": 
                     patientsQuery = patientsQuery.OrderBy(p => p.Name);
                     break;
                 case "Date":
@@ -280,7 +247,7 @@ namespace HOSPITAL2_LAB1.Controllers
                     patientsQuery = patientsQuery.OrderByDescending(p => p.Birthday);
                     break;
                 default:
-                    ViewData["NameSortParam"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : sortOrder; // Retain the sortOrder for the view
+                    ViewData["NameSortParam"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : sortOrder; 
                     break;
             }
 
@@ -292,12 +259,10 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             if (string.IsNullOrEmpty(query))
             {
-                // If the search string is empty or null, return all patients
                 var allPatients = await _context.Patients.Include(a => a.User).ToListAsync();
                 return View("Patients", allPatients);
             }
 
-            // Search for patients whose name and surname contain the search query
             var patients = await _context.Patients
                 .Where(d => (d.Name + " " + d.Surname).Contains(query))
                 .Include(a => a.User)
@@ -371,16 +336,13 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 try
                 {
-                    // Get the selected email from the doctor object
                     string selectedEmail = doctor.Email;
 
-                    // Find the user with the selected email in the AspNetUsers table
                     var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
                     
 
                     if (user != null)
                     {
-                        // Check if a doctor with the same UserId already exists
                         var existingDoctor = await _context.Doctors.FirstOrDefaultAsync(d => d.UserId == user.Id);
                       
                         if (existingDoctor != null && existingDoctor.DoctorId != doctor.DoctorId)
@@ -392,7 +354,6 @@ namespace HOSPITAL2_LAB1.Controllers
                             return View(doctor);
                         }
 
-                        // Set the UserId property of the doctor entity
                         doctor.UserId = user.Id;
                         existingDoctor.Name = doctor.Name;
                         existingDoctor.Surname = doctor.Surname;
@@ -400,7 +361,7 @@ namespace HOSPITAL2_LAB1.Controllers
                         existingDoctor.Specialization = doctor.Specialization;
                         existingDoctor.Email = doctor.Email;
                         existingDoctor.PhotoUrl = doctor.PhotoUrl;
-                        existingDoctor.UserId = user.Id; // Set UserId
+                        existingDoctor.UserId = user.Id;
 
                         await _context.SaveChangesAsync();
 
@@ -523,7 +484,6 @@ namespace HOSPITAL2_LAB1.Controllers
             SelectList doctorEmailsSelectList = new SelectList(doctorEmails);
             if (ModelState.IsValid)
             {
-                // Check if a doctor with the same email already exists
                 if (_context.Doctors.Any(d => d.Email == doctor.Email))
                 {
                     ModelState.AddModelError("Email", "This doctor already exists.");
@@ -532,18 +492,14 @@ namespace HOSPITAL2_LAB1.Controllers
                     return View(doctor);
                 }
 
-                // Get the selected email from the doctor object
                 string selectedEmail = doctor.Email;
 
-                // Find the user with the selected email in the AspNetUsers table
                 var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
 
                 if (user != null)
                 {
-                    // Set the UserId property of the doctor entity
                     doctor.UserId = user.Id;
 
-                    // Add and save the doctor entity
                     _context.Add(doctor);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Doctors));
@@ -564,21 +520,17 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             if (string.IsNullOrEmpty(query))
             {
-                // If the search string is empty or null, return all doctors
                 var allDoctors = await _context.Doctors.Include(a => a.User).ToListAsync();
                 return View("Doctors", allDoctors);
             }
 
-            // Search for doctors whose name or specialization contains the search query
             var doctors = await _context.Doctors
                 .Where(d => d.Name.Contains(query) || d.Surname.Contains(query))
                 .Include(a => a.User).Include(b=> b.SpecializationNavigation)
                 .ToListAsync();
 
-            // Populate the ViewBag.Name for the Specializations dropdown
             ViewData["Name"] = new SelectList(_context.Specializations, "SpecializationId", "Name");
 
-            // Populate the ViewBag.Emails for the Emails dropdown
             ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
 
             return View("Doctors", doctors);
@@ -689,15 +641,12 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 try
                 {
-                    // Retrieve the existing specialization from the DbContext
                     var existingService = await _context.Specializations.FindAsync(id);
 
-                    // Update the properties of the existing specialization with the values from the binding model
                     existingService.Name = service.Name;
                     existingService.Description = service.Description;
                     existingService.PhotoUrl = service.PhotoUrl;
 
-                    // Save the changes to the DbContext
                     _context.Update(existingService);
                     await _context.SaveChangesAsync();
 
@@ -789,7 +738,6 @@ namespace HOSPITAL2_LAB1.Controllers
             ViewBag.EarliestAppointment = earliestAppointment;
 
 
-            // Populate ViewBag.Doctors, ViewBag.Patients, and ViewBag.Specializations
             var doctors = await _context.Doctors.ToListAsync();
             var patients = await _context.Patients.ToListAsync();
 
@@ -939,7 +887,6 @@ namespace HOSPITAL2_LAB1.Controllers
 
                     if (user != null)
                     {
-                        // Check if a receptionist with the same UserId already exists
                         var existingReceptionist = await _context.Receptionists.FirstOrDefaultAsync(r => r.UserId == user.Id);
 
                         if (existingReceptionist != null && existingReceptionist.ReceptionistId != receptionist.ReceptionistId)
@@ -950,13 +897,11 @@ namespace HOSPITAL2_LAB1.Controllers
                         }
 
                         receptionist.UserId = user.Id;
-                        // Retrieve the existing receptionist from the DbContext
 
-                        // Update the properties of the existing receptionist with the values from the binding model
                         existingReceptionist.Name = receptionist.Name;
                         existingReceptionist.Surname = receptionist.Surname;
                         existingReceptionist.Email = receptionist.Email;
-                        existingReceptionist.UserId = receptionist.UserId; // Set UserId
+                        existingReceptionist.UserId = receptionist.UserId; 
 
                         await _context.SaveChangesAsync();
 
@@ -1026,13 +971,10 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             var users = await _context.AspNetUsers.ToListAsync();
 
-            // Retrieve receptionist information
             var receptionists = await _context.Receptionists.ToListAsync();
 
-            // Retrieve doctor information
             var doctors = await _context.Doctors.ToListAsync();
 
-            // Store the receptionist and doctor information in ViewData
             ViewData["Receptionists"] = receptionists;
             ViewData["Doctors"] = doctors;
 
