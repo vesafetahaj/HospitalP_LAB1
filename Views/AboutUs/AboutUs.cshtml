@@ -13,10 +13,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
 
+<link rel="stylesheet" href="~/css/AboutUs.css" />
 
 
-
-<link rel="stylesheet" href="~/css/AboutUs.css">
 
 <script type="text/babel">
       
@@ -138,12 +137,13 @@
                             <br />
                             <h1>Our Team</h1>
 
-                            <div class="row mt-4">
+                            <div className="row mt-4">
                                 @if (Model.Count > 0)
                                 {
                                     @foreach (var doctor in Model)
                                     {
-                                         <div className='staff-row'>
+                                          <div className='staff-row' style={{height:'220px'}}>
+    
                                               <div className='staff-image'>
                                                   <img src="~/images/@Url.Content(doctor.PhotoUrl)" className="card-img-top" alt="Doctor Image" />
                                               </div>
