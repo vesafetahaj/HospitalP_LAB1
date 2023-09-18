@@ -1,6 +1,7 @@
 html {
 	overflow-x: hidden;
 }
+
 .container {
 	max-width: 100%;
 }
@@ -79,6 +80,7 @@ html {
 #main-content {
 	margin-bottom: 500px;
 }
+
 #doctor h1 {
 	font-family: "sequel 85";
 	margin-top: 50px;
@@ -86,15 +88,17 @@ html {
 	font-size: 26px;
 	margin-left: 400px;
 }
-#doctor{
+
+#doctor {
 	margin-bottom: 50px;
 }
-#doctor img {
-	margin-left: 50px;
-	
-}
-#doktoresha{
-	width:40%;
+
+	#doctor img {
+		margin-left: 50px;
+	}
+
+#doktoresha {
+	width: 40%;
 }
 
 #doctor-container {
@@ -103,7 +107,6 @@ html {
 	flex-direction: column;
 	margin-left: 500px;
 	margin-top: -620px;
-
 }
 
 .doctor-card {
@@ -117,7 +120,7 @@ html {
 	.doctor-card h3 {
 		padding-left: 200px;
 		font-size: 20px;
-		margin-top:-60px;
+		margin-top: -60px;
 		font-family: 'Franklin Gothic Medium';
 	}
 
@@ -152,8 +155,6 @@ html {
 		transition: transform 0.3s ease;
 	}
 
-
-
 		.gallery-img img:hover {
 			transform: scale(1.05); /* Increase the size on hover */
 		}
@@ -162,12 +163,12 @@ html {
 	text-align: center;
 	font-family: "sequel 85";
 	margin-bottom: 50px;
-	margin-top:30px;
+	margin-top: 30px;
 }
 
 .staff-row {
 	border-bottom: 1px solid lightgrey;
-	height: 180px;
+	height: 220px;
 	padding: 20px;
 }
 
@@ -176,13 +177,18 @@ html {
 	}
 
 .staff-image img {
-	width: 200px;
-	border-radius: 100%;
-	max-height:180px;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 20px;
+	float: left;
 }
-.staff-info {
-	margin-left: 320px;
 
+.staff-info {
+	float: left;
+	margin-left: 20px; /* Add a margin to separate the image and info */
+	padding: 25px;
 }
 @keyframes zoomUp {
 	from {
