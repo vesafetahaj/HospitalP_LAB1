@@ -187,7 +187,12 @@ namespace HOSPITAL2_LAB1.Controllers
             return View();
         }
 
-        
+        public IActionResult CreateRoomAlert()
+        {
+            // Your logic for the CreateRoomAlert page
+            return View();
+        }
+
         public async Task<IActionResult> CreateRoom([Bind("RoomId,RoomNumber")] Room room)
         {
             if (ModelState.IsValid)
@@ -200,7 +205,7 @@ namespace HOSPITAL2_LAB1.Controllers
                 {
                     _context.Add(room);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Rooms));
+                    return RedirectToAction("CreateRoomAlert");
                 }
             }
 
