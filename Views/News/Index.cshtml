@@ -16,6 +16,17 @@
 
 <!--<link rel="stylesheet" href="~/css/Contact.css">-->
 <style>
+	.column {
+		float: left;
+		width: 50%;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 	
 	.wrapper {
 		max-width: 600px;
@@ -108,6 +119,7 @@
 		color: tomato;
 		font-size: 1.8rem;
 	}
+
 </style>
 <script type="text/babel">
 
@@ -116,37 +128,51 @@
         render() {
             return (
                 <div>
-				
+					<div class="row">
+	  <div class="column">
 					<div class="wrapper">
 			<h1>10 TIPS FOR MAINTAINING A HEALTHY LIFESTYLE </h1>
 		<ul>
-				<li id="wrap"><strong>Measure and Watch Your Weight</strong>
+		<br></br>
+				<li id="wrap"><strong>1. Measure and Watch Your Weight</strong>
 	Keeping track of your body weight on a daily or weekly basis will help you see what you’re losing and/or what you’re gaining.</li>
-				<li id="wrap"><strong>Limit Unhealthy Foods and Eat Healthy Meals</strong>
+				<li id="wrap"><strong>2. Limit Unhealthy Foods and Eat Healthy Meals</strong>
 	Do not forget to eat breakfast and choose a nutritious meal with more protein and fiber and less fat, sugar, and calories.</li>
-				<li id="wrap"><strong>Take Multivitamin Supplements</strong>
+				<li id="wrap"><strong>3. Take Multivitamin Supplements</strong>
 	To make sure you have sufficient levels of nutrients, taking a daily multivitamin supplement is a good idea such as vitamins A, B6, B12, C, D, and E, as well as zinc, iron, copper  and magnesium</li>
-			<li id="wrap"><strong>Drink Water and Stay Hydrated, and Limit Sugared Beverages</strong>
+			<li id="wrap"><strong>4. Drink Water and Stay Hydrated, and Limit Sugared Beverages</strong>
 	Drink water regularly to stay healthy, but there is NO evidence that drinking water frequently (e.g. every 15 minutes) can help prevent any viral infection.</li>
-		   <li id="wrap"><strong>Reduce Sitting and Screen Time</strong>
+		   <li id="wrap"><strong>5. Reduce Sitting and Screen Time</strong>
 	Exercise can’t immunize you from your sedentary time. Even people who exercise regularly could be at increased risk for diabetes and heart disease and stroke if they spend lots of time sitting behind computers</li>
-		<li id="wrap"><strong>Get Enough Good Sleep</strong>
-	There is a very strong connection between sleep quality and quantity and your immune system. You can keep your immune system functioning properly by getting seven to eight hours of sleep each night</li>
-		<li id="wrap"><strong>Exercise Regularly and Be Physically Active</strong>
-	Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities.
-	</li>
-	<li id="wrap"><strong>Find Ways to Manage Your Emotions</strong>
-	It is common for people to have feelings of fear, anxiety, sadness, and uncertainty during a pandemic
-	</li>
-	<li id="wrap"><strong>Stay away from junk food</strong>
-	Eating junk food on a regular basis can lead to an increased risk of obesity and chronic diseases like cardiovascular disease, type 2 diabetes, non-alcoholic fatty liver disease and some cancers.
-
-	</li>
-	<li id="wrap"><strong>Use an App to Keep Track of Your Movement, Sleep, and Heart Rate</strong>
-	</li>
+		
 
 		</ul>
 				</div>
+				   </div>
+ <div class="column">
+	<div class="wrapper">
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+    <br></br>
+	<li id="wrap"><strong>6. Get Enough Good Sleep</strong>
+	   There is a very strong connection between sleep quality and quantity and your immune system. You can keep your immune system functioning properly by getting seven to eight hours of sleep each night</li>
+		   <li id="wrap"><strong>7. Exercise Regularly and Be Physically Active</strong>
+	   Being physically active can improve your brain health, help manage weight, reduce the risk of disease, strengthen bones and muscles, and improve your ability to do everyday activities.
+	   </li>
+	   <li id="wrap"><strong>8. Find Ways to Manage Your Emotions</strong>
+	   It is common for people to have feelings of fear, anxiety, sadness, and uncertainty during a pandemic
+	   </li>
+	   <li id="wrap"><strong>9. Stay away from junk food</strong>
+	   Eating junk food on a regular basis can lead to an increased risk of obesity and chronic diseases like cardiovascular disease, type 2 diabetes, non-alcoholic fatty liver disease and some cancers.
+	   </li>
+	   <li id="wrap"><strong>10. Use an App to Keep Track of Your Movement, Sleep, and Heart Rate</strong>
+	   Tracking devices can definitely be useful for helping you recognize patterns in your sleep habits </li>
+ </div>
+ </div>
+				
+	</div>
     <div class="covidRules">
 	<h1>Covid Prevention Actions</h1>
     <ol>
