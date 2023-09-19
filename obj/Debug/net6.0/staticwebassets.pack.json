@@ -453,6 +453,26 @@
       "PackagePath": "staticwebassets\\images\\medical.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\hospitalnew12\\Hospital_LAB1\\wwwroot\\images\\medical1.jpg",
+      "PackagePath": "staticwebassets\\images\\medical1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\hospitalnew12\\Hospital_LAB1\\wwwroot\\images\\medical2.jpg",
+      "PackagePath": "staticwebassets\\images\\medical2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\hospitalnew12\\Hospital_LAB1\\wwwroot\\images\\medical3.jpg",
+      "PackagePath": "staticwebassets\\images\\medical3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\hospitalnew12\\Hospital_LAB1\\wwwroot\\images\\medical4.jpg",
+      "PackagePath": "staticwebassets\\images\\medical4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\hospitalnew12\\Hospital_LAB1\\wwwroot\\images\\medical5.jpg",
+      "PackagePath": "staticwebassets\\images\\medical5.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\hospitalnew12\\Hospital_LAB1\\wwwroot\\images\\menublue.png",
       "PackagePath": "staticwebassets\\images\\menublue.png"
     },

@@ -120,6 +120,32 @@
 		font-size: 1.8rem;
 	}
 
+	.image-container {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.left-image {
+		flex: 1;
+	}
+
+	.right-images {
+		flex: 1;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.right-image {
+		width: calc(50% - 32px); /* Adjust the size and spacing as needed */
+		margin-bottom: 20px; /* Adjust the spacing between images */
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
 </style>
 <script type="text/babel">
 
@@ -128,9 +154,46 @@
         render() {
             return (
                 <div>
-					<div class="row">
-	  <div class="column">
-					<div class="wrapper">
+						<div className="image-container">
+		<div className="left-image">
+			<div className="image-wrapper">
+				<img src="/images/medical1.jpg" alt="Large Image"></img>
+				<div className="image-text"><h3>BREAKING : NEW VIRUS IN OUR AREA</h3></div>
+			</div>
+		</div>
+		<div className="right-images">
+			<div className="right-image">
+				<div className="image-wrapper">
+					<img src="/images/medical2.jpg" alt="Small Image 1"></img>
+					<div className="image-text">Small Image 1 Text</div>
+				</div>
+			</div>
+			<div className="right-image">
+				<div className="image-wrapper">
+					<img src="/images/medical5.jpg" alt="Small Image 4"></img>
+					<div className="image-text">Small Image 4 Text</div>
+				</div>
+			</div>
+			<div className="right-image">
+				<div className="image-wrapper">
+					<img src="/images/laborator.jpg" alt="Small Image 3"></img>
+					<div className="image-text">Small Image 3 Text</div>
+				</div>
+			</div>
+			<div className="right-image">
+				<div className="image-wrapper">
+					<img src="/images/medical3.jpg" alt="Small Image 2"></img>
+					<div className="image-text">Small Image 2 Text</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+					<div className="row">
+	  <div className="column">
+					<div className="wrapper">
+					<br></br>
+					   <br></br>
 			<h1>10 TIPS FOR MAINTAINING A HEALTHY LIFESTYLE </h1>
 		<ul>
 		<br></br>
@@ -149,8 +212,8 @@
 		</ul>
 				</div>
 				   </div>
- <div class="column">
-	<div class="wrapper">
+ <div className="column">
+	<div className="wrapper">
 	<br></br>
 	<br></br>
 	<br></br>
@@ -173,7 +236,7 @@
  </div>
 				
 	</div>
-    <div class="covidRules">
+    <div className="covidRules">
 	<h1>Covid Prevention Actions</h1>
     <ol>
 
@@ -188,6 +251,7 @@
 
     </ol>
     </div>
+	  
 
               </div>
 

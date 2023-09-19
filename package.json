@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.22.20",
+    "@babel/preset-react": "^7.22.15"
+  }
+}
