@@ -366,9 +366,10 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 return NotFound();
             }
+
             if (string.IsNullOrWhiteSpace(patient.Name))
             {
-                ModelState.AddModelError("Name", "Name is reqired");
+                ModelState.AddModelError("Name", "Name is required");
             }
             else if (!Regex.IsMatch(patient.Name, "^[a-zA-Z]+$"))
             {
@@ -388,7 +389,7 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 ModelState.AddModelError("Gender", "Gender is required");
             }
-            if(patient.Birthday == null)
+            if (patient.Birthday == null)
             {
                 ModelState.AddModelError("Birthday", "Please fill in your birthday");
             }
@@ -406,19 +407,21 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 ModelState.AddModelError("Email", "Please select an email");
             }
-            
+
             if (patient.Phone == null)
             {
                 ModelState.AddModelError("Phone", "Phone number is required");
             }
-            
+
             if (ModelState.IsValid)
             {
                 try
                 {
-                    string selectedEmail = patient.Email;
+                    string selectedEmail = patient.Email.Trim().ToLower();
 
-                    var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email == selectedEmail);
+                    var user = await _context.AspNetUsers
+                        .Where(u => u.Email.Trim().ToLower() == selectedEmail && u.Email.EndsWith("@patient.com"))
+                        .SingleOrDefaultAsync();
 
                     if (user != null)
                     {
@@ -429,18 +432,20 @@ namespace HOSPITAL2_LAB1.Controllers
                             var room = await _context.Rooms.FirstOrDefaultAsync(r => r.RoomId == patient.Room);
                             if (room != null)
                             {
-                                var patientsInRoom = await _context.Patients.CountAsync(p => p.Room == patient.Room);
+                                var patientsInRoom = await _context.Patients.CountAsync(p => p.Room == patient.Room && p.PatientId != id);
                                 if (patientsInRoom >= 3)
                                 {
                                     ModelState.AddModelError("", "This room already has 3 patients assigned.");
-                                    ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Email", "Email");
+                                    ViewData["Emails"] = new SelectList(
+                                        _context.AspNetUsers
+                                            .Where(u => u.Email.EndsWith("@patient.com"))
+                                            .ToList(), "Id", "Email");
                                     ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
                                     return View(patient);
                                 }
                             }
                         }
 
-                        // Update the patient's room assignment
                         _context.Update(patient);
                         await _context.SaveChangesAsync();
                         return RedirectToAction(nameof(Patients));
@@ -450,28 +455,28 @@ namespace HOSPITAL2_LAB1.Controllers
                         ModelState.AddModelError("", "Selected user not found.");
                     }
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (DbUpdateException ex)
                 {
-                    if (!PatientExists(patient.PatientId))
+                    if (IsUniqueConstraintViolation(ex))
                     {
-                        return NotFound();
+                        ModelState.AddModelError("Email", "A patient with the same email already exists.");
                     }
                     else
                     {
-                        throw;
+                        ModelState.AddModelError("", "An error occurred while saving the patient record.");
                     }
                 }
             }
 
-            // Retrieve the same list of patient emails and room numbers as in the GET action
-            var patientsEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@patient.com")).Select(u => u.Email).ToList();
-            ViewData["Emails"] = new SelectList(patientsEmails);
+            ViewData["Emails"] = new SelectList(
+                _context.AspNetUsers
+                    .Where(u => u.Email.EndsWith("@patient.com"))
+                    .ToList(), "Id", "Email");
             ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
-
             return View(patient);
         }
 
-       
+
         private bool PatientExists(int id)
         {
             return _context.Patients.Any(e => e.PatientId == id);
