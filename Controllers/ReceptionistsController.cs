@@ -500,101 +500,119 @@ namespace HOSPITAL2_LAB1.Controllers
             }
         }
 
+[HttpPost]
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> CreatePatient([Bind("PatientId,Name,Surname,Gender,Birthday,Email,Phone,Room")] Patient patient)
+{
+    if (string.IsNullOrWhiteSpace(patient.Name))
+    {
+        ModelState.AddModelError("Name", "Name is required");
+    }
+    else if (!Regex.IsMatch(patient.Name, "^[a-zA-Z]+$"))
+    {
+        ModelState.AddModelError("Name", "Name should only contain letters");
+    }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreatePatient([Bind("PatientId,Name,Surname,Gender,Birthday,Email,Phone,Room")] Patient patient)
+    if (string.IsNullOrWhiteSpace(patient.Surname))
+    {
+        ModelState.AddModelError("Surname", "Surname is required");
+    }
+    else if (!Regex.IsMatch(patient.Surname, "^[a-zA-Z]+$"))
+    {
+        ModelState.AddModelError("Surname", "Surname should only contain letters");
+    }
+
+    if (string.IsNullOrWhiteSpace(patient.Gender))
+    {
+        ModelState.AddModelError("Gender", "Gender is required");
+    }
+    if (patient.Birthday == null)
+    {
+        ModelState.AddModelError("Birthday", "Please fill in your birthday");
+    }
+    else
+    {
+        var minBirthDate = DateTime.Today.AddYears(-18);
+
+        if (patient.Birthday > minBirthDate)
         {
-           
-            if (string.IsNullOrWhiteSpace(patient.Name))
-            {
-                ModelState.AddModelError("Name", "Name is reqired");
-            }
-            else if (!Regex.IsMatch(patient.Name, "^[a-zA-Z]+$"))
-            {
-                ModelState.AddModelError("Name", "Name should only contain letters");
-            }
+            ModelState.AddModelError("Birthday", "You must be at least 18 years old.");
+        }
+    }
 
-            if (string.IsNullOrWhiteSpace(patient.Surname))
-            {
-                ModelState.AddModelError("Surname", "Surname is required");
-            }
-            else if (!Regex.IsMatch(patient.Surname, "^[a-zA-Z]+$"))
-            {
-                ModelState.AddModelError("Surname", "Surname should only contain letters");
-            }
+    if (string.IsNullOrWhiteSpace(patient.Email))
+    {
+        ModelState.AddModelError("Email", "Please select an email");
+    }
 
-            if (string.IsNullOrWhiteSpace(patient.Gender))
+    if (patient.Phone == null)
+    {
+        ModelState.AddModelError("Phone", "Phone number is required");
+    }
+
+    if (ModelState.IsValid)
+    {
+        try
+        {
+            string selectedEmail = patient.Email;
+
+            var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email.ToLower() == selectedEmail.ToLower());
+            if (user != null)
             {
-                ModelState.AddModelError("Gender", "Gender is required");
-            }
-            if (patient.Birthday == null)
-            {
-                ModelState.AddModelError("Birthday", "Please fill in your birthday");
+                patient.UserId = user.Id;
+
+                if (patient.Room != 1)
+                {
+                    var room = await _context.Rooms.FirstOrDefaultAsync(r => r.RoomId == patient.Room);
+                    if (room != null)
+                    {
+                        var patientsInRoom = await _context.Patients.CountAsync(p => p.Room == patient.Room);
+                        if (patientsInRoom >= 3)
+                        {
+                            ModelState.AddModelError("", "This room already has 3 patients assigned.");
+                            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Id", "Email");
+                            ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+                            return View(patient);
+                        }
+                    }
+                }
+
+                _context.Add(patient);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Patients));
             }
             else
             {
-                var minBirthDate = DateTime.Today.AddYears(-18);
-
-                if (patient.Birthday > minBirthDate)
-                {
-                    ModelState.AddModelError("Birthday", "You must be at least 18 years old.");
-                }
+                ModelState.AddModelError("", "Selected user not found.");
             }
-
-            if (string.IsNullOrWhiteSpace(patient.Email))
-            {
-                ModelState.AddModelError("Email", "Please select an email");
-            }
-
-            if (patient.Phone == null)
-            {
-                ModelState.AddModelError("Phone", "Phone number is required");
-            }
-           
-            if (ModelState.IsValid)
-            {
-              
-                string selectedEmail = patient.Email;
-
-                var user = await _context.AspNetUsers.SingleOrDefaultAsync(u => u.Email.ToLower() == selectedEmail.ToLower());
-                if (user != null)
-                {
-                   
-                    patient.UserId = user.Id;
-
-                    if (patient.Room != 1)
-                    {
-                        var room = await _context.Rooms.FirstOrDefaultAsync(r => r.RoomId == patient.Room);
-                        if (room != null)
-                        {
-                            var patientsInRoom = await _context.Patients.CountAsync(p => p.Room == patient.Room);
-                            if (patientsInRoom >= 3)
-                            {
-                                ModelState.AddModelError("", "This room already has 3 patients assigned.");
-                                ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Id", "Email");
-                                ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
-                                return View(patient);
-                            }
-                        }
-                    }
-
-                    _context.Add(patient);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Patients));
-                }
-                else
-                {
-                    ModelState.AddModelError("", "Selected user not found.");
-                }
-            }
-
-            ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Id", "Email");
-            ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
-            return View(patient);
         }
+        catch (DbUpdateException ex)
+        {
+            if (IsUniqueConstraintViolation(ex))
+            {
+                // Handle unique constraint violation (UserId)
+                ModelState.AddModelError("Email", "A patient with the same email already exists.");
+            }
+            else
+            {
+                // Handle other database-related exceptions
+                ModelState.AddModelError("", "An error occurred while saving the patient record.");
+            }
+        }
+    }
 
-       
+    // If the model state is not valid, return to the view with error messages
+    ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Id", "Email");
+    ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+    return View(patient);
+}
+
+private bool IsUniqueConstraintViolation(DbUpdateException ex)
+{
+    var sqlException = ex.InnerException as SqlException;
+    return sqlException?.Number == 2601 || sqlException?.Number == 2627;
+}
+
 
 
 
