@@ -338,7 +338,7 @@ namespace HOSPITAL2_LAB1.Controllers
         }
         [HttpGet]
         public async Task<IActionResult> EditPatient(int? id)
-        {   
+        {
             if (id == null)
             {
                 return NotFound();
@@ -350,12 +350,25 @@ namespace HOSPITAL2_LAB1.Controllers
                 return NotFound();
             }
 
-            var patientsEmails = _context.AspNetUsers.Where(u => u.Email.EndsWith("@patient.com")).Select(u => u.Email).ToList();
-            ViewData["Emails"] = new SelectList(patientsEmails);
+            var patientsEmails = _context.AspNetUsers
+                .Where(u => u.Email.EndsWith("@patient.com"))
+                .Select(u => u.Email)
+                .ToList();
+
+
+            var emailsAssignedToOtherPatients = _context.Patients
+                .Where(p => p.PatientId != id)
+                .Select(p => p.Email)
+                .ToList();
+
+            var availableEmails = patientsEmails.Except(emailsAssignedToOtherPatients).ToList();
+
+            ViewData["Emails"] = new SelectList(availableEmails);
             ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
 
             return View(patient);
         }
+
 
         // POST: Receptionists/EditPatient/5
         [HttpPost]
