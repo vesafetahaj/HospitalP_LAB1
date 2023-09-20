@@ -686,6 +686,15 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditMessage(int id, [Bind("ContactId,Subject,Message,Patient")] ContactForm contact)
         {
+
+            if (string.IsNullOrWhiteSpace(contact.Subject))
+            {
+                ModelState.AddModelError("Subject", "A subject is required.");
+            }
+            if (contact.Message == null)
+            {
+                ModelState.AddModelError("Message", "A message is required.");
+            }
             if (id != contact.ContactId)
             {
                 return NotFound();
