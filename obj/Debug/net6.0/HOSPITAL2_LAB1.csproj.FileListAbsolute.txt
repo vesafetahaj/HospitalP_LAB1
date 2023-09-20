@@ -6054,3 +6054,5 @@ C:\Users\Admin\Desktop\hospitalnew12\Hospital_LAB1\obj\Debug\net6.0\HOSPITAL2_LA
 C:\Users\Admin\Desktop\hospitalnew12\Hospital_LAB1\obj\Debug\net6.0\ref\HOSPITAL2_LAB1.dll
 C:\Users\Admin\Desktop\hospitalnew12\Hospital_LAB1\bin\Debug\net6.0\package-lock.json
 C:\Users\Admin\Desktop\hospitalnew12\Hospital_LAB1\bin\Debug\net6.0\package.json
+C:\Users\Admin\Desktop\HOSPITAL-V2\Hospital_LAB1\bin\Debug\net6.0\package-lock.json
+C:\Users\Admin\Desktop\HOSPITAL-V2\Hospital_LAB1\bin\Debug\net6.0\package.json

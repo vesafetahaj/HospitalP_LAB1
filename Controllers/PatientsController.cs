@@ -10,6 +10,7 @@ using HOSPITAL2_LAB1.Model;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using System.Composition;
+using System.Numerics;
 
 namespace HOSPITAL2_LAB1.Controllers
 {
@@ -127,6 +128,8 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("PatientId,Name,Surname,Gender,Birthday,Address,Phone,UserId")] Patient patient)
         {
+           
+           
             if (id != patient.PatientId)
             {
                 return NotFound();
@@ -308,6 +311,19 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditAppointment(int id, [Bind("ReservationId,ReservationDate,ReservationTime,Doctor")] Reservation editedReservation)
         {
+            if (editedReservation.ReservationDate == null)
+            {
+                ModelState.AddModelError("ReservationDate", "Reservation date is required");
+            }
+
+            if (editedReservation.ReservationTime == null)
+            {
+                ModelState.AddModelError("ReservationTime", "Reservation time is required");
+            }
+            if (editedReservation.Doctor == null)
+            {
+                ModelState.AddModelError("Doctor", "Doctor is required.");
+            }
             if (id != editedReservation.ReservationId)
             {
                 return NotFound();
