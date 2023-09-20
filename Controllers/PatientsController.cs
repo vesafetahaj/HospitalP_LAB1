@@ -518,6 +518,16 @@ namespace HOSPITAL2_LAB1.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditComplaint(int id, [Bind("ComplaintId,ComplaintDate,ComplaintDetails,Patient")] Complaint complaint)
         {
+
+            if (complaint.ComplaintDate == null)
+            {
+                ModelState.AddModelError("ComplaintDate", "Complaint date is required");
+            }
+
+            if (complaint.ComplaintDetails == null)
+            {
+                ModelState.AddModelError("ComplaintDetails", "Complaint detail is required");
+            }
             if (id != complaint.ComplaintId)
             {
                 return NotFound();
