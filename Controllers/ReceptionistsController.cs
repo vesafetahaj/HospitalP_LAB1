@@ -674,17 +674,31 @@ private bool IsUniqueConstraintViolation(DbUpdateException ex)
 
 
         // show appointments
+
         public async Task<IActionResult> Appointments()
         {
+            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            var appointmentsQuery = _context.Reservations
-                .Include(r => r.PatientNavigation)
-                .Include(r => r.DoctorNavigation)
-                .AsQueryable();
-            var appointments = await appointmentsQuery.ToListAsync();
-            return View(appointments);
+            var doctor = await _context.Doctors.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
+            var receptionist = await _context.Receptionists.FirstOrDefaultAsync(a => a.UserId == loggedInUserId);
 
+            if (doctor != null || receptionist != null)
+            {
+                
+                var appointmentsQuery = _context.Reservations
+                    .Include(r => r.PatientNavigation)
+                    .Include(r => r.DoctorNavigation)
+                    .AsQueryable();
+                var appointments = await appointmentsQuery.ToListAsync();
+                return View(appointments);
+            }
+            else
+            {
+                ViewData["ErrorMessage"] = "You do not have permission to view appointments.";
+                return View();
+            }
         }
+
 
 
 

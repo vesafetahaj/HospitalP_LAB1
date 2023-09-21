@@ -31,9 +31,10 @@
 <table class="table table-bordered table-striped table-hover table-blue">
     <thead class="thead-dark">
         <tr>
-           
-            <th>ReservationDate</th>
-            <th>ReservationTime</th>
+
+            <th>Reservation Date</th>
+            <th>Reservation Time</th>
+            <th>Patient</th>
             <th>Doctor</th>
             <th>Action</th>
         </tr>
@@ -44,6 +45,7 @@
             <tr>
                 <td>@reservation.ReservationDate?.ToString("yyyy-MM-dd")</td>
                 <td>@reservation.ReservationTime</td>
+                <td>@reservation.PatientNavigation.Name @reservation.PatientNavigation.Surname</td>
                 <td>@reservation.DoctorNavigation.Name @reservation.DoctorNavigation.Surname</td>
                 <td>
                   
