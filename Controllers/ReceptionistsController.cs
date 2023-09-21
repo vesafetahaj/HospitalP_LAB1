@@ -358,21 +358,9 @@ namespace HOSPITAL2_LAB1.Controllers
                 return NotFound();
             }
 
-            var patientsEmails = _context.AspNetUsers
-                .Where(u => u.Email.EndsWith("@patient.com"))
-                .Select(u => u.Email)
-                .ToList();
-
-
-            var emailsAssignedToOtherPatients = _context.Patients
-                .Where(p => p.PatientId != id)
-                .Select(p => p.Email)
-                .ToList();
-
-            var availableEmails = patientsEmails.Except(emailsAssignedToOtherPatients).ToList();
-
-            ViewData["Emails"] = new SelectList(availableEmails);
             ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+
+            ViewData["Emails"] = new SelectList(new List<string> { patient.Email }, patient.Email);
 
             return View(patient);
         }
@@ -486,19 +474,22 @@ namespace HOSPITAL2_LAB1.Controllers
                     {
                         ModelState.AddModelError("", "An error occurred while saving the patient record.");
                     }
-                }
-            }
 
-            ViewData["Emails"] = new SelectList(
-                _context.AspNetUsers
-                    .Where(u => u.Email.EndsWith("@patient.com"))
-                    .ToList(), "Id", "Email");
-            ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+                    var currentPatientEmail = patient.Email;
+
+                    ViewData["Emails"] = new SelectList(new List<string> { currentPatientEmail }, currentPatientEmail);
+
+
+                    ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+
+                   
+                }
+
+            }
             return View(patient);
         }
 
-
-        private bool PatientExists(int id)
+            private bool PatientExists(int id)
         {
             return _context.Patients.Any(e => e.PatientId == id);
         }
