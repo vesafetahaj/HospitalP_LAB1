@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "b9UJ9BTHlcWhjRexFlrjOoK4duYsqX2EcThIohdcgt0=",
+  "Hash": "U36gKebGul+JxUCncScZuNFRtK62MJAHZV5+eADTI9s=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1222,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\Sequel100Black-85.ttf"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\8004cf3f59bb160e8321f43bf00fcddc.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/8004cf3f59bb160e8321f43bf00fcddc.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\8004cf3f59bb160e8321f43bf00fcddc.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\about.jpg",
@@ -2669,6 +2686,40 @@
       "OriginalItemSpec": "wwwroot\\images\\invitro.jpg"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\istockphoto-1189304032-612x612.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/istockphoto-1189304032-612x612.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\istockphoto-1189304032-612x612.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\istockphoto-1327024466-612x612.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/istockphoto-1327024466-612x612.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\istockphoto-1327024466-612x612.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\kirurgji.jpg",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -2939,6 +2990,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\medical.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\medical_editing_image-smaller.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/medical_editing_image-smaller.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\medical_editing_image-smaller.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\medical1.jpg",
@@ -4061,6 +4129,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\twitter.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\types-of-doctors-1600114658.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/types-of-doctors-1600114658.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\types-of-doctors-1600114658.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\urgjenca.jpg",

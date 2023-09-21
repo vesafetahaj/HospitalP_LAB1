@@ -360,12 +360,15 @@ namespace HOSPITAL2_LAB1.Controllers
 
             ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
 
-            ViewData["Emails"] = new SelectList(new List<string> { patient.Email }, patient.Email);
+           
+            ViewData["Emails"] = new SelectList(new List<string> { patient.Email });
 
             return View(patient);
         }
 
 
+
+        // POST: Receptionists/EditPatient/5
         // POST: Receptionists/EditPatient/5
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -474,22 +477,22 @@ namespace HOSPITAL2_LAB1.Controllers
                     {
                         ModelState.AddModelError("", "An error occurred while saving the patient record.");
                     }
-
-                    var currentPatientEmail = patient.Email;
-
-                    ViewData["Emails"] = new SelectList(new List<string> { currentPatientEmail }, currentPatientEmail);
-
-
-                    ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
-
-                   
                 }
-
             }
+
+           
+            var currentPatientEmail = patient.Email;
+
+           
+            ViewData["Emails"] = new SelectList(new List<string> { currentPatientEmail }, currentPatientEmail);
+
+          
+            ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+
             return View(patient);
         }
 
-            private bool PatientExists(int id)
+        private bool PatientExists(int id)
         {
             return _context.Patients.Any(e => e.PatientId == id);
         }

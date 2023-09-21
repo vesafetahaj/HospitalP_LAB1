@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\fonts\\Sequel100Black-85.ttf"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\8004cf3f59bb160e8321f43bf00fcddc.jpg",
+      "PackagePath": "staticwebassets\\images\\8004cf3f59bb160e8321f43bf00fcddc.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\Possible-3x1.mp4",
       "PackagePath": "staticwebassets\\images\\Possible-3x1.mp4"
     },
@@ -385,6 +389,14 @@
       "PackagePath": "staticwebassets\\images\\invitro.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\istockphoto-1189304032-612x612.jpg",
+      "PackagePath": "staticwebassets\\images\\istockphoto-1189304032-612x612.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\istockphoto-1327024466-612x612.jpg",
+      "PackagePath": "staticwebassets\\images\\istockphoto-1327024466-612x612.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\kirurgji.jpg",
       "PackagePath": "staticwebassets\\images\\kirurgji.jpg"
     },
@@ -471,6 +483,10 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\medical5.jpg",
       "PackagePath": "staticwebassets\\images\\medical5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\medical_editing_image-smaller.jpg",
+      "PackagePath": "staticwebassets\\images\\medical_editing_image-smaller.jpg"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\menublue.png",
@@ -707,6 +723,10 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\twitter.png",
       "PackagePath": "staticwebassets\\images\\twitter.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\types-of-doctors-1600114658.jpg",
+      "PackagePath": "staticwebassets\\images\\types-of-doctors-1600114658.jpg"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalFinal\\Hospital_LAB1\\wwwroot\\images\\urgjenca.jpg",
