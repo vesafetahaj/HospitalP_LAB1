@@ -230,7 +230,6 @@ namespace HOSPITAL2_LAB1.Controllers
 
             return View(room);
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditRoom(int id, [Bind("RoomId,RoomNumber")] Room room)
@@ -244,13 +243,22 @@ namespace HOSPITAL2_LAB1.Controllers
             {
                 try
                 {
-                    // Retrieve the existing specialization from the DbContext
                     var existingRoom = await _context.Rooms.FindAsync(id);
 
-                    // Update the properties of the existing specialization with the values from the binding model
+                    if (existingRoom == null)
+                    {
+                        return NotFound();
+                    }
+                    var roomWithSameNumber = await _context.Rooms.FirstOrDefaultAsync(r => r.RoomNumber == room.RoomNumber && r.RoomId != id);
+
+                    if (roomWithSameNumber != null)
+                    {
+                        ModelState.AddModelError("RoomNumber", "A room with the same number already exists.");
+                        return View(room);
+                    }
+
                     existingRoom.RoomNumber = room.RoomNumber;
 
-                    // Save the changes to the DbContext
                     _context.Update(existingRoom);
                     await _context.SaveChangesAsync();
 
@@ -270,10 +278,10 @@ namespace HOSPITAL2_LAB1.Controllers
             }
 
             return View(room);
-        } 
+        }
 
-       
-       
+
+
         private bool RoomExists(int id)
         {
             return (_context.Rooms?.Any(e => e.RoomId == id)).GetValueOrDefault();
