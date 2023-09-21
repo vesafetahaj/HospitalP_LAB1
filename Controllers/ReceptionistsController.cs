@@ -514,7 +514,7 @@ namespace HOSPITAL2_LAB1.Controllers
 
                 var room = _context.Rooms.ToList();
                 ViewData["RoomNumber"] = new SelectList(room, "RoomId", "RoomNumber");
-                ViewData["Emails"] = patientEmailsSelectList;
+                ViewBag.PatientEmails = patientEmailsSelectList;
 
                 return View();
             }
@@ -627,9 +627,12 @@ public async Task<IActionResult> CreatePatient([Bind("PatientId,Name,Surname,Gen
         }
     }
 
-    // If the model state is not valid, return to the view with error messages
-    ViewData["Emails"] = new SelectList(_context.AspNetUsers, "Id", "Email");
-    ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
+            // If the model state is not valid, return to the view with error messages
+            ViewBag.PatientEmails = new SelectList(_context.AspNetUsers
+                 .Where(u => u.Email.EndsWith("@patient.com"))
+                 .Select(u => u.Email)
+                 .ToList());
+            ViewData["RoomNumber"] = new SelectList(_context.Rooms, "RoomId", "RoomNumber");
     return View(patient);
 }
 
