@@ -45,8 +45,32 @@
       "PackagePath": "staticwebassets\\images\\8004cf3f59bb160e8321f43bf00fcddc.jpg"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\Dr.Faton-Xhaka-e1520952293937.png",
+      "PackagePath": "staticwebassets\\images\\Dr.Faton-Xhaka-e1520952293937.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\Drita-Kabashi-1.jpg",
+      "PackagePath": "staticwebassets\\images\\Drita-Kabashi-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\IMG-1334.jpg",
+      "PackagePath": "staticwebassets\\images\\IMG-1334.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\Luan-Morina.png",
+      "PackagePath": "staticwebassets\\images\\Luan-Morina.png"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\Possible-3x1.mp4",
       "PackagePath": "staticwebassets\\images\\Possible-3x1.mp4"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\Rita-Shkoza-e1520950365186.png",
+      "PackagePath": "staticwebassets\\images\\Rita-Shkoza-e1520950365186.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\Yll-Kusari.png",
+      "PackagePath": "staticwebassets\\images\\Yll-Kusari.png"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\about-patient.jpg",
@@ -63,6 +87,10 @@
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\agenda.png",
       "PackagePath": "staticwebassets\\images\\agenda.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\ahmet-panxha.png",
+      "PackagePath": "staticwebassets\\images\\ahmet-panxha.png"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\alergology.jpg",
@@ -759,6 +787,10 @@
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\white-arrow-down.gif",
       "PackagePath": "staticwebassets\\images\\white-arrow-down.gif"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\wp-23.jpg",
+      "PackagePath": "staticwebassets\\images\\wp-23.jpg"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\young-handsome-physician-medical-robe-with-stethoscope.jpg",

@@ -75,6 +75,18 @@
             background-color: #B3E0FF;
             color: #0056b3;
         }
+
+    .image-container {
+        overflow: hidden;
+    }
+
+        .image-container img {
+            transition: transform 0.3s ease; 
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
 </style>
 
 <div id="main">
@@ -83,12 +95,7 @@
         <a href="@Url.Action("CreateDoctor", "Administrators")" class="btn btn-outline-primary">Create New Doctor</a>
     </div>
     <div class="row mt-4">
-        <form method="get" action="@Url.Action("SearchDoctors", "Administrators")">
-            <div class="input-group mb-3">
-                <input type="text" name="query" class="form-control" placeholder="Search by name or surname" aria-label="Search" aria-describedby="search-button">
-                <button class="btn btn-primary" type="submit" id="search-button">Search</button>
-            </div>
-        </form>
+        
         <div class="dropdown">
             <button class="btn btn-primary" type="button" id="specializationDropdown">
                 Filter by Specializations
@@ -116,7 +123,11 @@
             {
                 <div class="col-md-3 mb-4">
                     <div class="card">
-                        <img src="~/images/@Url.Content(doctor.PhotoUrl)" class="card-img-top" alt="Doctor Image">
+                        <div class="card-image">
+                            <div class="image-container">
+                                <img src="~/images/@Url.Content(doctor.PhotoUrl)" class="card-img-top" alt="Doctor Image">
+                            </div>
+                        </div>                        
                         <div class="card-body">
                             <h5 class="card-title">@doctor.Name</h5>
                             <h5 class="card-title">@doctor.Surname</h5>

@@ -26,6 +26,18 @@
         max-height: 200px;
         min-height: 200px;
     }
+
+    .image-container {
+        overflow: hidden;
+    }
+
+        .image-container img {
+            transition: transform 0.3s ease; 
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1); 
+        }
 </style>
 
 <div id="main">
@@ -42,7 +54,11 @@
             {
                 <div class="col-md-3 mb-4">
                     <div class="card">
-                        <img src="~/images/@Url.Content(service.PhotoUrl)" class="card-img-top" alt="Service Image">
+                        <div class="card-image">
+                            <div class="image-container">
+                                <img src="~/images/@Url.Content(service.PhotoUrl)" class="card-img-top" alt="Service Image">
+                            </div>
+                        </div>                        
                         <div class="card-body">
                             <h5 class="card-title">@service.Name</h5>
                             <p class="card-text">@service.Description</p>
