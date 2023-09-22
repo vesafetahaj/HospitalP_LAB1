@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5Ri2CIBTt6wAx0pdJxajv7cU4i6/Wz8nMlkUW2Z3JO0=",
+  "Hash": "nquCP6D9bX9o+3FKMfHiE7hVupT5QKa2OcnWdzonO9E=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -4112,6 +4112,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\test1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\trinanushi.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/trinanushi.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\trinanushi.jpg"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\twitter.png",

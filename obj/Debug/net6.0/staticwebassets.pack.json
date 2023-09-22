@@ -721,6 +721,10 @@
       "PackagePath": "staticwebassets\\images\\test1.jpg"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\trinanushi.jpg",
+      "PackagePath": "staticwebassets\\images\\trinanushi.jpg"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\twitter.png",
       "PackagePath": "staticwebassets\\images\\twitter.png"
     },

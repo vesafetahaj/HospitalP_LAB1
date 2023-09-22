@@ -7,8 +7,7 @@
 
 
 <div id="react-container"></div>
-
-<link rel="stylesheet" href="~/css/Sherbimet.css">
+<link rel="stylesheet" href="~/css/Sherbimet.css" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
@@ -56,27 +55,25 @@
                     </div>
 
                     <div className='flexbox-sherbimet'>
-    @if (Model.Count > 0)
-    {
-        @foreach (var service in Model)
-        {
-                                        <div className='card-sherbimet'>
-                                            <div className='img'>
-                                                <img src="~/images/@Url.Content(service.PhotoUrl)" alt="Service Image" />
-                                            </div>
-                                            <p className='title'>@service.Name</p>
-
-
-                                             <div>
-                                                <p>@service.Description</p>
-                                            </div>
-                                        </div>
-        }
-    }
-    else
-    {
-                                <p>No services found.</p>
-    }
+                         @if (Model.Count > 0)
+                         {
+                            @foreach (var service in Model)
+                            {
+                                 <div className='card-sherbimet'>
+                                      <div className='img'>
+                                           <img src="~/images/@Url.Content(service.PhotoUrl)" alt="Service Image" />
+                                      </div>
+                                      <p className='title'>@service.Name</p>
+                                      <div>
+                                         <p>@service.Description</p>
+                                      </div>
+                                 </div>
+                            }
+                         }
+                         else
+                         {
+                             <p>No services found.</p>
+                         }
                     </div>
 
              </div>

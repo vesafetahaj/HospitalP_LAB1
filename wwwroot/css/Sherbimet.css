@@ -118,8 +118,7 @@
 .row {
     width: 100%;
     padding: 50px 100px;
-    margin-left:100px;
-
+    margin-left: 100px;
 }
 
 .image-section {
@@ -234,7 +233,7 @@
     background-size: cover;
 }
 
-.title {
+.title{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
     text-align: center;

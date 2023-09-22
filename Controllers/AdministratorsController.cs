@@ -29,7 +29,7 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             int numberOfPatients = _context.Patients.Count();
             int numberOfDoctors = _context.Doctors.Count();
-           int numberOfAppointments = _context.Reservations.Count();   
+            int numberOfAppointments = _context.Reservations.Count();   
 
             ViewData["NumberOfPatients"] = numberOfPatients;
             ViewData["NumberOfDoctors"] = numberOfDoctors;
@@ -273,15 +273,30 @@ namespace HOSPITAL2_LAB1.Controllers
 
 
         //Doctors
-        public async Task<IActionResult> Doctors()
+        public async Task<IActionResult> Doctors(int? specializationId)
         {
-            var doctors = await _context.Doctors
+            var query = _context.Doctors
                 .Include(a => a.User)
                 .Include(r => r.SpecializationNavigation)
-                .ToListAsync();
+                .AsQueryable(); // Create a base query
+
+            if (specializationId.HasValue)
+            {
+                // Filter by specialization if specializationId is provided
+                query = query.Where(d => d.SpecializationNavigation.SpecializationId == specializationId.Value);
+            }
+
+            var doctors = await query.ToListAsync();
+
+            // You may also need to fetch the list of specializations for the filter dropdown
+            var specializations = await _context.Specializations.ToListAsync();
+
+            ViewData["SpecializationId"] = new SelectList(specializations, "SpecializationId", "Name");
+            ViewData["SelectedSpecializationId"] = specializationId;
 
             return View(doctors);
         }
+
         public async Task<IActionResult> EditDoctor(int? id)
         {
             if (id == null || _context.Doctors == null)
