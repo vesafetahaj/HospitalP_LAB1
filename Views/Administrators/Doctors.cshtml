@@ -24,6 +24,7 @@
 
     .card-img-top{
         max-height:200px;
+        min-height: 200px;
     }
 
     .mega-menu {
@@ -95,7 +96,7 @@
             <div class="mega-menu" aria-labelledby="specializationDropdown">
                 <div class="mega-menu-columns">
                     <div class="mega-menu-column">
-                        <a class="dropdown-item" href="@Url.Action("Doctors", "Administrators")">All Doctors</a>
+                        <a class="dropdown-item" href="@Url.Action("Doctors", "Administrators")" style="color:#444;">All Doctors</a>
                     </div>
                     @foreach (var specialization in ViewData["SpecializationId"] as SelectList)
                     {
