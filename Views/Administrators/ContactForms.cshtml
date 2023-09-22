@@ -6,14 +6,14 @@
 <h1>Contact Forms</h1>
 <hr />
 <div class="container mt-4">
- 
+
     <ul class="list-group">
         @foreach (var contactForm in Model)
         {
             <li class="list-group-item">
                 <h5 class="mb-1">@contactForm.Subject</h5>
                 <p class="mb-1">@contactForm.Message</p>
-                <small class="text-muted">Sent by: @contactForm.PatientNavigation.Name @contactForm.PatientNavigation.Surname</small>
+                <small class="text-muted">Sent by: @contactForm.PatientNavigation.Name @contactForm.PatientNavigation.Surname (@contactForm.PatientNavigation.Email)</small>
             </li>
         }
     </ul>
@@ -21,20 +21,20 @@
 
 <style>
     .container {
-        padding: 20px; 
+        padding: 20px;
     }
 
     .list-group-item {
         background-color: #f0f7ff;
-        border-color: #bdddf7; 
-        margin-bottom: 10px; 
-        transition: background-color 0.3s, transform 0.3s; 
+        border-color: #bdddf7;
+        margin-bottom: 10px;
+        transition: background-color 0.3s, transform 0.3s;
     }
 
-        
+
         .list-group-item:hover {
-            background-color: #d6e9ff; 
-            transform: scale(1.05); 
+            background-color: #d6e9ff;
+            transform: scale(1.05);
         }
 </style>
 

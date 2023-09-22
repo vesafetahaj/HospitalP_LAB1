@@ -6344,3 +6344,5 @@ C:\Users\Admin\Desktop\HospitalFinal\Hospital_LAB1\obj\Debug\net6.0\refint\HOSPI
 C:\Users\Admin\Desktop\HospitalFinal\Hospital_LAB1\obj\Debug\net6.0\HOSPITAL2_LAB1.pdb
 C:\Users\Admin\Desktop\HospitalFinal\Hospital_LAB1\obj\Debug\net6.0\HOSPITAL2_LAB1.genruntimeconfig.cache
 C:\Users\Admin\Desktop\HospitalFinal\Hospital_LAB1\obj\Debug\net6.0\ref\HOSPITAL2_LAB1.dll
+C:\Users\LENOVO\Desktop\Hospital_LAB1\bin\Debug\net6.0\package-lock.json
+C:\Users\LENOVO\Desktop\Hospital_LAB1\bin\Debug\net6.0\package.json
