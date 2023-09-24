@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "udCgkUHvh5y+1dCmClMDEDh2TppwzimhuuweDsrGP/U=",
+  "Hash": "CL4fcr/3p/FhW50Vw0ZYxi1LcNhq7hsjenQoD5P9s3Q=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -3194,6 +3194,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\medical-team.png"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\memli-morina.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/memli-morina.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\memli-morina.jpg"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Hospital_LAB1\\wwwroot\\images\\menublue.png",
