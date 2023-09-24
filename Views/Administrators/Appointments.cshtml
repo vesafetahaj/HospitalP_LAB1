@@ -35,55 +35,10 @@
     }
 </style>
 
-<script>
-    function toggleOldestDate() {
-        var oldestButton = document.getElementById('oldestButton');
-        var oldestDate = document.getElementById('oldestDate');
 
-        if (!oldestButton.classList.contains('btn-pink-fill')) {
-            oldestButton.classList.remove('btn-pink-outline');
-            oldestButton.classList.add('btn-pink-fill');
-            oldestDate.style.display = 'inline';
-        } else {
-            oldestButton.classList.remove('btn-pink-fill');
-            oldestButton.classList.add('btn-pink-outline');
-            oldestDate.style.display = 'none';
-        }
-    }
-
-    function toggleEarliestDate() {
-        var earliestButton = document.getElementById('earliestButton');
-        var earliestDate = document.getElementById('earliestDate');
-
-        if (!earliestButton.classList.contains('btn-pink-fill')) {
-            earliestButton.classList.remove('btn-pink-outline');
-            earliestButton.classList.add('btn-pink-fill');
-            earliestDate.style.display = 'inline';
-        } else {
-            earliestButton.classList.remove('btn-pink-fill');
-            earliestButton.classList.add('btn-pink-outline');
-            earliestDate.style.display = 'none';
-        }
-    }
-</script>
 <h1>Appointments</h1>
 <hr/>
-<div class="mt-3">
-    <p>
-        <button type="button" class="btn btn-pink-outline" id="oldestButton" onclick="toggleOldestDate()">Oldest Appointment</button>
-        @if (ViewBag.OldestAppointment != null)
-        {
-            <span id="oldestDate">Date: @ViewBag.OldestAppointment.ReservationDate?.ToString("yyyy-MM-dd"), Time: @ViewBag.OldestAppointment.ReservationTime</span>
-        }
-    </p>
-    <p>
-        <button type="button" class="btn btn-pink-outline" id="earliestButton" onclick="toggleEarliestDate()">Earliest Appointment</button>
-        @if (ViewBag.EarliestAppointment != null)
-        {
-            <span id="earliestDate">Date: @ViewBag.EarliestAppointment.ReservationDate?.ToString("yyyy-MM-dd"), Time: @ViewBag.EarliestAppointment.ReservationTime</span>
-        }
-    </p>
-</div>
+
 
 
 <form method="get" class="form-inline">

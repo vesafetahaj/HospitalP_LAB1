@@ -726,9 +726,8 @@ namespace HOSPITAL2_LAB1.Controllers
                 .AsQueryable();
 
             // Apply filters
-            if (!string.IsNullOrEmpty(filterDate))
+            if (!string.IsNullOrEmpty(filterDate) && DateTime.TryParseExact(filterDate, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var selectedDate))
             {
-                DateTime selectedDate = DateTime.ParseExact(filterDate, "yyyy-MM-dd", CultureInfo.InvariantCulture);
                 appointmentsQuery = appointmentsQuery.Where(a => a.ReservationDate.HasValue && a.ReservationDate.Value.Date == selectedDate.Date);
             }
 
@@ -742,16 +741,9 @@ namespace HOSPITAL2_LAB1.Controllers
                 appointmentsQuery = appointmentsQuery.Where(a => a.Patient == filterPatient.Value);
             }
 
-            
-
             var appointments = await appointmentsQuery.ToListAsync();
-            var appointmentsWithDate = appointments.Where(a => a.ReservationDate.HasValue).ToList();
-            var oldestAppointment = appointmentsWithDate.OrderBy(a => a.ReservationDate).FirstOrDefault();
-            var earliestAppointment = appointmentsWithDate.OrderByDescending(a => a.ReservationDate).FirstOrDefault();
 
-            ViewBag.OldestAppointment = oldestAppointment;
-            ViewBag.EarliestAppointment = earliestAppointment;
-
+            
 
             var doctors = await _context.Doctors.ToListAsync();
             var patients = await _context.Patients.ToListAsync();
