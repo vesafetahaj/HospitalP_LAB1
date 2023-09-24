@@ -211,42 +211,45 @@ namespace HOSPITAL2_LAB1.Controllers
                 .Where(a => a.Doctor == reservation.Doctor)
                 .ToListAsync();
 
-            foreach (var existingAppointment in existingAppointments)
+            if (reservation.ReservationDate.HasValue && reservation.ReservationTime.HasValue)
             {
-                if (reservation.ReservationDate.HasValue && reservation.ReservationTime.HasValue &&
-                    existingAppointment.ReservationDate.HasValue && existingAppointment.ReservationTime.HasValue)
+                DateTimeOffset reservationDateTime = new DateTimeOffset(
+                    reservation.ReservationDate.Value.Year,
+                    reservation.ReservationDate.Value.Month,
+                    reservation.ReservationDate.Value.Day,
+                    reservation.ReservationTime.Value.Hours,
+                    reservation.ReservationTime.Value.Minutes,
+                    reservation.ReservationTime.Value.Seconds,
+                    TimeSpan.Zero 
+                );
+
+                foreach (var existingAppointment in existingAppointments)
                 {
-                    DateTimeOffset reservationDateTime = new DateTimeOffset(
-                        reservation.ReservationDate.Value.Year,
-                        reservation.ReservationDate.Value.Month,
-                        reservation.ReservationDate.Value.Day,
-                        reservation.ReservationTime.Value.Hours,
-                        reservation.ReservationTime.Value.Minutes,
-                        reservation.ReservationTime.Value.Seconds,
-                        TimeSpan.Zero // Use TimeSpan.Zero for UTC offset
-                    );
-
-                    DateTimeOffset existingAppointmentDateTime = new DateTimeOffset(
-                        existingAppointment.ReservationDate.Value.Year,
-                        existingAppointment.ReservationDate.Value.Month,
-                        existingAppointment.ReservationDate.Value.Day,
-                        existingAppointment.ReservationTime.Value.Hours,
-                        existingAppointment.ReservationTime.Value.Minutes,
-                        existingAppointment.ReservationTime.Value.Seconds,
-                        TimeSpan.Zero // Use TimeSpan.Zero for UTC offset
-                    );
-
-                    var timeDifferenceMinutes = (reservationDateTime - existingAppointmentDateTime).TotalMinutes;
-
-                    if (Math.Abs(timeDifferenceMinutes) < 30)
+                    if (existingAppointment.ReservationDate.HasValue && existingAppointment.ReservationTime.HasValue)
                     {
-                        return true;
+                        DateTimeOffset existingAppointmentDateTime = new DateTimeOffset(
+                            existingAppointment.ReservationDate.Value.Year,
+                            existingAppointment.ReservationDate.Value.Month,
+                            existingAppointment.ReservationDate.Value.Day,
+                            existingAppointment.ReservationTime.Value.Hours,
+                            existingAppointment.ReservationTime.Value.Minutes,
+                            existingAppointment.ReservationTime.Value.Seconds,
+                            TimeSpan.Zero 
+                        );
+
+                        var timeDifferenceMinutes = (reservationDateTime - existingAppointmentDateTime).TotalMinutes;
+
+                        if (Math.Abs(timeDifferenceMinutes) < 30)
+                        {
+                            return true;
+                        }
                     }
                 }
             }
 
             return false;
         }
+
 
 
         public IActionResult CreateAppointment()
