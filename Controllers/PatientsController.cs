@@ -205,6 +205,34 @@ namespace HOSPITAL2_LAB1.Controllers
         {
             return _context.Patients.Any(info => info.UserId == userId);
         }
+        private async Task<bool> HasConflictingAppointment(Reservation reservation)
+        {
+            var existingAppointments = await _context.Reservations
+                .Where(a => a.Doctor == reservation.Doctor)
+                .ToListAsync();
+
+            foreach (var existingAppointment in existingAppointments)
+            {
+                DateTimeOffset reservationDateTime = new DateTimeOffset(
+                    reservation.ReservationDate.Value,
+                    reservation.ReservationTime.Value
+                );
+
+                DateTimeOffset existingAppointmentDateTime = new DateTimeOffset(
+                    existingAppointment.ReservationDate.Value,
+                    existingAppointment.ReservationTime.Value
+                );
+
+                var timeDifferenceMinutes = (reservationDateTime - existingAppointmentDateTime).TotalMinutes;
+
+                if (Math.Abs(timeDifferenceMinutes) < 30)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
 
         public IActionResult CreateAppointment()
         {
@@ -245,6 +273,9 @@ namespace HOSPITAL2_LAB1.Controllers
                     if (existingAppointment != null)
                     {
                         ModelState.AddModelError("", "The appointment is not available. Please choose another one!");
+                    }else if (await HasConflictingAppointment(reservation))
+                    {
+                        ModelState.AddModelError("", "Unavailable appointment!");
                     }
                     else
                     {
@@ -339,6 +370,10 @@ namespace HOSPITAL2_LAB1.Controllers
                     {
                         ModelState.AddModelError("", "This appointment is not available. Please choose another one!");
                     }
+                    else if (await HasConflictingAppointment(editedReservation))
+                    {
+                        ModelState.AddModelError("", "Unavailable appointment!");
+                    }
                     else
                     {
                         // Update the reservation details
@@ -428,6 +463,7 @@ namespace HOSPITAL2_LAB1.Controllers
             );
         }
 
+        
         //complaints
         public async Task<IActionResult> Complaints()
         {
