@@ -57,10 +57,31 @@
     }
 
     #registerForm {
-        margin-top: -800px;
+        margin-top: -850px;
         margin-left:150px;
     }
 
+    .instruction {
+        font-weight: bold;
+        color: #007bff;
+        margin-top: 20px;
+    }
+
+    .role-list {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+        .role-list li {
+            margin-bottom: 5px;
+        }
+
+            .role-list li::before {
+                content: '\2022'; /* Bullet symbol (•) */
+                color: #007bff;
+                margin-right: 5px;
+            }
 </style>
 <body>
     <div class="row justify-content-start">
@@ -73,6 +94,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h2>Create a new account</h2>
+                        
+
                         <hr />
                         <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
                         <div class="form-floating mb-3">
@@ -90,8 +113,19 @@
                             <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                             <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                         </div>
-               
+                        <hr />
+                        <p class="instruction">Please use one of the following tags in your email to indicate your role:</p>
+                        <ul class="role-list">
+                            <li>@@admin - Administrator</li>
+                            <li>@@doctor - Doctor</li>
+                            <li>@@receptionist - Receptionist</li>
+                            <li>@@patient - Patient</li>
+                        </ul>
+
+                        <hr />
+
                         <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+                        
                     </div>
                 </div>
             </form>
