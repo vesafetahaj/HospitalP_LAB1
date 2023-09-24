@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xl5E+lxqXhHG5CldUKaBWIPDcHBdBhbKbOHf6IlnymE=",
+  "Hash": "22IejdY13AWY5762yHFauBaxpIsKLbqVFSB3Z6C2ZMY=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -2465,6 +2465,23 @@
       "OriginalItemSpec": "wwwroot\\images\\happypatients2.jpg"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ProjektiLAB1-Hospital\\Hospital_LAB1\\wwwroot\\images\\healthcare.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ProjektiLAB1-Hospital\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/healthcare.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\healthcare.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\ProjektiLAB1-Hospital\\Hospital_LAB1\\wwwroot\\images\\health-checkup.png",
       "SourceId": "HOSPITAL2_LAB1",
       "SourceType": "Discovered",
@@ -3381,6 +3398,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\orl.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\ProjektiLAB1-Hospital\\Hospital_LAB1\\wwwroot\\images\\pacienti.jpg",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\ProjektiLAB1-Hospital\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/pacienti.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pacienti.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\ProjektiLAB1-Hospital\\Hospital_LAB1\\wwwroot\\images\\paper-bills.png",

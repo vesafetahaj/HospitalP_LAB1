@@ -365,6 +365,10 @@
       "PackagePath": "staticwebassets\\images\\health-report.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\ProjektiLAB1-Hospital\\Hospital_LAB1\\wwwroot\\images\\healthcare.jpg",
+      "PackagePath": "staticwebassets\\images\\healthcare.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\ProjektiLAB1-Hospital\\Hospital_LAB1\\wwwroot\\images\\healthreport.png",
       "PackagePath": "staticwebassets\\images\\healthreport.png"
     },
@@ -563,6 +567,10 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\ProjektiLAB1-Hospital\\Hospital_LAB1\\wwwroot\\images\\orl.jpg",
       "PackagePath": "staticwebassets\\images\\orl.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\ProjektiLAB1-Hospital\\Hospital_LAB1\\wwwroot\\images\\pacienti.jpg",
+      "PackagePath": "staticwebassets\\images\\pacienti.jpg"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\ProjektiLAB1-Hospital\\Hospital_LAB1\\wwwroot\\images\\paper-bills.png",
