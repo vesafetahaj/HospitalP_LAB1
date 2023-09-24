@@ -14,8 +14,263 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
 
 <link rel="stylesheet" href="~/css/AboutUs.css" />
+<style>
+    html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%;
+}
+
+#aboutusvid {
+    opacity: 1;
+    width: 100%;
+    margin-top: -15px;
+    height: 140%;
+}
 
 
+.aboutus #sunriseabout {
+    font-family: 'sequel 85';
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+}
+
+.aboutus #scrollimg {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 90px;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.card-aboutus {
+    text-align: center;
+    padding: 50px;
+    margin-top: 5px;
+    border: none;
+    width: 40%;
+    border-radius: none;
+    height: 600px;
+}
+
+    .card-aboutus img {
+        width: 90px;
+        margin-left: 0px;
+    }
+
+    .card-aboutus h3 {
+        font-size: 18px;
+        font-family: "helvetica";
+        font-weight: 500;
+        margin-top: 80px;
+    }
+
+    .card-aboutus h2 {
+        font-family: "sequel 85";
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+#main-content {
+    margin-bottom: 500px;
+}
+
+#doctor h1 {
+    font-family: "sequel 85";
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 26px;
+    margin-left: 400px;
+}
+
+#doctor {
+    margin-bottom: 50px;
+}
+
+    #doctor img {
+        margin-left: 50px;
+    }
+
+#doktoresha {
+    width: 40%;
+}
+
+#doctor-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: 500px;
+    margin-top: -620px;
+}
+
+.doctor-card {
+    padding: 30px;
+}
+
+    .doctor-card img {
+        width: 90px;
+    }
+
+    .doctor-card h3 {
+        padding-left: 200px;
+        font-size: 20px;
+        margin-top: -60px;
+        font-family: 'Franklin Gothic Medium';
+    }
+
+.gallery #background {
+    width: 100%;
+    margin-top: -23px;
+}
+
+.gallery {
+    position: relative;
+    height: 623px;
+}
+
+.gallery-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+    .gallery-img img {
+        position: relative;
+        display: block;
+        width: 30%;
+        padding-left: 50px;
+        padding-top: 50px;
+        float: left;
+        transition: transform 0.3s ease;
+    }
+
+        .gallery-img img:hover {
+            transform: scale(1.05); 
+        }
+
+
+
+.zoom-up {
+    animation: zoomUp 1s;
+}
+
+.fade-left {
+    animation: fadeLeft 1s;
+}
+
+.staff-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    float: left;
+}
+
+.staff-info {
+    float: left;
+    margin-left: 20px; 
+    padding: 15px;
+}
+
+#staff-container > h1 {
+    text-align: center;
+    font-family: "sequel 85";
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.staff-row {
+    border-bottom: 1px solid lightgrey;
+    padding: 20px;
+        background-color: #f0f4fc;
+
+}
+
+    .staff-row:hover {
+        box-shadow: -5px 0px 5px -2px lightgrey, 5px 0px 5px -2px lightgrey, 0px 10px 10px -5px lightgrey;
+    }
+
+}
+
+
+.staff-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.staff-row {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+    .staff-row:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .staff-image img {
+        width: 150px; 
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease; 
+        cursor: pointer; 
+    }
+
+        .staff-image img:hover {
+            transform: scale(1.1); 
+        }
+.staff-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.staff-info h5 {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.staff-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+</style>
 
 <script type="text/babel">
       
@@ -142,7 +397,7 @@
                                 {
                                     @foreach (var doctor in Model)
                                     {
-                                          <div className='staff-row' style={{height:'220px'}}>
+                                          <div className='staff-row'>
     
                                               <div className='staff-image'>
                                                   <img src="~/images/@Url.Content(doctor.PhotoUrl)" className="card-img-top" alt="Doctor Image" />
