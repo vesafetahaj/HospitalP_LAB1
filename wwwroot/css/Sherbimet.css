@@ -27,7 +27,7 @@
 .slider-sherbimet {
     width: 100%;
     height: 520px;
-    background: url('../images/staf.jpg');
+    background: url('../images/slide5.jpg');
     margin: 100px auto;
     margin-top: -10px;
     animation: slide 6s infinite;
@@ -35,7 +35,7 @@
 
 @keyframes slide {
     25% {
-        background: url('../images/slide5.jpg');
+        background: url('../images/clinical.jpg');
     }
 
     50% {
@@ -43,7 +43,7 @@
     }
 
     75% {
-        background: url('../images/clinical.jpg');
+        background: url('../images/staf.jpg');
     }
 
     100% {
