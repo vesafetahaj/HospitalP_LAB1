@@ -149,6 +149,25 @@
 		background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
 	}
 
+	.bodyHealth {
+		display: grid;
+		padding: 2rem;
+		grid-template-columns: 300px 1fr;
+		gap: 1rem;
+		align-items: center;
+		max-width: 90%;
+		margin: 0 auto;
+		font: 500 100%/1.5 system-ui;
+	}
+
+	img {
+		max-width: 180%;
+		height: auto;
+	}
+	.bodyHealth p{
+		margin-left:30%;
+	}
+	
 </style>
 <script type="text/babel">
 
@@ -157,7 +176,26 @@
         render() {
             return (
                 <div>
-						
+						<div className="bodyHealth">
+							   <img src='https://www.nm.org/-/media/northwestern/healthbeat/images/healthy-tips/what-is-e-coli_pv.jpg?h=450&w=800&la=en&hash=0732224B389D8FD7D33029B2DA98D66B' width="600" height="500" alt=''></img>
+
+								  <p><h1>What Is E. coli?</h1><h2>Causes, Prevention and When to Seek Care.</h2><br></br> It is in your digestive tract. It is under your fingernails. Escherichia coli is everywhere. Most forms of this bacteria are harmless and important for digestive health</p>
+
+									  <p><h3>You can protect yourself from E. coli infections by taking the following precautions:</h3></p>
+							            <p>
+										<ol>
+											<li>Stay aware of consumer alerts and avoid foods with known contamination.</li>
+											<li>Thoroughly wash your produce.</li>
+											<li>Know the source of your food.</li>
+											<li>Avoid raw or unpasteurized dairy products.</li>
+											<li>Handle food safely, and thoroughly cook your meat products to kill all bacteria.</li>
+											<li>Avoid swallowing water in ponds, streams, lakes, pools, and other bodies of water.</li>
+										</ol></p>
+
+
+								 <img src='https://www.nm.org/~/media/northwestern/healthbeat/images/healthy-tips/nm-lollapalooza-survival_preview.jpg' width="600" height="500" alt=''></img>
+									<p><h1>Outdoor Festival Health and Safety</h1><h3> Everything You Need to Know for Festival Well-Being</h3></p>
+						</div>
 	   <div class="divider div-transparent"></div>
 					<div className="row">
 	  <div className="column">
