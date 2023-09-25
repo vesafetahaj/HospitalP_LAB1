@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/8HNi+NR/vdgNAXSHb2jZlXSQxGyfTpS/dvpOBJ7QZY=",
+  "Hash": "PmbEvGqag9ft4NagvE9GUgji6TKVbGsDGFMPwpznxQY=",
   "Source": "HOSPITAL2_LAB1",
   "BasePath": "_content/HOSPITAL2_LAB1",
   "Mode": "Default",
@@ -1766,6 +1766,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\contact-us.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\HospitalF\\Hospital_LAB1\\wwwroot\\images\\credit-card.png",
+      "SourceId": "HOSPITAL2_LAB1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\HospitalF\\Hospital_LAB1\\wwwroot\\",
+      "BasePath": "_content/HOSPITAL2_LAB1",
+      "RelativePath": "images/credit-card.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\credit-card.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\HospitalF\\Hospital_LAB1\\wwwroot\\images\\customer.png",

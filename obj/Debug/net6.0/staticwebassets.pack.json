@@ -201,6 +201,10 @@
       "PackagePath": "staticwebassets\\images\\contact-us.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\HospitalF\\Hospital_LAB1\\wwwroot\\images\\credit-card.png",
+      "PackagePath": "staticwebassets\\images\\credit-card.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\HospitalF\\Hospital_LAB1\\wwwroot\\images\\customer.png",
       "PackagePath": "staticwebassets\\images\\customer.png"
     },
