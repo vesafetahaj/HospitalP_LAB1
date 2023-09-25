@@ -278,17 +278,15 @@ namespace HOSPITAL2_LAB1.Controllers
             var query = _context.Doctors
                 .Include(a => a.User)
                 .Include(r => r.SpecializationNavigation)
-                .AsQueryable(); // Create a base query
+                .AsQueryable(); 
 
             if (specializationId.HasValue)
             {
-                // Filter by specialization if specializationId is provided
                 query = query.Where(d => d.SpecializationNavigation.SpecializationId == specializationId.Value);
             }
 
             var doctors = await query.ToListAsync();
 
-            // You may also need to fetch the list of specializations for the filter dropdown
             var specializations = await _context.Specializations.ToListAsync();
 
             ViewData["SpecializationId"] = new SelectList(specializations, "SpecializationId", "Name");
