@@ -24,12 +24,6 @@ namespace HOSPITAL2_LAB1.Controllers
             _context = context;
         }
 
-        // GET: Patients
-        public async Task<IActionResult> Index()
-        {
-            var hOSPITAL2Context = _context.Patients.Include(p => p.User);
-            return View(await hOSPITAL2Context.ToListAsync());
-        }
         public async Task<IActionResult> Details()
         {
             // Get the currently logged-in user's ID
@@ -46,160 +40,6 @@ namespace HOSPITAL2_LAB1.Controllers
 
             // Pass the doctor's information to the view
             return View(patient);
-        }
-
-        /*
-
-        // GET: Patients/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null || _context.Patients == null)
-            {
-                return NotFound();
-            }
-
-            var patient = await _context.Patients
-                .Include(p => p.User)
-                .FirstOrDefaultAsync(m => m.PatientId == id);
-            if (patient == null)
-            {
-                return NotFound();
-            }
-
-            return View(patient);
-        }
-        */
-        // GET: Patients/Create
-        public IActionResult Create()
-        {
-            string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (HasProvidedPersonalInfo(loggedInUserId))
-            {
-                return RedirectToAction(nameof(Details));
-            }
-            ViewData["UserId"] = new SelectList(_context.AspNetUsers, "Id", "Id");
-            return View();
-        }
-
-        // POST: Patients/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PatientId,Name,Surname,Gender,Birthday,Address,Phone")] Patient patient)
-        {
-            if (ModelState.IsValid)
-            {
-                // Get the user's ID from the ClaimsPrincipal
-                string loggedInUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-                // Set the UserId property of the administrator object
-                patient.UserId = loggedInUserId;
-
-                _context.Add(patient);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["UserId"] = new SelectList(_context.AspNetUsers, "Id", "Id", patient.UserId);
-            return View(patient);
-        }
-
-        // GET: Patients/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null || _context.Patients == null)
-            {
-                return NotFound();
-            }
-
-            var patient = await _context.Patients.FindAsync(id);
-            if (patient == null)
-            {
-                return NotFound();
-            }
-            ViewData["UserId"] = new SelectList(_context.AspNetUsers, "Id", "Id", patient.UserId);
-            return View(patient);
-        }
-
-        // POST: Patients/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PatientId,Name,Surname,Gender,Birthday,Address,Phone,UserId")] Patient patient)
-        {
-           
-           
-            if (id != patient.PatientId)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(patient);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!PatientExists(patient.PatientId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["UserId"] = new SelectList(_context.AspNetUsers, "Id", "Id", patient.UserId);
-            return View(patient);
-        }
-
-        // GET: Patients/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null || _context.Patients == null)
-            {
-                return NotFound();
-            }
-
-            var patient = await _context.Patients
-                .Include(p => p.User)
-                .FirstOrDefaultAsync(m => m.PatientId == id);
-            if (patient == null)
-            {
-                return NotFound();
-            }
-
-            return View(patient);
-        }
-
-        // POST: Patients/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            if (_context.Patients == null)
-            {
-                return Problem("Entity set 'HOSPITAL2Context.Patients'  is null.");
-            }
-            var patient = await _context.Patients.FindAsync(id);
-            if (patient != null)
-            {
-                _context.Patients.Remove(patient);
-            }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool PatientExists(int id)
-        {
-            return (_context.Patients?.Any(e => e.PatientId == id)).GetValueOrDefault();
         }
         private bool HasProvidedPersonalInfo(string userId)
         {
@@ -251,7 +91,7 @@ namespace HOSPITAL2_LAB1.Controllers
         }
 
 
-
+        //Crud for appointments
         public IActionResult CreateAppointment()
         {
             ViewBag.DoctorList = new SelectList(_context.Doctors, "DoctorId", "FullName");
